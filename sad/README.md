@@ -7,6 +7,45 @@
 # Anotaciones de interés:
 + Moodle: [0378 Seguridad y Alta Disponibilidad](https://moodle.educarex.es/iescastelarfp/course/edit.php?id=67) - “tema0”
 
+
+---
+
+*En aquellos puntos en los que este documento pudiera discrepar con la **programación didáctica** del módulo formativo, prevalecerá lo indicado en la programación publicada por canales oficiales (moodle).*
+
+---
+
+
+## Resumen
+Este módulo profesional contiene la formación necesaria para seleccionar y utilizar técnicas y herramientas específicas de seguridad informática en el ámbito de la administración de sistemas. 
+
+Además, servirá para conocer arquitecturas de alta  disponibilidad y 
+utilizar herramientas de virtualización en la implantación de servicios de alta disponibilidad.
+
+Dividiremos por tanto en 4 grandes conceptos:
++ Seguridad ante pérdidas de datos.
++ Seguridad ante infiltraciones.
++ Seguridad ante exfiltración de datos.
++ Seguridad ante interrupciones de servicio.
+
+## One more thing
++ [Cosas que molan](https://www.youtube.com/watch?v=XZmGGAbHqa0)
++ Cosas que no:
+  + [Japón](https://www.xataka.com/seguridad/japon-tiene-agencia-ciberseguridad-para-proteger-al-pais-hackearon-se-han-enterado-nueve-meses-tarde)
+  + [Barcos](https://maritimecybersecurity.nl/)
+  + [En casa](https://ciberseguridad.com/ciberataques/espana/) y [chungos](https://www.bluradio.com/nacion/ciberataque-deja-sin-servicio-paginas-de-supersalud-cruz-roja-y-rama-judicial-rg10)
+  + ...
+
+
+## Referencias bibliográficas y web
+Cualquiera de las siguientes referencias son **muy** recomendables y se tomarán como tal. El profesor **no** los tomará como libros de texto.
+
++ [Apuntes de Oscar Maestre](https://oscarmaestre.github.io/apuntes_sad/index.html)
++ [Apuntes de José Domingo - PLEDIN 3.0](https://fp.josedomingo.org/seguridadgs/)
++ [Canal de KaleroLinex](https://www.youtube.com/kalerolinex) y [blog](https://kalerolinex.com/)
+
+---
+
+
 # Normativa:
 + **[Real Decreto 1629/2009](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2009-18355)**, de 30 de octubre, por el que se establece el título de Técnico Superior en Administración de Sistemas Informáticos en Red y se fijan sus enseñanzas mínimas.
 + **[DECRETO 210/2010](https://www.todofp.es/dam/jcr:f3d615c1-6102-4d09-80c8-91dc8663d909/extadministracion-sistemas-informaticos-en-red-pdf.pdf)**, de 19 de noviembre, por el que se establece el currículo del ciclo formativo de Grado Superior de Técnico Superior en Administración de Sistemas Informáticos en Red en la Comunidad Autónoma de Extremadura:
@@ -164,31 +203,3 @@ Las prácticas son otra forma más de evaluar los conocimientos y capacidades ad
 
 **Truco:** *si tienes dudas con la documentación, pide a un compañero que lea a ver que entiende*.
 
-
-## Resumen
-Este módulo profesional contiene la formación necesaria para seleccionar y utilizar técnicas y herramientas específicas de seguridad informática en el ámbito de la administración de sistemas. 
-
-Además, servirá para conocer arquitecturas de alta  disponibilidad y 
-utilizar herramientas de virtualización en la implantación de servicios de alta disponibilidad.
-
-Dividiremos por tanto en 4 grandes conceptos:
-+ Seguridad ante pérdidas de datos.
-+ Seguridad ante infiltraciones.
-+ Seguridad ante exfiltración de datos.
-+ Seguridad ante interrupciones de servicio.
-
-## One more thing
-+ [Cosas que molan](https://www.youtube.com/watch?v=XZmGGAbHqa0)
-+ Cosas que no:
-  + [Japón](https://www.xataka.com/seguridad/japon-tiene-agencia-ciberseguridad-para-proteger-al-pais-hackearon-se-han-enterado-nueve-meses-tarde)
-  + [Barcos](https://maritimecybersecurity.nl/)
-  + [En casa](https://ciberseguridad.com/ciberataques/espana/) y [chungos](https://www.bluradio.com/nacion/ciberataque-deja-sin-servicio-paginas-de-supersalud-cruz-roja-y-rama-judicial-rg10)
-  + ...
-
-
-## Referencias bibliográficas y web
-Cualquiera de las siguientes referencias son **muy** recomendables y se tomarán como tal. El profesor **no** los tomará como libros de texto.
-
-+ [Apuntes de Oscar Maestre](https://oscarmaestre.github.io/apuntes_sad/index.html)
-+ [Apuntes de José Domingo - PLEDIN 3.0](https://fp.josedomingo.org/seguridadgs/)
-+ [Canal de KaleroLinex](https://www.youtube.com/kalerolinex) y [blog](https://kalerolinex.com/)
