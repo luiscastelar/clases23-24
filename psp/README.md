@@ -1,12 +1,12 @@
-#curso23_24 #SAD [estado:: Done] 
+#curso23_24 #PSP [estado:: Working] 
 {[Page: New]} {[Editor: Toggle Dark Mode]} {[Editor: Toggle Vim Mode]}
 
+![portada](https://luiscastelar.duckdns.org/2023/assets/PSP/portada.jpg)
+[Imagen de storyset](https://www.freepik.es/vector-gratis/ilustracion-concepto-interfaz-programacion-aplicaciones_25625375.htm#query=programaci%C3%B3n&position=44&from_view=search&track=sph) en Freepik
 
-![portada](https://luiscastelar.duckdns.org/2023/assets/SAD/sed-portada-Wavy_Bus-20_Single-06.jpg)
-[Imagen de vectorjuice](https://www.freepik.es/vector-gratis/almacenamiento-informacion-nube-computacion-nube-colocada-sincronizacion-armonizacion-datos-disponible-accesible-digital-copia-seguridad-conectada-ilustracion-metafora-concepto-aislado-vector_12083500.htm#query=server&position=46&from_view=search&track=sph) en Freepik
 
 # Anotaciones de interés:
-+ Moodle: [0378 Seguridad y Alta Disponibilidad](https://moodle.educarex.es/iescastelarfp/course/edit.php?id=67) - “tema0”
++ Moodle: [0490 Programación de servicios y procesos](https://moodle.educarex.es/iescastelarfp/course/view.php?id=12) - “tema0”
 
 
 ---
@@ -48,8 +48,9 @@ Cualquiera de las siguientes referencias son **muy** recomendables y se tomarán
 
 
 # Normativa:
-+ **[Real Decreto 1629/2009](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2009-18355)**, de 30 de octubre, por el que se establece el título de Técnico Superior en Administración de Sistemas Informáticos en Red y se fijan sus enseñanzas mínimas.
-+ **[DECRETO 210/2010](https://www.todofp.es/dam/jcr:f3d615c1-6102-4d09-80c8-91dc8663d909/extadministracion-sistemas-informaticos-en-red-pdf.pdf)**, de 19 de noviembre, por el que se establece el currículo del ciclo formativo de Grado Superior de Técnico Superior en Administración de Sistemas Informáticos en Red en la Comunidad Autónoma de Extremadura:
++ **[Real Decreto 450/2010](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2010-8067)**, de 16 de abril, por el que se establece el título de Técnico Superior en Desarrollo de Aplicaciones Multiplataforma y se fijan sus enseñanzas mínimas.
++ **[Real Decreto 405/2023](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2023-13221)**, de 29 de mayo, por el que se actualizan los títulos de la formación profesional del sistema educativo de Técnico Superior en Desarrollo de Aplicaciones Multiplataforma y Técnico Superior en Desarrollo de Aplicaciones Web, de la familia profesional Informática y Comunicaciones, y se fijan sus enseñanzas mínimas.
++ **[DECRETO 259/2011](https://www.todofp.es/dam/jcr:f9adfc2b-d0d4-46a8-b459-f6df792af2f6/extdesarrollo-aplicaciones-multiplataforma-pdf.pdf)**, de 7 de octubre, por el que se establece el currículo del ciclo formativo de grado superior de Técnico Superior en Desarrollo de Aplicaciones Multiplataforma en la Comunidad Autónoma de Extremadura:
   
   > ...
   > Artículo 7. Desarrollo curricular.
@@ -60,30 +61,27 @@ Cualquiera de las siguientes referencias son **muy** recomendables y se tomarán
 
 ## Duración:
 
-Créditos ECTS: 6 -> 150 h \
+Créditos ECTS: 5 -> 125 h \
 Duración en aula: 80 h -> 4 h/sem en 20 sem \
-**Trabajo de casa: 70 h** -> 3,5 h/sem
+**Trabajo de casa: 45 h** -> 2,3 h/sem
 
 *No se considera trabajo de casa la visualización o lectura de la bibliografía, pero sí el razonamiento y ejecución de ejercicios, tareas y prácticas recomendadas u obligatorias.*
 
 
 ## Unidad de competencia
-Este módulo otorga la *UC0486_3: Asegurar equipos informáticos.*
+Este módulo otorga la *UC0964_3: Crear elementos software para gestión del sistema y sus recursos.*
 
 
 ## Resultados de aprendizaje
 De acuerdo al Decreto antes mencionado, los RA son:
-1. Adopta pautas y prácticas de tratamiento seguro de la información, reconociendo las vulnerabilidades de un sistema informático y la necesidad de asegurarlo.
-2. Implanta mecanismos de seguridad activa, seleccionando y ejecutando contramedidas ante amenazas o ataques al sistema.
-3. Implanta técnicas seguras de acceso remoto a un sistema informático, interpretando y aplicando el plan de seguridad.
-4. Implanta cortafuegos para asegurar un sistema informático, analizando sus prestaciones y controlando el tráfico hacia la red interna.
-5. Implanta servidores “proxy”, aplicando criterios de configuración que garanticen el funcionamiento seguro del servicio.
-6. Implanta soluciones de alta disponibilidad empleando técnicas de virtualización y configurando los entornos de prueba.
-8. Reconoce la legislación y normativa sobre seguridad y protección de datos valorando su importancia.
 
+1. Desarrolla aplicaciones compuestas por varios procesos reconociendo y aplicando principios de programación paralela.
+2. Desarrolla aplicaciones compuestas por varios hilos de ejecución analizando y aplicando librerías específicas del lenguaje de programación.
+3. Programa mecanismos de comunicación en red empleando sockets y analizando el escenario de ejecución.
+4. Desarrolla aplicaciones que ofrecen servicios en red, utilizando librerías de clases y aplicando criterios de eficiencia y disponibilidad.
+5. Protege las aplicaciones y los datos definiendo y aplicando criterios de seguridad en el acceso, almacenamiento y transmisión de la información.
 
-
-# Evaluación
+Evaluación
 
 ## Evaluaciones ordinaria y extraordinaria
 El proceso de evaluación, calificación y promoción se rige por lo indicado en la Orden de 20 de junio de 2012 por la que se regula la evaluación, promoción y acreditación académica del alumnado de ciclos formativos, y su posterior modificación de 5 de agosto de 2015, así como la Orden de 9 de junio de 2022 que modifica la primera orden.
@@ -192,3 +190,5 @@ Las prácticas son otra forma más de evaluar los conocimientos y capacidades ad
 
 **Truco:** *si tienes dudas con la documentación, pide a un compañero que lea a ver que entiende*.
 
+
+---
