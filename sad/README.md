@@ -2,7 +2,7 @@
 {[Page: New]} {[Editor: Toggle Dark Mode]} {[Editor: Toggle Vim Mode]}
 
 
-![portada](https://luiscastelar.duckdns.org/2023/assets/sed-portada-Wavy_Bus-20_Single-06.jpg)[Imagen de vectorjuice](https://www.freepik.es/vector-gratis/almacenamiento-informacion-nube-computacion-nube-colocada-sincronizacion-armonizacion-datos-disponible-accesible-digital-copia-seguridad-conectada-ilustracion-metafora-concepto-aislado-vector_12083500.htm#query=server&position=46&from_view=search&track=sph) en Freepik
+![portada](https://luiscastelar.duckdns.org/2023/assets/SAD/sed-portada-Wavy_Bus-20_Single-06.jpg)[Imagen de vectorjuice](https://www.freepik.es/vector-gratis/almacenamiento-informacion-nube-computacion-nube-colocada-sincronizacion-armonizacion-datos-disponible-accesible-digital-copia-seguridad-conectada-ilustracion-metafora-concepto-aislado-vector_12083500.htm#query=server&position=46&from_view=search&track=sph) en Freepik
 
 # Anotaciones de interés:
 + Moodle: [0378 Seguridad y Alta Disponibilidad](https://moodle.educarex.es/iescastelarfp/course/edit.php?id=67) - “tema0”
