@@ -8,18 +8,6 @@
 + Moodle: [0378 Seguridad y Alta Disponibilidad](https://moodle.educarex.es/iescastelarfp/course/edit.php?id=67) - “tema0”
 
 
-# Contenidos
-1. [Capacitación y herramientas](./SAD-1-Capacitación y herramientas.md)
-2. Adopción de pautas de seguridad informática
-3. Instalación y configuración de cortafuegos
-
-4. Implantación de técnicas de acceso remoto
-5. Instalación y configuración de servidores proxy
-6. Implantación de soluciones de alta disponibilidad
-7. Legislación y normas sobre seguridad
-
-*La temporización y orden podrían variar a lo largo del curso para adaptarse al proceso de enseñanza-aprendizaje.*
-
 ---
 
 *En aquellos puntos en los que este documento pudiera discrepar con la **programación didáctica** del módulo formativo, prevalecerá lo indicado en la programación publicada por canales oficiales (moodle).*
