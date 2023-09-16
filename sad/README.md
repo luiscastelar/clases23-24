@@ -1,5 +1,4 @@
 #curso23_24 #SAD [estado:: Done] 
-{[Page: New]} {[Editor: Toggle Dark Mode]} {[Editor: Toggle Vim Mode]}
 
 
 ![portada](https://luiscastelar.duckdns.org/2023/assets/SAD/sed-portada-Wavy_Bus-20_Single-06.jpg)

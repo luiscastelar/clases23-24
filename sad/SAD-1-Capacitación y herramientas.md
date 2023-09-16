@@ -1,5 +1,4 @@
 #curso23_24 #SAD [estado:: Done] 
-{[Page: New]} {[Editor: Toggle Dark Mode]} {[Editor: Toggle Vim Mode]}
 
 # Capacitación
 El módulo se basará fundamentalmente en código, por lo que realizaremos uso intensivo de control de versiones ([GIT]([https://git-scm.com](https://git-scm.com/))) y virtualización en distintos formatos.
@@ -9,18 +8,27 @@ El módulo se basará fundamentalmente en código, por lo que realizaremos uso i
 
 > Git es un software de control de versiones diseñado por Linus Torvalds, pensando en la eficiencia, la confiabilidad y compatibilidad del mantenimiento de versiones de aplicaciones cuando estas tienen un gran número de archivos de código fuente.
 
-+ FC: [TodoCode - Git](https://www.youtube.com/watch?v=mCVQgSyjCkI&list=PLQxX2eiEaqby-qh4raiKfYyb4T7WyHsfW) -> [1,25h]
+## ==Trabajo en casa (FC)==
+Para el día 18s:
+* FC: [TodoCode - Git](https://www.youtube.com/watch?v=mCVQgSyjCkI&list=PLQxX2eiEaqby-qh4raiKfYyb4T7WyHsfW) -> [1,25h]
 + FC: [Fazt Code - Markdown](https://www.youtube.com/watch?v=oxaH9CFpeEE) -> [0,5h]
-+ Clase: Crear un repo con README.md conectado con GitHub. Añadir colaborador (profe `@luiscastelar`). Postear cambios de captura (`tee`) de un clone -> [2h]
+
+*FC: Flipp Class -> Clase invertida: miráis los conceptos y luego lo trabajamos en clase.*
+
+## En clase:
+Crear un repo con README.md conectado con GitHub. Añadir colaborador (profe `@luiscastelar`). Postear cambios de captura (`tee`) de un clone -> [2h]
   + El `README.md` contendrá vuestro nombre y email coorporativo.
-+ [GitFiend](https://gitfiend.com/) o [GitG](https://wiki.gnome.org/Apps/Gitg) como apoyo visual a *git bash*
-+ .gitignore *.env y otros archivos binarios*. \
+
+**Archivo .gitignore:**
   Crearemos en la raíz del repo un archivo denominado `.gitignore` con el contenido:
   ```
   *.env
   ```
 
-+ *Referencias*:
+**Apoyos visuales**:
++ [GitFiend](https://gitfiend.com/) o [GitG](https://wiki.gnome.org/Apps/Gitg) como apoyo visual a *git bash*
+
+## Referencias:
   + Documentación OFICIAL -> [Git reference manual](https://git-scm.com/docs)
   + Vídeos aclarativos -> [PildorasInformáticas 1-5, 10-11](https://www.youtube.com/watch?v=ANF1X42_ae4&list=PLU8oAlHdN5BlyaPFiNQcV0xDqy0eR35aU)
      
@@ -36,7 +44,13 @@ El módulo se basará fundamentalmente en código, por lo que realizaremos uso i
 
 En otras palabras, nos permite gestionar máquinas virtuales desde código... [vamos a ello](https://app.vagrantup.com/techchad2022/boxes/ubuntu2204).
 
-#### Ejercicio:
+
+## ==Trabajo en casa (FC)==
+Investigar en la web como generar el archivo `Vagrantfile` con las características que vamos a desarrollar en clase.
+
+
+## En clase:
+Hacer los archivos `Vagrantfile` (7 distintos) que resuelva los siguientes supuestos:
 1. Añadir una segunda interfaz de red
 2. Ponerla en modo `bridge`
 3. Añadir 2 mv en un sólo fichero
