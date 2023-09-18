@@ -5,7 +5,7 @@
 
 1. 15s:
   * [x] Presentación/Evaluación-calificación
-  * [x] FC sobre GIT y MD
+  * [x] FC sobre [[pub23/sad/SAD-1-Capacitación y herramientas| GIT y MD]]
   * [x] Tareas sesión 2 - GIT
   
 2. 18s:
