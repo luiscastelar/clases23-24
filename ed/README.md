@@ -1,7 +1,7 @@
-#curso23_24 #PSP [estado:: Done] 
+#curso23_24 #ED [estado:: Done] 
 
-![portada](https://luiscastelar.duckdns.org/2023/assets/PSP/portada.jpg)
-[Imagen de storyset](https://www.freepik.es/vector-gratis/ilustracion-concepto-interfaz-programacion-aplicaciones_25625375.htm#query=programaci%C3%B3n&position=44&from_view=search&track=sph) en Freepik
+![portada](https://luiscastelar.duckdns.org/2023/assets/ED/portada.jpg)
+*[Imagen de fullvector](https://www.freepik.es/vector-gratis/computadora-portatil-icono-isometrico-codigo-programa-desarrollo-software-aplicaciones-programacion-neon-oscuro_4102879.htm#query=java&position=8&from_view=search&track=sph) en Freepik*
 
 
 # Anotaciones de interés:
@@ -19,7 +19,6 @@ Cualquiera de las siguientes referencias son **muy** recomendables y se tomarán
 
 + *pdte*
 
-  
 ---
 
 
@@ -37,27 +36,26 @@ Cualquiera de las siguientes referencias son **muy** recomendables y se tomarán
 
 ## Duración:
 
-Créditos ECTS: 5 -> 125 h \
-Duración en aula: 80 h -> 4 h/sem en 20 sem \
-**Trabajo de casa: 45 h** -> 2,3 h/sem
-
-*No se considera trabajo de casa la visualización o lectura de la bibliografía, pero sí el razonamiento y ejecución de ejercicios, tareas y prácticas recomendadas u obligatorias.*
+Créditos ECTS: 6 -> 150 h \
+Duración en aula: 128 h -> 4 h/sem en 32 sem \
 
 
 ## Unidad de competencia
-Este módulo otorga la *UC0964_3: Crear elementos software para gestión del sistema y sus recursos.*
+Este módulo otorga no otorga ninguna unidad de competencia.
 
 
 ## Resultados de aprendizaje
-De acuerdo al Decreto antes mencionado, los RA son:
+De acuerdo a la normativa antes mencionada, los RA son:
 
-1. Desarrolla aplicaciones compuestas por varios procesos reconociendo y aplicando principios de programación paralela.
-2. Desarrolla aplicaciones compuestas por varios hilos de ejecución analizando y aplicando librerías específicas del lenguaje de programación.
-3. Programa mecanismos de comunicación en red empleando sockets y analizando el escenario de ejecución.
-4. Desarrolla aplicaciones que ofrecen servicios en red, utilizando librerías de clases y aplicando criterios de eficiencia y disponibilidad.
-5. Protege las aplicaciones y los datos definiendo y aplicando criterios de seguridad en el acceso, almacenamiento y transmisión de la información.
+1. Reconoce los elementos y herramientas que intervienen en el desarrollo de un programa informático, analizando sus características y las fases en las que actúan hasta llegar a su puesta en funcionamiento.
+2. Evalúa entornos integrados de desarrollo analizando sus características para editar código fuente y generar ejecutables.
+3. Verifica el funcionamiento de programas diseñando y realizando pruebas.
+4. Optimiza código empleando las herramientas disponibles en el entorno de desarrollo.
+5. Genera diagramas de clases valorando su importancia en el desarrollo de aplicaciones y empleando herramientas específicas.
+6. Genera diagramas de comportamiento valorando su importancia en el desarrollo de aplicaciones y empleando herramientas específicas.
 
-Evaluación
+
+## Evaluación
 
 ## Evaluaciones ordinaria y extraordinaria
 El proceso de evaluación, calificación y promoción se rige por lo indicado en la Orden de 20 de junio de 2012 por la que se regula la evaluación, promoción y acreditación académica del alumnado de ciclos formativos, y su posterior modificación de 5 de agosto de 2015, así como la Orden de 9 de junio de 2022 que modifica la primera orden.

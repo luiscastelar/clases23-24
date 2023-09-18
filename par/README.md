@@ -1,11 +1,11 @@
-#curso23_24 #PSP [estado:: Done] 
+#curso23_24 #PAR [estado:: Done] 
 
-![portada](https://luiscastelar.duckdns.org/2023/assets/PSP/portada.jpg)
-[Imagen de storyset](https://www.freepik.es/vector-gratis/ilustracion-concepto-interfaz-programacion-aplicaciones_25625375.htm#query=programaci%C3%B3n&position=44&from_view=search&track=sph) en Freepik
+![Portada](https://luiscastelar.duckdns.org/2023/assets/par-portada-joven-ingeniero-comercial-tableta-tiro-medio.jpg)
+*[Imagen de freepik](https://www.freepik.es/foto-gratis/joven-ingeniero-comercial-tableta-tiro-medio_5819321.htm#query=server&position=47&from_view=search&track=sph) en Freepik*
 
 
 # Anotaciones de interés:
-+ Moodle: [0490 Programación de servicios y procesos](https://moodle.educarex.es/iescastelarfp/course/view.php?id=12) - “tema0”
++ Moodle: [0370 Planificación y Administración de Redes](https://moodle.educarex.es/iescastelarfp/course/edit.php?id=27) - “tema0”
 
 
 ---
@@ -14,19 +14,18 @@
 
 ---
 
+
 ## Referencias bibliográficas y web
 Cualquiera de las siguientes referencias son **muy** recomendables y se tomarán como tal. El profesor **no** los tomará como libros de texto.
 
 + *pdte*
 
-  
 ---
 
 
-# Normativa:
-+ **[Real Decreto 450/2010](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2010-8067)**, de 16 de abril, por el que se establece el título de Técnico Superior en Desarrollo de Aplicaciones Multiplataforma y se fijan sus enseñanzas mínimas.
-+ **[Real Decreto 405/2023](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2023-13221)**, de 29 de mayo, por el que se actualizan los títulos de la formación profesional del sistema educativo de Técnico Superior en Desarrollo de Aplicaciones Multiplataforma y Técnico Superior en Desarrollo de Aplicaciones Web, de la familia profesional Informática y Comunicaciones, y se fijan sus enseñanzas mínimas.
-+ **[DECRETO 259/2011](https://www.todofp.es/dam/jcr:f9adfc2b-d0d4-46a8-b459-f6df792af2f6/extdesarrollo-aplicaciones-multiplataforma-pdf.pdf)**, de 7 de octubre, por el que se establece el currículo del ciclo formativo de grado superior de Técnico Superior en Desarrollo de Aplicaciones Multiplataforma en la Comunidad Autónoma de Extremadura:
+## Legislación:
++ **Real Decreto 1629/2009**, de 30 de octubre, por el que se establece el título de Técnico Superior en Administración de Sistemas Informáticos en Red y se fijan sus enseñanzas mínimas.
++ **DECRETO 210/2010**, de 19 de noviembre, por el que se establece el currículo del ciclo formativo de Grado Superior de Técnico Superior en Administración de Sistemas Informáticos en Red en la Comunidad Autónoma de Extremadura:
   
   > ...
   > Artículo 7. Desarrollo curricular.
@@ -34,28 +33,26 @@ Cualquiera de las siguientes referencias son **muy** recomendables y se tomarán
   > 2. El equipo docente responsable del desarrollo del ciclo formativo elaborará las programaciones para los distintos módulos profesionales. Estas programaciones didácticas deberán contener, al menos, la adecuación de las competencias profesionales, personales y sociales al contexto socioeconómico y cultural dentro del centro educativo y a las características del alumnado, la distribución y el desarrollo de los contenidos, la metodología de carácter general y los criterios sobre el proceso de evaluación, así como los materiales didácticos.
   > ...
 
+## Duración: 
+Créditos ECTS: 12 -> 300 h
+Duración en aula: 224 h -> 7 h/sem en 32 sem
+**Trabajo en casa: 76 h** -> 2,4 h/sem
 
-## Duración:
-
-Créditos ECTS: 5 -> 125 h \
-Duración en aula: 80 h -> 4 h/sem en 20 sem \
-**Trabajo de casa: 45 h** -> 2,3 h/sem
-
-*No se considera trabajo de casa la visualización o lectura de la bibliografía, pero sí el razonamiento y ejecución de ejercicios, tareas y prácticas recomendadas u obligatorias.*
+*No se considera trabajo personal la visualización o lectura de la bibliografía, si no el razonamiento y ejecución de ejercicios, tareas y prácticas recomendadas u obligatorias.*
 
 
 ## Unidad de competencia
-Este módulo otorga la *UC0964_3: Crear elementos software para gestión del sistema y sus recursos.*
+Este módulo no cubre ninguna unidad de competencia.
 
 
 ## Resultados de aprendizaje
-De acuerdo al Decreto antes mencionado, los RA son:
-
-1. Desarrolla aplicaciones compuestas por varios procesos reconociendo y aplicando principios de programación paralela.
-2. Desarrolla aplicaciones compuestas por varios hilos de ejecución analizando y aplicando librerías específicas del lenguaje de programación.
-3. Programa mecanismos de comunicación en red empleando sockets y analizando el escenario de ejecución.
-4. Desarrolla aplicaciones que ofrecen servicios en red, utilizando librerías de clases y aplicando criterios de eficiencia y disponibilidad.
-5. Protege las aplicaciones y los datos definiendo y aplicando criterios de seguridad en el acceso, almacenamiento y transmisión de la información.
+1. Reconoce la estructura de las redes de datos identificando sus elementos y principios de funcionamiento.
+2. Integra ordenadores y periféricos en redes cableadas e  inalámbricas, evaluando su funcionamiento y prestaciones.
+3. Administra conmutadores estableciendo opciones de configuración para su integración en la red.
+4. Administra las funciones básicas de un “router” estableciendo opciones de configuración para su integración en la red.
+5. Configura redes locales virtuales identificando su campo de aplicación.
+6. Realiza tareas avanzadas de administración de red analizando y utilizando protocolos dinámicos de encaminamiento.
+7. Conecta redes privadas a redes públicas identificando y aplicando diferentes tecnologías.
 
 Evaluación
 
@@ -167,4 +164,3 @@ Las prácticas son otra forma más de evaluar los conocimientos y capacidades ad
 **Truco:** *si tienes dudas con la documentación, pide a un compañero que lea a ver que entiende*.
 
 
----
