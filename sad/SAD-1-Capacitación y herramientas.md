@@ -31,6 +31,7 @@ Crear un repo con README.md conectado con GitHub. Añadir colaborador (profe `@l
 ## Referencias:
   + Documentación OFICIAL -> [Git reference manual](https://git-scm.com/docs)
   + Vídeos aclarativos -> [PildorasInformáticas 1-5, 10-11](https://www.youtube.com/watch?v=ANF1X42_ae4&list=PLU8oAlHdN5BlyaPFiNQcV0xDqy0eR35aU)
+  + Resumen de comandos -> [Luis del Moral](https://github.com/ldmoral1987/comandos-github-basicos/blob/master/comandos.md)
      
   
 

@@ -45,9 +45,14 @@ Y para eliminar `taskkill /F /PID PID_PROCESO`
 
 # Procesos y multiprocesos
 ## Procesos
-[Runtime](https://psp2dam.github.io/psp_pages/es/unit2/runtime.html)
++ Conceptos básicos -> [Escuela Universitaria de Segovia](https://www.infor.uva.es/~fjgonzalez/apuntes/Tema4.pdf) o [Universidad Carlos III](https://media.uc3m.es/uploads2/material/5b3012c28f420863d08b7f9f/Apuntes_14_10.pdf)
++ Teoría -> [Vicente Martínez - IES Doctor Balmis](https://psp2dam.github.io/psp_pages/es/unit1/)
 
 
 ## Multiprocesos
-[ProcessBuilder](https://psp2dam.github.io/psp_pages/es/unit2/processbuilder.html)
++ [Runtime](https://psp2dam.github.io/psp_pages/es/unit2/runtime.html)
++ [ProcessBuilder](https://psp2dam.github.io/psp_pages/es/unit2/processbuilder.html)
 
+
+## Referencias:
++ 
