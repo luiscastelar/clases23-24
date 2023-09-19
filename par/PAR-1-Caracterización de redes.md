@@ -1,7 +1,7 @@
 #curso23_24 #PAR [estado::Working]
 
 # UT1 - Caracterización de redes. Modelo de capas y normas.
-![boceto de red](https://luiscastelar.duckdns.org/2023/assets/ED/boceto_red.png)
+![boceto de red](https://luiscastelar.duckdns.org/2023/assets/PAR/boceto_red.png)
 
 A principios de los 70 con la popularización de equipos informáticos en las empresas y universidades aparece la necesidad de compartir
 información más allá de las rudimentarias conexiones punto a punto entre
@@ -106,7 +106,7 @@ Descripción de la terminología:
 > visión directa (sin edificios) y son sensibles a las condiciones
 > metereológicas (lluvia y nieblas).
 
-![dte-dce](https://luiscastelar.duckdns.org/2023/assets/ED/DTE-DCE-medio.png)
+![dte-dce](https://luiscastelar.duckdns.org/2023/assets/PAR/DTE-DCE-medio.png)
 
 ## Topologías de red.
 
@@ -128,7 +128,7 @@ por motivos históricos nos podemos encontrar aún:
 
 -   Mixta: normalmente estrella-bus o estrella-anillo.
 
-    ![topologías](https://luiscastelar.duckdns.org/2023/assets/ED/Topologia_de_red.png)
+    ![topologías](https://luiscastelar.duckdns.org/2023/assets/PAR/Topologia_de_red.png)
 
 ### Topologías lógicas de red:
 
@@ -157,7 +157,7 @@ otro modo, cada capa resuelve un problema distinto.\
 Es importante recordar que las capas sólo se comunican con capas de su
 mismo nivel. 
 
-![capa a capa](https://luiscastelar.duckdns.org/2023/assets/ED/capa_a_capa.jpeg)
+![capa a capa](https://luiscastelar.duckdns.org/2023/assets/PAR/capa_a_capa.jpeg)
 ## Modelo de capas
 
 ![capas ISO](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi0.wp.com%2Fwww.elingesor.com%2Fwp-content%2Fuploads%2F2019%2F05%2Fosi.jpg%3Ffit%3D768%252C576%26ssl%3D1&f=1&nofb=1&ipt=7fb9890fd4ef6fcb20574cda551a9ca6e1d0589026a523c313ce66803fc46a57&ipo=images)
@@ -166,7 +166,7 @@ mismo nivel.
 
 Pila teórica ISO frente a la pila real TCP-IP:
 
-![topologías](https://luiscastelar.duckdns.org/2023/assets/ED/pila_tcp-ip-recortao.png)
+![topologías](https://luiscastelar.duckdns.org/2023/assets/PAR/pila_tcp-ip-recortao.png)
 # ==VOY  POR AQUÍ==
 
 ## Normas
