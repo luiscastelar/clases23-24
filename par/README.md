@@ -1,6 +1,6 @@
 #curso23_24 #PAR [estado:: Done] 
 
-![Portada](https://luiscastelar.duckdns.org/2023/assets/par-portada-joven-ingeniero-comercial-tableta-tiro-medio.jpg)
+![Portada](https://luiscastelar.duckdns.org/2023/assets/ED/par-portada-joven-ingeniero-comercial-tableta-tiro-medio.jpg)
 *[Imagen de freepik](https://www.freepik.es/foto-gratis/joven-ingeniero-comercial-tableta-tiro-medio_5819321.htm#query=server&position=47&from_view=search&track=sph) en Freepik*
 
 
