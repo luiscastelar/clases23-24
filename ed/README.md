@@ -5,7 +5,7 @@
 
 
 # Anotaciones de interés:
-+ Moodle: [0490 Programación de servicios y procesos](https://moodle.educarex.es/iescastelarfp/course/view.php?id=12) - “tema0”
++ Moodle: [0487 Entornos de Desarrollo](https://moodle.educarex.es/iescastelarfp/course/view.php?id=36)  - “tema0”
 
 
 ---
@@ -17,7 +17,10 @@
 ## Referencias bibliográficas y web
 Cualquiera de las siguientes referencias son **muy** recomendables y se tomarán como tal. El profesor **no** los tomará como libros de texto.
 
-+ *pdte*
++ [UT1 - Git reference manual](https://git-scm.com/docs)
++ [UT1 - Markdown](https://www.markdownguide.org/)
++ ...
++ 
 
 ---
 
@@ -91,11 +94,11 @@ Con el fin de garantizar que el alumnado matriculado en un módulo formativo cum
 3. Es obligación del alumnado, salvo causa de fuerza mayor, hacer llegar *las* *actividades* *por el medio establecido por el* profesorado en el plazo establecido. 
 
 4. De modo general, cuando el alumnado no presente en fecha y hora las actividades, sean o no presenciales, el profesorado podrá tomar las siguientes medidas:
-  1. Proponer un nuevo plazo de entrega.
-  2. Realizar una actividad similar, en el plazo establecido por el profesorado.
-  3. Realizar un conjunto de actividades generales por evaluación, independientemente de las actividades no realizadas.
-  4. Realizar un control escrito/oral relacionado con la actividad.
-  5. Incluir en el siguiente control preguntas específicas relacionadas con la actividad.
+  + Proponer un nuevo plazo de entrega.
+  + Realizar una actividad similar, en el plazo establecido por el profesorado.
+  + Realizar un conjunto de actividades generales por evaluación, independientemente de las actividades no realizadas.
+  + Realizar un control escrito/oral relacionado con la actividad.
+  + Incluir en el siguiente control preguntas específicas relacionadas con la actividad.
 
 6. Será requisito imprescindible haber **superado** el 80% de las actividades del curso para la obtención de aprobado en las convocatorias Ordinaria y Extraordinaria.
 
@@ -132,8 +135,8 @@ La calificación de cada trimestre se obtiene a partir de una media ponderada, e
 3. **Pruebas específicas. 50 % de la calificación final.** Se trata de pruebas teóricas y/o prácticas, tanto escritas, como utilizando un sistema informático o herramientas propias de su perfil profesional. Estas pruebas objetivas se desarrollarán en el aula para tratar de evaluar de forma objetiva e individual la correcta asimilación de los contenidos y elementos de capacidad objeto del Módulo Profesional.
 
 *En aquellas unidades que no se realice una prueba específica la distribución será:*
-*1. 20% actividades de aula*
-*2. 80% actividades prácticas*
+1. *20% actividades de aula*
+2. *80% actividades prácticas*
 
 *Las actividades prácticas serán evaluadas y calificadas según el siguiente esquema:*
 *   *Apta - 8 puntos.*
@@ -148,7 +151,7 @@ Será condición necesaria para poder obtener calificación positiva en el trime
 
 
 ### Prácticas
-* **OBLIGATORIO** trabajo sobre máquina expuesta al mundo (salvo cuando se indique lo contrario).
+* ~~**OBLIGATORIO** trabajo sobre máquina expuesta al mundo (salvo cuando se indique lo contrario).~~
 * Todos los ficheros de configuración en sus respectivas rutas de forma que se pueda reproducir vuestra práctica con sólo *clonar* y *levantar*.
 * La salida estándar será capturadas con `tee` en Linux o `Tee-Object` en PowerShell. **NO** se aceptan capturas de pantalla.
 * Evaluación de las prácticas / plazos de entrega:
