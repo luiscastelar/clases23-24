@@ -3,7 +3,7 @@
 # 1 Caracterización de redes. Introducción a los modelos de capas y normas. 
 28h del 15/09/2023 al 18/10/2023 *1ª eva*
 * [ ] 19s: Presentación
-* [ ] 20s:
+* [ ] 20s: Caracterización de redes
 * [ ] 21s:
 * [ ] ...
 * [ ] 18o: **Exámen UT1**
