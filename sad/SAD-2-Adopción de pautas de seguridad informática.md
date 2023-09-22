@@ -64,8 +64,7 @@ Los equipos informáticos y sólo éstos deben ir conectados al enchufe **rojo**
 
 ![public key](https://www.foxpass.com/hubfs/SSHkeydiagram.png)
 
-**Ejercicio gpg**: 
-
+**Ejercicio gpg**:  
 Por parejas deberéis:
 1. Generar llaves.
 2. Intercambiar llaves **públicas**.

@@ -4,10 +4,10 @@
 # 1. Caracterización de redes:
 - [x] Terminología: redes LAN, MAN y WAN, topologías, arquitecturas, protocolos (20s, 21s).
 - [ ] Sistemas de numeración decimal, binario y hexadecimal. Conversión entre sistemas. -> UT2
-- [ ] Arquitectura de redes.
-- [ ] Encapsulamiento de la información.
-- [ ] El modelo OSI.
-- [ ] El modelo TCP/IP.
+- [x] Arquitectura de redes (21s).
+- [x] Encapsulamiento de la información (21s).
+- [x] El modelo OSI (21s).
+- [x] El modelo TCP/IP (21s).
 - [ ] Las tecnologías “Ethernet”. FDDI.
 - [ ] El modelo OSI y “Ethernet”.
 - [ ] Acceso al medio CSMA/CD.

@@ -9,32 +9,55 @@
   * [x] Tareas sesión 2 - GIT
   
 2. 18s:
-  * [ ] Presentación de Vagrant
-  * [ ] FC Vagrant - Documentar
-  * [ ] Tareas sesión 3 - Vagrant
-  * [ ] Ejecución de tareas GIT
+  * [x] Presentación de Vagrant
+  * [x] FC Vagrant - Documentar
+  * [x] Tareas sesión 3 - Vagrant
+  * [x] Ejecución de tareas GIT
 
 3. 22s:
   * [ ] Ejecución de tareas Vagrant
-  * [ ] Presentación de virtualización tipo 1, 2 y contenedores. Evolución a orquestación.
+  * [ ] Presentación de virtualización tipo 1, 2 y contenedores. ~~Evolución a orquestación.~~
 
-4. ¿25s?:
-  + [ ] **Examen**
+4. 29s:
+  + [ ] **Examen UT1**
+
+**Evaluación de la unidad:**
++ Exámen de 29 de septiembre (50%).
++ Tareas (40%):
+  + Git de 26 septiembre (50%).
+  + Vagrant de 28 de septiembre (50%).
++ Participación en clase (10%).
 
 
 ---
 # UT2 - Adopción de pautas
 8h - 4 sesiones - Del 29s al 9o
 
-1. 29s:
+1. 25s:
   * [ ] FC Ver apuntes de *Oscar Maestre*.
-  * [ ] Ejecución de tareas:
+  * [ ] Ejecución de tareas (entrega 2 oct):
     * [ ] disponibilidad
     * [ ] SAI
     * [ ] Cifrado
-3. 2o:
-4. 6o:
-5. ¿9o:?
+
+2. 2o:
+  + [ ] Desarrollo de la actividad *en clase* sobre ACL (David 8 bits) sobre máquina en Vagrant.
+
+3. 6o:
+  + [ ] Desarrollo de la actividad de realización de copias de seguridad de una máquina sobre otra:
+    + [ ] rsync + tar
+    + [ ] restic
+
+4. 9o:
+  + [ ]  **Examen UT2**
+
+**Evaluación de la unidad:**
++ Exámen de 9 de octubre (50%).
++ Tareas (40%):
+  + Iniciales (disponibilidad, SAI y cifrado) (20%).
+  + ACL (40%).
+  + Copias de segurida entre máquinas (virtuales) (40%).
++ Participación en clase (10%).
 
 ---
 UT3 - Instalación y config firewall - 16h - 8 sesiones - 10o-10n

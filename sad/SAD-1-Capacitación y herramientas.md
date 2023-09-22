@@ -68,7 +68,7 @@ Hacer los archivos `Vagrantfile` (7 distintos) que resuelva los siguientes supue
 
 
 
-## Virtualización LIGERA:
+## ~~Virtualización LIGERA~~:
 
 ### LXC
 ![portada](https://luiscastelar.duckdns.org/2023/assets/vm-vs-lxc.png)

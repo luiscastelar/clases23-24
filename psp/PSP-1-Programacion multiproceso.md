@@ -24,7 +24,7 @@ El módulo se basará fundamentalmente en código, por lo que realizaremos uso i
      
 
 ## Servicios
-Para verificar algunos aspectos de la programción multiproceso necesitaremos tener una idea clara sobre la situación actual de nuestro equipo. 
+Para verificar algunos aspectos de la programación multiproceso necesitaremos tener una idea clara sobre la situación actual de nuestro equipo. 
 
 Para esto obtendremos información de los procesos:
 
@@ -45,11 +45,28 @@ Y para eliminar `taskkill /F /PID PID_PROCESO`
 
 # Procesos y multiprocesos
 ## Procesos
-+ Conceptos básicos -> [Escuela Universitaria de Segovia](https://www.infor.uva.es/~fjgonzalez/apuntes/Tema4.pdf) o [Universidad Carlos III](https://media.uc3m.es/uploads2/material/5b3012c28f420863d08b7f9f/Apuntes_14_10.pdf)
+En los siguientes minutos vamos a intentar responder y definir los puntos:
+1. ¿Que es un proceso?
+2. Bloque de Control de Procesos - PCB
+3. Programación concurrente:
+  + cooperativa: Mac OS Clásico y Windows 3.x
+  + preventiva: UNIX - GNU/Linux, Mac OS X y Windows 95 y NT
+
+4. Programación paralela.
+5. Programación distribuida.
+
+   
++ Conceptos básicos:
+  + [Vídeo - David Pérez](https://youtu.be/3JlLl5sdepc?si=ct-DV5IDrZLBP7Hy)
+  + [Escuela Universitaria de Segovia](https://www.infor.uva.es/~fjgonzalez/apuntes/Tema4.pdf) o [Universidad Carlos III](https://media.uc3m.es/uploads2/material/5b3012c28f420863d08b7f9f/Apuntes_14_10.pdf)
 + Teoría -> [Vicente Martínez - IES Doctor Balmis](https://psp2dam.github.io/psp_pages/es/unit1/)
 
 
 ## Multiprocesos
+
+***OFF-TOPIC***: Ejecución concurrente mediante la API `stream` (programación funcional): stream() vs parallelStream() -> [vídeo](https://www.youtube.com/watch?v=cTGPgMMKxZk)
+
+  
 + [Runtime](https://psp2dam.github.io/psp_pages/es/unit2/runtime.html)
 + [ProcessBuilder](https://psp2dam.github.io/psp_pages/es/unit2/processbuilder.html)
 
