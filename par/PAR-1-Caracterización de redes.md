@@ -2,6 +2,7 @@
 
 # {[Fold: Fold]} UT1 - Caracterización de redes. Modelo de capas y normas.
 ![boceto de red](https://luiscastelar.duckdns.org/2023/assets/PAR/boceto_red.png)
+## Introducción
 
 A principios de los 70 con la popularización de equipos informáticos en las empresas y universidades aparece la necesidad de compartir
 información más allá de las rudimentarias conexiones punto a punto entre
@@ -14,6 +15,9 @@ incrementándose poco a poco hasta encontrarnos en algún caso equipos de
 personas que trabajan enteramente en remoto, quedando sus equipos
 locales como terminales de acceso intercambiables.
 
+
+## Mapa conceptual de la unidad
+![mapa conceptual](https://luiscastelar.duckdns.org/2023/assets/PAR/UT1-esquema.png)
 
 ## Características de Redes Locales. Ventajas e inconvenientes.
 

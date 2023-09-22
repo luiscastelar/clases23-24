@@ -15,8 +15,8 @@
   * [x] Ejecución de tareas GIT
 
 3. 22s:
-  * [ ] Ejecución de tareas Vagrant
-  * [ ] Presentación de virtualización tipo 1, 2 y contenedores. ~~Evolución a orquestación.~~
+  * [x] Ejecución de tareas Vagrant
+  * [x] Presentación de virtualización tipo 1, 2 y contenedores. ~~Evolución a orquestación.~~
 
 4. 29s:
   + [ ] **Examen UT1**
