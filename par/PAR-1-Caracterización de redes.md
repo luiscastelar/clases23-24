@@ -599,3 +599,4 @@ continuación describimos algunas de estas tareas:
     servicios.
 -   **Configuración del software** de red en clientes y servidores de la
     red.
+    
