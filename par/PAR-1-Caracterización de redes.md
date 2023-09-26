@@ -87,8 +87,6 @@ De forma resumida:
 | Medios (cables) y conectores | Interpretación de señales (drivers) |
 | Tarjetas de red | Drivers del S.O. |
 
-# {[Fold: Fold]} ==Vamos por aquí==
-
 Descripción de la terminología:
 
 -   DTE (Equipo terminal de datos): equipos informáticos. Es el equipo
@@ -197,6 +195,7 @@ En la actualidad, fuera del modelo OSI nos encontramos que abundante bibliograf�
 + Capa 9: Es una referencia a los “jefes” o la “empresa” u “organización” donde se encuentra la red de comunicaciones. A menudo son referidos los errores de capa 9 a las malas decisiones tomadas en contra de toda lógica y recomendación técnica (p.e. utilizar la IP 1.1.1.1 para comunicación interna con los routers de `Movistar` o `Vodafone`).
 + Capa 10: Es una referencia a las decisiones políticas y normativas que condicionan la estructura de la red. P.e. recientemente ha salido a la luz un borrador de norma europea donde se estudia impedir normativamente las comunicaciones cifradas extremo a extremo... ***Gran Hermano** se acerca a nosotros*.
 
+# {[Fold: Fold]} ==VOY POR AQUÍ==
 ## Encapsulamiento de la información:
 ...y los servicios.
 ![encapsulamiento](https://luiscastelar.duckdns.org/2023/assets/PAR/ut1_encapsulamiento.png)
@@ -234,6 +233,13 @@ Dado que cada capa empaqueta se da la circunstancia que las capas de un disposit
   + 606
 
 6. Sobre las normas anteriores... ¿Existe relación con normas IEEE?
+
+**Ejercicio capa 1**: ¿Creación de latiguillos de red ANSI/TIA 568A-A... o B-B? [referencia](https://www.forodvd.com/tema/137653-fabricar-tus-cables-de-red/)
+
+**Voluntarios**: 
++ Creación de latiguillo **cruzado** => A-B
++ Creación de latiguillo consola => [¿rolled?](https://www.cisco.com/c/es_mx/support/docs/routers/7000-series-routers/12223-14.pdf)
+  
 
 
 ## Las tecnologías “Ethernet”. FDDI.
@@ -361,10 +367,7 @@ Algunas ideas:
 + [Análisis completo](https://www.youtube.com/watch?v=cJX1fZ1nvBs)
 
 
-# ==PENDIENTE DE REVISIÓN==
-
-Canalizaciones: Tipos. Procedimientos de montaje. Elementos de fijación.
-------------------------------------------------------------------------
+## Canalizaciones: Tipos. Procedimientos de montaje. Elementos de fijación.
 
 Existen multitud de soluciones para canalizar el cableado, pero según
 por donde discurran las dividiremos en canalización de: suelo (técnico),
@@ -373,65 +376,40 @@ techo, pared y superficie.
 Veremos algunos ejemplos de canalizaciones en los siguientes enlaces:
 
 -   [fpbredeschannel](https://fpbredeschannel.wordpress.com/2016/04/10/canalizaciones-para-redes/)
--   [Cableado
-    Estructurado](https://cableadoestructurado1102.weebly.com/tipos-de-canalizaciones.html)
--   [Elias
-    Cavero](https://cableadoestructuradofpb2.wordpress.com/tag/canalizaciones/)
+-   [Cableado Estructurado](https://cableadoestructurado1102.weebly.com/tipos-de-canalizaciones.html)
+-   [Elias Cavero](https://cableadoestructuradofpb2.wordpress.com/tag/canalizaciones/)
 
-Medios de Comunicación. Cable convencional. Cables de Fibra óptica. Medios inalámbricos.
-----------------------------------------------------------------------------------------
+
+## Medios de Comunicación. Cable convencional. Cables de Fibra óptica. Medios inalámbricos.
 
 Hoy en día conviven el par trenzado de cobre, la fibra óptica y las
-redes inalámbricas en la implementación de redes locales.\
+redes inalámbricas en la implementación de redes locales.
+
 Pasemos a ver las principales carácterísticas.
 
 ### Cable convencional (par trenzado):
 
-Los cables de par trenzado transmiten las señales de forma diferencial
-y, al estar trenzados, hacen que las interferencias eléctricas que le
-lleguen afecten por igual a ambos conductores, y por tanto el
-diferencial se mantenga inalterado.\
-La transmisión diferencial implica que la tensión aplicada a uno de los
-conductores también se aplica al otro con signo contrario.\
-El mínimo válido para ethernet es la transmisión a través de 2 pares,
-aunque lo habitual es el uso de 4 pares.
+Los cables de par trenzado transmiten las señales de forma diferencial y, al estar trenzados, hacen que las interferencias eléctricas que le lleguen afecten por igual a ambos conductores, y por tanto el
+diferencial se mantenga inalterado.
 
-Tipos:
+La transmisión diferencial implica que la tensión aplicada a uno de los conductores también se aplica al otro con signo contrario.
 
--   UTP: cable trenzado sin apantallar. Es el más básico, económico y de
-    fácil instalación, pero son los más propensos a errores por
-    distancia y ruidos.\
-    \#+ATTR\_ORG: :width 300px
+El mínimo válido para ethernet es la transmisión a través de 2 pares, aunque lo habitual es el uso de 4 pares.
 
-    ![](https://luiscastelar.duckdns.org/2023/assets/PAR/utp.jpg)
-
--   STP: cable trenzado apantallado. Es algo más caro y difícil de
-    manejar, pero su apantallamiento lo hace más inmune al ruido. El uso
-    de estos cables está asociado con los conectores RJ49, equivalente a
-    los RJ45 con toma de tierra.\
-    \#+ATTR\_ORG: :width 300px
-
+**Tipos:**
+-   UTP: cable trenzado sin apantallar. Es el más básico, económico y de fácil instalación, pero son los más propensos a errores por distancia y ruidos.    ![](https://luiscastelar.duckdns.org/2023/assets/PAR/utp.jpg)
+-   STP: cable trenzado apantallado. Es algo más caro y difícil de manejar, pero su apantallamiento lo hace más inmune al ruido. El uso de estos cables está asociado con los conectores RJ49, equivalente a los RJ45 con toma de tierra.
     ![](https://luiscastelar.duckdns.org/2023/assets/PAR/stp.jpg)
-
--   FTP: pares trenzados con apantallamiento global. Mejora la
-    protección frente a interferencias.\
-    \#+ATTR\_ORG: :width 300px
-
+-   FTP: pares trenzados con apantallamiento global. Mejora la protección frente a interferencias.
     ![](https://luiscastelar.duckdns.org/2023/assets/PAR/ftp.jpg)
 
 ### Fibra óptica
 
-Son filamentos de vidrio de distinta densidad que provocan la refracción
-de las ondas de luz en el interfase de ambas densidades de forma que
-\"atrapan\" las ondas de un determinada longitud de onda.\
-\#+CAPTION: Detalle de costitución de fibra.
-
+Son filamentos de vidrio de distinta densidad que provocan la refracción de las ondas de luz en el interfase de ambas densidades de forma que "atrapan" las ondas de un determinada longitud de onda.
 ![](https://luiscastelar.duckdns.org/2023/assets/PAR/fibra_optica.jpg)
-
 ![](https://luiscastelar.duckdns.org/2023/assets/PAR/fibra_monomodo.jpg)
 
-Conectores, tomas de red y herramientas.
-----------------------------------------
+## Conectores, tomas de red y herramientas.
 
 Como ya hemos ido mencionando, los conectores más habituales son el
 RJ45, y en redes de alta calidad con STP o FTP se suelen utilizar RJ49
@@ -439,34 +417,31 @@ que ponen a tierra las envolventes metálicas de los cables aportando un
 extra de inmunidad al ruido.\
 \#+CAPTION: Terminales RJ45 y RJ49
 
-![](https://luiscastelar.duckdns.org/2023/assets/PAR/rj45.jpeg){width="300px"}
+![terminal rj45](https://luiscastelar.duckdns.org/2023/assets/PAR/rj45.jpeg)
 
-![](https://luiscastelar.duckdns.org/2023/assets/PAR/cimpadora.jpeg){width="300px"}
+![crimpadora rj45](https://luiscastelar.duckdns.org/2023/assets/PAR/cimpadora.jpeg)
 
 También hemos visto como se instala una toma de red en su conector
 hembra gracias a la herramienta de impacto.\
-\#+CAPTION: Detalle de toma con esquema T568 A y B
 
-![](https://luiscastelar.duckdns.org/2023/assets/PAR/toma_red.jpeg){width="300px"}
+![Detalle de toma con esquema T568 A y B](https://luiscastelar.duckdns.org/2023/assets/PAR/toma_red.jpeg)
 
-![](https://luiscastelar.duckdns.org/2023/assets/PAR/herramienta_de_impacto.jpeg){width="300px"}
+![herramienta de impacto](https://luiscastelar.duckdns.org/2023/assets/PAR/herramienta_de_impacto.jpeg)
 
-Conexión de tomas y paneles de parcheo.
----------------------------------------
+## Conexión de tomas y paneles de parcheo.
 
-También hemos visto las realización de la conexión de una toma y un
-detalle de un panel de parcheo.
+También hemos visto las realización de la conexión de una toma y un detalle de un panel de parcheo.
 
-![](https://luiscastelar.duckdns.org/2023/assets/PAR/conexion_toma.jpeg){width="300px"}
+![detalle del parcheo](https://luiscastelar.duckdns.org/2023/assets/PAR/conexion_toma.jpeg)
 
-![](https://luiscastelar.duckdns.org/2023/assets/PAR/panel_parcheo2.jpeg)
+![trasera del patch panel](https://luiscastelar.duckdns.org/2023/assets/PAR/panel_parcheo2.jpeg)
 
-Creación de cables. Certificación de cableado. Pruebas.
--------------------------------------------------------
+## Creación de cables. Certificación de cableado. Pruebas.
 
 Existen 2 tipos de cable para la conexión entre equipos, el directo y el
 cruzado. El primero lo utilizaremos para conectar `HOST` a equipos de
-red `SWITCH`, `HUB` o `ROUTER`.\
+red `SWITCH`, `HUB` o `ROUTER`.
+
 Los segundos, los cables cruzados, los utilizaremos para conectar dos
 equipos iguales, esto es, `HOST` con `HOST`, o equipo de red con equipo
 de red.
@@ -481,58 +456,52 @@ Algunas figuras para la confección y uso de cables cruzados:
 
 ![](https://luiscastelar.duckdns.org/2023/assets/PAR/PC-Switch-Cable_cruzado-Switch-PC.png)
 
-Ejemplo de cronstrucción de [cable PoE
-cruzado](https://www.taringa.net/+hazlo_tu_mismo/como-armar-cable-de-alimentacion-y-datos-poe_hifrm)
-casero.
+
+Ejemplo de construcción de [cable PoE cruzado](https://www.taringa.net/+hazlo_tu_mismo/como-armar-cable-de-alimentacion-y-datos-poe_hifrm) casero.
+
+*En la actualidad, gracias a la norma Auto-MDIX no es necesario utilizar cables cruzados.*
 
 ![](https://luiscastelar.duckdns.org/2023/assets/PAR/T568A_y_T568B.png)
 
 ![](https://luiscastelar.duckdns.org/2023/assets/PAR/TIA568.png)
 
-En instalaciones nuevas se preferirá el T568A, y en antiguas con
-sistemas T568B presente, se preferirá ésta.[^1]
+En instalaciones **nuevas** se preferirá el **T568**, y en antiguas con sistemas T568B presente, se preferirá ésta.
 
-Para la certificación de cableado existen herramientas similares a los
-tester mostrados en el aula, pero que nos indican la calidad del cable,
-la longitud y las pérdidas.
+Para la certificación de cableado existen herramientas similares a los tester mostrados en el aula, pero que nos indican la calidad del cable, la longitud y las pérdidas.
 
 ### Tipos de cables según su certificación:
 
-  Categoría   Apantallamiento   Máx Tasa (a 100 metros)   Ancho de banda
-  ----------- ----------------- ------------------------- ----------------
-  Cat 3       NO                10 Mbps                   16 MHz
-  Cat 5       NO                10/100 Mbps               100 MHz
-  Cat 5e      NO                1000 Mbps / 1 Gbps        100 MHz
-  Cat 6       SÍ o NO           1000 Mbps / 1 Gbps        \>250 MHz
-  Cat 6a      Sí                10000 Mbps / 10 Gbps      500 MHz
-  Cat 7       Sí                10000 Mbps / 10 Gbps      600 MHz
-  Cat 8       Sí                25 Gbps or 40Gbps \*      2000 MHz
+  | Categoría |   Apantallamiento  | Máx Tasa (a 100 metros) |  Ancho de banda |
+  | --------- | -----------------  | ----------------------- | ----------------|
+  | Cat 3     |  NO                | 10 Mbps                 |   16 MHz        |
+  | Cat 5     |  NO                | 10/100 Mbps             |  100 MHz        |
+  | Cat 5e    |  NO                | 1000 Mbps / 1 Gbps      |  100 MHz        |
+  | Cat 6     |  SÍ o NO           | 1000 Mbps / 1 Gbps      |  250 MHz        |
+  | Cat 6a    |  Sí                | 10000 Mbps / 10 Gbps    |  500 MHz        |
+  | Cat 7     |  Sí                | 10000 Mbps / 10 Gbps    |  600 MHz        |
+  | Cat 8     |  Sí                | 25 Gbps or 40Gbps       | 2000 MHz        |
 
-Podemos ver que a día de hoy la categoría 6a nos ofrece la mejor
-relación calidad precio con prespectivas de futuro a medio plazo.\
-Ya existen cables `CAT 6a` sin apantallamiento metálico, con la redución
-de costes y simplicidad de manipulación.
+Podemos ver que a día de hoy la categoría 6a nos ofrece la mejor relación calidad precio con prespectivas de futuro a medio plazo.
+
+Ya existen cables `CAT 6a` sin apantallamiento metálico, con la reducción de costes y simplicidad de manipulación.
+
 
 ### Estándard PoE (Power over Ethernet)
 
-El estándard PoE fija las normas que deben de cumplir los dispositivos
-para recibir la alimentación a través del cableado estándar Ethernet
-existente en la empresa.\
-El estándard PoE nos permite conectar y alimentar puntos de acceso (AP),
-cámaras IP, routers, etc. a la red ethernet y evita la necesidad de
-tender un cableadlo eléctrico hasta donde se ubican dichos dispositivos,
-cargándose a través de `SWITCH PoE`, normalmente.
+El estándar PoE fija las normas que deben de cumplir los dispositivos para recibir la alimentación a través del cableado estándar Ethernet existente en la empresa.
 
-Recomendaciones en la instalación del cableado.
------------------------------------------------
+El estándard PoE nos permite conectar y alimentar puntos de acceso (AP), cámaras IP, routers, etc. a la red ethernet y evita la necesidad de tender un cableadlo eléctrico hasta donde se ubican dichos dispositivos, cargándose a través de `SWITCH PoE`, normalmente.
 
-EJERCICIOS:
------------
+
+# {[Fold: Fold]} ==PENDIENTE DE REVISIÓN==
+
+## EJERCICIOS:
+
 
 1.  Realizar un esquema de los elementos del cableado estructurado.
 2.  Buscaremos en la red manuales con recomendaciones de instalación de
     cableado.
-3.  Qué es una colisión Ethernet? ¿Y un dominio de colisión?
+3.  ¿Qué es una colisión Ethernet? ¿Y un dominio de colisión?
 4.  Cita los elementos que organizan una instalación construida con
     cableado estructurado.
 5.  ¿Qué instrumentos tiene a su disposición el instalador de red para
@@ -548,8 +517,8 @@ EJERCICIOS:
     -   La máxima distancia permitida para un cable UTP es de 90 m sin
         contar los latiguillos de conexión en los extremos.
 
-EL PROYECTO DE INSTALACIÓN
---------------------------
+
+## EL PROYECTO DE INSTALACIÓN
 
 La instalación consiste en la ejecución ordenada, según las directrices
 del proyecto de instalación de un conjunto de tareas que revierten en
@@ -599,4 +568,7 @@ continuación describimos algunas de estas tareas:
     servicios.
 -   **Configuración del software** de red en clientes y servidores de la
     red.
-    
+
+
+## Referencias
++ [José Antonio Muñoz](https://planificacionadministracionredes.readthedocs.io/es/latest/Tema04/Teoria.html)
