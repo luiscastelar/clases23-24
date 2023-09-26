@@ -34,11 +34,11 @@
 8h - 4 sesiones - Del 29s al 9o
 
 1. 25s:
-  * [ ] FC Ver apuntes de *Oscar Maestre*.
-  * [ ] Ejecución de tareas (entrega 2 oct):
-    * [ ] disponibilidad
-    * [ ] SAI
-    * [ ] Cifrado
+  * [x] FC Ver apuntes de *Oscar Maestre*.
+  * [x] Ejecución de tareas (entrega 2 oct):
+    * [x] disponibilidad
+    * [x] SAI
+    * [x] Cifrado
 
 2. 2o:
   + [ ] Desarrollo de la actividad *en clase* sobre ACL (David 8 bits) sobre máquina en Vagrant.

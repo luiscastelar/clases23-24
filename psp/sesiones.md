@@ -18,11 +18,11 @@
   * [x] Tareas sesión 2 - GIT
   
 2. 22s:
-  * [ ] Presentación **PROCESOS**
+  * [x] Presentación **PROCESOS**
 
 3. 25s:
-  * [ ] Ejercicios de procesos (Git)
-  * [ ] Describir prácticas de procesos (Moodle+Git)
+  * [x] Ejercicios de procesos (Git)
+  * [x] Describir prácticas de procesos (Moodle+Git)
   
 4. 2o:
   + [ ] **Examen**
