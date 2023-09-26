@@ -7,8 +7,8 @@ Esto es un documento vivo donde hacer una planificación diaria y control del tr
 
  + [x] 19s: Presentación
    + [x] Programación y bases del módulo
- + [ ] 20s: UT1 CVS
-   + [ ] Funcionamiento de Git
+ + [x] 20s: UT1 CVS
+   + [x] Funcionamiento de Git
    + [ ] Ejercicio de Git
    + [ ] Práctica 1
  + [ ] 26s: UT1
