@@ -6,7 +6,7 @@
 * [x] 20s: De introducción hasta componentes.
 * [x] 21s: De componentes hasta arquitectura.
 * [x] 22s: De arquitectura hasta encapsulamiento.
-* [ ] 26s: De encapsulamiento hasta normas. Ejercicio de normas.
+* [x] 26s: De encapsulamiento hasta normas. Ejercicio de normas.
 * [ ] 27s: Tecnologías “Ethernet”, CSMA/CD y creación de latiguillos.
 * [ ] 28s: Cableado estructurado, espacios y conectando equipos de red (routers y switches).
 * [ ] 3o: Cuartos de comunicaciones, armarios y *patch panels*.

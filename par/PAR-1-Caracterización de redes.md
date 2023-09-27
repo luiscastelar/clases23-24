@@ -188,6 +188,16 @@ Computer) y NetBeui (de IBM/Microsoft). El más reseñable es el protocolo SMB d
 | 2        |  Enlace         |  Ethernet, Wifi,      |  Dirección real del apartado o nº tlf real             |
 | 1        |  Física         |  Fibra,...            |  Calle y edificio o Phone o Huawei                     |
 
+> ¿Cómo recordar los nombre de todas la capas? Fácil:
+    Please | Physical Layer
+    Do | Data Link Layer
+    Not | Network Layer
+    Tell (the) | Transport Layer
+    Secret | Session Layer
+    Password (to) | Presentation Layer
+    Anyone | Application Layer
+
+
 ## Otras capas
 En la actualidad, fuera del modelo OSI nos encontramos que abundante bibliografía hace referencia a las siguientes capas:
 + Capa 0: Medio físico. Tratado especialmente en bibliografía que analiza las calidades de fibras para la transmisión de la luz.
@@ -195,7 +205,6 @@ En la actualidad, fuera del modelo OSI nos encontramos que abundante bibliograf�
 + Capa 9: Es una referencia a los “jefes” o la “empresa” u “organización” donde se encuentra la red de comunicaciones. A menudo son referidos los errores de capa 9 a las malas decisiones tomadas en contra de toda lógica y recomendación técnica (p.e. utilizar la IP 1.1.1.1 para comunicación interna con los routers de `Movistar` o `Vodafone`).
 + Capa 10: Es una referencia a las decisiones políticas y normativas que condicionan la estructura de la red. P.e. recientemente ha salido a la luz un borrador de norma europea donde se estudia impedir normativamente las comunicaciones cifradas extremo a extremo... ***Gran Hermano** se acerca a nosotros*.
 
-# {[Fold: Fold]} ==VOY POR AQUÍ==
 ## Encapsulamiento de la información:
 ...y los servicios.
 ![encapsulamiento](https://luiscastelar.duckdns.org/2023/assets/PAR/ut1_encapsulamiento.png)
@@ -221,6 +230,9 @@ Dado que cada capa empaqueta se da la circunstancia que las capas de un disposit
 ![huevo o gallina](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.ytimg.com%2Fvi%2Fg3xZSZPqMrE%2Fmaxresdefault.jpg&f=1&nofb=1&ipt=374618e18d6d1ecac967ea70dea6288296a5981d6c712b7c065dd0d9190c233f&ipo=images)
 
 **IEEE 802.x** y **ANSI/TIA-xxx**
+
+
+# {[Fold: Fold]} ==VOY POR AQUÍ==
 
 **Ejercicio**: Investiga y responde sobre las normas IEEE 802.x y ANSI/TIA-xxx:
 1. ¿Que significan las siglas?
