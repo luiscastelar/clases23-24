@@ -1,4 +1,4 @@
-#curso23_24 #PAR [estado::Working]
+#curso23_24 #PAR [estado::Done]
 
 # {[Fold: Fold]} UT1 - Caracterización de redes. Modelo de capas y normas.
 ![boceto de red](https://luiscastelar.duckdns.org/2023/assets/PAR/boceto_red.png)
@@ -232,8 +232,6 @@ Dado que cada capa empaqueta se da la circunstancia que las capas de un disposit
 **IEEE 802.x** y **ANSI/TIA-xxx**
 
 
-# {[Fold: Fold]} ==VOY POR AQUÍ==
-
 **Ejercicio**: Investiga y responde sobre las normas IEEE 802.x y ANSI/TIA-xxx:
 1. ¿Que significan las siglas?
 2. ¿Cómo se organizan las normas IEEE 802.x?
@@ -253,6 +251,7 @@ Dado que cada capa empaqueta se da la circunstancia que las capas de un disposit
 + Creación de latiguillo consola => [¿rolled?](https://www.cisco.com/c/es_mx/support/docs/routers/7000-series-routers/12223-14.pdf)
   
 
+# {[Fold: Fold]} ==VOY POR AQUÍ==
 
 ## Las tecnologías “Ethernet”. FDDI.
 
@@ -289,24 +288,28 @@ edificio (o campus) para la creación de una LAN (Red de Áreal Local).
 
 A dia de hoy tratarse de cable de par trenzado de cobre UTP/STP (sin o con envolvente metálica), para redes de tipo Ethernet (norma IEEE
 802.3). No obstante, también puede tratarse de fibra óptica en algún
-punto de interconexión de switches, ~~y algún remanente obsoledo de cable coaxial~~.
-
-El estándar EIA/TIA 568 sobre cableado de comunicaciones (voz, imagen,
-LAN, WAN) que define los parámetros que permiten establecer el cableado de un edificio. Se entiende el cableado como un servicio más del edificio (luz, agua, gas y datos).
-
-Podemos diferenciar los siguientes espacios y subsistemas:
-
-1.  Equipo de usuario.
-2.  Latiguillo de red: conecta el equipo de usuario a la toma fija de la     pared.
-3.  Toma o roseta: es el punto de terminación de red. El último punto
-    fijo de la instalación.
-4.  Subsistema horizontal o de planta: es el conjunto de cables que van desde el armario de distribución de planta hasta los distintos
-    puntos de terminación de red.\
-    En ocasiones, especialmente cuando la distancia es elevada, podemos encontrarnos armarios intermedios de distribución, de forma que desde el armario de planta a una sala concreta se tiende sólo un cable por el consecuente ahorro en mano de obra o para evitar las pérdidas siendo cable de fibra.
-5.  Subsistema distribuidor (armarios de planta): son los racks
-    (armarios) que interconectan el subsistema vertical con el cableado de planta. En él se encuentran los switchs/hubs y los equipos de terminación del cableado (paneles de parcheo).
-6.  Subsistema vertical, dorsal o de edificio: es el cableado que
-    interconecta el distribuidor de edificio con cada una de los
+punto de interconexión de swi<!-- #query page where name != "{{page}}" order by lastModified desc limit 20 render [[templete/page]] -->
+* [[privadas/par/redes locales]] (modificado: 2023-09-27) 
+* [[index]] (modificado: 2023-09-27) 
+* [[pub23/par/sesiones]] (modificado: 2023-09-27) Working
+* [[pub23/par/contenidos]] (modificado: 2023-09-27) Working
+* [[pub23/par/PAR-2-Integración de los elementos de una red]] (modificado: 2023-09-27) Working
+* [[pub23/par/PAR-1-Caracterización de redes]] (modificado: 2023-09-27) Done
+* [[pub23/ed/sesiones]] (modificado: 2023-09-27) Working
+* [[privadas/par/ideas]] (modificado: 2023-09-26) Working
+* [[pub23/ed/ED-2-Elaboración de diagramas de comportamiento]] (modificado: 2023-09-26) Working
+* [[pub23/ed/ED-1-Control de versiones]] (modificado: 2023-09-25) Working
+* [[privadas/psp/ideas]] (modificado: 2023-09-25) 
+* [[pub23/psp/requisitos previos]] (modificado: 2023-09-25) Review
+* [[pub23/sad/sesiones]] (modificado: 2023-09-25) 
+* [[pub23/psp/sesiones]] (modificado: 2023-09-25) 
+* [[pub23/psp/PSP-1-Programacion multiproceso]] (modificado: 2023-09-24) Working
+* [[pub23/psp/README]] (modificado: 2023-09-24) Done
+* [[privadas/psp/PSP-2-Programación multihilo]] (modificado: 2023-09-23) Working
+* [[privadas/psp/PSP-3-Comunicaciones de red y sockets]] (modificado: 2023-09-23) ToDo
+* [[privadas/Notas 23]] (modificado: 2023-09-23) ToDo
+* [[STYLES]] (modificado: 2023-09-21)
+<!-- /query -->e los
     armarios de planta. Su necesidad de ancho de banda es elevado por lo que suele implementarse mediante conexiones ATM, FDDI o Gigabit
     Ethernet.
 7.  Subsistema distribuidor de edificio: realizan la misma función que
@@ -359,8 +362,7 @@ La organización y orden en ellos es fundamental...
 ## [Patch Panels](https://duckduckgo.com/?q=patch+panel&t=newext&atb=v388-1&iax=images&ia=images&iai=https%3A%2F%2Fordenadores-y-portatiles.com%2Fwp-content%2Fuploads%2F2020%2F05%2FPatch-Panel-746x420.jpg)
 
 ![](https://luiscastelar.duckdns.org/2023/assets/PAR/panel_parcheo.jpg)
-Instalación de [paneles de
-parcheo](https://www.youtube.com/watch?v=5PLrhc4I8m8).
+Instalación de [paneles de parcheo](https://www.youtube.com/watch?v=5PLrhc4I8m8).
 
 ### Temperatura de armarios
 Otro aspecto fundamental en los armarios es la gestión de la temperatura ya que los dispositivos que contienen suelen producir bastante calor y por tanto el armario debe estar pensado para la evacuación de calor. 
@@ -505,10 +507,7 @@ El estándar PoE fija las normas que deben de cumplir los dispositivos para reci
 El estándard PoE nos permite conectar y alimentar puntos de acceso (AP), cámaras IP, routers, etc. a la red ethernet y evita la necesidad de tender un cableadlo eléctrico hasta donde se ubican dichos dispositivos, cargándose a través de `SWITCH PoE`, normalmente.
 
 
-# {[Fold: Fold]} ==PENDIENTE DE REVISIÓN==
-
 ## EJERCICIOS:
-
 
 1.  Realizar un esquema de los elementos del cableado estructurado.
 2.  Buscaremos en la red manuales con recomendaciones de instalación de
@@ -583,4 +582,5 @@ continuación describimos algunas de estas tareas:
 
 
 ## Referencias
++ [Cableado estructurado - @vanza](https://luiscastelar.duckdns.org/2023/assets/PAR/UT1-cableado_estructurado.pdf)
 + [José Antonio Muñoz](https://planificacionadministracionredes.readthedocs.io/es/latest/Tema04/Teoria.html)

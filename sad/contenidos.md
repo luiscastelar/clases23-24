@@ -77,10 +77,10 @@
   - [ ] Sistemas de “clusters”.
   - [ ] Balanceadores de carga.
 - [ ] Instalación y configuración de soluciones de alta disponibilidad.
-- [ ] Virtualización de sistemas.
-- [ ] Posibilidades de la virtualización de sistemas.
-- [ ] Herramientas para la virtualización.
-- [ ] Configuración y utilización de máquinas virtuales.
+- [x] Virtualización de sistemas.
+- [x] Posibilidades de la virtualización de sistemas.
+- [x] Herramientas para la virtualización.
+- [x] Configuración y utilización de máquinas virtuales.
 - [ ] Alta disponibilidad y virtualización.
 - [ ] Simulación de servicios con virtualización.
 

@@ -7,7 +7,9 @@
 * [x] 21s: De componentes hasta arquitectura.
 * [x] 22s: De arquitectura hasta encapsulamiento.
 * [x] 26s: De encapsulamiento hasta normas. Ejercicio de normas.
-* [ ] 27s: Tecnologías “Ethernet”, CSMA/CD y creación de latiguillos.
+* [x] 27s: Tecnologías “Ethernet”
+  * [x] CSMA/CD
+  * [ ] creación de latiguillos.
 * [ ] 28s: Cableado estructurado, espacios y conectando equipos de red (routers y switches).
 * [ ] 3o: Cuartos de comunicaciones, armarios y *patch panels*.
 * [ ] 4o: Temperaturas, canalizaciones y medios de transmisión.
@@ -17,7 +19,7 @@
   * [ ] **[FC] proyecto**.
 * [ ] 10o: Certificación de cables. PoE. Ejercicios.
 * [ ] 11o: Proyecto de instalación.
-* [x] *12o: Festivo*
+* [ ] Día del Pilar
 * [ ] 17o: Continuación de proyecto de instalación.
 * [ ] 18o: **Exámen UT1**
 

@@ -10,7 +10,7 @@
 - [x] El modelo TCP/IP (21s).
 - [ ] Las tecnologías “Ethernet”. FDDI.
 - [ ] El modelo OSI y “Ethernet”.
-- [ ] Acceso al medio CSMA/CD.
+- [x] Acceso al medio CSMA/CD.
 - [ ] Tipos de cableado “Ethernet”. Cableado estructurado.
 
 # 2. Integración de elementos en una red:

@@ -12,11 +12,11 @@ Esto es un documento vivo donde hacer una planificación diaria y control del tr
    + [x] Ejercicio de Git
    + [x] Práctica 1
  + [x] 26s: UT1
-   + [ ] Resolución de dudas y defensa de prácticas
- + [ ] 27s: UT1
-   + [ ] Resolución de dudas y defensa de prácticas
+   + [x] Resolución de dudas y defensa de prácticas
+ + [x] 27s: UT1
+   + [x] Resolución de dudas y defensa de prácticas
  + [ ] 3o: Entrega de prácticas.
- + [ ] 4o: **Exámen UT1**   
+ + [ ] 4o: **Exámen UT1** / [avance curso UML - Pildoras Informáticas](https://www.youtube.com/watch?v=KY81igoV8W0&list=PLU8oAlHdN5BmmxXT0C2HO0bLRHZFWKbhH)
  
 
 # 2 Eleboración de diagramas de comportamiento

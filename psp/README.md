@@ -18,7 +18,9 @@
 ## Referencias bibliográficas y web
 Cualquiera de las siguientes referencias son **muy** recomendables y se tomarán como tal. El profesor **no** los tomará como libros de texto.
 
-+ *pdte*
++ [Apuntes de PSP - Vicente Martínez](https://psp2dam.github.io/psp_pages/es/)
++ [Otros apuntes - Oscar Maestre](https://oscarmaestre.github.io/servicios/index.html)
++ [AbrilCode.com](https://psp.abrilcode.com/doku.php)
 
   
 ---

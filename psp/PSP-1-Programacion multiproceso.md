@@ -236,3 +236,4 @@ Operaciones:
 
 ## Referencias:
 + [Doc oficial de Process](https://docs.oracle.com/en/java/javase/21/core/process-api1.html#GUID-6FAB2491-FD4E-42B4-A883-DCD181A1CE3E)
++ [Programación multiproceso - David Pérez](https://www.youtube.com/watch?v=3JlLl5sdepc&t=393s)
