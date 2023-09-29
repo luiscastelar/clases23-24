@@ -23,9 +23,11 @@
 3. 25s:
   * [x] Ejercicios de procesos (Git)
   * [x] Describir prácticas de procesos (Moodle+Git)
+
+4. 29s: Resolución dudas.
   
 4. 2o:
-  + [ ] **Examen**
+  + [ ] **Examen UT1**
 
 
 ---

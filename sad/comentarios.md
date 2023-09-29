@@ -13,8 +13,7 @@ Todos los comentarios son válidos para todo el módulo formativo, salvo cuando 
   + **NUNCA** versiones obsoletas (*deprecated*).
 + Cuando pasas una práctica que “rompe”, es que no te has molestado ni en comprobar “tus fuentes”.
 + No se debe utilizar **root** salvo cuando necesitamos a root. El uso innecesario de root será penalizado con 2 puntos en cada práctica.
-
-
++ RAR es un formato propietario. No se admiten entregas en dicho formato. Utiliza `tar` o `zip` en su lugar
 
 ---
 # UT2 - Adopción de pautas

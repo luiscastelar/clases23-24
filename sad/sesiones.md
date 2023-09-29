@@ -20,7 +20,7 @@
   * [x] Presentación de virtualización tipo 1, 2 y contenedores. ~~Evolución a orquestación.~~
 
 4. 29s:
-  + [ ] **Examen UT1**
+  + [x] **Examen UT1**
 
 **Evaluación de la unidad:**
 + Exámen de 29 de septiembre (50%).
