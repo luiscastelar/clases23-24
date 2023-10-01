@@ -2,11 +2,13 @@
 #curso23_24 #PSP [estado:: Done] 
 
 ![portada](https://luiscastelar.duckdns.org/2023/assets/PSP/portada.jpg)
+
 [Imagen de storyset](https://www.freepik.es/vector-gratis/ilustracion-concepto-interfaz-programacion-aplicaciones_25625375.htm#query=programaci%C3%B3n&position=44&from_view=search&track=sph) en Freepik
 
 
 # Anotaciones de interés:
 + Moodle: [0490 Programación de servicios y procesos](https://moodle.educarex.es/iescastelarfp/course/view.php?id=12) - “tema0”
++ [Recordatorios](../recordatorio.md)
 
 
 ---
