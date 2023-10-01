@@ -8,7 +8,7 @@
 
 # Anotaciones de interés:
 + Moodle: [0490 Programación de servicios y procesos](https://moodle.educarex.es/iescastelarfp/course/view.php?id=12) - “tema0”
-+ [Recordatorios](../recordatorio.md)
++ [Recordatorios](../recordatorios.md)
 
 
 ---
