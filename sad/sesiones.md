@@ -41,7 +41,7 @@
     * [x] Cifrado
 
 2. 2o:
-  + [ ] Desarrollo de la actividad *en clase* sobre ACL (David 8 bits) sobre máquina en Vagrant.
+  + [x] Desarrollo de la actividad *en clase* sobre ACL (David 8 bits) sobre máquina en Vagrant.
 
 3. 6o:
   + [ ] Desarrollo de la actividad de realización de copias de seguridad de una máquina sobre otra:
