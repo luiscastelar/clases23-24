@@ -6,6 +6,7 @@
 
 # Anotaciones de interés:
 + Moodle: [0378 Seguridad y Alta Disponibilidad](https://moodle.educarex.es/iescastelarfp/course/edit.php?id=67) - “tema0”
++ [Recordatorios](../recordatorios.md)
 
 
 ---

@@ -6,7 +6,7 @@
 
 # Anotaciones de interés:
 + Moodle: [0370 Planificación y Administración de Redes](https://moodle.educarex.es/iescastelarfp/course/edit.php?id=27) - “tema0”
-
++ [Recordatorios](../recordatorios.md)
 
 ---
 

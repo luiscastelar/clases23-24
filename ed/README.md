@@ -6,6 +6,7 @@
 
 # Anotaciones de interés:
 + Moodle: [0487 Entornos de Desarrollo](https://moodle.educarex.es/iescastelarfp/course/view.php?id=36)  - “tema0”
++ [Recordatorios](../recordatorios.md)
 
 
 ---

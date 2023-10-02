@@ -305,7 +305,7 @@ punto de interconexión de swi<!-- #query page where name != "{{page}}" order by
 * [[pub23/psp/sesiones]] (modificado: 2023-09-25) 
 * [[pub23/psp/PSP-1-Programacion multiproceso]] (modificado: 2023-09-24) Working
 * [[pub23/psp/README]] (modificado: 2023-09-24) Done
-* [[privadas/psp/PSP-2-Programación multihilo]] (modificado: 2023-09-23) Working
+* [[pub23/psp/PSP-2-Programación multihilo]] (modificado: 2023-09-23) Working
 * [[privadas/psp/PSP-3-Comunicaciones de red y sockets]] (modificado: 2023-09-23) ToDo
 * [[privadas/Notas 23]] (modificado: 2023-09-23) ToDo
 * [[STYLES]] (modificado: 2023-09-21)
@@ -579,6 +579,11 @@ continuación describimos algunas de estas tareas:
     servicios.
 -   **Configuración del software** de red en clientes y servidores de la
     red.
+
+### Algunas imágenes impactantes:
++ https://pin.it/3gazth8
++ https://pin.it/41mOQeZ
++ https://pin.it/3VfMTJL
 
 
 ## Referencias

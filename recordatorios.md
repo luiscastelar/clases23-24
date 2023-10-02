@@ -6,6 +6,14 @@ El incumplimiento podrá ser motivo de penalizaciones o dar por no entregado, as
 
 
 **1 de octubre**
+* Estructura del repositorio (_salvo para el módulo de PAR_):
+  * Como sabes las correcciones se realizaran sobre el **primer** repositorio del que recibí invitación a colaborar. El resto de repositorios serán completamente ignorados.
+  * Dentro del repositorio deberás tener un README.md con tu nombre, email y el nombre del módulo formativo (ED, SAD o PSP).
+  * Además crearás una carpeta por cada Unidad de Trabajo y se llamarán UT1, UT2, ... (Si ya las tienes, pero con otros nombres, puedes renombrarlas con p.e. `git mv tema1_tal UT1`).
+  * Dentro de cada carpeta de unidad colocarás una carpeta por trabajo entregable (`Practica1`, `Practica2`, ...) o exámen (`EXAMEN`), y otra para `EJERCICIOS`. \
+    *No utilices tildes ni `ñ` en los nombres de archivos o directorios, git desde windows la lia parda con ellas*.
+  * Dentro de cada carpeta irá un `README.md` con la documentación del trabajo/práctica/exámen, o simplemente informando del contenido de la carpeta.
+  * Sólo se corregirá aquellos trabajos donde haya una copia **ZIP** del directorio subida al MOODLE en tiempo y forma. Si además la acompañas con el README correspondiente podremos ambos (tú y yo) saber que contiene el zip sin descargarlo y abrirlo.
 * Recuerda que el git de clase así como cualquier documento de entrega obligatorio son documentos **OFICIALES** que serán incluidos a tu expediente académico, usa por tanto lenguaje formal, adecuado y técnico. *No estás en el parque con los amigos*.
 ![lenguaje no formal](https://luiscastelar.duckdns.org/2023/assets/ED/formas_inadecuadas.png)
 

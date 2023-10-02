@@ -24,9 +24,10 @@
   * [x] Ejercicios de procesos (Git)
   * [x] Describir prácticas de procesos (Moodle+Git)
 
-4. 29s: Resolución dudas.
+4. 29s:
+  * [x] Resolución dudas.
   
-4. 2o:
+4. 6o:
   + [ ] **Examen UT1**
 
 
@@ -34,25 +35,27 @@
 # UT2 - Programación multihilo 
 16h - 8 sesiones - Del 29s al 27o
 
-1. 29s:
-  * [ ] FC Ver Hilos
-  * [ ] Ejecución de tareas:
-    * [ ] ...
 
-2. 6o:
-3. 9o:
-4. 16o:
-5. 20o:
-6. 23o:
-7. 27o:
-8. ¿30o?:
+1. 2o:
+    * [ ] FC Ver Hilos
+    * [ ] Ejecución de ejercicios
+    * [ ] *Resolución de dudas sobre procesos (UT1)*
+  
+4. 9o:
+5. 16o:
+6. 20o:
+7. 23o:
+8. 27o:
+9. ¿30o?:
    * [ ] **Examen**
 
 ---
-UT3 Comunicaciones de red - Sockets 12 30/10/2023 17/11/2023 1ª
+# UT3 Comunicaciones de red - Sockets 
+12h - 6 sesiones - Del 30/10/2023 al 17/11/2023. *1ª eva*.
 
 ---
-UT4 Servicios de red 12 20/11/2023 11/12/2023 1ª
+# UT4 Servicios de red 
+12h - 6 sesiones - Del 20/11/2023 al 11/12/2023. *1ª eva*.
 
 ---
 **2ª EVALUACIÓN**
