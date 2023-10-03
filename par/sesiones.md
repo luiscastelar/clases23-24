@@ -10,13 +10,16 @@
 * [x] 27s: Tecnologías “Ethernet”
   * [x] CSMA/CD
   * [ ] creación de latiguillos.
-* [ ] 28s: Cableado estructurado, espacios y conectando equipos de red (routers y switches).
-* [ ] 3o: Cuartos de comunicaciones, armarios y *patch panels*.
-* [ ] 4o: Temperaturas, canalizaciones y medios de transmisión.
-* [ ] 5o:
+* [x] 28s: Cableado estructurado, espacios
+  * [x] y conectando equipos de red (routers y switches).
+  * [x] Cuartos de comunicaciones, armarios
+  * [x] y *patch panels*.
+* [ ] 3o: Temperaturas, canalizaciones y medios de transmisión.
+* [ ] 4o:
   * [ ] Conectores y tomas.
   * [ ] Panel de parcheo y ejercicio de panel.
   * [ ] **[FC] proyecto**.
+* [ ] 5o: Proyecto y ejercicios latiguillo y patch panel.
 * [ ] 10o: Certificación de cables. PoE. Ejercicios.
 * [ ] 11o: Proyecto de instalación.
 * [ ] Día del Pilar

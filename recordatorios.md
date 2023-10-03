@@ -5,6 +5,9 @@ Todos los recordatorios son válidos para todo el módulo formativo, salvo cuand
 El incumplimiento podrá ser motivo de penalizaciones o dar por no entregado, así como apercibimientos oficiales.
 
 
+**2 de octubre**
++ Todos los emails deben llevar un asunto. De otra forma serán automáticamente eliminados (mi gestor de correo lo hace así).
+
 **1 de octubre**
 * Estructura del repositorio (_salvo para el módulo de PAR_):
   * Como sabes las correcciones se realizaran sobre el **primer** repositorio del que recibí invitación a colaborar. El resto de repositorios serán completamente ignorados.

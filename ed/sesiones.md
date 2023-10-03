@@ -16,7 +16,7 @@ Esto es un documento vivo donde hacer una planificación diaria y control del tr
  + [x] 27s: UT1
    + [x] Resolución de dudas y defensa de prácticas
  + [ ] 3o: Entrega de prácticas.
- + [ ] 4o: **Exámen UT1** / [avance curso UML - Pildoras Informáticas](https://www.youtube.com/watch?v=KY81igoV8W0&list=PLU8oAlHdN5BmmxXT0C2HO0bLRHZFWKbhH)
+ + [ ] 4o: [**Exámen UT1** (10:05-11:00)](https://moodle.educarex.es/iescastelarfp/mod/assign/view.php?id=51769) / [avance curso UML - Pildoras Informáticas](https://www.youtube.com/watch?v=KY81igoV8W0&list=PLU8oAlHdN5BmmxXT0C2HO0bLRHZFWKbhH)
  
 
 # 2 Eleboración de diagramas de comportamiento

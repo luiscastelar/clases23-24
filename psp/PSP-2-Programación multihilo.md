@@ -11,26 +11,40 @@ Pueden crearse mediante la herencia de la clase `Thread` o la implementación de
 Se recomienda revisar la [doc oficial](https://docs.oracle.com/javase/8/docs/api/java/lang/Thread.html) para tener una idea de los métodos y usos. Esta clase tiene métodos para el control de hilos y algunos otros estáticos de gran utilidad.
 
 ```java
-/**                                                                                                         * Hilo mediante la extensión de `Thread`                                                                   *                                                                                                          * DEBE: implementar el método abstracto `void run()`                                                       * Puede: tener constructores y otros métodos                                                               * Tiene: los métodos de su padre                                                                           */                                                                                                                 
-class Saluda extends Thread {                                                                              
-  @Override 
-  public void run(){                                                                                          for( int i = 0 ; i < 10 ; i++ ){                                                                        
-     // Esperamos para dar realidad el hilo
-     //try { Thread.sleep(1000); } catch (Exception e) { e.printStackTrace(); }  
-     
-     System.out.println(i+1 + " Soy el hilo " + Thread.currentThread().getName()                                                   + " de la clase " + this.getClass().getName() );
-     }                                                                                                       }                                                                                                        }
+/**
+ * Hilo mediante la extensión de `Thread`
+ *
+ * DEBE: implementar el método abstracto `void run()`
+ * Puede: tener constructores y otros métodos
+ * Tiene: los métodos de su padre
+ */
+ class Saluda extends Thread {
+   @Override
+   public void run(){
+     for( int i = 0 ; i < 10 ; i++ ){
+       // Esperamos para dar realidad el hilo
+       //try { Thread.sleep(1000); } catch (Exception e) { e.printStackTrace(); }
+       System.out.println(i+1 + " Soy el hilo " 
+                           + Thread.currentThread().getName()
+                           + " de la clase " 
+                           + this.getClass().getName() );
+     }
+  }
+}
 ```
 
 Y ahora lo invocamos:
 ```java
-public class Hilos1e {                                                                                       public static void main(String[] args){                                                                           
-      Saluda uno = new Saluda();                                                                           
-      Thread otro = new Saluda();                                                                                   
-      uno.start();                                                                                         
-      otro.start();                                                                                        
-      System.out.println("Esto es de la rama principal");                                                
-  }                                                                                                        } 
+public class Hilos1e {
+  public static void main(String[] args){
+    Saluda uno = new Saluda();
+    Thread otro = new Saluda();
+    
+    uno.start();
+    otro.start();
+    System.out.println("Esto es de la rama principal");
+  }
+} 
 ```
 
 *Nota: Como recordarás, al ser la clase `Saluda` hija de `Thread`, los objetos de la misma “cabran” dentro de las “cajas” de tipo `Thread`*.
@@ -40,7 +54,8 @@ public class Hilos1e {                                                          
 A todos nos gusta que nos llamen por nuestro nombre... a los hilos también:
 ```java
         ...
-        Thread otro = new Saluda();                                                                                otro.setName("Hilo_Otro");
+        Thread otro = new Saluda();
+        otro.setName("Hilo_Otro");
         ...
 ```
 
@@ -213,6 +228,9 @@ En el ejemplo no hay problemas de realizar una parada incondicional, al estar to
 
 ## Referencias:
 + [Hilos y Multihilo - netradio.net](https://dis.um.es/~bmoros/Tutorial/parte10/cap10-1.html)
++ [[pub23/psp/PSP-2-Programación multihilo2 |Comunicación entre hilos]]
+
+
 
 ---
 
