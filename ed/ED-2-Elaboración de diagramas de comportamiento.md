@@ -1,7 +1,9 @@
 #curso23_24 #ED [estado:: Working] 
 
 
-[FC] -> [Apuntes](./UT2-Diagramas UML/UA6-Diagramas\_de\_comportamiento.pdf)
+[FC] -> [Apuntes](./UT2-Diagramas UML/UA6-Diagramas_de_comportamiento.pdf)
+
+[**Apuntes de aula**](https://luiscastelar.duckdns.org/2023/temarios/ed/uml-uni_cantabria.pdf) (pag 1-14 y pag 66-92)
 
 ## Ejercicios:
 1. Crea diagramas de **casos de uso** para:

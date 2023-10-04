@@ -41,6 +41,7 @@
     * [x] Cifrado
 
 2. 2o:
+  + [x] Revisión de [[pub23/recordatorios]]
   + [x] Desarrollo de la actividad *en clase* sobre ACL (David 8 bits) sobre máquina en Vagrant.
 
 3. 6o:

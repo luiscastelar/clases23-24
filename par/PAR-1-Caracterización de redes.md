@@ -249,10 +249,8 @@ Dado que cada capa empaqueta se da la circunstancia que las capas de un disposit
 **Voluntarios**: 
 + Creación de latiguillo **cruzado** => A-B
 + Creación de latiguillo consola => [¿rolled?](https://www.cisco.com/c/es_mx/support/docs/routers/7000-series-routers/12223-14.pdf)
+
   
-
-# {[Fold: Fold]} ==VOY POR AQUÍ==
-
 ## Las tecnologías “Ethernet”. FDDI.
 
 + Ethernet -> [802.3](https://es.wikipedia.org/wiki/IEEE_802) -> Ethernet, Fast, Giga, ... sobre par de cobre o fibra.
@@ -288,28 +286,7 @@ edificio (o campus) para la creación de una LAN (Red de Áreal Local).
 
 A dia de hoy tratarse de cable de par trenzado de cobre UTP/STP (sin o con envolvente metálica), para redes de tipo Ethernet (norma IEEE
 802.3). No obstante, también puede tratarse de fibra óptica en algún
-punto de interconexión de swi<!-- #query page where name != "{{page}}" order by lastModified desc limit 20 render [[templete/page]] -->
-* [[privadas/par/redes locales]] (modificado: 2023-09-27) 
-* [[index]] (modificado: 2023-09-27) 
-* [[pub23/par/sesiones]] (modificado: 2023-09-27) Working
-* [[pub23/par/contenidos]] (modificado: 2023-09-27) Working
-* [[pub23/par/PAR-2-Integración de los elementos de una red]] (modificado: 2023-09-27) Working
-* [[pub23/par/PAR-1-Caracterización de redes]] (modificado: 2023-09-27) Done
-* [[pub23/ed/sesiones]] (modificado: 2023-09-27) Working
-* [[privadas/par/ideas]] (modificado: 2023-09-26) Working
-* [[pub23/ed/ED-2-Elaboración de diagramas de comportamiento]] (modificado: 2023-09-26) Working
-* [[pub23/ed/ED-1-Control de versiones]] (modificado: 2023-09-25) Working
-* [[privadas/psp/ideas]] (modificado: 2023-09-25) 
-* [[pub23/psp/requisitos previos]] (modificado: 2023-09-25) Review
-* [[pub23/sad/sesiones]] (modificado: 2023-09-25) 
-* [[pub23/psp/sesiones]] (modificado: 2023-09-25) 
-* [[pub23/psp/PSP-1-Programacion multiproceso]] (modificado: 2023-09-24) Working
-* [[pub23/psp/README]] (modificado: 2023-09-24) Done
-* [[pub23/psp/PSP-2-Programación multihilo]] (modificado: 2023-09-23) Working
-* [[privadas/psp/PSP-3-Comunicaciones de red y sockets]] (modificado: 2023-09-23) ToDo
-* [[privadas/Notas 23]] (modificado: 2023-09-23) ToDo
-* [[STYLES]] (modificado: 2023-09-21)
-<!-- /query -->e los
+punto de interconexión de swie los
     armarios de planta. Su necesidad de ancho de banda es elevado por lo que suele implementarse mediante conexiones ATM, FDDI o Gigabit
     Ethernet.
 7.  Subsistema distribuidor de edificio: realizan la misma función que
@@ -335,8 +312,7 @@ En ellos se ubican los equipos informáticos de entrada como GATEWAY y
 ROUTER, y en la mayoría de los casos también es el subsistema
 distribuidor de edificio y punto de partida del subsistema vertical.
 
-Leer [Información importante sobre cuartos de
-comunicaciones](http://pedrovallejo.blogspot.com/2016/04/un-cuarto-de-telecomunicaciones-optimo.html)
+Leer [Información importante sobre cuartos de comunicaciones](http://pedrovallejo.blogspot.com/2016/04/un-cuarto-de-telecomunicaciones-optimo.html)
 
 
 ## Armarios de comunicaciones. Paneles de parcheo.
@@ -423,6 +399,12 @@ Son filamentos de vidrio de distinta densidad que provocan la refracción de las
 ![](https://luiscastelar.duckdns.org/2023/assets/PAR/fibra_optica.jpg)
 ![](https://luiscastelar.duckdns.org/2023/assets/PAR/fibra_monomodo.jpg)
 
+
+# {[Fold: Fold]} ==VOY POR AQUÍ==
+
+[**Funcionamiento de la fibra óptica**](https://www.youtube.com/watch?v=AT3oa7ER9zE)
+
+
 ## Conectores, tomas de red y herramientas.
 
 Como ya hemos ido mencionando, los conectores más habituales son el
@@ -500,12 +482,19 @@ Podemos ver que a día de hoy la categoría 6a nos ofrece la mejor relación cal
 Ya existen cables `CAT 6a` sin apantallamiento metálico, con la reducción de costes y simplicidad de manipulación.
 
 
-### Estándard PoE (Power over Ethernet)
+### Estándard PoE (Power over Ethernet) - IEEE 802.3af
 
 El estándar PoE fija las normas que deben de cumplir los dispositivos para recibir la alimentación a través del cableado estándar Ethernet existente en la empresa.
 
 El estándard PoE nos permite conectar y alimentar puntos de acceso (AP), cámaras IP, routers, etc. a la red ethernet y evita la necesidad de tender un cableadlo eléctrico hasta donde se ubican dichos dispositivos, cargándose a través de `SWITCH PoE`, normalmente.
 
+#### POE+ y POE++
+
+**PoE+ o 802.3at** => potencia máxima de salida de 30 Watts (la alimentación real recibida es de **25,50 Watts**).
+
+**PoE++ o 802.3bt** => se subdivide en dos tipos: Tipo 3 y Tipo 4.
+*   Tipo 3, con potencia máxima de salida de **60 Watts**, la alimentación real recibida es de **51 Watts**.
+*   Tipo 4, con potencia máxima de salida de **100 Watts**, la alimentación real recibida es de **71 Watts**.
 
 ## EJERCICIOS:
 

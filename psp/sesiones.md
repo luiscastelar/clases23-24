@@ -37,9 +37,10 @@
 
 
 1. 2o:
-    * [ ] FC Ver Hilos
-    * [ ] Ejecución de ejercicios
-    * [ ] *Resolución de dudas sobre procesos (UT1)*
+    + [x] Revisión de [[pub23/recordatorios]]
+    * [x] FC Ver Hilos
+    * [x] Ejecución de ejercicios
+    * [x] *Resolución de dudas sobre procesos (UT1)*
   
 4. 9o:
 5. 16o:

@@ -14,7 +14,9 @@
   * [x] y conectando equipos de red (routers y switches).
   * [x] Cuartos de comunicaciones, armarios
   * [x] y *patch panels*.
-* [ ] 3o: Temperaturas, canalizaciones y medios de transmisión.
+* [x] 3o:
+  + [x] Revisión de [[pub23/recordatorios]]
+  * [x] Temperaturas, canalizaciones y medios de transmisión.
 * [ ] 4o:
   * [ ] Conectores y tomas.
   * [ ] Panel de parcheo y ejercicio de panel.
