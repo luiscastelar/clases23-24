@@ -3,7 +3,44 @@
 
 [FC] -> [Apuntes](./UT2-Diagramas UML/UA6-Diagramas_de_comportamiento.pdf)
 
-[**Apuntes de aula**](https://luiscastelar.duckdns.org/2023/temarios/ed/uml-uni_cantabria.pdf) (pag 1-14 y pag 66-92)
+## Introducción:
+
+1. [**Apuntes de aula**](https://luiscastelar.duckdns.org/2023/temarios/ed/uml-uni_cantabria.pdf) (pag 1-13)
+2. **Introducción – Ventajas e inconvenientes de UML** \
+   *Fuente: Patricia López, Francisco Ruiz - IS1* \
+   + **Ventajas de UML:**
+     + Es estándar => Facilita la comunicación
+     + Está basado en metamodelo con una semántica bien definida
+     + Se basa en una notación gráfica concisa y fácil de aprender y utilizar
+     + Se puede utilizar para modelar sistemas software en diversos dominios:
+       + Sistemas de información empresariales, Sistemas WEB, sistemas críticos y de tiempo real, etc.
+       + Incluso en sistemas que no son software
+     + Es fácilmente extensible
+   + **Inconvenientes de UML**:
+     + No es una metodología. Además de UML, hace falta una metodología OO.
+     + No cubre todas las necesidades de especificación de un proyecto software
+       + No define los documentos textuales o el diseño de interfaces de usuario
+     + Faltan ejemplos elaborados en la documentación
+     + Puede resultar complejo alcanzar un conocimiento completo del lenguaje
+       + Sin embargo => Regla del 80 - 20
+
+3.  [**Apuntes de aula**](https://luiscastelar.duckdns.org/2023/temarios/ed/uml-uni_cantabria.pdf) (pag 66-92)
+
+## Casos de uso
+
+[FC] -> [Vídeo explicativo](https://www.youtube.com/watch?v=fJa3cshrFWs)
+
+**Elementos:**
++ Escenario
++ Actores
++ Casos de uso
++ Relaciones:
+  + Interacción
+  + Inclusión
+  + Extensión
+
++ Referencias: [diagramasUML](https://diagramasuml.com/casos-de-uso/)
+
 
 ## Ejercicios:
 1. Crea diagramas de **casos de uso** para:
