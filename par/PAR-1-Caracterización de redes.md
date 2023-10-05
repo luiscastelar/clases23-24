@@ -399,9 +399,6 @@ Son filamentos de vidrio de distinta densidad que provocan la refracción de las
 ![](https://luiscastelar.duckdns.org/2023/assets/PAR/fibra_optica.jpg)
 ![](https://luiscastelar.duckdns.org/2023/assets/PAR/fibra_monomodo.jpg)
 
-
-# {[Fold: Fold]} ==VOY POR AQUÍ==
-
 [**Funcionamiento de la fibra óptica**](https://www.youtube.com/watch?v=AT3oa7ER9zE)
 
 
@@ -518,56 +515,9 @@ El estándard PoE nos permite conectar y alimentar puntos de acceso (AP), cámar
         contar los latiguillos de conexión en los extremos.
 
 
-## EL PROYECTO DE INSTALACIÓN
+## [EL PROYECTO DE INSTALACIÓN](./pub23/par/PAR-1-Proyecto de instalación.md)
 
-La instalación consiste en la ejecución ordenada, según las directrices
-del proyecto de instalación de un conjunto de tareas que revierten en
-proporcionar el servicio que necesitaba el cliente que solicitó la
-instalación.
-
-Algunas de estas tareas se pueden superponer en el tiempo y habrá que
-tener esto en cuenta al confeccionar el calendario de instalación. A
-continuación describimos algunas de estas tareas:
-
--   **Diseño del cableado estructurado**. Plasmar en papel el diseño que
-    queremos implementar posteriormente de forma física.
--   **Presupuestar**. Una vez que tenemos el diseño podemos realizar el
-    presupuesto de materiales y mano de obra.
-
-![](https://luiscastelar.duckdns.org/2023/assets/PAR/flujo_de_trabajo.png)
-
--   **Instalación de las tomas de corriente**. Esta tarea suele
-    realizarla un electricista, pero desde el punto de vista del
-    proyecto debemos asegurarnos de que hay suficientes tomas de
-    corriente para alimentar todos los equipos de comunicaciones.
--   **Instalación de rosetas y jacks**. Es la instalación de los puntos
-    de red finales desde los que se conectarán los equipos de
-    comunicaciones sirviéndose de latiguillos. La mayor parte de estas
-    conexiones residirán en canaletas o en armarios de cableado.
--   **Tendido de los cables**. Se trata de medir la distancia que debe
-    recorrer cada cable y añadirle una longitud prudente que nos permita
-    trabajar cómodamente con él antes de cortarlo.\
-    Debemos asegurarnos de que el cable que utilizaremos tenga la
-    certificación necesaria.
--   **Conectorización de los cables** en los patch panels y en las
-    rosetas utilizando las herramientas de crimpado apropiadas. A esto
-    se le denomina cross-connect.
--   **Probado de los cables instalados**. Cada cable construido y
-    conectorizado debe ser inmediatamente probado para asegurarse de que
-    cumplirá correctamente su función.
--   **Etiquetado y documentación del cable y conectores**. Todo cable
-    debe ser etiquetado en ambos extremos, así como los conectores de
-    patch panels y rosetas, de modo que queden identificados
-    unívocamente.
--   **Instalación de los adaptadores de red**. Gran parte de los equipos
-    informáticos vienen ya con la tarjeta de red instalada, pero esto no
-    es así necesariamente.
--   **Instalación de los dispositivos de red**. Se trata de instalar los
-    concentradores, conmutadores, puentes y encaminadores. Algunos de
-    estos dispositivos deben ser configurados antes de prestar sus
-    servicios.
--   **Configuración del software** de red en clientes y servidores de la
-    red.
+[[pub23/par/PAR-1-Proyecto de instalación]]
 
 ### Algunas imágenes impactantes:
 + https://pin.it/3gazth8
