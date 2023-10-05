@@ -9,7 +9,7 @@
 * [x] 26s: De encapsulamiento hasta normas. Ejercicio de normas.
 * [x] 27s: Tecnologías “Ethernet”
   * [x] CSMA/CD
-  * [ ] creación de latiguillos.
+  * [x] creación de latiguillos.
 * [x] 28s: Cableado estructurado, espacios
   * [x] y conectando equipos de red (routers y switches).
   * [x] Cuartos de comunicaciones, armarios
@@ -17,19 +17,21 @@
 * [x] 3o:
   + [x] Revisión de [[pub23/recordatorios]]
   * [x] Temperaturas, canalizaciones y medios de transmisión.
-* [ ] 4o:
-  * [ ] Conectores y tomas.
-  * [ ] Panel de parcheo y ejercicio de panel.
-  * [ ] **[FC] proyecto**.
-* [ ] 5o: Proyecto y ejercicios latiguillo y patch panel.
-* [ ] 10o: Certificación de cables. PoE. Ejercicios.
-* [ ] 11o: Proyecto de instalación.
+* [x] 4o:
+  * [x] Conectores y tomas.
+  * [x] Panel de parcheo y ejercicio de panel.
+  * [x] PoE.
+  * [x] Ejercicios.
+* [ ] **Proyecto de instalación**:
+  * 12 horas aprox
+  * 1 hora por día de clase
+  * Finalización y defensa 7 nov   
 * [ ] Día del Pilar
-* [ ] 17o: Continuación de proyecto de instalación.
-* [ ] 18o: **Exámen UT1**
+* [ ] 9n: NO ~~Exámen UT1~~
 
 # 2 Integración de elementos en una red. 
-28 18/10/2023 16/11/2023 1ª
+28h 18/10/2023 16/11/2023 *1ª eva*
++ [ ] 
 
 # 3 Configuración y administración de conmutadores. 
 28 16/11/2023 20/12/2023 2ª
