@@ -59,7 +59,7 @@ Para representar el sistema hexadecimal debemos añadir 6 _caracteres_ extra a n
   | 1001 0110                         |   96          |
   | 0001 1110                         |   1E          |
   | 1001 0110 . 1100 0111             |   96 C7       |
-  | 0001 1110 . 1001 0110 . 1100 0111 . 1010 0111 |   1E96:C7A5    | 
+  | 0001 1110 . 1001 0110 . 1100 0111 . 1010 0110 |   1E96:C7A5    | 
 
 Como podemos ver, es mucho más práctico representar en hexadecimal que
 en binario, y uno y otro encajan perfectamente en bloques de 4 dígitos binarios (nibble) a 1 dígito hexadecimal.
@@ -211,6 +211,7 @@ Las tarjetas hoy en día se diferencia fundamentalmente en internas
         simplificada normativa del tipo "wifi6".
     2.  Razona el posible uso de cada uno de los tipos de dispositivos,
         las ventajas y los inconvenientes.
+
 
 
 ## ==Documentación de la red==
