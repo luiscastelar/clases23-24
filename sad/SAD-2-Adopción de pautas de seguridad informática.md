@@ -85,6 +85,15 @@ Referencias: [David 8 bits](https://www.ochobitshacenunbyte.com/2019/03/26/crear
 ## ~~Políticas de almacenamiento~~ => NO
 
 ## Copias de seguridad e imágenes de respaldo
-+ TAR => Sin encriptar. 
++ TAR + rsync + cron => Sin encriptar. 
 + [restic](https://restic.readthedocs.io/en/stable/) => Múltiples repositorios y respaldo encriptados, incrementales y sin duplicados.
 
+
+## Prácticas:
+Define el `Vagrantfile` y todos los scripts que veas necesario de forma que se cumplan las siguientes premisas:
+1. Dentro el `home` del usuario `luis` del `host A` deberás crear el directorio `clientes` que deberá ser accesible para lectura por el usuario `pedro` y para lectura y escritura por el usuario `juan`.
+2. Copias de seguridad:
+   + Realiza un sistema automático que realice copias de seguridad diarias de un `host A` con **tar + rsync + cron** sobre un `host B`. Debe guardar el directorio `/home` y `/etc`.
+   + Repite las copias con **restic + cron** sobre un `host C`.
+  
+*Nota: asegúrate que TODO funciona según las especificaciones.*
