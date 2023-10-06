@@ -21,7 +21,7 @@
   * [x] Conectores y tomas.
   * [x] Panel de parcheo y ejercicio de panel.
   * [x] PoE.
-  * [x] Ejercicios.
+  * [ ] Ejercicios.
 * [ ] **Proyecto de instalación**:
   * 12 horas aprox
   * 1 hora por día de clase
