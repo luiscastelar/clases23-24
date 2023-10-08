@@ -514,10 +514,10 @@ El estándard PoE nos permite conectar y alimentar puntos de acceso (AP), cámar
     -   La máxima distancia permitida para un cable UTP es de 90 m sin
         contar los latiguillos de conexión en los extremos.
 
-
-## [EL PROYECTO DE INSTALACIÓN](./pub23/par/PAR-1-Proyecto de instalación.md)
+## [PAR-1-Proyecto de instalación.md](https://github.com/luiscastelar/clases23-24/blob/main/par/PAR-1-Proyecto%20de%20instalaci%C3%B3n.md)
 
 [[pub23/par/PAR-1-Proyecto de instalación]]
+
 
 ### Algunas imágenes impactantes:
 + https://pin.it/3gazth8
