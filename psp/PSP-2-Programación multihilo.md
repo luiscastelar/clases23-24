@@ -200,33 +200,67 @@ Debemos por tanto recurrir a promesas con la interfaz `Future` y la ejecución c
 
 ## Jugando con hilos
 
-### Suspensión de un Thread
-
-Puede resultar útil suspender la ejecución de un hilo sin marcar un límite de tiempo. Si, por ejemplo, está construyendo un applet con un hilo de animación, seguramente se querrá permitir al usuario la opción de detener la animación hasta que quiera continuar. No se trata de terminar la animación, sino desactivarla. Para este tipo de control de los hilos de ejecución se puede utilizar el método *suspend()*.
-
-    t1.suspend();
-
-Este método no detiene la ejecución permanentemente. El hilo es suspendido indefinidamente y para volver a activarlo de nuevo se necesita realizar una invocación al método *resume()*:
-
-    t1.resume();
-
 ### Parada de un Thread
 
-El último elemento de control que se necesita sobre los hilos de ejecución es el método *stop()*. Se utiliza para terminar la ejecución de un hilo:
+**¡OJO!**: Los métodos `hilo.stop()` y `hilo.suspend()` se encuentran marcados como obsoletos (`@Deprecated`) desde la versión 1.2 de java. 
 
-    t1.stop();
+¿Cómo podemos parar un hilo (infinito) en java? Pues haciendo que deje de ser infinito.
 
-Esta llamada no destruye el hilo, sino que detiene su ejecución. La ejecución no se puede reanudar ya con *t1.start()*. Cuando se desasignen las variables que se usan en el hilo, el objeto *Thread* (creado con new) quedará marcado para eliminarlo y el *garbage collector* se encargará de liberar la memoria que utilizaba.
+```java
+volatile boolean ejecutar = true;
 
-En el ejemplo, no se necesita detener explícitamente el hilo de ejecución. Simplemente se le deja terminar. Los programas más complejos necesitarán un control sobre cada uno de los hilos que lancen, el método *stop()* puede utilizarse en esas situaciones.
+@Override
+public void run() {
+    while(ejecutar) {
+        //tarea infinita que nunca va a terminar...
+    }
+}
+
+public synchronized void detener() {
+    ejecutar = false;
+}
+```
 
 Si se necesita, se puede comprobar si un hilo está vivo o no; considerando vivo un hilo que ha comenzado y no ha sido detenido.
 
     t1.isAlive();
 
-Este método devolverá *true* en caso de que el hilo t1 esté vivo, es decir, ya se haya llamado a su método *run()* y no haya sido parado con un *stop()* ni haya terminado el método *run()* en su ejecución.
+Este método devolverá *true* en caso de que el hilo t1 esté vivo y no haya terminado su ejecución.
 
-En el ejemplo no hay problemas de realizar una parada incondicional, al estar todos los hilos vivos. Pero si a un hilo de ejecución, que puede no estar vivo, se le invoca su método *stop()*, se generará una excepción. En este caso, en los que el estado del hilo no puede conocerse de antemano es donde se requiere el uso del método *isAlive()*.
+### Suspensión de ejecución
+
+De forma análoga a deneter mediante otra variable:
+```java
+volatile boolean ejecutar = true;
+volatile boolean suspender = false;
+
+@Override
+public void run() {
+    while(ejecutar) {
+        //tarea infinita que nunca va a terminar...
+	    
+	    if( !suspender ){
+		// Sólo se ejecuta si no está suspendido
+		System.out.println( "Ejecutado " + (++i) + " veces." );
+	    }
+	            
+    }
+}
+
+
+public synchronized void suspend() {
+	suspender = true;
+}
+
+public synchronized void reactivar() {
+	suspender = false;
+}
+
+public synchronized void detener() {
+    ejecutar = false;
+}
+```
+
 
 ## EJERCICIOS:
 1. Lanzar 3 hilos con `Thread.sleep(x)` con distintos tiempos. Desde la rama principal verifica los estados de cada hilo. Cuando estén todos muertos despídete y acaba.
