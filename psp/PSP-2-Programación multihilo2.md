@@ -14,6 +14,7 @@ El ejemplo clásico de comunicación de hilos de ejecución es un modelo product
 
 El productor extenderá la clase **Thread**, y su código es el siguiente:
 
+```java
     class Productor extends Thread {
       private Tuberia tuberia;
       private String alfabeto = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -40,13 +41,15 @@ El productor extenderá la clase **Thread**, y su código es el siguiente:
             }
       }
     }
+```
 
-Notar que se crea una instancia de la clase **Tuberia**, y que se utiliza el método *tuberia.lanzar()* para que se vaya construyendo la tubería, en principio de 10 caracteres.
+Notar que se crea una instancia de la clase **`Tuberia`**, y que se utiliza el método *tuberia.lanzar()* para que se vaya construyendo la tubería, en principio de 10 caracteres.
 
 ### Consumidor
 
 Ahora se reproduce el código del consumidor, que también extenderá la clase **Thread**:
 
+```java
     class Consumidor extends Thread {
       private Tuberia tuberia;
 
@@ -71,6 +74,7 @@ Ahora se reproduce el código del consumidor, que también extenderá la clase *
             }
       }
     }
+```
 
 En este caso, como en el del productor, se cuenta con un método en la clase **Tuberia**, *tuberia.recoger()*, para manejar la información.
 
@@ -80,6 +84,7 @@ Una vez vistos el productor de la información y el consumidor, solamente queda 
 
 Lo que realiza la clase **Tuberia**, es una función de supervisión de las transacciones entre los dos hilos de ejecución, el productor y el consumidor. Los monitores, en general, son piezas muy importantes de las aplicaciones multihilo, porque mantienen el flujo de comunicación entre los hilos.
 
+```java
     class Tuberia {
       private char buffer\[\] = new char\[6\];
       private int siguiente = 0;
@@ -134,6 +139,7 @@ Lo que realiza la clase **Tuberia**, es una función de supervisión de las tran
         notify();
       }
     }
+```
 
 En la clase **Tuberia** se pueden observar dos características importantes: los miembros dato (buffer\[\]) son privados, y los métodos de acceso (*lanzar()* y *recoger()*) son sincronizados.
 
@@ -143,16 +149,19 @@ Los métodos sincronizados de acceso impiden que los productores y consumidores 
 
 Se pueden sincronizar incluso variables, para realizar alguna acción determinada sobre ellas, por ejemplo:
 
+```java
     sincronized( p ) {
       // aquí se colocaría el código
       // los threads que estén intentando acceder a p se pararán
       // y generarán una InterruptedException
     }
+```
 
 El método *notify()* al final de cada método de acceso avisa a cualquier proceso que esté esperando por el objeto, entonces el proceso que ha estado esperando intentará acceder de nuevo al objeto. En el método *wait()* se hace que el hilo se quede a la espera de que le llegue un *notify()*, ya sea enviado por el hilo de ejecución o por el sistema.
 
 Ahora que ya se dispone de un productor, un consumidor y un objeto compartido, se necesita una aplicación que arranque los hilos y que consiga que todos hablen con el mismo objeto que están compartiendo. Esto es lo que hace el siguiente trozo de código, del fuente [java1007.java](https://dis.um.es/~bmoros/Tutorial/fuentes/java1007.java):
 
+```java
     class java1007 {
       public static void main( String args\[\] ) {
         Tuberia t = new Tuberia();
@@ -163,6 +172,7 @@ Ahora que ya se dispone de un productor, un consumidor y un objeto compartido, s
         c.start();
       }
     }
+```
 
 Compilando y ejecutando esta aplicación, se podrá observar en modelo que se ha diseñado en pleno funcionamiento.
 

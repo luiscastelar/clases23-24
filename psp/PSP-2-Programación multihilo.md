@@ -74,16 +74,21 @@ Recordad de los `streams` que en java moderno podemos utilizar sintaxis funciona
 
 De forma análoga podemos implementar la interfaz.
 ```java
-/**                                                                                                         * Hilo mediante la implementación de la `interface` Runnable                                            
- *                                                                                                          * DEBE: implementar el método abstracto `void run()`                                                     
- * Puede: tener constructores y otros métodos                                                               */                                                                                                        class Saluda implements Runnable {                                                                         
+/**
+* Hilo mediante la implementación de la `interface` Runnable
+*
+* DEBE: implementar el método abstracto `void run()`
+* Puede: tener constructores y otros métodos
+*/
+class Saluda implements Runnable {
   @Override
-  public void run(){                                                                                       
-     for( int i = 0 ; i < 10 ; i++ ){
-       // Esperamos para dar realidad el hilo
-       //try { Thread.sleep(1000); } catch (Exception e) { e.printStackTrace(); }  
-       
-       System.out.println("Soy un hilo independiente de la clase " + Thread.currentThread().getName() );        }                                                                                                        } // método run()
+  public void run(){
+    for( int i = 0 ; i < 10 ; i++ ){
+      // Esperamos para dar realidad el hilo
+      //try { Thread.sleep(1000); } catch (Exception e) { e.printStackTrace(); }
+      System.out.println("Soy un hilo independiente de la clase " + Thread.currentThread().getName() );
+    }
+  } // método run()
 } // clase Saluda
 ```
 
@@ -104,15 +109,20 @@ Podría parecer que tenemos más verbosidad, pero ya veremos más adelante que e
 ## Pasando datos al hilo
 Podemos crear un constructor que reciba lo que queramos...
 ```java
-class Saluda implements Runnable {                                                                             private String nombre;                                                          
-
+public class Saluda implements Runnable {
+    private String nombre;
+    
     // Constructor
-    Saluda(String nombre){ this.nombre = nombre; }                                                         
+    Saluda(String nombre){ this.nombre = nombre; }
     
     // Ejecutor
     @Override
-    public void run(){                                                                                             for( int i = 0 ; i < 10 ; i++ ){                                                                               System.out.println("Soy un hilo independiente de la clase " + Thread.currentThread().getName() + " a " \
-+ nombre);                                                                                                         }                                                                                                     } // método run()
+    public void run(){
+	  for( int i = 0 ; i < 10 ; i++ ){
+	    System.out.println("Soy un hilo independiente de la clase " + Thread.currentThread().getName()
+			       + " a " + nombre);
+	  }
+    } // método run()
 } // clase Saluda
 
 ```
@@ -167,6 +177,8 @@ public class Hilos2b {                                                          
 
 ¿Problema de las `lambda`s? ¡¡No podemos reutilizarlas!! Recuerda que se “inventaron” para simplificar aquel código que no requeríamos reutilizar.
 
+# ==VAMOS POR AQUÍ==
+
 
 ## Retornando objetos
 
@@ -220,15 +232,17 @@ En el ejemplo no hay problemas de realizar una parada incondicional, al estar to
 1. Lanzar 3 hilos con `Thread.sleep(x)` con distintos tiempos. Desde la rama principal verifica los estados de cada hilo. Cuando estén todos muertos despídete y acaba.
 2. Lanzar 3 hilos que saluden 100 veces, cada uno con una prioridad diferente.
 3. Repite la práctica de 1 invirtiendo los papeles. Esto es:
-  1. Crea un hilo `hImprimir` que imprima por pantalla letras aleatorias.
-  2. Crea un menú que capture el teclado realizand.o:
-     + Si recibe una `i` lanza el hilo `hImprimir`.
-     + Si recibe una `s` detiene el hilo `hImprimir`.
+  1. Crea un hilo `hiloImprimir` que imprima por pantalla letras aleatorias.
+  2. Crea un menú que capture el teclado realizando:
+     + Si recibe una `i` lanza el hilo `hiloImprimir`.
+     + Si recibe una `s` detiene el hilo `hiloImprimir`.
      + Si recibe una `q` sale del programa.
+
+# [Continuación -> PSP-2-Programación multihilo2](https://github.com/luiscastelar/clases23-24/blob/main/psp/PSP-2-Programaci%C3%B3n%20multihilo2.md)
 
 ## Referencias:
 + [Hilos y Multihilo - netradio.net](https://dis.um.es/~bmoros/Tutorial/parte10/cap10-1.html)
-+ [[pub23/psp/PSP-2-Programación multihilo2 |Comunicación entre hilos]]
+
 
 
 
