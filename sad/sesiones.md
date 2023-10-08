@@ -49,7 +49,7 @@
     + [ ] rsync + tar
     + [ ] restic
 
-4. 9o:
+4. 16o:
   + [ ]  **Examen UT2**
 
 **Evaluación de la unidad:**
@@ -61,7 +61,19 @@
 + Participación en clase (10%).
 
 ---
-UT3 - Instalación y config firewall - 16h - 8 sesiones - 10o-10n
+# UT3 - Instalación y config firewall 
+16h - 8 sesiones - 10o-10n
+
+1. 9o:
+   + [ ] ...
+3. 20o:
+4. 23o:
+5. 27o:
+6. 30o:
+7. 3n:
+8. 6n:
+9. 10n:
+   + [ ] **Examen UT3**
 
 ---
 **2ª EVALUACIÓN**
