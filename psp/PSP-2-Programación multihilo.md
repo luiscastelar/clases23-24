@@ -193,9 +193,11 @@ En este segundo caso, deberíamos asegurarnos que el dato ya está preparado, y 
 ### Callable vs Runnable
 
 ![callabe vs runnable](https://javagoal.com/wp-content/uploads/2020/10/3.png)
+
 Si necesitamos ir más allá, deberemos recurrir a implementar al interfaz `Callable`. ¿Problema? Pues que la clase `Thread` sólo admite `Runnable`. 
 
 Debemos por tanto recurrir a promesas con la interfaz `Future` y la ejecución con `ExecutorService` o  `FutureTask`, para una o varias tareas a ejecutar.
+
 ![future](https://javagoal.com/wp-content/uploads/2020/10/2.png)
 
 ## Jugando con hilos
@@ -271,25 +273,35 @@ public synchronized void detener() {
      + Si recibe una `i` lanza el hilo `hiloImprimir`.
      + Si recibe una `s` detiene el hilo `hiloImprimir`.
      + Si recibe una `q` sale del programa.
-
-# [Continuación -> PSP-2-Programación multihilo2](https://github.com/luiscastelar/clases23-24/blob/main/psp/PSP-2-Programaci%C3%B3n%20multihilo2.md)
+    
 
 ## Referencias:
 + [Hilos y Multihilo - netradio.net](https://dis.um.es/~bmoros/Tutorial/parte10/cap10-1.html)
 
 
+# [Comunicación entre hilos -> PSP-2-Programación multihilo 2](https://github.com/luiscastelar/clases23-24/blob/main/psp/PSP-2-Programaci%C3%B3n%20multihilo2.md)
 
 
----
+# Fuera de evaluación:
 
-# ==Pendiente de REVISIÓN==
+## Synchronized
+¿Qué hace `synchronized`?
+[Fuente: jachguate - StackOverflow](https://es.stackoverflow.com/posts/265860/timeline)
 
-# Hilos virtuales
+> La sincronización en *java* funciona a nivel de objeto. Lo que un método *sincronizado* te garantiza es que no habrá dos hilos ejecutando un mismo método de un mismo objeto a la vez. Si hay varios hilos intentando ejecutar el mismo método del mismo objeto a la misma vez, uno logrará su ejecución y los otros deberán esperar a que este concluya para obtener su turno.
+>
+> El problema que estamos teniendo, en tu caso, es que tenemos 10 objetos diferentes, y por tanto, cada objeto está tratando de sincronizarse únicamente consigo mismo, con lo cual no hay ninguna sincronización en efecto.
+>
+> Lo que debemos hacer es lograr que esa sincronización funcione de manera global.
+>
+> Una manera de hacerlo, es declarar tu método `Imprimir` también estático. Al ser estático, en realidad todos los hilos competirán por ese único método a nivel de clase, con lo cual se ven obligados a sincronizarse. En cada llamada, deberás pasarle por parámetro los datos del hilo que lo llama.
 
-JDK21 anunciado el 19 de septiembre de 2023 con soporte para, al menos, 8 años. 
 
-En esta versión se consolidan los hilos virtuales o “hilos ligeros”.
+## Hilos virtuales
 
+JDK21 publicado el 19 de septiembre de 2023 con soporte para, al menos, 8 años soporta los denominados hilos virtuales o *hilos ligeros*.
+
+Para un acercamiento a la característica podéis revisar los siguientes enlaces:
 + Hilos de plataforma [SACAViX Tech](https://www.youtube.com/watch?v=BsJnXKpOVMw)
 + Hilos virtuales [SACAViX Tech](https://www.youtube.com/watch?v=j0RO-LX9rLA)
 + [Guia de hilos virtuales - Adam Gamboa](https://blog.adamgamboa.dev/es/guia-para-virtual-threads-hilos-livianos-en-java/)
