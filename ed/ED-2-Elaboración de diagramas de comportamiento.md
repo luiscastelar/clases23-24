@@ -39,7 +39,10 @@
   + Inclusión
   + Extensión
 
-+ Referencias: [diagramasUML](https://diagramasuml.com/casos-de-uso/)
+### Referencias:
++ [diagramasUML](https://diagramasuml.com/casos-de-uso/)
++ [Diagramas de comportamiento - Luis Del Moral](https://github.com/ldmoral1987/temario-ed-dam/blob/main/UA6-Elaboraci%C3%B3n%20de%20diagramas%20de%20comportamiento.pdf)
++ [Diagramas de comportamiento - @vanza](https://apuntes-daw.javiergutierrez.trade/entornos-de-desarrollo/ut5/recopila.html)
 
 
 ## Ejercicios:

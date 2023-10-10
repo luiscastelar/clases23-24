@@ -20,6 +20,7 @@ Cualquiera de las siguientes referencias son **muy** recomendables y se tomarán
 
 + [Apuntes - Oscar Maestre](https://oscarmaestre.github.io/apuntes_redes/index.html)
 + [Apuntes - José Luis ](https://planificacionadministracionredes.readthedocs.io/es/latest/)
++ [WikiBooks](https://es.wikibooks.org/wiki/Planificaci%C3%B3n_y_Administraci%C3%B3n_de_Redes)
 + ...
 
 ### También podría interesarte:

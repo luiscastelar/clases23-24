@@ -31,7 +31,7 @@ Esto es un documento vivo donde hacer una planificación diaria y control del tr
     * [ ] De Comportamiento: Casos de uso, secuencia, estados y actividad
     * [ ] ~~De Agrupamiento~~
     * [ ] ~~De Anotación~~
-* [ ] 9o: Ejercicios de **casos de uso**.
+* [ ] 10o: Ejercicios de **casos de uso**.
 * [ ] 11o: Ejercicios de **diagramas de secuencia**.
 * [ ] 17o: Ejercicios de **diagramas de estado**.
 * [ ] 18o: Ejercicios de **diagramas de actividades**.

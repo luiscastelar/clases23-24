@@ -177,28 +177,18 @@ public class Hilos2b {                                                          
 
 ¿Problema de las `lambda`s? ¡¡No podemos reutilizarlas!! Recuerda que se “inventaron” para simplificar aquel código que no requeríamos reutilizar.
 
-# ==VAMOS POR AQUÍ==
-
 
 ## Retornando objetos
 
 ¿Y si después de la ejecución queremos que nos devuelva el resultado?
 
-### Runtime.exit(int) o Getters
+### ~~Runtime.exit(int) o~~ Getters
 
-Si sólo queremos conocer el código de finalización lo tenemos sencillo `Runtime.exit(int)` pero, ¿y si queremos que nos retorne una Lista o un objeto cualquiera? **getter**s.
+~~Si sólo queremos conocer el código de finalización lo tenemos sencillo `Runtime.exit(int)` pero, ¿y si queremos que nos retorne una Lista o un objeto cualquiera? **getter**s.~~
 
-En este segundo caso, deberíamos asegurarnos que el dato ya está preparado, y que no está “sucio”
+Para retornar valores deberemos realizarlo mediante `getter`s.
 
-### Callable vs Runnable
-
-![callabe vs runnable](https://javagoal.com/wp-content/uploads/2020/10/3.png)
-
-Si necesitamos ir más allá, deberemos recurrir a implementar al interfaz `Callable`. ¿Problema? Pues que la clase `Thread` sólo admite `Runnable`. 
-
-Debemos por tanto recurrir a promesas con la interfaz `Future` y la ejecución con `ExecutorService` o  `FutureTask`, para una o varias tareas a ejecutar.
-
-![future](https://javagoal.com/wp-content/uploads/2020/10/2.png)
+~~En este segundo caso, deberíamos~~ deberemos asegurarnos que el dato ya está preparado, y que no está “sucio”, por ejemplo con `hilo.join()`.
 
 ## Jugando con hilos
 
@@ -275,10 +265,64 @@ public synchronized void detener() {
      + Si recibe una `q` sale del programa.
     
 
-## Referencias:
+### Referencias:
 + [Hilos y Multihilo - netradio.net](https://dis.um.es/~bmoros/Tutorial/parte10/cap10-1.html)
 
 
+# ==VAMOS POR AQUÍ==
+
+## Callable vs Runnable
+
+![callabe vs runnable](https://javagoal.com/wp-content/uploads/2020/10/3.png)
+
+Si necesitamos ir más allá, deberemos recurrir a implementar al interfaz `Callable`. ¿Problema? Pues que la clase `Thread` sólo admite `Runnable`. 
+
+Debemos por tanto recurrir a promesas con la interfaz `Future` y la ejecución con `ExecutorService` o  `FutureTask`, para una o varias tareas a ejecutar.
+
+![future](https://javagoal.com/wp-content/uploads/2020/10/2.png)
+
+```java
+import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
+
+public class EjecutorServicioBis {
+   public static void main(String[] args) throws InterruptedException, ExecutionException 
+   {
+      ExecutorService servicio = Executors.newSingleThreadExecutor();
+      TareaLlamable tarea = new TareaLlamable(3, 5);
+      Future<Integer> promesa = servicio.submit( tarea );
+      Integer valor = promesa.get();
+      System.out.println( valor );
+      servicio.shutdown();
+   }
+}
+
+class TareaLlamable implements Callable<Integer> {
+    private int a, b, c;
+    
+    public TareaLlamable( int _a, int _b ){
+        this.a = _a;
+        this.b = _b;
+    }
+    
+    @Override
+    public Integer call() throws Exception {
+      return ( a + b );
+   }
+}   
+```
+
+*1. Se crea un servicio ejecutable... hace la función de `Thread`*.
+*2. Se crea una tarea que implementa `Callable` declarando que retornará un entero*.
+*3. Se crea una “promesa” de retorno de un entero con la llamada al servicio al que le pasamos `submit` la tarea*.
+*4. Se espera a obtener `get` el valor de la “promesa”*.
+*5. Se “solicita el apagado” del servicio. Los servicios activos acabarán, pero no se aceptarán más servicios*.
+
+    Se simplifica la implementación de la tarea y la captura de valores es más obvia, pero evidentemente se complica la bifurcación de ejecución (creación de hilo).
+    
 # [Comunicación entre hilos -> PSP-2-Programación multihilo 2](https://github.com/luiscastelar/clases23-24/blob/main/psp/PSP-2-Programaci%C3%B3n%20multihilo2.md)
 
 

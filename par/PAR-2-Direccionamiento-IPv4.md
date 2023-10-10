@@ -2,9 +2,9 @@
 
 
 ## Mapa conceptual de la unidad
-![mapa conceptual](https://luiscastelar.duckdns.org/2023/assets/PAR/UT2_MapaConceptual.jpg)
+![mapa conceptual](https://luiscastelar.duckdns.org/2023/assets/PAR/UT2_MapaConceptual_IPv4.jpg)
 
-# {[Fold: Fold]} Direccionamiento IPv4
+# Direccionamiento IPv4
 
 ## Introducción. 
 
@@ -146,10 +146,132 @@ El direccionamiento IPv4:
     different multicast address and/or port
 
 
- # ==revisar==
+## Rango de IPs: públicas, privadas y otras
+
+-   **IPs PÚBLICAS**: Clases de IPv4:
+  
+      | Clase  | Rango |
+      |-------| -----------------------------|
+      |A  |     1.0.0.0 - 127.255.255.255|
+      |B  |     128.0.0.0 - 191.255.255.255|
+      |C  |     192.0.0.0 - 223.255.255.255|
+          
+
+    (*) En binario, se atiende a donde nos encontramos el primer cero y la posición corresponde a la clase.
+    
+    La **IP `0.0.0.0`** veremos que es una IP especial que el HOST interpreta como *no especificado*, esto es, según suposición significa que no tiene ip aún o que atiende en todas las interfaces (un “comodin”).
+
+-   **IPs PRIVADAS**: Los siguientes rangos son de uso en redes privadas.
+
+      | Clase |   Rango |                           Máscara RED |
+      |-------| -------------------------------|  ------------- |
+      | A |       10.0.0.0 - 10.255.255.255 |       255.0.0.0 |
+      | B |      172.16.0.0 - 172.31.255.255 |    255.240.0.0 |
+      | C |      192.168.0.0 - 192.168.255.255 |  255.255.0.0 |
+
+
+-   **IPs RESERVADAS**:
+
+    -   **IP no VÁLIDA**: La IP `0.0.0.0` no es una dirección válida ya que es utilizada como dirección `COMODÍN`. Esto es, cuando un equipo escucha en `0.0.0.0` lo que hace es escuchar en **TODAS** sus intarfaces de red.
+    -   **IPs de BUCLE**: De las anteriores, debemos quitar la `127.x.x.x` ya que es la dirección de LOOPBACK, que también podemos invocar con `localhost`.
+    -   **IPs INTERNAS DE ENRUTAMIENTO**: Las direcciones de `0.0.0.1` a `0.255.255.255` son utilizadas sólo por software para comunicaciones internas. Nosotros no le prestaremos atención.
+
+-   **IPs locales de enlace**: Cuando un HOST no puede establecer comunicación con ningún DHCP y no está configurado estático (a mano), comienza un proceso de autoconfiguración y se asigna a sí mismo una IP aleatoria dentro del rango `169.254.0.0` - `169.254.255.255`.
+
+    > **Importante**: si nos encontramos que un HOST está en dicho rango es **síntoma** de que no pudo establecer comunicación con ningún DHCP.
+
++   **IPs para CGNAT**: El rango `100.64.0.0` a `100.127.255.255` es utilizado hacer NAT a nivel de operadora. Permite “multiplexar” una IP pública por 2^22 abonados (4 millones de direcciones aprox.).
+
+
+### Ejercicio IP
+
+Nos dicen que nuestro equipo está en la dirección 31.4.149.59. ¿Qué
+sabemos de él?
+
+1.  ¿A que clase pertenece?
+2.  ¿Cuantos bits de RED y de HOST tiene?
+3.  ¿Cuántas redes existen en esa clase?
+4.  ¿Cuántos HOST puede haber en esa RED?
+5.  ¿Qué máscara de RED le pertenece?
+6.  IP de la RED a la que pertenece
+7.  Dirección de difusión o BROADCAST
+8.  Dirección del primer host de la RED
+9.  Dirección del último host de la RED
+
+[**Otros ejercicios**](https://www.educatica.es/redes/ejercicios-de-redes)
+
+
+### Referencias:
++ [Vídeo resumen](https://www.youtube.com/watch?v=TldkSiygpPY) (versión larga 48 min)
++ [Vídeo corto](https://youtu.be/xyXQjZ7w_No) (versión corta 5 min)
++ [Vídeo corto 2](https://www.youtube.com/watch?v=EdhPwqWXZpI) (versión extra corta 4 min)
++ [Vídeo aclaratorio 1 (UPV)](https://youtu.be/ZdWYe4PB0Qk)
 
 
 ## IPv4 con CIDR
+
+Vamos a estudiar las normas RFC950 y RFC1812 que realizan 2 mejoras sobre el uso del direccionamiento IPv4.
+
+**CIDR** o Enrutamiento entre dominios sin clase (Classless Inter-Domain Routing) es un una mejora que nos permite dividir redes en subredes.
+
+Por ejemplo, la red 8.0.0.0, red de clase A tiene 2^24 direcciones, o 16.777.216 direcciones. Es fácil pensar que hay pocas entidades con necesidad de tener algo más de 16 millones de equipos visibles desde internet. 
+
+¿Entonces? Pues si a una empresa se le asigna una `clase A` se desperdicia muchas direcciones.
+
+Pues, ¿y si le asignamos únicamente la mitad? ¿Cómo podríamos hacerlo? Con el **CIDR**.
+
+Al principio hablamos de la `máscara de red` que nos indicaba que bits eran de dirección de red y que bits eran de host, pero esta máscara tenía 3 opciones: 8, 16, o 24 bits. 
+
+Ahora con el CIDR eso deja de estar bloqueado, por lo que podríamos poner una máscara de 9 bits que partiría en 2 la red de clase A  `8.0.0.0`, concretamente tendríamos la red `8.0.0.0/9` y `8.128.0.0/9`
+
+### Ejercicios IP
+
+Nos dicen que nuestro equipo está en la dirección `31.4.149.59/8`, `31.4.149.59/9`, `31.4.149.59/15`, `31.4.149.59/16`. ¿Qué sabemos de él?
+
+1.  ¿A que clase pertenece?
+2.  ¿Cuantos bits de RED y de HOST tiene?
+3.  ¿Cuántas redes existen en esa clase?
+4.  ¿Cuántos HOST puede haber en esa RED?
+5.  ¿Qué máscara de RED le pertenece?
+6.  IP de la RED a la que pertenece
+7.  Dirección del primer host de la RED
+8.  Dirección del último host de la RED
+9.  ¿Qué máscara de SUBRED tiene?
+10.  ¿Cuántas SUBREDES tiene la RED?
+11.  ¿Qué ip de SUBRED tiene?
+12.  ¿Qué dirección de difusión o BROADCAST tiene?
+13.  Dirección del primer host de la SUBRED
+14.  Dirección del último host de la SUBRED
+15.  [*opcional*] Dirección de la primera SUBRED
+16.  [*opcional*] Dirección de la última SUBRED
+
+
+### El error de la RFC950
+
+Reserva la primera y ultima subred => Gran desperdicio cuando no es necesario.
+
+
+### Sumarización
+
+En ocasiones el proceso se realiza en el camino opuesto, esto es, unimos 2 redes contiguas por necesidad de mayor número de direcciones. 
+
+*Se verá con más detenimiento más adelante*.
+
+
+### Las excepciones
++ `/0`: Aparece a menudo la dirección `0.0.0.0/0` en las tablas de rutas. Hará las veces de *ruta por defecto* o **default gateway** o simplemente **gateway**.
++ `/31`: la [RFC3021](https://www.rfc-editor.org/rfc/rfc3021) establece que las comunicaciones punto a punto podrán utilizar este CIDR, ya que no tienen sentido hablar de dirección de red y de difusión con sólo 2 equipos.
++ `/32`: algunos sistemas indicarán esto como una obligación para que el equipo deba comunicarse de forma única con el gateway.
+
+
+### Referencias:
++ [Vídeo resúmen](https://youtu.be/6SMdDOlnqsw) (25 min)
++ [Vídeo resúmen 2](https://www.youtube.com/watch?v=t-rtwD0-QMc&t=240s) (24 min)
++ [Subnetting](https://youtu.be/sbpuez96vpo): dividir una red para tener una subred donde podamos tener 12 equipos (16 min)
+
+
+ # ==revisar==
+
 
 ## IPv4 VLSM
 

@@ -45,12 +45,13 @@
   + [x] Desarrollo de la actividad *en clase* sobre ACL (David 8 bits) sobre máquina en Vagrant.
 
 3. 6o:
-  + [ ] Desarrollo de la actividad de realización de copias de seguridad de una máquina sobre otra:
-    + [ ] rsync + tar
-    + [ ] restic
+  + [x] Desarrollo de la actividad de realización de copias de seguridad de una máquina sobre otra:
+    + [x] rsync + tar + cron
+    + [ ] ~~restic~~ (*No encajaba*)
 
 4. 16o:
   + [ ]  **Examen UT2**
+  + [ ]  restic
 
 **Evaluación de la unidad:**
 + Exámen de 9 de octubre (50%).
@@ -65,14 +66,20 @@
 16h - 8 sesiones - 10o-10n
 
 1. 9o:
-   + [ ] ...
+   + [x] Presentación de firewall de perimetral `pfsense` y local `iptables`
+   + [x] Diseño de infraestructura para firewall perimetral (`pfsense`-vm + `vagrant`)
+   + [x] Redes:
+     + [x] Wan (red pública)
+     + [x] Lan (zona-controlada)
+     + [x] solo anfitrión
 3. 20o:
-4. 23o:
-5. 27o:
-6. 30o:
-7. 3n:
-8. 6n:
-9. 10n:
+   + [ ] ...
+5. 23o:
+6. 27o:
+7. 30o:
+8. 3n:
+9. 6n:
+10. 10n:
    + [ ] **Examen UT3**
 
 ---

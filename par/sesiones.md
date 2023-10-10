@@ -7,21 +7,23 @@
 * [x] 21s: De componentes hasta arquitectura.
 * [x] 22s: De arquitectura hasta encapsulamiento.
 * [x] 26s: De encapsulamiento hasta normas. Ejercicio de normas.
-* [x] 27s: Tecnologías “Ethernet”
+* 27s:
+  * [x] Tecnologías “Ethernet”
   * [x] CSMA/CD
   * [x] creación de latiguillos.
-* [x] 28s: Cableado estructurado, espacios
+* 28s:
+  * [x] Cableado estructurado, espacios
   * [x] y conectando equipos de red (routers y switches).
   * [x] Cuartos de comunicaciones, armarios
   * [x] y *patch panels*.
-* [x] 3o:
+* 3o:
   + [x] Revisión de [[pub23/recordatorios]]
   * [x] Temperaturas, canalizaciones y medios de transmisión.
-* [x] 4o:
+* 4o:
   * [x] Conectores y tomas.
   * [x] Panel de parcheo y ejercicio de panel.
   * [x] PoE.
-  * [ ] Ejercicios.
+  * [x] Ejercicios.
 * [ ] **Proyecto de instalación**:
   * 12 horas aprox
   * 1 hora por día de clase
@@ -31,7 +33,56 @@
 
 # 2 Integración de elementos en una red. 
 28h 18/10/2023 16/11/2023 *1ª eva*
-+ [ ] 
++ 5o:
+  + [x] Sistemas de numeración (dec-bin-hex)
+  + [x] Direcciones capa 1 => no hay
+  + [x] Inicio proyecto UT1
++ 10o:
+  + [ ] Cont. proyecto UT1
+  + [ ] Direcciones capa 2
+  + [ ] Ejercicio de direcciones `ipconfig /ALL` o `ip a[ddress]`
++ 11o:
+  + [ ] Direcciones capa 3 - Intro
+  + [ ] Máscara de red
+  + [ ] IPv4 con clases
+  + [ ] Cont. proyecto UT1
++ [ ] 12o - Día del pilar
++ 17o:
+  + [ ] Cont. proyecto UT1
+  + [ ] IPv4 con clases
++ 18o:
+  + [ ] Rango de IPs: públicas, privadas y otras
+  + [ ] Ejercicio de multidifusión
+  + [ ] Cont. proyecto UT1
++ 19o:
+  + [ ] Ejercicio de IPs
+  + [ ] IPv4 con CIDR
+  + [ ] Cont. proyecto UT1
++ 24o:
+  + [ ] Cont. proyecto UT1
+  + [ ] IPv4 con CIDR
++ 25o:
+  + [ ] ... 
++ 26o:
+  + [ ] ...
++ 31o:
+  + [ ] ...
++ 2n:
+  + [ ] ...
++ 7n:
+  + [ ] **Defensa proyecto UT1**
++ 8n:
+  + [ ] ...
++ 9n:
+  + [ ] ...
++ 14n:
+  + [ ] ...
++ 15n:
+  + [ ] ...
++ 16n:
+  + [ ] **Exámen UT2**
+  
+
 
 # 3 Configuración y administración de conmutadores. 
 28 16/11/2023 20/12/2023 2ª

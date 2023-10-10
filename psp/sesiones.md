@@ -28,13 +28,12 @@
   * [x] Resolución dudas.
   
 4. 6o:
-  + [ ] **Examen UT1**
+  + [x] **Examen UT1**
 
 
 ---
 # UT2 - Programación multihilo 
 16h - 8 sesiones - Del 29s al 27o
-
 
 1. 2o:
     + [x] Revisión de [[pub23/recordatorios]]
@@ -43,12 +42,21 @@
     * [x] *Resolución de dudas sobre procesos (UT1)*
   
 4. 9o:
-5. 16o:
-6. 20o:
-7. 23o:
-8. 27o:
-9. ¿30o?:
-   * [ ] **Examen**
+    + [x] Distintos hilos con un mismo lambda -> comparten “coche”, recuerdan donde dejó el coche cada uno.
+    + [x] `getter`s y `hilo.join()`.
+    + [x] @Deprecated `hilo.stop()` e `hilo.suspend()`.
+    + [x] `volatile` y `synchronized`.
+    + [x] ¿`hilo.isAlive()`?
+6. 16o:
+    + [ ] Ejercicios y dudas
+8. 20o:
+    + [ ] `Callable`s y “promesas”
+10. 23o:
+    + [ ] Productores, consumidores y monitores
+12. 27o:
+    + [ ] Ejercicios y dudas
+14. ¿30o?:
+   * [ ] **Examen UT2** 
 
 ---
 # UT3 Comunicaciones de red - Sockets 
@@ -62,7 +70,8 @@
 **2ª EVALUACIÓN**
 
 ---
-UT5 Java Fx 8 12/12/2023 12/01/2024 2ª
+# UT5 Java Fx 
+8h - 4 sesiones - Del 12/12/2023 al 12/01/2024. *2ª eva*.
 
 ---
 UT6 Técnicas de programación segura 4 15/01/2024 19/01/2024 2ª
