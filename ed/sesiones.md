@@ -25,13 +25,13 @@ Esto es un documento vivo donde hacer una planificación diaria y control del tr
  14h del  04/10/2023 al 25/10/2023. *1a eva*
 
 * [x] 3o: Introducción a UML
-  * [ ] Apuntes U.Cantabria - pag 1-14
-  * [ ] Cuatro tipos de elementos - breve -> pag 66-92:
+  * [x] Apuntes U.Cantabria - pag 1-14
+  * [x] Cuatro tipos de elementos - breve -> pag 66-92:
     * [ ] ~~Estructurales~~ 
-    * [ ] De Comportamiento: Casos de uso, secuencia, estados y actividad
+    * [x] De Comportamiento: Casos de uso, secuencia, estados y actividad
     * [ ] ~~De Agrupamiento~~
     * [ ] ~~De Anotación~~
-* [ ] 10o: Ejercicios de **casos de uso**.
+* [x] 10o: Ejercicios de **casos de uso**.
 * [ ] 11o: Ejercicios de **diagramas de secuencia**.
 * [ ] 17o: Ejercicios de **diagramas de estado**.
 * [ ] 18o: Ejercicios de **diagramas de actividades**.

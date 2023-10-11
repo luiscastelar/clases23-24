@@ -318,10 +318,15 @@ class TareaLlamable implements Callable<Integer> {
 *1. Se crea un servicio ejecutable... hace la función de `Thread`*.
 *2. Se crea una tarea que implementa `Callable` declarando que retornará un entero*.
 *3. Se crea una “promesa” de retorno de un entero con la llamada al servicio al que le pasamos `submit` la tarea*.
-*4. Se espera a obtener `get` el valor de la “promesa”*.
+*4. Se espera a obtener `get()` el valor de la “promesa”*.
 *5. Se “solicita el apagado” del servicio. Los servicios activos acabarán, pero no se aceptarán más servicios*.
 
-    Se simplifica la implementación de la tarea y la captura de valores es más obvia, pero evidentemente se complica la bifurcación de ejecución (creación de hilo).
+> Se simplifica la implementación de la tarea y la captura de valores es más obvia, pero evidentemente se complica la bifurcación de ejecución (creación de hilo).
+> 
+> Entonces, ¿porqué usarlo?
+>
+> Porque nos permite generar un “pool” de hilos que realmente podrán [ejecutarse en paralelo](https://www.baeldung.com/java-executor-service-tutorial). 
+
     
 # [Comunicación entre hilos -> PSP-2-Programación multihilo 2](https://github.com/luiscastelar/clases23-24/blob/main/psp/PSP-2-Programaci%C3%B3n%20multihilo2.md)
 

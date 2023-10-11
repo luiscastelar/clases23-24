@@ -21,9 +21,19 @@
   + [Escaner](https://pentest-tools.com/website-vulnerability-scanning/sql-injection-scanner-online)
   + [Simulador de SQL injection](https://www.hacksplaining.com/exercises/sql-injection)
   + [Otro simulador](https://www.codingame.com/playgrounds/154/sql-injection-demo/sql-injection)
-+ JS Injection: modificación de la web del lado de cliente.
++ [JS Injection](https://code-boxx.com/javascript-injection-beginners/):
 
-En líneas generales, ningún programa web debe confiar en lo que escriben sus usuarios.
+  Modificación de la web del lado de cliente.
+
+  Y si es en el lado del cliente, ¿que riesgos existen?
+
+  Pues que el cliente ve algo que puede ser falso.
+
+  Por ejemplo, si la web de acceso a un banco es modificada en el lado del cliente, cambiando la dirección de recepción de un formulario... credenciales robadas.
+  
++ [Web shell](https://www.invicti.com/learn/web-shell/)
+
+
 
 
 ### Amenazas lógicas.

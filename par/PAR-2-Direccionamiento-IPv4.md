@@ -15,6 +15,8 @@
 > Fuente: [Wikipedia](https://es.wikipedia.org/wiki/Protocolo_de_internet)
 
 
+# ==VAMOS POR AQUÍ==
+
 ## Características del protocolo IPv4 (versión 4).
 Como ya veíamos, este protocolo se enmarca en la capa 3 o capa de red y
 nos proporciona el direccionamiento lógico de equipos. Con él podemos

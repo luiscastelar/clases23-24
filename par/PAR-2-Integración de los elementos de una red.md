@@ -67,8 +67,6 @@ en binario, y uno y otro encajan perfectamente en bloques de 4 dígitos binarios
 ### Direcciones capa 1:
 No existen
 
-# ==VAMOS POR AQUÍ==
-
 ### Direcciones capa 2:
 
 Se denominan direcciones MAC (Control de Acceso al Medio):
@@ -106,13 +104,11 @@ Localiza las distintas `MAC`s de tu equipo y verifica la información que puedas
 
 Direccionamiento IP. Tenemos en la actualidad 2 protocolos funcionando en paralelo: IPv4 e IPv6. Son incompatibles por lo que los equipos requieren la implementación “Dual-stack”, esto es, ambas direcciones.
 
-**[[pub23/par/PAR-2-Direccionamiento-IPv4]]**
-
++ [Direccionamiento **IPv4**](https://github.com/luiscastelar/clases23-24/blob/main/par/PAR-2-Direccionamiento-IPv4.md)
 
 # {[Fold: Fold]} ==PDTE DE REVISIÓN==
 
-
-[[pub23/par/PAR-2-Direccionamiento-IPv6]]
++ [Direccionamiento **IPv6**](https://github.com/luiscastelar/clases23-24/blob/main/par/PAR-2-Direccionamiento-IPv6.md)
 
 ### Direcciones capa 4:
 

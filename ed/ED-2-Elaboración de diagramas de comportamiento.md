@@ -39,10 +39,31 @@
   + Inclusión
   + Extensión
 
+Breve **resumen**: [Casos de uso - YT: Big Learning](https://www.youtube.com/watch?v=x4l1Sp03vQo)
+
+
 ### Referencias:
 + [diagramasUML](https://diagramasuml.com/casos-de-uso/)
 + [Diagramas de comportamiento - Luis Del Moral](https://github.com/ldmoral1987/temario-ed-dam/blob/main/UA6-Elaboraci%C3%B3n%20de%20diagramas%20de%20comportamiento.pdf)
 + [Diagramas de comportamiento - @vanza](https://apuntes-daw.javiergutierrez.trade/entornos-de-desarrollo/ut5/recopila.html)
+
+
+## Diagramas de secuencia
+
+[FC] -> [Vídeo explicativo](https://www.youtube.com/watch?v=xiQfSFxuuBw)
+
+[Presentación de Rafael Parada (slideshare.net)](https://github.com/luiscastelar/clases23-24/blob/main/ed/ED-2-Diagramas%20de%20secuencia.md)
+
+*Nota: Los estímulos estarán inclinados cuando no podamos despreciar el tiempo de respuesta*.
+
+**Ejemplos:**
+1. [Petición web (GET)](https://www.arkaitzgarro.com/xhtml/capitulo-1.html)
+2. [Ejemplo biblioteca](http://modprosneg.blogspot.com/2012/11/actividad-lunes-12-de-noviembre.html)
+3. [Facebook](https://luiscastelar.duckdns.org/2023/assets/ED/UT2_secuencia_facebook.png)
+
+
+### Referencias:
++ [diagramasUML](https://diagramasuml.com/secuencia/)
 
 
 ## Ejercicios:

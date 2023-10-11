@@ -27,7 +27,7 @@
 4. 29s:
   * [x] Resolución dudas.
   
-4. 6o:
+5. 6o:
   + [x] **Examen UT1**
 
 
@@ -41,21 +41,21 @@
     * [x] Ejecución de ejercicios
     * [x] *Resolución de dudas sobre procesos (UT1)*
   
-4. 9o:
+2. 9o:
     + [x] Distintos hilos con un mismo lambda -> comparten “coche”, recuerdan donde dejó el coche cada uno.
     + [x] `getter`s y `hilo.join()`.
     + [x] @Deprecated `hilo.stop()` e `hilo.suspend()`.
     + [x] `volatile` y `synchronized`.
     + [x] ¿`hilo.isAlive()`?
-6. 16o:
+3. 16o:
     + [ ] Ejercicios y dudas
-8. 20o:
+4. 20o:
     + [ ] `Callable`s y “promesas”
-10. 23o:
+5. 23o:
     + [ ] Productores, consumidores y monitores
-12. 27o:
+6. 27o:
     + [ ] Ejercicios y dudas
-14. ¿30o?:
+7. ¿30o?:
    * [ ] **Examen UT2** 
 
 ---

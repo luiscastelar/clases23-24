@@ -38,9 +38,9 @@
   + [x] Direcciones capa 1 => no hay
   + [x] Inicio proyecto UT1
 + 10o:
-  + [ ] Cont. proyecto UT1
-  + [ ] Direcciones capa 2
-  + [ ] Ejercicio de direcciones `ipconfig /ALL` o `ip a[ddress]`
+  + [x] Cont. proyecto UT1
+  + [x] Direcciones capa 2
+  + [x] Ejercicio de direcciones `ipconfig /ALL` o `ip a[ddress]`
 + 11o:
   + [ ] Direcciones capa 3 - Intro
   + [ ] Máscara de red
