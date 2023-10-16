@@ -72,7 +72,10 @@
      + [x] Wan (red pública)
      + [x] Lan (zona-controlada)
      + [x] solo anfitrión
-3. 20o:
+
+2. 16o:
+   + [ ] 
+4. 20o:
    + [ ] ...
 5. 23o:
 6. 27o:
