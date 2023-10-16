@@ -30,14 +30,14 @@ El productor extenderá la clase **Thread**, y su código es el siguiente:
         // Mete 10 letras en la tubería
         for( int i=0; i < 10; i++ )
             {
-            c = alfabeto.charAt( (int)(Math.random()\*26 ) );
+            c = alfabeto.charAt( (int)( Math.random() * 26 ) );
             tuberia.lanzar( c );
             // Imprime un registro con lo añadido
-            System.out.println( "Lanzado "+c+" a la tuberia." );
+            System.out.println( "Lanzado " + c + " a la tuberia." );
             // Espera un poco antes de añadir más letras
             try {
-                sleep( (int)(Math.random() \* 100 ) );
-            } catch( InterruptedException e ) {;}
+                sleep( (int)( Math.random() * 100 ) );
+            } catch( InterruptedException e ) { ; }
             }
       }
     }
@@ -66,11 +66,11 @@ Ahora se reproduce el código del consumidor, que también extenderá la clase *
             {
             c = tuberia.recoger();
             // Imprime las letras retiradas
-            System.out.println( "Recogido el caracter "+c );
+            System.out.println( "Recogido el caracter " + c );
             // Espera un poco antes de coger más letras
             try {
-                sleep( (int)(Math.random() \* 2000 ) );
-            } catch( InterruptedException e ) {;}
+                sleep( (int)( Math.random() * 2000 ) );
+            } catch( InterruptedException e ) { ; }
             }
       }
     }
@@ -86,7 +86,7 @@ Lo que realiza la clase **Tuberia**, es una función de supervisión de las tran
 
 ```java
     class Tuberia {
-      private char buffer\[\] = new char\[6\];
+      private char[] buffer = new char[ 6];
       private int siguiente = 0;
       // Flags para saber el estado del buffer
       private boolean estaLlena = false;
@@ -95,53 +95,52 @@ Lo que realiza la clase **Tuberia**, es una función de supervisión de las tran
       // Método para retirar letras del buffer
       public synchronized char recoger() {
         // No se puede consumir si el buffer está vacío
-        while( estaVacia == true )
-            {
-            try {
+        while( estaVacia == true ) {
+              try {
                 wait(); // Se sale cuando estaVacia cambia a false
-            } catch( InterruptedException e ) {
-                ;
-                }
-            }
+              } catch( InterruptedException e ) { ; }
+        }
         // Decrementa la cuenta, ya que va a consumir una letra
         siguiente--;
-        // Comprueba si se retiró la última letra
-        if( siguiente == 0 )
-            estaVacia = true;
         // El buffer no puede estar lleno, porque acabamos
         // de consumir
         estaLlena = false;
+
+        // Comprueba si se retiró la última letra
+        if( siguiente == 0 )
+            estaVacia = true;
+
         notify();
 
         // Devuelve la letra al thread consumidor
-        return( buffer\[siguiente\] );
+        return( buffer[ siguiente ] );
       }
 
       // Método para añadir letras al buffer
       public synchronized void lanzar( char c ) {
         // Espera hasta que haya sitio para otra letra
-        while( estaLlena == true )
-            {
-            try {
+        while( estaLlena == true ){
+              try {
                 wait(); // Se sale cuando estaLlena cambia a false
-            } catch( InterruptedException e ) {
-                ;
-                }
-            }
+              } catch( InterruptedException e ) { ; }
+        }
         // Añade una letra en el primer lugar disponible
-        buffer\[siguiente\] = c;
-        // Cambia al siguiente lugar disponible
+        buffer[ siguiente ] = c;
+
+        // Cambia al siguiente lugar disponible y entonces no puede estar vacía
         siguiente++;
+        estaVacia = false;
+        
         // Comprueba si el buffer está lleno
         if( siguiente == 6 )
             estaLlena = true;
-        estaVacia = false;
+
         notify();
       }
     }
 ```
 
-En la clase **Tuberia** se pueden observar dos características importantes: los miembros dato (buffer\[\]) son privados, y los métodos de acceso (*lanzar()* y *recoger()*) son sincronizados.
+En la clase **Tuberia** se pueden observar dos características importantes: los miembros dato (buffer[ ]) son privados, y los métodos de acceso (*lanzar()* y *recoger()*) son sincronizados.
 
 Aquí se observa que la variable estaVacia es un semáforo, como los de toda la vida. La naturaleza privada de los datos evita que el productor y el consumidor accedan directamente a éstos. Si se permitiese el acceso directo de ambos hilos de ejecución a los datos, se podrían producir problemas; por ejemplo, si el consumidor intenta retirar datos de un buffer vacío, obtendrá excepciones innecesarias, o se bloqueará el proceso.
 
@@ -159,11 +158,13 @@ Se pueden sincronizar incluso variables, para realizar alguna acción determinad
 
 El método *notify()* al final de cada método de acceso avisa a cualquier proceso que esté esperando por el objeto, entonces el proceso que ha estado esperando intentará acceder de nuevo al objeto. En el método *wait()* se hace que el hilo se quede a la espera de que le llegue un *notify()*, ya sea enviado por el hilo de ejecución o por el sistema.
 
+![wait-notify](https://www.baeldung.com/wp-content/uploads/2018/02/Java_-_Wait_and_Notify.png)
+
 Ahora que ya se dispone de un productor, un consumidor y un objeto compartido, se necesita una aplicación que arranque los hilos y que consiga que todos hablen con el mismo objeto que están compartiendo. Esto es lo que hace el siguiente trozo de código, del fuente [java1007.java](https://dis.um.es/~bmoros/Tutorial/fuentes/java1007.java):
 
 ```java
     class java1007 {
-      public static void main( String args\[\] ) {
+      public static void main( String[] args ) {
         Tuberia t = new Tuberia();
         Productor p = new Productor( t );
         Consumidor c = new Consumidor( t );
@@ -175,6 +176,7 @@ Ahora que ya se dispone de un productor, un consumidor y un objeto compartido, s
 ```
 
 Compilando y ejecutando esta aplicación, se podrá observar en modelo que se ha diseñado en pleno funcionamiento.
+
 
 ### Monitorización del Productor
 
