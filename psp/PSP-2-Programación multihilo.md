@@ -1,4 +1,4 @@
-#curso23_24 #PSP [estado:: Working] 
+#curso23_24 #PSP [estado:: Done] 
 
 A menudo se les conoce como procesos ligeros.
 
@@ -258,18 +258,16 @@ public synchronized void detener() {
 1. Lanzar 3 hilos con `Thread.sleep(x)` con distintos tiempos. Desde la rama principal verifica los estados de cada hilo. Cuando estén todos muertos despídete y acaba.
 2. Lanzar 3 hilos que saluden 100 veces, cada uno con una prioridad diferente.
 3. Repite la práctica de 1 invirtiendo los papeles. Esto es:
-  1. Crea un hilo `hiloImprimir` que imprima por pantalla letras aleatorias.
-  2. Crea un menú que capture el teclado realizando:
-     + Si recibe una `i` lanza el hilo `hiloImprimir`.
-     + Si recibe una `s` detiene el hilo `hiloImprimir`.
-     + Si recibe una `q` sale del programa.
+   + Crea un hilo `hiloImprimir` que imprima por pantalla letras aleatorias.
+   + Crea un menú que capture el teclado realizando:
+     1. Si recibe una `i` lanza el hilo `hiloImprimir`.
+     2. Si recibe una `s` detiene el hilo `hiloImprimir`.
+     3. Si recibe una `q` sale del programa.
     
 
 ### Referencias:
 + [Hilos y Multihilo - netradio.net](https://dis.um.es/~bmoros/Tutorial/parte10/cap10-1.html)
 
-
-# ==VAMOS POR AQUÍ==
 
 ## Callable vs Runnable
 
@@ -315,11 +313,12 @@ class TareaLlamable implements Callable<Integer> {
 }   
 ```
 
-*1. Se crea un servicio ejecutable... hace la función de `Thread`*.
-*2. Se crea una tarea que implementa `Callable` declarando que retornará un entero*.
-*3. Se crea una “promesa” de retorno de un entero con la llamada al servicio al que le pasamos `submit` la tarea*.
-*4. Se espera a obtener `get()` el valor de la “promesa”*.
-*5. Se “solicita el apagado” del servicio. Los servicios activos acabarán, pero no se aceptarán más servicios*.
+*Pasos*:
+1. Se crea un servicio ejecutable... hace la función de `Thread`.
+2. Se crea una tarea que implementa `Callable` declarando que retornará un entero.
+3. Se crea una “promesa” de retorno de un entero con la llamada al servicio al que le pasamos `submit` la tarea.
+4. Se espera a obtener `get()` el valor de la “promesa”.
+5. Se “solicita el apagado” del servicio. Los servicios activos acabarán, pero no se aceptarán más servicios.
 
 > Se simplifica la implementación de la tarea y la captura de valores es más obvia, pero evidentemente se complica la bifurcación de ejecución (creación de hilo).
 > 
@@ -327,6 +326,15 @@ class TareaLlamable implements Callable<Integer> {
 >
 > Porque nos permite generar un “pool” de hilos que realmente podrán [ejecutarse en paralelo](https://www.baeldung.com/java-executor-service-tutorial). 
 
+
+## EJERCICIOS:
+4. Repite el ejercicio 3 con `Callable`. Esto es:
+   + Crea un hilo `hiloImprimir` que imprima por pantalla letras aleatorias.
+   + Crea un menú que capture el teclado realizando:
+     1. Si recibe una `i` lanza el hilo `hiloImprimir`.
+     2. Si recibe una `s` detiene el hilo `hiloImprimir`.
+     3. Si recibe una `q` sale del programa.
+     4. Lanzar hilo que sume dos números enteros que reciba como argumentos `Integer callableSumaEnteros()`. Deberá crear un hilo que retorne dichos argumentos `Integer callableCapturaEntero()`.
     
 # [Comunicación entre hilos -> PSP-2-Programación multihilo 2](https://github.com/luiscastelar/clases23-24/blob/main/psp/PSP-2-Programaci%C3%B3n%20multihilo2.md)
 
