@@ -224,7 +224,187 @@ Pues, ¿y si le asignamos únicamente la mitad? ¿Cómo podríamos hacerlo? Con 
 
 Al principio hablamos de la `máscara de red` que nos indicaba que bits eran de dirección de red y que bits eran de host, pero esta máscara tenía 3 opciones: 8, 16, o 24 bits. 
 
-Ahora con el CIDR eso deja de estar bloqueado, por lo que podríamos poner una máscara de 9 bits que partiría en 2 la red de clase A  `8.0.0.0`, concretamente tendríamos la red `8.0.0.0/9` y `8.128.0.0/9`
+
+## Evolución 1: Enrutamiento entre dominios sin clases (CIDR por sus siglas inglesas)
+
+Su introducción permitió una mayor flexibilidad al dividir rangos de
+direcciones IP en redes separadas. De esta manera permitió:
+
+-   Un uso más eficiente de las direcciones IPv4 (Se acaban!!!!).
+-   Un mayor uso de la jerarquía de direcciones (agregación de prefijos
+    de red).
+
+De IPv4 192.168.0.6 pasamos a 192.168.0.6/24. El CIDR, 24 en este caso,
+indica el número de bits de red, con lo que ya no tenemos que pasar de
+254 a 16.000 equipos. 
+
+Ahora con el CIDR eso deja de estar bloqueado, por lo que podríamos poner
+una máscara de 23 bits que partiría en 2 la red de clase C `192.168.0.0`, 
+concretamente tendríamos la red `192.168.0.0/23` que va de `192.168.0.0` a 
+`192.168.1.255` y una máscara de red `255.255.254.0`.
+
+
+**Subredes:**
+
+Una subred toma prestados bits de la parte de host para formar una
+agrupación intermedia. P.e. la dirección 192.168.0.6/30 está creando una
+subred, donde tenemos entonces: 24 bits de red + 6 bits de subred + 2
+bits de host = 32 bits (eso **SIEMPRE** constante).
+
+El CIDR es **siempre** la suma de los bits de red y de subred.
+
+Análisis de la red con CIDR
+
+Nos dicen que nuestro equipo está en la dirección 192.168.0.6/30. ¿Qué
+sabemos de él?
+
+1.  IPs comprendidas entre >=192 y <224 => Red de clase C.
+
+2.  30 bits CIDR = 24 bits de red + 6 bits de subred.
+
+3.  32 bits totales IPv4 - 30 bits CIDR = 2 bits de host
+
+4.  Máscara de red:
+
+    255.255.255.252 => 11111111.11111111.11111111.11111100
+
+5.  Dir de subred:
+
+    111111 => 6 bits => 2^6 = 64 subredes[^3]
+
+6.  Bits de host:
+
+    00 => 2 bits => 2^2-2 = 2 host
+
+7.  Dirección de subred: Operación IP **&** Mascara de red
+
+    192.168.0.6.......11100000.10101000.00000000.00000110
+
+    255.255.255.252 - 11111111.11111111.11111111.11111100
+
+    Subred........... 11100000.10101000.00000000.00000100 ->
+    192.168.0.4
+
+8.  Dirección de broadcast de subred:
+
+    11100000.10101000.00000000.00000111 -> 192.168.0.7
+
+9.  Primer host de la red (la siguiente a la de la subred): 192.168.0.5
+
+10. Dirección del último host (la anterior a la de broadcast):
+    192.168.0.6
+
+### RFC 950 y RFC 1812:
+
+En la RFC 950 hay que reservar la primera subred y la última sin
+utilizar (similar a los host), por lo que el número de estas es 2^N-2.
+
+En la RFC 1812 no hay que reservar nada. Entonces hay 2^N redes. Éste
+es el estandar actual, por lo que si no se indica lo contrario, será el
+utilizado.
+
+No necesitáis recorar los nombre de los estándares, sólo que si os lo
+indican sepáis que lo tenéis que tener en cuenta ya que os encontráis
+ante un equipo antiguo.
+
+[Ejercicios](https://www.educatica.es/redes/ejercicios-de-redes/)
+
+Se pide determinar:
+
+1.  Clase
+2.  nº de bits de red y nº de redes
+3.  nº de bits subred y nº de subredes
+4.  nº de bits de host y nº de host
+5.  Máscara de red (decimal y binario)
+6.  Dirección de subred
+7.  Dirección de broadcast de subred
+8.  Primer host de la subred
+9.  Último host de la subred
+10. Primera subred de la red
+11. Última subred de la red
+
+De las direcciones IP:
+
+-   192.168.20.154/27
+-   192.168.20.154/28
+-   192.168.20.154/29
+-   192.168.20.154/30
+-   172.25.184.253/19
+-   172.25.184.253/20
+-   172.25.184.253/21
+
+### Referencias:
++ [Vídeo resúmen](https://youtu.be/6SMdDOlnqsw) (25 min) 
++ [Vídeo resúmen 2](https://www.youtube.com/watch?v=t-rtwD0-QMc&t=240s) (24 min)
++ [Subnetting](https://youtu.be/sbpuez96vpo): dividir una red para tener una subred donde podamos tener 12 equipos (16 min).
+
+
+## Ejercicio de enrutamiento entre dominios sin clases (CIDR por sus siglas inglesas)
+
+Dada la IPv4 172.54.12.26/26 podemos decir de ella:
+
+-   Es una IP de la clase B, por lo que tiene 16 bits de RED. Ésto hace
+    un total de 2^16 redes (65536 redes).
+-   Nos indica además que tiene un CIDR de 26, por lo que el número de
+    subredes disponibles serán 26 bits CIDR - 16 bits RED => 10 bits
+    SUBREDES, 2^10 subredes (1024 subredes).
+-   Nos deja por tanto 32 - 26 bits para HOST, esto es 2^6-2 HOST (62
+    host), ya que sabemos que la 00 0000 y la 11 1111 son las
+    direcciones de la subred concreta y de difusión (BROADCAST) de dicha
+    subred.\
+    **IMPORTANTE:** tenemos una subred cada 2^6 (64) direcciones.
+-   Otros datos de interés:
+
+# ==REVISAR==
+
+                  IP (dec)                  IP (bin)
+  
+  IP              172.54.12.26/26   ->     1010 1100.0011 0110.0000 1100.0001 1010
+  Másc. red       255.255.255.192   <-     1111 1111.1111 1111.1111 1111.1100 0000
+  & => IP red     172.54.12.0       <-     1010 1100.0011 0110.0000 1100.0000 0000
+  difusión        172.54.12.63      <-     1010 1100.0011 0110.0000 1100.0011 1111
+                                            
+  1er host        172.54.12.1               (En decimal -> IP de la red + 1)
+  último host     172.54.12.62              (En decimal -> IP de difusión - 1)
+                                            
+  1ª subred       172.54.0.0        (1)   1010 1100.0011 0110.0000 0000.0000 0000
+  Última subred   172.54.255.192    (2)   1010 1100.0011 0110.1111 1111.1100 0000
+
+(1) Todos los bits de subred a 0 (no de la máscara).\
+(2) Todos los bits de subred a 1.
+
+Vídeos de repaso/refuerzo:
+--------------------------
+
+<https://www.educatica.es/redes/ejercicios-de-redes/>\
+[Vídeo resúmen](https://youtu.be/6SMdDOlnqsw) (25 min)\
+[Vídeo resúmen 2](https://www.youtube.com/watch?v=t-rtwD0-QMc&t=240s)
+(24 min)\
+[Subnetting](https://youtu.be/sbpuez96vpo): dividir una red para tener
+una subred donde podamos tener 12 equipos (16 min)
+
+Revisión 2: Máscara de Subred de Logitud Variable - VLSM
+--------------------------------------------------------
+
+La siguiente vuelta de tuerca el direccionamiento IP es no usar subredes
+de tamaño fijo, con lo que se aprovecha mejor el tamaño.
+
+Esto es, si partimos por ejemplo de la subred 192.168.20.128/25 de 126
+host, podemos a su vez segmentarla en las subredes 192.168.20.0/26 de 62
+host, y 192.168.20.128/27 y 192.168.20.160/27, de 30 host cada una.
+
+Máscaras de red especiales:
+---------------------------
+
+-   /24 is the Subnet Mask that is usually used in the local networks by
+    default.
+-   /32 is the Subnet Mask used generally on Loopback and System
+    interfaces.
+-   /31 is the Subnet Mask used on point-to-point links.
+-   /30 is also widely used in Service Provider Networks for
+    point-to-point connections.
+    
+
 
 ### Ejercicios IP
 
@@ -264,16 +444,4 @@ En ocasiones el proceso se realiza en el camino opuesto, esto es, unimos 2 redes
 + `/0`: Aparece a menudo la dirección `0.0.0.0/0` en las tablas de rutas. Hará las veces de *ruta por defecto* o **default gateway** o simplemente **gateway**.
 + `/31`: la [RFC3021](https://www.rfc-editor.org/rfc/rfc3021) establece que las comunicaciones punto a punto podrán utilizar este CIDR, ya que no tienen sentido hablar de dirección de red y de difusión con sólo 2 equipos.
 + `/32`: algunos sistemas indicarán esto como una obligación para que el equipo deba comunicarse de forma única con el gateway.
-
-
-### Referencias:
-+ [Vídeo resúmen](https://youtu.be/6SMdDOlnqsw) (25 min)
-+ [Vídeo resúmen 2](https://www.youtube.com/watch?v=t-rtwD0-QMc&t=240s) (24 min)
-+ [Subnetting](https://youtu.be/sbpuez96vpo): dividir una red para tener una subred donde podamos tener 12 equipos (16 min)
-
-
- # ==revisar==
-
-
-## IPv4 VLSM
 
