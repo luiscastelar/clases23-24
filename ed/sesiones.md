@@ -32,7 +32,7 @@ Esto es un documento vivo donde hacer una planificación diaria y control del tr
     * [ ] ~~De Agrupamiento~~
     * [ ] ~~De Anotación~~
 * [x] 10o: Ejercicios de **casos de uso**.
-* [ ] 11o: Ejercicios de **diagramas de secuencia**.
+* [x] 11o: Ejercicios de **diagramas de secuencia**.
 * [ ] 17o: Ejercicios de **diagramas de estado**.
 * [ ] 18o: Ejercicios de **diagramas de actividades**.
 * [ ] ~~24o~~: *Exceso de horas*
@@ -42,10 +42,30 @@ Esto es un documento vivo donde hacer una planificación diaria y control del tr
  14h del 26/10/2023 al 22/11/2023. *1a eva*.
 
  + [ ] 24o:
+     + [ ] Licencias Copyright, Freeware, Open Source, GPL, MIT, etc
+     + [ ] Ciclo de vida: análisis, diseño, codificación, pruebas y mantenimiento.
+     + [ ] Modelos de ciclo de vida: cascada (clásico) vs incremental (agile)
+     + [ ] Proyecto mínimo viable
  + [ ] 7n:
+     + [ ] Fases de desarrollo
+     + [ ] Requisitos funcionales y no funcionales
+     + [ ] Diagramas:
+         + [ ] DFD - Diagramas de flujo de datos
+         + [ ] DFC - Diagramas de flujo de contol
+         + [ ] DTE - Diagramas de transición de estados
+         + [ ] DER - Diagramas Entidad - Relación
+         + [ ] DD - Diccionario de datos
  + [ ] 8n:
- + [ ] 14n:
- + [ ] 15n:
+     + [ ] Paradigma imperativo:
+         + [ ] Diseño estructurado: Diseño de datos, diseño arquitectónico, diseño de interfaz y diseño procedimental (secuencial, condicional, repetitiva)
+         + [ ] Diseño orientado a objetos
+     + [ ] Programación funcional
+       + [ ] Características
+       + [ ] *Repetitividad* vs *Recursividad*
+       + [ ] Su presencia en `Java`
+     + [ ] Programación lógica
+ + [ ] 14n: Documentación
+ + [ ] 15n: ...
  + [ ] 21n: **Exámen UT3**
 
 # Cierre de trimestre

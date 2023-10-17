@@ -78,6 +78,7 @@ Breve **resumen**: [Casos de uso - YT: Big Learning](https://www.youtube.com/wat
   + Chat por Whatsapp.
 
 3. Crea diagramas de **estados** para:
+  + Luz de aula (estados y entradas - flancos).
   + Semáforos de un cruce.
   + Cliente de Netflix.
 

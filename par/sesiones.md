@@ -28,7 +28,7 @@
   * 12 horas aprox
   * 1 hora por día de clase
   * Finalización y defensa 7 nov   
-* [ ] Día del Pilar
+* [x] Día del Pilar
 * [ ] 9n: NO ~~Exámen UT1~~
 
 # 2 Integración de elementos en una red. 
@@ -42,11 +42,11 @@
   + [x] Direcciones capa 2
   + [x] Ejercicio de direcciones `ipconfig /ALL` o `ip a[ddress]`
 + 11o:
-  + [ ] Direcciones capa 3 - Intro
-  + [ ] Máscara de red
-  + [ ] IPv4 con clases
-  + [ ] Cont. proyecto UT1
-+ [ ] 12o - Día del pilar
+  + [x] Direcciones capa 3 - Intro
+  + [x] Máscara de red
+  + [x] IPv4 con clases
+  + [x] Cont. proyecto UT1
++ [x] 12o - Día del pilar
 + 17o:
   + [ ] Cont. proyecto UT1
   + [ ] IPv4 con clases

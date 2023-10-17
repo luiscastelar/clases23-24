@@ -86,7 +86,7 @@ Lo que realiza la clase **Tuberia**, es una función de supervisión de las tran
 
 ```java
     class Tuberia {
-      private char[] buffer = new char[ 6];
+      private char[] buffer = new char[ 6 ];
       private int siguiente = 0;
       // Flags para saber el estado del buffer
       private boolean estaLlena = false;

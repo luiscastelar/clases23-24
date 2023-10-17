@@ -3,22 +3,22 @@
 **Contenidos:**
 
 # 1. Adopción de pautas de seguridad informática:
-- [ ] Fiabilidad, confidencialidad, integridad y disponibilidad.
-- [ ] Elementos vulnerables en el sistema informático: hardware, software y datos.
-- [ ] Análisis de las principales vulnerabilidades de un sistema informático.
-- [ ] Amenazas. Tipos:
-  + [ ] Amenazas físicas.
-  + [ ] Amenazas lógicas.
-- [ ] Seguridad física y ambiental:
-  + [ ] Ubicación y protección física de los equipos y servidores.
-  + [ ] Sistemas de alimentación ininterrumpida.
-- [ ] Seguridad lógica:
-  - [ ] Criptografía.
-  - [ ] Listas de control de acceso.
-  - [ ] Establecimiento de políticas de contraseñas.
-  - [ ] Políticas de almacenamiento.
-  - [ ] Copias de seguridad e imágenes de respaldo.
-  - [ ] Medios de almacenamiento.
+- [x] Fiabilidad, confidencialidad, integridad y disponibilidad.
+- [x] Elementos vulnerables en el sistema informático: hardware, software y datos.
+- [x] Análisis de las principales vulnerabilidades de un sistema informático.
+- [x] Amenazas. Tipos:
+  + [x] Amenazas físicas.
+  + [x] Amenazas lógicas.
+- [x] Seguridad física y ambiental:
+  + [x] Ubicación y protección física de los equipos y servidores.
+  + [x] Sistemas de alimentación ininterrumpida.
+- [x] Seguridad lógica:
+  - [x] Criptografía.
+  - [x] Listas de control de acceso.
+  - [x] Establecimiento de políticas de contraseñas.
+  - [x] Políticas de almacenamiento.
+  - [x] Copias de seguridad e imágenes de respaldo.
+  - [x] Medios de almacenamiento.
 - [ ] Análisis forense en sistemas informáticos.
 
 # 2. Implantación de mecanismos de seguridad activa:
@@ -30,7 +30,7 @@
   - [ ] Actualización de sistemas y aplicaciones.
   - [ ] Seguridad en la conexión con redes públicas.
   - [ ] Pautas y prácticas seguras.
-- [ ] Seguridad en la red corporativa:
+- [x] Seguridad en la red corporativa:
   - [ ] Monitorización del tráfico en redes.
   - [ ] Seguridad en los protocolos para comunicaciones inalámbricas.
   - [ ] Riesgos potenciales de los servicios de red.
