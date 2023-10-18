@@ -15,8 +15,6 @@
 > Fuente: [Wikipedia](https://es.wikipedia.org/wiki/Protocolo_de_internet)
 
 
-# ==VAMOS POR AQUÍ==
-
 ## Características del protocolo IPv4 (versión 4).
 Como ya veíamos, este protocolo se enmarca en la capa 3 o capa de red y
 nos proporciona el direccionamiento lógico de equipos. Con él podemos
@@ -208,15 +206,36 @@ Hasta ahora hemos visto algunos conceptos que no es necesario saber de memoria. 
 Nos dicen que nuestro equipo está en la dirección 31.4.149.59. ¿Qué
 sabemos de él?
 
-1.  ¿A que clase pertenece?
+1.  ¿A que clase pertenece? 
 2.  ¿Cuantos bits de RED y de HOST tiene?
-3.  ¿Cuántas redes existen en esa clase?
+3.  Con ese número de bits de RED, ¿cuántas redes posibles se pueden crear?
 4.  ¿Cuántos HOST puede haber en esa RED?
 5.  ¿Qué máscara de RED le pertenece?
 6.  IP de la RED a la que pertenece
 7.  Dirección de difusión o BROADCAST
 8.  Dirección del primer host de la RED
 9.  Dirección del último host de la RED
+10.  ¿Podrá establecer comunicación **directa** con la IP 32.0.1.1?
+11.  ¿Y con la IP 31.25.255.255?
+
+*SOLUCIÓN:*
+1. Clase A
+2. 8 bits de RED y 24 bits de `host`
+3. 2^8 REDes
+4. 2^24 - 2 `HOST`
+
+| . | . | IP (dec) | . | IP (bin) |
+|---|---|----------|---|-------|
+|   |  IP             | 31.4.149.59    |   -> |    0001 1111.0000 0100.1001 0101.0011 1011 |
+| 5.|  Másc. red      | 255.0.0.0      |   <- |    1111 1111.0000 0000.0000 0000.0000 0000 |
+| 6.|  & => IP red    | 31.0.0.0       |   <- |    0001 1111.0000 0000.0000 0000.0000 0000 |
+| 7.| difusión       | 31.255.255.255 |   <- |    0001 1111.1111 1111.1111 1111.1111 1111 |
+|   |                |                |      |      |
+| 8.| 1er host       | 31.0.0.1       |      |     (En decimal -> IP de la red + 1)   |
+| 9.| último host    | 31.255.255.254 |      |     (En decimal -> IP de difusión - 1) |
+
+10. No. la IP 31.4.149.59 pertenece a la red 31.0.0.0 y la IP 32.0.1.1 pertenece a la red 32.0.0.0
+11. Sí. Ambos pertenecen a la red 31.0.0.0
 
 [**Otros ejercicios**](https://www.educatica.es/redes/ejercicios-de-redes)
 
@@ -226,6 +245,8 @@ sabemos de él?
 + [Vídeo corto](https://youtu.be/xyXQjZ7w_No) (versión corta 5 min)
 + [Vídeo corto 2](https://www.youtube.com/watch?v=EdhPwqWXZpI) (versión extra corta 4 min)
 + [Vídeo aclaratorio 1 (UPV)](https://youtu.be/ZdWYe4PB0Qk)
+
+# ==VAMOS POR AQUÍ==
 
 
 ## IPv4 con CIDR
