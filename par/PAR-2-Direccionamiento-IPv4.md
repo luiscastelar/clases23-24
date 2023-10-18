@@ -104,22 +104,15 @@ El direccionamiento IPv4:
 + Pueden enviar mensaje para desvincularse del grupo, y dejarán de recibir los mensajes del grupo.
 
 
-*Otras direcciones*:
-+ Las direcciones de clase E, del 240.0.0.0 - 255.255.255.254. Fueron reservadas para experimentación. No deberíamos encontrarnoslas y menos usarlas.
-+ La dirección 255.255.255.255 significa **todos los nodos**.
-
-
-**Ejercicio**: Streaming por multicast
-
-    How to use VLC Media player to stream multicast video By ane \| 12
-    Dec, \'12 \| Posts, Technology, Tips
-
-    When testing networks and routing, it is sometimes useful to be able
-    to send a number of multicast streams across the network. VLC media
-    player can do this, but getting it working is not as trivial as I
-    expected. Here's how to do it:
-
-    In the Media menu, choose "Stream" In the Open Media dialog file
+> **Ejercicio**: Streaming por multicast
+> 
+> How to use VLC Media player to stream multicast video By ane | 12 Dec, '12 | Posts, Technology, Tips
+>
+> When testing networks and routing, it is sometimes useful to be able to send a number of multicast streams across the network. VLC media player can do this, but getting it working is not as trivial as I expected.
+>
+> Here's how to do it:
+> 
+> In the Media menu, choose "Stream" In the Open Media dialog file
     tab, click "add" and choose the file you want to stream and click
     "Open" At the bottom, click the "Stream" button This opens the
     "Stream Output" dialog showing the source file you have chosen.
@@ -134,21 +127,46 @@ El direccionamiento IPv4:
     the bitrate to 4000kb/s Once the options are set, click "Save". Then
     click Next for "Option Setup" and select "Stream all elementary
     streams" then click stream.
-
-    To view the stream, open another instance of VLC media player (try
+>
+> To view the stream, open another instance of VLC media player (try
     it on the same PC before trying it over the network)
-
-    Choose Media/Open Network Stream In address, enter
+>
+> Choose Media/Open Network Stream In address, enter
     rtp://@239.255.0.1:5004 -- choose the correct address and port you
     entered when setting up the stream. Don't forget to enter the "@"
     symbol after "rtp://" and before the multicast ip address! Click
     "Play"
-
-    If you want to stream multiple videos, remember to choose an
+>
+> If you want to stream multiple videos, remember to choose an
     different multicast address and/or port
+
+**Servidor**: 
+```bash
+vlc -vvv ~/Descargas/pelicula.mp4 --sout '#rtp{access=udp,mux=ts,dst=224.255.1.1,port=1234,sap,group="Video",name=Olas de mar"}' :sout-all
+```
+
+**Clientes**:
+```bash
+vlc -vvv rtp://224.255.1.1:1234
+```
+
+
+**Otras direcciones**:
++ Las direcciones de clase E, del 240.0.0.0 - 255.255.255.254. Fueron reservadas para experimentación. No deberíamos encontrarnoslas y menos usarlas.
++ La dirección 255.255.255.255 significa **todos los nodos**.
+
+
+### Tipos de direcciones:
++ Unicast: comunicaciones 1 a 1.
++ Anycast: comunicaciones 1 a 1, donde varios servidores comparten una misma IP para formar CDN’s
+  ![anycast](https://luiscastelar.duckdns.org/2023/assets/PAR/anycast-unicast-botnet-attack.webp)
++ Multicast: comunicaciones en grupos. Entre todos los equipos asociados a una IP de clase D.
++ Broadcast: comunicaciones de difusión 1 a todos.
 
 
 ## Rango de IPs: públicas, privadas y otras
+
+Hasta ahora hemos visto algunos conceptos que no es necesario saber de memoria. Este punto por el contrario **deberéis MEMORIZAR** ya que es necesario.
 
 -   **IPs PÚBLICAS**: Clases de IPv4:
   
@@ -161,7 +179,7 @@ El direccionamiento IPv4:
 
     (*) En binario, se atiende a donde nos encontramos el primer cero y la posición corresponde a la clase.
     
-    La **IP `0.0.0.0`** veremos que es una IP especial que el HOST interpreta como *no especificado*, esto es, según suposición significa que no tiene ip aún o que atiende en todas las interfaces (un “comodin”).
+    La **IP `0.0.0.0`** veremos que es una IP especial que el HOST interpreta como *no especificado*, esto es, según su posición significa que no tiene ip aún o que atiende en todas las interfaces (un “comodin”).
 
 -   **IPs PRIVADAS**: Los siguientes rangos son de uso en redes privadas.
 
@@ -176,7 +194,7 @@ El direccionamiento IPv4:
 
     -   **IP no VÁLIDA**: La IP `0.0.0.0` no es una dirección válida ya que es utilizada como dirección `COMODÍN`. Esto es, cuando un equipo escucha en `0.0.0.0` lo que hace es escuchar en **TODAS** sus intarfaces de red.
     -   **IPs de BUCLE**: De las anteriores, debemos quitar la `127.x.x.x` ya que es la dirección de LOOPBACK, que también podemos invocar con `localhost`.
-    -   **IPs INTERNAS DE ENRUTAMIENTO**: Las direcciones de `0.0.0.1` a `0.255.255.255` son utilizadas sólo por software para comunicaciones internas. Nosotros no le prestaremos atención.
+    -   *IPs INTERNAS DE ENRUTAMIENTO*: Las direcciones de `0.0.0.1` a `0.255.255.255` son utilizadas sólo por software para comunicaciones internas. Nosotros no le prestaremos atención.
 
 -   **IPs locales de enlace**: Cuando un HOST no puede establecer comunicación con ningún DHCP y no está configurado estático (a mano), comienza un proceso de autoconfiguración y se asigna a sí mismo una IP aleatoria dentro del rango `169.254.0.0` - `169.254.255.255`.
 
@@ -303,9 +321,9 @@ En la RFC 1812 no hay que reservar nada. Entonces hay 2^N redes. Éste
 es el estandar actual, por lo que si no se indica lo contrario, será el
 utilizado.
 
-No necesitáis recorar los nombre de los estándares, sólo que si os lo
+*Nota: No necesitáis recorar los nombre de los estándares, sólo que si os lo
 indican sepáis que lo tenéis que tener en cuenta ya que os encontráis
-ante un equipo antiguo.
+ante un equipo antiguo.*
 
 [Ejercicios](https://www.educatica.es/redes/ejercicios-de-redes/)
 
@@ -343,8 +361,8 @@ De las direcciones IP:
 
 Dada la IPv4 172.54.12.26/26 podemos decir de ella:
 
--   Es una IP de la clase B, por lo que tiene 16 bits de RED. Ésto hace
-    un total de 2^16 redes (65536 redes).
+-   Es una IP pública de la clase B, por lo que tiene 16 bits de RED. Ésto
+    hace un total de 2^16 redes (65536 redes).
 -   Nos indica además que tiene un CIDR de 26, por lo que el número de
     subredes disponibles serán 26 bits CIDR - 16 bits RED => 10 bits
     SUBREDES, 2^10 subredes (1024 subredes).
@@ -355,36 +373,30 @@ Dada la IPv4 172.54.12.26/26 podemos decir de ella:
     **IMPORTANTE:** tenemos una subred cada 2^6 (64) direcciones.
 -   Otros datos de interés:
 
-# ==REVISAR==
 
-                  IP (dec)                  IP (bin)
-  
-  IP              172.54.12.26/26   ->     1010 1100.0011 0110.0000 1100.0001 1010
-  Másc. red       255.255.255.192   <-     1111 1111.1111 1111.1111 1111.1100 0000
-  & => IP red     172.54.12.0       <-     1010 1100.0011 0110.0000 1100.0000 0000
-  difusión        172.54.12.63      <-     1010 1100.0011 0110.0000 1100.0011 1111
-                                            
-  1er host        172.54.12.1               (En decimal -> IP de la red + 1)
-  último host     172.54.12.62              (En decimal -> IP de difusión - 1)
-                                            
-  1ª subred       172.54.0.0        (1)   1010 1100.0011 0110.0000 0000.0000 0000
-  Última subred   172.54.255.192    (2)   1010 1100.0011 0110.1111 1111.1100 0000
+| . | IP (dec) | . | IP (bin) |
+|---|----------|---|-------|
+|  IP             | 172.54.12.26/26 |   -> |    1010 1100.0011 0110.0000 1100.0001 1010 |
+|  Másc. red      | 255.255.255.192 |  <- |    1111 1111.1111 1111.1111 1111.1100 0000 |
+|  & => IP red    | 172.54.12.0     |  <- |    1010 1100.0011 0110.0000 1100.0000 0000 |
+|  difusión       | 172.54.12.63    |  <- |    1010 1100.0011 0110.0000 1100.0011 1111 |
+|                 |                 |     |      |
+|  1er host       | 172.54.12.1     |     |     (En decimal -> IP de la red + 1) |
+|  último host    | 172.54.12.62    |     |     (En decimal -> IP de difusión - 1) |
+|                 |                 |     |      |
+|  1ª subred      | 172.54.0.0      |  (1)|   1010 1100.0011 0110.0000 0000.0000 0000 |
+|  Última subred  | 172.54.255.192  |  (2)|   1010 1100.0011 0110.1111 1111.1100 0000 |
 
 (1) Todos los bits de subred a 0 (no de la máscara).\
 (2) Todos los bits de subred a 1.
 
-Vídeos de repaso/refuerzo:
---------------------------
+### Referencias:
++ [redes - educatica.es](https://www.educatica.es/redes/ejercicios-de-redes)
++ [Vídeo resúmen](https://youtu.be/6SMdDOlnqsw) (25 min)
++ [Vídeo resúmen 2](https://www.youtube.com/watch?v=t-rtwD0-QMc&t=240s) (24 min)
++ [Subnetting](https://youtu.be/sbpuez96vpo): dividir una red para tener una subred donde podamos tener 12 equipos (16 min)
 
-<https://www.educatica.es/redes/ejercicios-de-redes/>\
-[Vídeo resúmen](https://youtu.be/6SMdDOlnqsw) (25 min)\
-[Vídeo resúmen 2](https://www.youtube.com/watch?v=t-rtwD0-QMc&t=240s)
-(24 min)\
-[Subnetting](https://youtu.be/sbpuez96vpo): dividir una red para tener
-una subred donde podamos tener 12 equipos (16 min)
-
-Revisión 2: Máscara de Subred de Logitud Variable - VLSM
---------------------------------------------------------
+## Evolución 2: Máscara de Subred de Logitud Variable - VLSM
 
 La siguiente vuelta de tuerca el direccionamiento IP es no usar subredes
 de tamaño fijo, con lo que se aprovecha mejor el tamaño.
@@ -393,18 +405,14 @@ Esto es, si partimos por ejemplo de la subred 192.168.20.128/25 de 126
 host, podemos a su vez segmentarla en las subredes 192.168.20.0/26 de 62
 host, y 192.168.20.128/27 y 192.168.20.160/27, de 30 host cada una.
 
-Máscaras de red especiales:
----------------------------
+## Máscaras de red especiales:
 
--   /24 is the Subnet Mask that is usually used in the local networks by
-    default.
--   /32 is the Subnet Mask used generally on Loopback and System
-    interfaces.
--   /31 is the Subnet Mask used on point-to-point links.
--   /30 is also widely used in Service Provider Networks for
-    point-to-point connections.
-    
-
++ `/0`: Aparece a menudo la dirección `0.0.0.0/0` en las tablas de rutas. Hará las veces de *ruta por defecto* o **default gateway** o simplemente **gateway**.
+- */24 is the Subnet Mask that is usually used in the local networks by
+    default*.
+- /30 is also widely used in Service Provider Networks for point-to-point connections.
++ **`/31`: la [RFC3021](https://www.rfc-editor.org/rfc/rfc3021) establece que las comunicaciones punto a punto podrán utilizar este CIDR**. No tiene sentido hablar de dirección de red y de difusión con sólo 2 equipos.
+- /32 is the Subnet Mask used generally on Loopback and System interfaces.
 
 ### Ejercicios IP
 
@@ -441,7 +449,5 @@ En ocasiones el proceso se realiza en el camino opuesto, esto es, unimos 2 redes
 
 
 ### Las excepciones
-+ `/0`: Aparece a menudo la dirección `0.0.0.0/0` en las tablas de rutas. Hará las veces de *ruta por defecto* o **default gateway** o simplemente **gateway**.
-+ `/31`: la [RFC3021](https://www.rfc-editor.org/rfc/rfc3021) establece que las comunicaciones punto a punto podrán utilizar este CIDR, ya que no tienen sentido hablar de dirección de red y de difusión con sólo 2 equipos.
-+ `/32`: algunos sistemas indicarán esto como una obligación para que el equipo deba comunicarse de forma única con el gateway.
+
 

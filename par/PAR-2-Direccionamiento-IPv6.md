@@ -6,8 +6,32 @@
 
 # {[Fold: Fold]} Direccionamiento IPv6
 
+## Notación de direcciones IPv6
 
-[Nociones básicas sobre IPv6](HTTPS://community.cisco.com/t5/blogs-routing-y-switching/direccionamiento-ipv6-bases-y-fundamentos/ba-p/3103703)
+Se representa en “hextetos”, esto es, en bloques de 4 dígitos hexadecimales, concretamente 8 bloques:  `2001:0db8:85a3:08d3:1319:8a2e:0370:7334`, lo cual hacen 128 bits binarios.
+
+Evidentemente la complejidad para escribir y leer direcciones es exponencial, por lo que se ha implementado métodos de compresión de direcciones.
+
+Se podrán comprimir aquellos bloques que comiencen por un 0. Por ejemplo:\ `2001:0df8:00f2:0000:0000:0000:0000:0f11` \
+`2001:df8:f2:0:0:0:0:f11`
+
+Esta primera aproximación mejora la situación, pero se permite además sustituir un único (el más grande) grupo de ceros por `::`, esto es, la dirección anterior quedaría `2001:df8:f2::f11`
+
+Si hubiera más de un grupo de ceros, se cogería el más grande y en caso de iguales, el primero. Esto es, la dirección `2001:0000:0000:0000:0af0:0000:0000:0000` pasaría a ser `2001::0af0:0000:0000:0000`.
+
+Esta regla de compresión y eliminación de ceros (a la izquierda) lleva a direcciones tan pintorescas como `::` o `::1` por ejemplo.
+
+### Longitud del prefijo
+`2000::/3` nos indica que sólo debemos atender a los 3 primeros bits de la dirección indicada.
+
+`fe80::/10` es un prefijo típico de red que nos encontraremos en las *site-local*.
+
+El prefijo podrá ir desde 0 hasta 64. **NUNCA (*)** podrá ser mayor, salvo /128
+
+(*) En realidad podrémos encontrarlo pero con significados especiales.
+
+
+*Referencias: [Nociones básicas sobre IPv6](HTTPS://community.cisco.com/t5/blogs-routing-y-switching/direccionamiento-ipv6-bases-y-fundamentos/ba-p/3103703)*
 
 ## Autoconfiguración de direcciones libres de estado (SLAAC)
 

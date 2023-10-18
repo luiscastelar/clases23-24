@@ -22,7 +22,7 @@
 - [ ] La conexión inalámbrica. Los espectros de onda de microondas y radio. Topologías. Asociación y autenticación en la WLAN.
 - [ ] Direccionamiento.
 - [ ] Dominios de colisión y de “broadcast”.
-- [ ] Direcciones IPv4 y máscaras de red.
+- [x] Direcciones IPv4 y máscaras de red.
 - [ ] Direccionamiento dinámico (DHCP).
 - [ ] Adaptadores.
 - [ ] Adaptadores alámbricos: instalación y configuración.

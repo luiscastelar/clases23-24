@@ -10,7 +10,7 @@
    *Fuente: Patricia López, Francisco Ruiz - IS1* \
    + **Ventajas de UML:**
      + Es estándar => Facilita la comunicación
-     + Está basado en metamodelo con una semántica bien definida
+     + Está basado en meta-modelo con una semántica bien definida
      + Se basa en una notación gráfica concisa y fácil de aprender y utilizar
      + Se puede utilizar para modelar sistemas software en diversos dominios:
        + Sistemas de información empresariales, Sistemas WEB, sistemas críticos y de tiempo real, etc.
@@ -66,6 +66,25 @@ Breve **resumen**: [Casos de uso - YT: Big Learning](https://www.youtube.com/wat
 + [diagramasUML](https://diagramasuml.com/secuencia/)
 
 
+## Diagramas de estados
+Explicación en aula + [diagramasUML](https://diagramasuml.com/estados/)
+
+![diagramas](https://luiscastelar.duckdns.org/2023/assets/ED/diagrama_de_estados.gif)
+En este ejemplo, el pseudo estado de entrada sería `fork()` y el de salida sería posterior al `zombie`.
+
+
+## Diagrama de actividades
+
+Es una estandarización de los diagramas de flujo, podemos ver un ejemplo [aquí](https://es.slideshare.net/jarinconc/diagrama-actividades).
+
+![diagramas](https://luiscastelar.duckdns.org/2023/assets/ED/diagrama_actividades_vs_flujos.png)
+
+Ejemplo completo de diagrama de actividad:
+
+![actividad](https://luiscastelar.duckdns.org/2023/assets/ED/activity-diagram.png)
+
+
+
 ## Ejercicios:
 1. Crea diagramas de **casos de uso** para:
   + Un cajero automático automático.
@@ -86,6 +105,11 @@ Breve **resumen**: [Casos de uso - YT: Big Learning](https://www.youtube.com/wat
   + Sacar saldo en un cajero automático.
   + Ver siguiente capítulo de serie en *Netflix*.
   + Ir a un concierto/viaje con amigos.
+
+**Comienza la fiesta:**
+  + [En que volumen](https://aceptaelreto.com/problem/statement.php?id=595&cat=146)
+  + [Cuando seré rico](https://aceptaelreto.com/problem/statement.php?id=602&cat=146)
+  + [Codificación límite](https://aceptaelreto.com/problem/statement.php?id=596&cat=146)
 
 
 ## Referencias:

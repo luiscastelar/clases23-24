@@ -48,8 +48,8 @@
   + [x] Cont. proyecto UT1
 + [x] 12o - Día del pilar
 + 17o:
-  + [ ] Cont. proyecto UT1
-  + [ ] IPv4 con clases
+  + [x] Cont. proyecto UT1
+  + [x] IPv4 con clases
 + 18o:
   + [ ] Rango de IPs: públicas, privadas y otras
   + [ ] Ejercicio de multidifusión
