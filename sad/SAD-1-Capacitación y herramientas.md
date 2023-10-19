@@ -63,8 +63,10 @@ Hacer los archivos `Vagrantfile` (7 distintos) que resuelva los siguientes supue
 
 
 #### Referencias: 
++ [Manual completo - Friends of Vagrant](https://friendsofvagrant.github.io/v1/docs/boxes.html)
 + [Get Started - Vagrant](https://developer.hashicorp.com/vagrant/tutorials/getting-started)
 + [Vagrant Boxes](https://app.vagrantup.com/boxes/search?provider=virtualbox)
++ [Repositorio externo de BOXes](https://github.com/acntech/vagrant-repository)
 
 
 

@@ -51,7 +51,7 @@
   + [x] Cont. proyecto UT1
   + [x] IPv4 con clases
 + 18o:
-  + [ ] Rango de IPs: públicas, privadas y otras
+  + [x] Rango de IPs: públicas, privadas y otras
   + [ ] Ejercicio de multidifusión
   + [ ] Cont. proyecto UT1
 + 19o:

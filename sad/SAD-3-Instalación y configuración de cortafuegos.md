@@ -26,9 +26,14 @@ Dado que el sistema es complejo, la defensa se realizará vía presentación a l
 **pfsense**
 + [Curso pfsense - youtube Wilmer Almazan](https://www.youtube.com/playlist?list=PLuMd8fg3qBxflEQOl0N2QKlYaUgD26Jvs)
 + [Doc oficial](https://docs.netgate.com/pfsense/en/latest/nat/index.html)
++ [Configuración L2TP/IPsec](https://www.redeszone.net/tutoriales/vpn/pfsense-configurar-servidor-vpn-l2tp-ipsec/)
++ [Configuración Wireguard](https://www.redeszone.net/tutoriales/vpn/configuracion-servidor-vpn-wireguard-pfsense/)
 
 **iptables**
 + [firewall sencillo - Jose Domingo](https://fp.josedomingo.org/seguridadgs/u03/iptables.html)
 + [FireWall con IpTables - Manuales LuCAS](http://es.tldp.org/Manuales-LuCAS/doc-iptables-firewall/doc-iptables-firewall.pdf)
 + [NAT con iptables - Alberto Molina](https://albertomolina.wordpress.com/2009/01/09/nat-con-iptables/)
 + [Cortafuegos con iptables - Alberto Molina](https://albertomolina.wordpress.com/2011/12/08/cortafuegos-con-iptables/)
+
+**redes virtualBox**
++ [Todo sobre redes - NAKIVO](https://www.nakivo.com/blog/virtualbox-network-setting-guide/)

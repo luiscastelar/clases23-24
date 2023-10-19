@@ -33,8 +33,8 @@ Esto es un documento vivo donde hacer una planificación diaria y control del tr
     * [ ] ~~De Anotación~~
 * [x] 10o: Ejercicios de **casos de uso**.
 * [x] 11o: Ejercicios de **diagramas de secuencia**.
-* [ ] 17o: Ejercicios de **diagramas de estado**.
-* [ ] 18o: Ejercicios de **diagramas de actividades**.
+* [x] 17o: Ejercicios de **diagramas de estado**.
+* [x] 18o: Ejercicios de **diagramas de actividades**.
 * [ ] ~~24o~~: *Exceso de horas*
 * [ ] 25o: **Exámen UT2**
 
@@ -75,7 +75,7 @@ Esto es un documento vivo donde hacer una planificación diaria y control del tr
    + [ ] Defensa de prácticas **extraordinarias** (si las hubiera).
  + [ ] 28n: **RECUPERACIÓN** 1ª evaluación.
 
-Horas de trabajo **en casa** => ==2h== de 22h
+Horas de trabajo **en casa** => ==8h== de 22h
 
 ---
  
@@ -129,7 +129,7 @@ Horas de trabajo **en casa** => ==2h== de 22h
    + [ ] Defensa de prácticas **extraordinarias** (si las hubiera).
  + [ ] 5m: **RECUPERACIÓN** 2ª evaluación.
 
-Horas de trabajo **en casa** => ==6h== de 22h
+Horas de trabajo **en casa** => ==14h== de 22h
 
 ---
 
