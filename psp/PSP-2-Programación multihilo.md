@@ -366,4 +366,5 @@ Para un acercamiento a la característica podéis revisar los siguientes enlaces
 + [Dev.Java - Nuevas características](https://dev.java/learn/new-features/virtual-threads/)
 + [JEP444 Virtual Threats](https://openjdk.org/jeps/444)
 + [Programación concurrente - Empieza a programar](https://www.youtube.com/playlist?list=PLw8RQJQ8K1ySGcb3ZP66peK4Za0LKf728)
++ [Java multihilos - Todo lo que necesitas saber](https://medium.com/excited-developers/java-multithreading-all-you-need-to-know-33d7e0ff4622)
 
