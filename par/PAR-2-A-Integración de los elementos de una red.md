@@ -104,11 +104,15 @@ Localiza las distintas `MAC`s de tu equipo y verifica la información que puedas
 
 Direccionamiento IP. Tenemos en la actualidad 2 protocolos funcionando en paralelo: IPv4 e IPv6. Son incompatibles por lo que los equipos requieren la implementación “Dual-stack”, esto es, ambas direcciones.
 
-+ [Direccionamiento **IPv4**](https://github.com/luiscastelar/clases23-24/blob/main/par/PAR-2-Direccionamiento-IPv4.md)
++ [Direccionamiento IPv4](https://github.com/luiscastelar/clases23-24/blob/main/par/PAR-2-B-Direccionamiento-IPv4.md)
 
 # {[Fold: Fold]} ==PDTE DE REVISIÓN==
 
-+ [Direccionamiento **IPv6**](https://github.com/luiscastelar/clases23-24/blob/main/par/PAR-2-Direccionamiento-IPv6.md)
++ [Direccionamiento **IPv6**](https://github.com/luiscastelar/clases23-24/blob/main/par/PAR-2-C-Direccionamiento-IPv6.md)
+
+*Off-topic*: [**Introducción a Packet-Tracert**](https://github.com/luiscastelar/clases23-24/blob/main/par/PAR-2-D-Introducci%C3%B3n%20a%20Packet-Tracer.md)
+
+
 
 ### Direcciones capa 4:
 

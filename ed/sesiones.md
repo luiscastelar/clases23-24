@@ -18,11 +18,11 @@ Esto es un documento vivo donde hacer una planificación diaria y control del tr
  + [x] 3o:
    + [x] Entrega de prácticas.
    + [x] Revisión de [[pub23/recordatorios]]
- + [ ] 4o: [**Exámen UT1** (10:05-11:00)](https://moodle.educarex.es/iescastelarfp/mod/assign/view.php?id=51769) / [avance curso UML - Pildoras Informáticas](https://www.youtube.com/watch?v=KY81igoV8W0&list=PLU8oAlHdN5BmmxXT0C2HO0bLRHZFWKbhH)
+ + [x] 4o: [**Exámen UT1** (10:05-11:00)](https://moodle.educarex.es/iescastelarfp/mod/assign/view.php?id=51769) / [avance curso UML - Pildoras Informáticas](https://www.youtube.com/watch?v=KY81igoV8W0&list=PLU8oAlHdN5BmmxXT0C2HO0bLRHZFWKbhH)
  
 
 # 2 Eleboración de diagramas de comportamiento
- 14h del  04/10/2023 al 25/10/2023. *1a eva*
+ 14h -> 7 sesiones del  04/10/2023 al 25/10/2023. *1a eva*
 
 * [x] 3o: Introducción a UML
   * [x] Apuntes U.Cantabria - pag 1-14
@@ -39,13 +39,13 @@ Esto es un documento vivo donde hacer una planificación diaria y control del tr
 * [ ] 25o: **Exámen UT2**
 
 # 3 Desarrollo de software
- 14h del 26/10/2023 al 22/11/2023. *1a eva*.
+ 14h -> 7 sesiones del 26/10/2023 al 22/11/2023. *1a eva*.
 
  + [ ] 24o:
-     + [ ] Licencias Copyright, Freeware, Open Source, GPL, MIT, etc
+     + [ ] Licencias Copyright, Freeware, Open Source, GPL, MIT, Apache, BSL, etc.
      + [ ] Ciclo de vida: análisis, diseño, codificación, pruebas y mantenimiento.
      + [ ] Modelos de ciclo de vida: cascada (clásico) vs incremental (agile)
-     + [ ] Proyecto mínimo viable
+     + [ ] POC, Prototipo y PMV
  + [ ] 7n:
      + [ ] Fases de desarrollo
      + [ ] Requisitos funcionales y no funcionales

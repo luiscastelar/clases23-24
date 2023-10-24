@@ -53,22 +53,30 @@
 + 18o:
   + [x] Rango de IPs: públicas, privadas y otras
   + [ ] Ejercicio de multidifusión
-  + [ ] Cont. proyecto UT1
+  + [x] Cont. proyecto UT1
 + 19o:
-  + [ ] Ejercicio de IPs
-  + [ ] IPv4 con CIDR
-  + [ ] Cont. proyecto UT1
+  + [x] Ejercicio de IPs
+  + [x] IPv4 con CIDR
+  + [x] Cont. proyecto UT1
 + 24o:
   + [ ] Cont. proyecto UT1
   + [ ] IPv4 con CIDR
+  + [ ] Intro IPv6
 + 25o:
-  + [ ] ... 
+  + [ ] Resolución dudas IPv4
+  + [ ] IPv6
+  + [ ] Cont. proyecto UT1
 + 26o:
-  + [ ] ...
+  + [ ] **Exámen de direccionamiento de IPv4**
+  + [ ] Continuación IPv6
+  + [ ] Intro Packet Tracert
+  + [ ] Cont. proyecto UT1
 + 31o:
+  + [ ] Cont. proyecto UT1
   + [ ] ...
 + 2n:
   + [ ] ...
+  + [ ] Cont. proyecto UT1
 + 7n:
   + [ ] **Defensa proyecto UT1**
 + 8n:

@@ -51,9 +51,9 @@
     + [x] Ejercicios y dudas
     + [x] `Callable`s y “promesas”
 4. 20o:
-    + [ ] Productores, consumidores y monitores
+    + [x] Productores, consumidores y monitores
 5. 23o:
-    + [ ] Ejercicios y dudas
+    + [x] Ejercicios y dudas
 6. ~~¿27o?:~~ Exceso de horas
 7. 30o:
     * [ ] **Examen UT2** 

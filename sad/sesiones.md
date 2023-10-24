@@ -49,7 +49,9 @@
     + [x] rsync + tar + cron
     + [ ] ~~restic~~ (*No encajaba*)
 
-4. 16o:
+4. 23o:
+  + [x] Resolución de dudas
+6. 27o: 
   + [ ]  **Examen UT2**
   + [ ]  restic
 
@@ -74,15 +76,17 @@
      + [x] solo anfitrión
 
 2. 16o:
-   + [ ] 
-4. 20o:
-   + [ ] ...
-5. 23o:
-6. 27o:
-7. 30o:
-8. 3n:
-9. 6n:
-10. 10n:
+   + [x] Trabajo sobre esquema de red
+3. 20o:
+   + [x] Exposición de práctica.
+   + [x] Cómo realizar preguntas inteligentes
+ 
+4. 27o:
+  + [ ] Inicio de práctica
+6. 30o:
+7. 3n:
+8. 6n:
+9. 10n:
    + [ ] **Examen UT3**
 
 ---
