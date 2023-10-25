@@ -59,10 +59,11 @@
   + [x] IPv4 con CIDR
   + [x] Cont. proyecto UT1
 + 24o:
-  + [ ] Cont. proyecto UT1
-  + [ ] IPv4 con CIDR
-  + [ ] Intro IPv6
+  + [x] Cont. proyecto UT1
+  + [x] IPv4 con CIDR
+  + [x] Intro IPv6
 + 25o:
+  + [ ] VSLM
   + [ ] Resolución dudas IPv4
   + [ ] IPv6
   + [ ] Cont. proyecto UT1

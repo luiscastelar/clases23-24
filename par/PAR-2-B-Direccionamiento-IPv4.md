@@ -241,12 +241,11 @@ sabemos de él?
 
 
 ### Referencias:
++ [Calculadora de subnetting](https://www.aprendaredes.com/cgi-bin/ipcalc/ipcalc_cgi1)
 + [Vídeo resumen](https://www.youtube.com/watch?v=TldkSiygpPY) (versión larga 48 min)
 + [Vídeo corto](https://youtu.be/xyXQjZ7w_No) (versión corta 5 min)
 + [Vídeo corto 2](https://www.youtube.com/watch?v=EdhPwqWXZpI) (versión extra corta 4 min)
 + [Vídeo aclaratorio 1 (UPV)](https://youtu.be/ZdWYe4PB0Qk)
-
-# ==VAMOS POR AQUÍ==
 
 
 ## IPv4 con CIDR
@@ -417,6 +416,10 @@ Dada la IPv4 172.54.12.26/26 podemos decir de ella:
 + [Vídeo resúmen 2](https://www.youtube.com/watch?v=t-rtwD0-QMc&t=240s) (24 min)
 + [Subnetting](https://youtu.be/sbpuez96vpo): dividir una red para tener una subred donde podamos tener 12 equipos (16 min)
 
+
+# ==VAMOS POR AQUÍ==
+
+
 ## Evolución 2: Máscara de Subred de Logitud Variable - VLSM
 
 La siguiente vuelta de tuerca el direccionamiento IP es no usar subredes
@@ -425,6 +428,18 @@ de tamaño fijo, con lo que se aprovecha mejor el tamaño.
 Esto es, si partimos por ejemplo de la subred 192.168.20.128/25 de 126
 host, podemos a su vez segmentarla en las subredes 192.168.20.0/26 de 62
 host, y 192.168.20.128/27 y 192.168.20.160/27, de 30 host cada una.
+
+**Ejercicio**:
+
+Asignada la red 10.0.0/24 nos piden que la separemos en subredes mediante la técnica de VLSM para satisfacer las necesidades:
++ Dpto de dirección (A): 3 equipos
++ Dpto de informática (B): 15 equipos
++ Dpto de ventas (C): 62 equipos
++ Dpto de compras (D): 31 equipos
++ Dpto de márqueting (E): 4 equipos
++ Conexión punto a punto nube pública (F): 2 equipos
+
+
 
 ## Máscaras de red especiales:
 
