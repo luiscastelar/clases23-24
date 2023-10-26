@@ -1,4 +1,4 @@
-#curso23_24 #PAR #ED [estado::Done]
+#curso23_24 #PAR [estado::Done]
 
 # LA INSTALACIÓN FÍSICA DE UNA RED
 

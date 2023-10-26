@@ -35,26 +35,23 @@ Esto es un documento vivo donde hacer una planificación diaria y control del tr
 * [x] 11o: Ejercicios de **diagramas de secuencia**.
 * [x] 17o: Ejercicios de **diagramas de estado**.
 * [x] 18o: Ejercicios de **diagramas de actividades**.
-* [ ] ~~24o~~: *Exceso de horas*
-* [ ] 25o: **Exámen UT2**
+* [x] ~~24o~~: *Exceso de horas*
+* [x] 25o: **Exámen UT2**
 
+  
 # 3 Desarrollo de software
  14h -> 7 sesiones del 26/10/2023 al 22/11/2023. *1a eva*.
 
- + [ ] 24o:
-     + [ ] Licencias Copyright, Freeware, Open Source, GPL, MIT, Apache, BSL, etc.
-     + [ ] Ciclo de vida: análisis, diseño, codificación, pruebas y mantenimiento.
-     + [ ] Modelos de ciclo de vida: cascada (clásico) vs incremental (agile)
-     + [ ] POC, Prototipo y PMV
+ + [x] 24o:
+     + [x] Licencias Copyright, Freeware, Open Source, GPL, MIT, Apache, BSL, etc.
+ + [x] 25o:
+   * [x] Ciclo de vida: análisis, diseño, codificación, pruebas y mantenimiento.
+   + [x] Modelos de ciclo de vida: cascada (clásico), en V
  + [ ] 7n:
-     + [ ] Fases de desarrollo
-     + [ ] Requisitos funcionales y no funcionales
-     + [ ] Diagramas:
-         + [ ] DFD - Diagramas de flujo de datos
-         + [ ] DFC - Diagramas de flujo de contol
-         + [ ] DTE - Diagramas de transición de estados
-         + [ ] DER - Diagramas Entidad - Relación
-         + [ ] DD - Diccionario de datos
+     + [ ] Modelos de ciclo de vida: espiral, incremental (agile).
+     + [ ] *Metodologías ágiles. Técnicas. Características*.
+     + [x] Fases de desarrollo
+     + [ ] Código fuente, código objeto y código ejecutable; tecnologías de virtualización. 
  + [ ] 8n:
      + [ ] Paradigma imperativo:
          + [ ] Diseño estructurado: Diseño de datos, diseño arquitectónico, diseño de interfaz y diseño procedimental (secuencial, condicional, repetitiva)
@@ -64,8 +61,11 @@ Esto es un documento vivo donde hacer una planificación diaria y control del tr
        + [ ] *Repetitividad* vs *Recursividad*
        + [ ] Su presencia en `Java`
      + [ ] Programación lógica
- + [ ] 14n: Documentación
- + [ ] 15n: ...
+ + [ ] 14n:
+     + [ ] Características de los lenguajes más difundidos.
+     + [ ] Proceso de obtención de código ejecutable a partir del código fuente; herramientas implicadas.
+     + [ ] Documentación
+ + [ ] 15n: Repaso
  + [ ] 21n: **Exámen UT3**
 
 # Cierre de trimestre

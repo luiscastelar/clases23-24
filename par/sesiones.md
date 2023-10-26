@@ -63,18 +63,17 @@
   + [x] IPv4 con CIDR
   + [x] Intro IPv6
 + 25o:
-  + [ ] VSLM
-  + [ ] Resolución dudas IPv4
-  + [ ] IPv6
+  + [x] VSLM
+  + [x] Resolución dudas IPv4
+  + [x] IPv6
   + [ ] Cont. proyecto UT1
 + 26o:
-  + [ ] **Exámen de direccionamiento de IPv4**
   + [ ] Continuación IPv6
   + [ ] Intro Packet Tracert
   + [ ] Cont. proyecto UT1
 + 31o:
   + [ ] Cont. proyecto UT1
-  + [ ] ...
+  + [ ] **Exámen de direccionamiento de IPv4**
 + 2n:
   + [ ] ...
   + [ ] Cont. proyecto UT1
