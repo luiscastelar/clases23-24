@@ -98,6 +98,47 @@ Referencias: [David 8 bits](https://www.ochobitshacenunbyte.com/2019/03/26/crear
 + TAR + rsync + cron => Sin encriptar. 
 + [restic](https://restic.readthedocs.io/en/stable/) => Múltiples repositorios y respaldo encriptados, incrementales y sin duplicados.
 
+**Restic**:
+```bash
+# Inicializamos repositorio de backups
+#     Deberemos tener acceso por llave pública a dicho servidor
+#     Podemos crearla siguiendo https://eltallerdelbit.com/copiar-clave-publica-ssh-scp-ssh-copy-id/
+  restic -r sftp:user@host:/ruta_absoluta/restic-repo init
+
+# Backup
+#     -r -> repo
+#     --verbose
+#     backup -> realizar un backup
+#     ~/work -> directorios a salvar
+  restic -r sftp:user@host:/ruta_absoluta/restic-repo --verbose backup ~/work
+
+# Listar copias
+  restic -r sftp:user@host:/ruta_absoluta/restic-repo snapshots
+
+# Restauración de copias
+#     se puede sustituir el hash por 'latest'
+  restic -r sftp:user@host:/ruta_absoluta/restic-repo restore 79766175 --target /tmp/restore-work
+
+# Buscando entre los archivos de una copia (y versión concreta de una archivo)
+  mkdir /mnt/restic
+  restic -r sftp:user@host:/ruta_absoluta/restic-repo mount /mnt/restic
+
+# Haciendo limpieza de backups antiguos
+#     copias concretas
+#     o según políticas (ver doc)
+  restic -r sftp:user@host:/ruta_absoluta/restic-repo forget bdbd3439
+  restic forget --keep-daily 4
+
+# Backup de stdin
+#     el exit code es de la completa
+#     backup de un mysqld y lo metemos en un repo
+  set -o pipefail
+  mysqldump [...] | restic -r sftp:user@host:/ruta_absoluta/restic-repo backup --stdin
+
+# Recuperar de stdout
+  restic -r sftp:user@host:/ruta_absoluta/restic-repo dump latest production.sql | mysql
+```
+
 
 ## Prácticas:
 Define el `Vagrantfile` y todos los scripts que veas necesario de forma que se cumplan las siguientes premisas:

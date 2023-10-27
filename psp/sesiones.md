@@ -63,16 +63,16 @@
 12h - 6 sesiones - Del 30/10/2023 al 17/11/2023. *1ª eva*.
 
 1. 27o:
-    + [ ] Java Socket - Hola mundo cliente/servidor
+    + [ ] Java Socket - Hola mundo cliente/servidor.
 3. 3n:
-    + [ ] Chat 1 a 1
+    + [ ] Chat 1 a 1.
     + [ ] Chat 1 sala con N clientes (por grupos).
 5. 6n:
-    + [ ] Servidor web (de archivos html)
+    + [ ] Servidor web (de archivos html).
 7. 10n:
-    + [ ] Websockets
+    + [ ] Websockets.
 8. 13n:
-    + [ ] Ejercicios y dudas
+    + [ ] Ejercicios y dudas.
 9. 17n: **Exámen UT3**
 
 ---

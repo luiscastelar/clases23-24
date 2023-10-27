@@ -66,21 +66,21 @@
   + [x] VSLM
   + [x] Resolución dudas IPv4
   + [x] IPv6
-  + [ ] Cont. proyecto UT1
+  + [ ] ~~Cont. proyecto UT1~~
 + 26o:
-  + [ ] Continuación IPv6
-  + [ ] Intro Packet Tracert
-  + [ ] Cont. proyecto UT1
+  + [ ] **ESNOG 30**
+  + [ ] ~~Cont. proyecto UT1~~
 + 31o:
   + [ ] Cont. proyecto UT1
   + [ ] **Exámen de direccionamiento de IPv4**
 + 2n:
-  + [ ] ...
+  + [ ] Continuación IPv6
+  + [ ] Intro Packet Tracert
   + [ ] Cont. proyecto UT1
 + 7n:
-  + [ ] **Defensa proyecto UT1**
+  + [ ] Cont. proyecto UT1
 + 8n:
-  + [ ] ...
+  + [ ] **Defensa proyecto UT1**
 + 9n:
   + [ ] ...
 + 14n:

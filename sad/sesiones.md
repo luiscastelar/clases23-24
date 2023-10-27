@@ -51,7 +51,8 @@
 
 4. 23o:
   + [x] Resolución de dudas
-6. 27o: 
+
+5. 27o: 
   + [ ]  **Examen UT2**
   + [ ]  restic
 

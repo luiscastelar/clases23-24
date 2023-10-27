@@ -16,6 +16,113 @@ Para abrir una conexión en modo “cliente” escribiremos `nc HOST PUERTO`, do
 ### Ejercicios:
 Crea un cliente-servidor TCP y otro UDP.
 
+1. Primero comenzaremos programando el servidor y lo atacaremos con nuestro cliente `nc localhost 5000`
++ **Servidor**:
+```java
+import java.io.*;
+import java.net.*;
+
+public class Servidor {
+
+    public static void main(String argv[]) {
+
+        // Definimos los Sockets:
+        // ----------------------
+        //
+        // Socket de escucha del servidor
+        ServerSocket servidor; 
+        // Socket para atender a un cliente
+        Socket cliente; 
+        
+        int numCliente = 0; // Contador de clientes 
+        int PUERTO = 5000; // Puerto para esuchar
+        System.out.println("Soy el servidor y empiezo a escuchar peticiones por el puerto: " + PUERTO);
+
+        try {
+            // Apertura de socket para escuhar a través de un puerto
+            servidor = new ServerSocket(PUERTO);
+            
+            // Atendemos a los clientes
+            //     + En la realidad por cada cliente lanzaríamos un hilo 
+            do {
+                System.out.println("\t Llega el cliente: " + ++numCliente);
+                                
+                // Aceptamos la conexión
+                cliente = servidor.accept();
+                
+                // Creamos la salida hacia el cliente y la usamos
+                DataOutputStream ps = new DataOutputStream(cliente.getOutputStream());
+                ps.writeUTF("Usted es mi cliente: "+numCliente);
+                
+                // Y cerramos la conexión porque ya no vamos a operar más con él
+                cliente.close();
+                
+                System.out.println("\t Se ha cerrado la conexión con el cliente: " +numCliente);
+            } while (true);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+    
+}
+```
+
+2. Ahora modificaremos el servidor para que reciba un datos y los muestre hasta que el cliente envíe el comando `QUIT`.
+
+3. Y lo modificaremos para que muera después de recibir `SHUTDOWN`.
+
+4. Ahora programaremos el cliente:
++  **Cliente**:
+```java
+import java.io.*;
+import java.net.*;
+
+public class Cliente {
+
+    public static void main(String argv[]) {
+        // Definimos los parámetros de conexión
+        InetAddress direccion; // La IP o Dirección de conexión
+        Socket servidor; // Socket para conectarnos a un servidor u otra máquina
+        int numCliente = 0; // Mi número de cliente
+        int PUERTO = 5000;  // Puerto de conexión
+        
+        System.out.println("Soy el cliente e intento conectarme");
+        
+        try {
+            // Vamos a indicar la dirección de conexión
+            //     dirección local (localhost)
+            // direccion = InetAddress.getLocalHost(); 
+            //     por String url o por IP como sigue
+            byte addr[] = { (byte)192, (byte)168, (byte)0, (byte)37 };
+            direccion = InetAddress.getByAddress( addr );
+            // Nos conectamos al servidor: dirección y puerto
+            servidor = new Socket(direccion, PUERTO); 
+            // Operamos con la conexión. En este caso recibimos los datos que nos mandan
+            System.out.println("Conexión realizada con éxito");
+            
+            // Es inputStream porque los recibimos
+            DataInputStream datos = new DataInputStream(servidor.getInputStream());
+            // Si queremos leer normal
+            //System.out.println(datos.readLine());
+            // Si leemos con formato
+            System.out.println(datos.readUTF());
+            // Cerramos la conexión
+            servidor.close();
+            System.out.println("Soy el cliente y cierro la conexión");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+    
+}
+
+```
+
+5. **PrinterWriter:** a menudo los alumnos se siente más cómodos utilizando PrinterWriter ya que con lo que queremos trabajar es con cadenas de caracteres. En este caso, debemos recordar activar la *autoflush* ya que de otra forma deberemos controlarlo “a mano”. \
+
+   Esto es, sustituiremos `DataOutputStream` por `PrinterWriter`, con lo que luego podremos sustituir el método `writerUTF` por el reconocido `println`.
+
+
 ## Desarrollo
 [apuntes - codeandcoke.com](https://psp.codeandcoke.com/apuntes:sockets)
 
@@ -26,4 +133,7 @@ Crea un cliente-servidor TCP y otro UDP.
 + https://github.com/ldmoral1987/temario-psp-dam 
 + https://psp.codeandcoke.com
 + https://github.com/socketio/chat-example
-  
++ [Java T point](https://www.javatpoint.com/socket-programming)
++ [Programador Ya](https://www.programarya.com/Cursos-Avanzados/Java/Sockets)
++ [Geeks for Geeks](https://www.geeksforgeeks.org/socket-programming-in-java/)
++ [**Websockets - Arquitectura Java](https://www.arquitecturajava.com/java-websockets/)
