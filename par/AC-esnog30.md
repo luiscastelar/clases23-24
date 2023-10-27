@@ -23,4 +23,19 @@
 ## Taller fibra
 + **Iperf3**
 + bucles
-+ 
+
+## CLOUD ROUTER
++ CTO
++ AZURE
++ AWS
++ VPN
++ VLAN ID
++ SLA
++ VLAN secundaria
++ ON PREMISE
++ AMS-IX, DE-IX, LINX
+
+### DNSTAP
++ EspaNIX
++ Pcap
++ Netflow
