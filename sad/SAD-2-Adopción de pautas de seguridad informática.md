@@ -139,6 +139,14 @@ Referencias: [David 8 bits](https://www.ochobitshacenunbyte.com/2019/03/26/crear
   restic -r sftp:user@host:/ruta_absoluta/restic-repo dump latest production.sql | mysql
 ```
 
+**Resúmen**:
+> restic -r REPO init
+                > backup DIR
+        >         snapshots
+        >         restore HASH --target DIR
+        >         mount DIR
+        >         forget HASH
+
 
 ## Prácticas:
 Define el `Vagrantfile` y todos los scripts que veas necesario de forma que se cumplan las siguientes premisas:

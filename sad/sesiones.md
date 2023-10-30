@@ -53,7 +53,7 @@
   + [x] Resolución de dudas
 
 5. 27o: 
-  + [ ]  **Examen UT2**
+  + [x]  **Examen UT2**
   + [ ]  restic
 
 **Evaluación de la unidad:**
@@ -83,24 +83,38 @@
    + [x] Cómo realizar preguntas inteligentes
  
 4. 27o:
-  + [ ] Inicio de práctica
-6. 30o:
-7. 3n:
-8. 6n:
-9. 10n:
+  + [x] Inicio de práctica
+
+5. 30o:
+  + [ ] Continuación de la práctica
+  + [ ] Resolución de dudas UT3, UT2 y UT1
+
+6. 3n:
+  + [ ] Continuación de la práctica
+  + [ ] Resolución de dudas UT3, UT2 y UT1
+
+7. 6n:
+  + [ ] Continuación de la práctica
+  + [ ] Resolución de dudas UT3, UT2 y UT1
+
+8. 10n:
    + [ ] **Examen UT3**
 
 ---
 **2ª EVALUACIÓN**
 
 ---
-UT4 - Implantación tcas acceso remoto - 16h - 8 sesiones - 13n-11d
+# UT4 - Implantación técnicas acceso remoto
+16h - 8 sesiones - 13n-11d
 
 ---
-UT5 - Instalación y configuración de servidores proxy 12 12/12/2023 19/01/2024 2ª
+# UT5 - Instalación y configuración de servidores proxy 
+12h - 6 sesiones - 12/12/2023 19/01/2024 2ª
 
 ---
-UT6 - Implantación de soluciones de alta disponibilidad. 18 22/01/2024 26/02/2024 2ª
+# UT6 - Implantación de soluciones de alta disponibilidad. 
+18h - 9 sesiones - 22/01/2024 26/02/2024 2ª
 
 ---
-UT7 - Legislación y normas sobre seguridad 2 27/02/2024 01/03/2024 2ª
+# UT7 - Legislación y normas sobre seguridad 
+2h 27/02/2024 01/03/2024 2ª

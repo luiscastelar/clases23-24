@@ -56,7 +56,8 @@
     + [x] Ejercicios y dudas
 6. ~~¿27o?:~~ Exceso de horas
 7. 30o:
-    * [ ] **Examen UT2** 
+    * [ ] **Examen UT2**
+    * [ ] Aclaración `Runnable worker = new Worker().run()` vs `new Thread( worker ).start()`
 
 ---
 # UT3 Comunicaciones de red - Sockets 

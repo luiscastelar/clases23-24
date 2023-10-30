@@ -122,6 +122,26 @@ public class Cliente {
 
    Esto es, sustituiremos `DataOutputStream` por `PrinterWriter`, con lo que luego podremos sustituir el método `writerUTF` por el reconocido `println`.
 
+## Chat 1 a 1:
+Deberemos crear un servidor de chat al que se conectarán 2 clientes. El servidor se encargará de recibir los mensajes de ambos y reenviarlos al otro cliente.
+
+El cliente:
+1. pedirá host
+2. mostrará a la derecha (`\t\t\t`) los mensajes recibidos y a la izquierda los enviados (al contrario que whatsapp).
+
+El servidor:
+1. aceptará peticiones en puerto por defecto (1234).
+2. cuando reciba la primera generará la conexión y enviará un mensaje indicando “... esperando segundo cliente...”
+3. cuando reciba el segundo cliente comenzará a gestionar los mensajes
+4. si recibe un “EXIT” de cualquiera de los dos clientes enviará un “ SE HA CERRADO LA SALA ” y desconectará a los clientes.
+
+**Mejoras:**
++ Gestión del doble check
+
+## Chat 1 a muchos:
+Se aceptarán más de 2 clientes. \
+Las conversaciones comenzarán con el nombre del emisor.
+
 
 ## Desarrollo
 [apuntes - codeandcoke.com](https://psp.codeandcoke.com/apuntes:sockets)
