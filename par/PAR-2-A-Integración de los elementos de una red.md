@@ -106,8 +106,6 @@ Direccionamiento IP. Tenemos en la actualidad 2 protocolos funcionando en parale
 
 + [Direccionamiento IPv4](https://github.com/luiscastelar/clases23-24/blob/main/par/PAR-2-B-Direccionamiento-IPv4.md)
 
-# {[Fold: Fold]} ==PDTE DE REVISIÓN==
-
 + [Direccionamiento **IPv6**](https://github.com/luiscastelar/clases23-24/blob/main/par/PAR-2-C-Direccionamiento-IPv6.md)
 
 *Off-topic*: [**Introducción a Packet-Tracert**](https://github.com/luiscastelar/clases23-24/blob/main/par/PAR-2-D-Introducci%C3%B3n%20a%20Packet-Tracer.md)

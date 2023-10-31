@@ -68,7 +68,7 @@
   + [x] IPv6
   + [ ] ~~Cont. proyecto UT1~~
 + 26o:
-  + [ ] **ESNOG 30**
+  + [x] **ESNOG 30**
   + [ ] ~~Cont. proyecto UT1~~
 + 31o:
   + [ ] Cont. proyecto UT1

@@ -21,7 +21,7 @@ Para crear un README en texto plano, pero con un formato agradable y *convertibl
   *.env
   ```
 
-*Aplicaciones auxiliares:* [GitFiend](https://gitfiend.com/) o [GitG](https://wiki.gnome.org/Apps/Gitg) como apoyo visual a *git bash*
+*Aplicaciones auxiliares:* [GitFiend](https://gitfiend.com/) o [GitG](https://wiki.gnome.org/Apps/Gitg) como apoyo visual a *git bash*. También [Git Extensions](https://gitextensions.github.io/) como plug-in de VS.
 
 
 ### Merge y rebase

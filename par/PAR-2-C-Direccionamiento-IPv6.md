@@ -24,11 +24,11 @@ Esta regla de compresión y eliminación de ceros (a la izquierda) lleva a direc
 ### Longitud del prefijo
 `2000::/3` nos indica que sólo debemos atender a los 3 primeros bits de la dirección indicada.
 
-`fe80::/10` es un prefijo típico de red que nos encontraremos en las *site-local*.
+`fe80::/10` es un prefijo típico de red que nos encontraremos en las *link-local*.
 
 El prefijo podrá ir desde 0 hasta 64. **NUNCA (*)** podrá ser mayor, salvo /128
 
-(*) En realidad podrémos encontrarlo pero con significados especiales.
+(*) En realidad podremos encontrarlo pero con significados especiales.
 
 
 *Referencias: [Nociones básicas sobre IPv6](HTTPS://community.cisco.com/t5/blogs-routing-y-switching/direccionamiento-ipv6-bases-y-fundamentos/ba-p/3103703)*
@@ -71,16 +71,17 @@ rangos definidos por los primeros bits de cada dirección.
 -   ::ffff:0:0/96 -> La "dirección IPv4 mapeada" se usa como
     mecanismo de transición en terminales duales. Los dos últimos 0\'s
     son los 32 bits de IPv4.
++   **2000::/3** -> global unicast addresses -> dirección global enrutable.
 -   **fe80::/10** -> El prefijo de enlace local (link local, en inglés)
     específica que la dirección solamente es válida en el enlace físico
-    local.
+    local (no enrutable).
 -   ~~fec0::~~ -> El "prefijo de emplazamiento local" (en inglés,
     site-local prefix) específica que la dirección únicamente es válida
     dentro de una organización local. La RFC 3879 lo declaró
     **obsoleto**, estableciendo que los sistemas futuros no deben
     implementar ningún soporte para este tipo de dirección especial. Se
     deben sustituir por direcciones Local IPv6 Unicast.
--   fc00::/7 -> El prefijo de dirección local única (en inglés, unique
+-   fc00::/7 -> El prefijo de dirección local universal (en inglés, universal
     local address). Está definido por la RFC 4193. Se usa en
     substitución de las direcciones site-local... sería el equivalente a
     direcciones privadas IPv4 (192.168/24 ó 10/8).
