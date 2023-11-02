@@ -4,6 +4,10 @@ Todos los recordatorios son válidos para todo el módulo formativo, salvo cuand
 
 El incumplimiento podrá ser motivo de penalizaciones o dar por no entregado, así como apercibimientos oficiales.
 
+**2 de noviembre**
++ Las capturas de salida estándar se realizarán con `tee` o `Tee-Object` como así se indicó el primer día de clase.
++ Únicamente cuando no sea posible se realizarán con el método de realizar captura y subir (siempre con GIT) y asegurándoos de que funcionan mediante ruta relativa al README y no a rutas absolutas respecto a github.
+
 **26 de octubre**
 + No se admitirán [variables ninja](https://es.javascript.info/ninja-code) bajo ninguna circunstancia. Del nombre de las mismas deberá poder inferirse su contenido u utilidad.
 

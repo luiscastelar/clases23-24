@@ -71,8 +71,8 @@
   + [x] **ESNOG 30**
   + [ ] ~~Cont. proyecto UT1~~
 + 31o:
-  + [ ] Cont. proyecto UT1
-  + [ ] **Exámen de direccionamiento de IPv4**
+  + [x] Cont. proyecto UT1
+  + [x] **Exámen de direccionamiento de IPv4**
 + 2n:
   + [ ] Continuación IPv6
   + [ ] Intro Packet Tracert
