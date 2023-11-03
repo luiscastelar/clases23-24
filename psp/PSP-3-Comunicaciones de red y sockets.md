@@ -142,6 +142,9 @@ El servidor:
 Se aceptarán más de 2 clientes. \
 Las conversaciones comenzarán con el nombre del emisor.
 
+[*Patrón Observador*](https://es.wikipedia.org/wiki/Observer_(patr%C3%B3n_de_dise%C3%B1o))
+
+
 
 ## Desarrollo
 [apuntes - codeandcoke.com](https://psp.codeandcoke.com/apuntes:sockets)
