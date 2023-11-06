@@ -122,7 +122,8 @@ public class Cliente {
 }
 
 ```
-<details>
+
+</details>
 
 5. **PrinterWriter:** a menudo los alumnos se siente más cómodos utilizando PrinterWriter ya que con lo que queremos trabajar es con cadenas de caracteres. En este caso, debemos recordar activar la *autoflush* ya que de otra forma deberemos controlarlo “a mano”. \
 
