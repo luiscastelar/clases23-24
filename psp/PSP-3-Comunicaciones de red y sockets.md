@@ -135,19 +135,35 @@ El servidor:
 3. cuando reciba el segundo cliente comenzará a gestionar los mensajes
 4. si recibe un “EXIT” de cualquiera de los dos clientes enviará un “ SE HA CERRADO LA SALA ” y desconectará a los clientes.
 
++ [ejemplo](https://parzibyte.me/blog/2018/02/09/sockets-java-chat-cliente-servidor/)
+
 **Mejoras:**
 + Gestión del doble check
 
-## Chat 1 a muchos:
-Se aceptarán más de 2 clientes. \
+## ~~Chat 1 a muchos:~~
+Se aceptarán más de 1 clientes. \
 Las conversaciones comenzarán con el nombre del emisor.
 
-[*Patrón Observador*](https://es.wikipedia.org/wiki/Observer_(patr%C3%B3n_de_dise%C3%B1o))
+[*Patrón Observador*](https://es.wikipedia.org/wiki/Observer_(patr%C3%B3n_de_dise%C3%B1o)) (ojo que la interface Observer está obsoleta desde Java 9).
 
+## Multicast UDP
+
+## Transferencia de objetos
+
+## Interfaces de Programación de Aplicaciones - API
++ [tipos](https://hackernoon.com/the-system-design-cheat-sheet-api-styles-rest-graphql-websocket-webhook-rpcgrpc-soap?ref=reactivisima.com&utm_source=substack&utm_medium=email)
+
+### WebSockets
++ [ejercicio websocket sobre servlet](https://www.arquitecturajava.com/java-websockets/)
++ [barra de progreso con websocket](https://www.oscarblancarteblog.com/2017/02/23/websocket-con-java/)
+
+### RPC 
+[Brustusin RPC](http://rpc.brutusin.org/)
 
 
 ## Desarrollo
 [apuntes - codeandcoke.com](https://psp.codeandcoke.com/apuntes:sockets)
+
 
 # Referencias
 + [Doc Oficial de Red en Java21](https://docs.oracle.com/en/java/javase/21/core/java-networking.html#GUID-82A738CB-2A1C-4AC8-B9DA-C4543D398B51)

@@ -86,19 +86,20 @@
   + [x] Inicio de práctica
 
 5. 30o:
-  + [ ] Continuación de la práctica
-  + [ ] Resolución de dudas UT3, UT2 y UT1
+  + [x] Continuación de la práctica
+  + [x] Resolución de dudas UT3, UT2 y UT1
 
 6. 3n:
-  + [ ] Continuación de la práctica
-  + [ ] Resolución de dudas UT3, UT2 y UT1
+  + [x] Continuación de la práctica
+  + [x] Resolución de dudas UT3, UT2 y UT1
 
 7. 6n:
+  + [ ] [Postmorten Cloudflare 4nov23](https://twitter.com/weareDMNTRs/status/1720726674495472120)
   + [ ] Continuación de la práctica
   + [ ] Resolución de dudas UT3, UT2 y UT1
 
 8. 10n:
-   + [ ] **Examen UT3**
+   + [ ] **Entrega PRÁCTICA UT3**
 
 ---
 **2ª EVALUACIÓN**

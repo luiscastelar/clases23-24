@@ -1,5 +1,46 @@
   #curso23_24 #PSP
 
+---
+# UT3 Comunicaciones de red - Sockets 
+12h - 6 sesiones - Del 30/10/2023 al 17/11/2023. *1ª eva*.
+
+1. 27o:
+    + [ ] Java Socket - Hola mundo cliente/servidor.
+3. 3n:
+    + [ ] Chat 1 a 1.
+    + [ ] ~~Chat 1 sala con N clientes (por grupos).~~
+5. 6n:
+    + [ ] Transferencia de objetos entre cliente-servidor. Transferir objeto *Persona(nombre, edad)*.
+    + [ ] Servidor web (de archivos html).
+7. 10n:
+    + [ ] Websockets.
+8. 13n:
+    + [ ] Ejercicios y dudas.
+9. 17n: **Exámen UT3**
+
+---
+# UT4 Servicios de red 
+12h - 6 sesiones - Del 20/11/2023 al 11/12/2023. *1ª eva*.
+
+---
+**2ª EVALUACIÓN**
+
+---
+# UT5 Java Fx 
+8h - 4 sesiones - Del 12/12/2023 al 12/01/2024. *2ª eva*.
+
+---
+UT6 Técnicas de programación segura 4 15/01/2024 19/01/2024 2ª
+
+---
+UT7 Proyecto integrador 20 22/01/2024 01/03/2024 2ª
+
+
+---
+**1ª EVALUACIÓN**
+
+---
+
 # UT0 - Presentación
 2h - 1 sesiones - 15s
 
@@ -59,36 +100,3 @@
     * [ ] **Examen UT2**
     * [ ] Aclaración `Runnable worker = new Worker().run()` vs `new Thread( worker ).start()`
 
----
-# UT3 Comunicaciones de red - Sockets 
-12h - 6 sesiones - Del 30/10/2023 al 17/11/2023. *1ª eva*.
-
-1. 27o:
-    + [ ] Java Socket - Hola mundo cliente/servidor.
-3. 3n:
-    + [ ] Chat 1 a 1.
-    + [ ] Chat 1 sala con N clientes (por grupos).
-5. 6n:
-    + [ ] Servidor web (de archivos html).
-7. 10n:
-    + [ ] Websockets.
-8. 13n:
-    + [ ] Ejercicios y dudas.
-9. 17n: **Exámen UT3**
-
----
-# UT4 Servicios de red 
-12h - 6 sesiones - Del 20/11/2023 al 11/12/2023. *1ª eva*.
-
----
-**2ª EVALUACIÓN**
-
----
-# UT5 Java Fx 
-8h - 4 sesiones - Del 12/12/2023 al 12/01/2024. *2ª eva*.
-
----
-UT6 Técnicas de programación segura 4 15/01/2024 19/01/2024 2ª
-
----
-UT7 Proyecto integrador 20 22/01/2024 01/03/2024 2ª
