@@ -18,6 +18,8 @@ Crea un cliente-servidor TCP y otro UDP.
 
 1. Primero comenzaremos programando el servidor y lo atacaremos con nuestro cliente `nc localhost 5000`
 + **Servidor**:
+<details>
+
 ```java
 import java.io.*;
 import java.net.*;
@@ -66,6 +68,7 @@ public class Servidor {
     
 }
 ```
+</details>
 
 2. Ahora modificaremos el servidor para que reciba un datos y los muestre hasta que el cliente envíe el comando `QUIT`.
 
@@ -73,6 +76,8 @@ public class Servidor {
 
 4. Ahora programaremos el cliente:
 +  **Cliente**:
+<details>
+
 ```java
 import java.io.*;
 import java.net.*;
@@ -117,6 +122,7 @@ public class Cliente {
 }
 
 ```
+<details>
 
 5. **PrinterWriter:** a menudo los alumnos se siente más cómodos utilizando PrinterWriter ya que con lo que queremos trabajar es con cadenas de caracteres. En este caso, debemos recordar activar la *autoflush* ya que de otra forma deberemos controlarlo “a mano”. \
 
