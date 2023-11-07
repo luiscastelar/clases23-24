@@ -1,35 +1,5 @@
 #curso23_24 #PAR [estado:: Working] 
 
-# 1 Caracterización de redes. Introducción a los modelos de capas y normas. 
-28h del 15/09/2023 al 18/10/2023 *1ª eva*
-* [x] 19s: Presentación
-* [x] 20s: De introducción hasta componentes.
-* [x] 21s: De componentes hasta arquitectura.
-* [x] 22s: De arquitectura hasta encapsulamiento.
-* [x] 26s: De encapsulamiento hasta normas. Ejercicio de normas.
-* 27s:
-  * [x] Tecnologías “Ethernet”
-  * [x] CSMA/CD
-  * [x] creación de latiguillos.
-* 28s:
-  * [x] Cableado estructurado, espacios
-  * [x] y conectando equipos de red (routers y switches).
-  * [x] Cuartos de comunicaciones, armarios
-  * [x] y *patch panels*.
-* 3o:
-  + [x] Revisión de [[pub23/recordatorios]]
-  * [x] Temperaturas, canalizaciones y medios de transmisión.
-* 4o:
-  * [x] Conectores y tomas.
-  * [x] Panel de parcheo y ejercicio de panel.
-  * [x] PoE.
-  * [x] Ejercicios.
-* [ ] **Proyecto de instalación**:
-  * 12 horas aprox
-  * 1 hora por día de clase
-  * Finalización y defensa 7 nov   
-* [x] Día del Pilar
-* [ ] 9n: NO ~~Exámen UT1~~
 
 # 2 Integración de elementos en una red. 
 28h 18/10/2023 16/11/2023 *1ª eva*
@@ -74,11 +44,13 @@
   + [x] Cont. proyecto UT1
   + [x] **Exámen de direccionamiento de IPv4**
 + 2n:
-  + [ ] Continuación IPv6
-  + [ ] Intro Packet Tracert
-  + [ ] Cont. proyecto UT1
+  + [x] Continuación IPv6
+  + [x] Intro Packet Tracert
+  + [x] Cont. proyecto UT1
 + 7n:
   + [ ] Cont. proyecto UT1
+  + [ ] [Documentación RACK](https://www.youtube.com/live/7RGkUdb37ZM?si=QO2lbcLtcD_zOBV0&t=2576)
+  + [ ] [Sorteo para defensa](https://www.random.org/)
 + 8n:
   + [ ] **Defensa proyecto UT1**
 + 9n:
@@ -109,3 +81,36 @@
 
 # 8 Proyecto integrador (dual). 
 28 03/05/2024 30/05/2024 3ª
+
+---
+
+# 1 Caracterización de redes. Introducción a los modelos de capas y normas. 
+28h del 15/09/2023 al 18/10/2023 *1ª eva*
+* [x] 19s: Presentación
+* [x] 20s: De introducción hasta componentes.
+* [x] 21s: De componentes hasta arquitectura.
+* [x] 22s: De arquitectura hasta encapsulamiento.
+* [x] 26s: De encapsulamiento hasta normas. Ejercicio de normas.
+* 27s:
+  * [x] Tecnologías “Ethernet”
+  * [x] CSMA/CD
+  * [x] creación de latiguillos.
+* 28s:
+  * [x] Cableado estructurado, espacios
+  * [x] y conectando equipos de red (routers y switches).
+  * [x] Cuartos de comunicaciones, armarios
+  * [x] y *patch panels*.
+* 3o:
+  + [x] Revisión de [[pub23/recordatorios]]
+  * [x] Temperaturas, canalizaciones y medios de transmisión.
+* 4o:
+  * [x] Conectores y tomas.
+  * [x] Panel de parcheo y ejercicio de panel.
+  * [x] PoE.
+  * [x] Ejercicios.
+* [ ] **Proyecto de instalación**:
+  * 12 horas aprox
+  * 1 hora por día de clase
+  * Finalización y defensa 7 nov   
+* [x] Día del Pilar
+* [ ] 9n: NO ~~Exámen UT1~~

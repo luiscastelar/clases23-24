@@ -81,6 +81,68 @@ Crea un repositorio NUEVO y conviértelo en un Scrum Board (ver [ejemplo](https:
 3. Proyecto Mínimo Viable: es la cantidad mínima de funcionalidades o “Historias de Usuario” que necesitamos implementar para poner en el mercado nuestro producto.
 
 
+## Códigos fuente, objeto y ejecutable
+ + [ ] Código fuente, código objeto y código ejecutable; tecnologías de virtualización.
+
++ Nuestro lenguaje de alto nivel (C) `hola.c`
+
+  Cojamos un un `HolaMundo.java` que conocemos (*o casi*):
+  ```java
+  void main(){
+    System.out.println( "Hola mundo" );
+  }
+  ```
+  *Para ejecutar el código anterior: `java --enable-preview --source 21 hola.java`*.
+
+  Y veamos las similitudes con su homólogo en C:
+  ```C
+  #include <stdio.h>
+
+  int main(){
+    printf( "Hola mundo." );
+    return 0;
+  }
+  ```
+
+
+  
++ Código ensamblador <- `gcc -S hola.c`
+  
++ Código máquina <- `gcc -c hola.c`
+  
++ Código máquina enlazado (creación de proceso) <- `gcc hola.c -o hola.exe`
+![multiproceso](https://luiscastelar.duckdns.org/2023/assets/ED/UT3/pcb.png)
+  
+  ![multiproceso](https://luiscastelar.duckdns.org/2023/assets/ED/UT3/memoria_ppal.png)
+
+***Truco:*** *imposible acordarse de todo... man, comando --help y cheat.sh son vuestros amigos*.
+
+
+## Paradigmas de la programación:
++ Paradigma imperativo:
+  + Diseño estructurado: Diseño de datos, diseño arquitectónico, diseño de interfaz y diseño procedimental (secuencial, condicional, repetitiva)
+  + Diseño orientado a objetos
++ Programación funcional \
+  > En informática, la programación funcional es un paradigma de programación declarativa basado en el uso de verdaderas funciones matemáticas. En este estilo de programación las funciones son ciudadanas de primera clase, porque sus expresiones pueden ser asignadas a variables como se haría con cualquier otro valor; además de que pueden crearse funciones de orden superior.
+  > Fuente: [Wikipedia](https://es.wikipedia.org/wiki/Programaci%C3%B3n_funcional).
+  + Características:
+    + sólo funciones (sin repetitividad)
+    + sin variables
+  + *Repetitividad* vs *Recursividad*
+  + [Su presencia en `Java`](https://blog.codmind.com/que-es-la-programacion-funcional-en-java/)
+
+## Compilación/Interpretación y ejecución
+ + Java
+ 
+ *Requisito Vagrant*
+ + PHP y Python
+ 
+ + javascript
+ + [C++ en VS Code](https://code.visualstudio.com/docs/cpp/config-mingw) y [C++ con MinGW](https://es.wikihow.com/compilar-un-programa-en-C-usando-el-compilador-GNU-%28GCC%29)
+ + [C#](https://desarrolloweb.com/articulos/primer-programa-csharp)
+
+
+
 ## Continuación:
 + [Desarrollo de software - fases](https://github.com/jamj2000/DAW1-ED-Apuntes/blob/master/1.ELEMENTOS.md#desarrollo-de-software)
 + [Lenguajes de programación](https://github.com/jamj2000/DAW1-ED-Apuntes/blob/master/1.ELEMENTOS.md#lenguajes-de-programaci%C3%B3n)

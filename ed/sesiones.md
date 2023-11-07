@@ -2,43 +2,6 @@
 
 Esto es un documento vivo donde hacer una planificación diaria y control del trabajo realizado.
 
-# 1 Introducción a Sistemas de control de versiones (GIT)
- 12h del 14/09/2023 al 03/10/2023.  *1a eva*
-
- + [x] 19s: Presentación
-   + [x] Programación y bases del módulo
- + [x] 20s: UT1 CVS
-   + [x] Funcionamiento de Git
-   + [x] Ejercicio de Git
-   + [x] Práctica 1
- + [x] 26s: UT1
-   + [x] Resolución de dudas y defensa de prácticas
- + [x] 27s: UT1
-   + [x] Resolución de dudas y defensa de prácticas
- + [x] 3o:
-   + [x] Entrega de prácticas.
-   + [x] Revisión de [[pub23/recordatorios]]
- + [x] 4o: [**Exámen UT1** (10:05-11:00)](https://moodle.educarex.es/iescastelarfp/mod/assign/view.php?id=51769) / [avance curso UML - Pildoras Informáticas](https://www.youtube.com/watch?v=KY81igoV8W0&list=PLU8oAlHdN5BmmxXT0C2HO0bLRHZFWKbhH)
- 
-
-# 2 Eleboración de diagramas de comportamiento
- 14h -> 7 sesiones del  04/10/2023 al 25/10/2023. *1a eva*
-
-* [x] 3o: Introducción a UML
-  * [x] Apuntes U.Cantabria - pag 1-14
-  * [x] Cuatro tipos de elementos - breve -> pag 66-92:
-    * [ ] ~~Estructurales~~ 
-    * [x] De Comportamiento: Casos de uso, secuencia, estados y actividad
-    * [ ] ~~De Agrupamiento~~
-    * [ ] ~~De Anotación~~
-* [x] 10o: Ejercicios de **casos de uso**.
-* [x] 11o: Ejercicios de **diagramas de secuencia**.
-* [x] 17o: Ejercicios de **diagramas de estado**.
-* [x] 18o: Ejercicios de **diagramas de actividades**.
-* [x] ~~24o~~: *Exceso de horas*
-* [x] 25o: **Exámen UT2**
-
-  
 # 3 Desarrollo de software
  14h -> 7 sesiones del 26/10/2023 al 22/11/2023. *1a eva*.
 
@@ -47,12 +10,12 @@ Esto es un documento vivo donde hacer una planificación diaria y control del tr
  + [x] 25o:
    * [x] Ciclo de vida: análisis, diseño, codificación, pruebas y mantenimiento.
    + [x] Modelos de ciclo de vida: cascada (clásico), en V
+ + [x] 31o:
+   + [x] Modelos de ciclo de vida: espiral, incremental (agile).
+   + [x] *Metodologías ágiles. Técnicas. Características*.
+   + [x] Fases de desarrollo
  + [ ] 7n:
-     + [ ] Modelos de ciclo de vida: espiral, incremental (agile).
-     + [ ] *Metodologías ágiles. Técnicas. Características*.
-     + [x] Fases de desarrollo
      + [ ] Código fuente, código objeto y código ejecutable; tecnologías de virtualización. 
- + [ ] 8n:
      + [ ] Paradigma imperativo:
          + [ ] Diseño estructurado: Diseño de datos, diseño arquitectónico, diseño de interfaz y diseño procedimental (secuencial, condicional, repetitiva)
          + [ ] Diseño orientado a objetos
@@ -60,12 +23,16 @@ Esto es un documento vivo donde hacer una planificación diaria y control del tr
        + [ ] Características
        + [ ] *Repetitividad* vs *Recursividad*
        + [ ] Su presencia en `Java`
-     + [ ] Programación lógica
+     + [ ] Programación lógica     
+ + [ ] 8n: Proceso de obtención de código ejecutable a partir del código fuente; herramientas implicadas según el lenguaje:
+     + [ ] Java
+     + [ ] *Requisito Vagrant*
+     + [ ] PHP y Python
+     + [ ] javascript
+     + [ ] [C++ en VS Code](https://code.visualstudio.com/docs/cpp/config-mingw) y [C++ con MinGW](https://es.wikihow.com/compilar-un-programa-en-C-usando-el-compilador-GNU-%28GCC%29)
+     + [ ] [C#](https://desarrolloweb.com/articulos/primer-programa-csharp)
  + [ ] 14n:
-     + [ ] Características de los lenguajes más difundidos.
-     + [ ] Proceso de obtención de código ejecutable a partir del código fuente; herramientas implicadas.
      + [ ] Documentación
- + [ ] 15n: Repaso
  + [ ] 21n: **Exámen UT3**
 
 # Cierre de trimestre
@@ -176,6 +143,45 @@ Horas de trabajo **en casa** => ==14h== de 22h
  + [ ] 29m: **RECUPERACIÓN** 3ª evaluación.
 
 Horas de trabajo **en casa** => ==22h== de 22h
+
+---
+
+
+# 1 Introducción a Sistemas de control de versiones (GIT)
+ 12h del 14/09/2023 al 03/10/2023.  *1a eva*
+
+ + [x] 19s: Presentación
+   + [x] Programación y bases del módulo
+ + [x] 20s: UT1 CVS
+   + [x] Funcionamiento de Git
+   + [x] Ejercicio de Git
+   + [x] Práctica 1
+ + [x] 26s: UT1
+   + [x] Resolución de dudas y defensa de prácticas
+ + [x] 27s: UT1
+   + [x] Resolución de dudas y defensa de prácticas
+ + [x] 3o:
+   + [x] Entrega de prácticas.
+   + [x] Revisión de [[pub23/recordatorios]]
+ + [x] 4o: [**Exámen UT1** (10:05-11:00)](https://moodle.educarex.es/iescastelarfp/mod/assign/view.php?id=51769) / [avance curso UML - Pildoras Informáticas](https://www.youtube.com/watch?v=KY81igoV8W0&list=PLU8oAlHdN5BmmxXT0C2HO0bLRHZFWKbhH)
+ 
+
+# 2 Eleboración de diagramas de comportamiento
+ 14h -> 7 sesiones del  04/10/2023 al 25/10/2023. *1a eva*
+
+* [x] 3o: Introducción a UML
+  * [x] Apuntes U.Cantabria - pag 1-14
+  * [x] Cuatro tipos de elementos - breve -> pag 66-92:
+    * [ ] ~~Estructurales~~ 
+    * [x] De Comportamiento: Casos de uso, secuencia, estados y actividad
+    * [ ] ~~De Agrupamiento~~
+    * [ ] ~~De Anotación~~
+* [x] 10o: Ejercicios de **casos de uso**.
+* [x] 11o: Ejercicios de **diagramas de secuencia**.
+* [x] 17o: Ejercicios de **diagramas de estado**.
+* [x] 18o: Ejercicios de **diagramas de actividades**.
+* [x] ~~24o~~: *Exceso de horas*
+* [x] 25o: **Exámen UT2**
 
 ---
 
