@@ -4,6 +4,13 @@ Todos los recordatorios son válidos para todo el módulo formativo, salvo cuand
 
 El incumplimiento podrá ser motivo de penalizaciones o dar por no entregado, así como apercibimientos oficiales.
 
+**8 de noviembre**
++ Respecto a las correcciones encuentro que debemos recordar algunos términos que a algunos se les olvida:
+  1. Si no existe documentación no continúa la corrección ya que “el cliente” no sabe como comenzar.
+  2. Si la documentación no refleja algún requisito se entenderá que no ha sido realizado (o no de forma *original)
+  3. Si la práctica/examen/tarea arroja errores no gestionados y rompe, el corrector (automático o humano) para ya que no puede evaluar más.
+  4. La práctica/examen/tarea debe cumplir con TODAS los requisitos de “el cliente”. Excepcionalmente, “el cliente” puede quedar temporalmente satisfecho si algunos requisitos auxiliares no se cumplen. Ante la duda, consultar a “el cliente”.
+
 **2 de noviembre**
 + Las capturas de salida estándar se realizarán con `tee` o `Tee-Object` como así se indicó el primer día de clase.
 + Únicamente cuando no sea posible se realizarán con el método de realizar captura y subir (siempre con GIT) y asegurándoos de que funcionan mediante ruta relativa al README y no a rutas absolutas respecto a github.

@@ -48,11 +48,11 @@
   + [x] Intro Packet Tracert
   + [x] Cont. proyecto UT1
 + 7n:
-  + [ ] Cont. proyecto UT1
-  + [ ] [Documentación RACK](https://www.youtube.com/live/7RGkUdb37ZM?si=QO2lbcLtcD_zOBV0&t=2576)
-  + [ ] [Sorteo para defensa](https://www.random.org/)
+  + [x] Cont. proyecto UT1
+  + [x] [Sorteo para defensa](https://www.random.org/)
 + 8n:
   + [ ] **Defensa proyecto UT1**
+  + [ ] [Documentación RACK](https://www.youtube.com/live/7RGkUdb37ZM?si=QO2lbcLtcD_zOBV0&t=2576)
 + 9n:
   + [ ] ...
 + 14n:

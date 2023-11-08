@@ -71,7 +71,7 @@ Crea un repositorio NUEVO y conviértelo en un KanBoard siguiendo los pasos indi
 
 
 #### Tarea 2: 
-Crea un repositorio NUEVO y conviértelo en un Scrum Board (ver [ejemplo](https://github.com/users/itzrick620/projects/4/views/1))
+~~Crea un repositorio NUEVO y conviértelo en un Scrum Board~~ (ver [ejemplo](https://github.com/users/itzrick620/projects/4/views/1))
 
 
 ## PoC, Prototipo y PMV
@@ -106,22 +106,26 @@ Crea un repositorio NUEVO y conviértelo en un Scrum Board (ver [ejemplo](https:
 
 
   
-+ Código ensamblador <- `gcc -S hola.c`
-  
-+ Código máquina <- `gcc -c hola.c`
++ Código ensamblador <- `gcc -S hola.c` => `hola.s`
+
++ Código máquina
+  + Desde código fuente: `gcc -c hola.c` 
+  + Desde ensamblador: `as hola.s -o hola.o`
   
 + Código máquina enlazado (creación de proceso) <- `gcc hola.c -o hola.exe`
 ![multiproceso](https://luiscastelar.duckdns.org/2023/assets/ED/UT3/pcb.png)
   
   ![multiproceso](https://luiscastelar.duckdns.org/2023/assets/ED/UT3/memoria_ppal.png)
+También desde el código no enlazado `ld /usr/lib/x86\_64-linux-gnu/crti.o /usr/lib/x86\_64-linux-gnu/crtn.o /usr/lib/x86\_64-linux-gnu/crt1.o -lc hola.o -dynamic-linker /l  
+ib64/ld-linux-x86-64.so.2 -o hola.exe`.
 
 ***Truco:*** *imposible acordarse de todo... man, comando --help y cheat.sh son vuestros amigos*.
 
 
 ## Paradigmas de la programación:
 + Paradigma imperativo:
-  + Diseño estructurado: Diseño de datos, diseño arquitectónico, diseño de interfaz y diseño procedimental (secuencial, condicional, repetitiva)
-  + Diseño orientado a objetos
+  + Diseño estructurado: Diseño de datos, diseño arquitectónico, diseño de interfaz y diseño procedimental (secuencial, condicional, repetitiva).
+  + Diseño orientado a objetos: agregación y composición.
 + Programación funcional \
   > En informática, la programación funcional es un paradigma de programación declarativa basado en el uso de verdaderas funciones matemáticas. En este estilo de programación las funciones son ciudadanas de primera clase, porque sus expresiones pueden ser asignadas a variables como se haría con cualquier otro valor; además de que pueden crearse funciones de orden superior.
   > Fuente: [Wikipedia](https://es.wikipedia.org/wiki/Programaci%C3%B3n_funcional).
