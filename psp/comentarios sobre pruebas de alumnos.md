@@ -1,5 +1,24 @@
   #curso23_24 #PSP
 
+# UT2 - Programación multihilo 
+
+1. **Debéis entregar una copia en el moodle**
+
+2. El siguiente código tiene 2 problemas:
+    ```java
+    final int MIN = 1;
+    final int MAX = 10_000;
+    final int MITAD = (MAX) / 2;
+    Runnable runnable1 = new MiRunnable(MIN, MITAD, DUREZA, lista);
+    Runnable runnable2 = new MiRunnable(MITAD+1, MAX, DUREZA, lista);
+    ```
+    
+    El primero y algo intuitivo, que el me da una lista de 9694 elementos (siempre menos de 10.000). ¿Por qué?
+    
+    Pero el segundo es aún más opaco (ver ejercicio de llamas a métodos con paso de argumentos)
+
+3. ...
+
 
 # UT1 - Programación multiproceso 
 
@@ -55,10 +74,10 @@
 
     *En el procesado posterior de los procesos deberemos también tener en cuenta que puede no existir.*
 
-7. 
+
 
 ---
-# UT2 - Programación multihilo 
+
 ...
 
 

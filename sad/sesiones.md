@@ -51,6 +51,11 @@ Evaluación de la unidad:**
   + iptables - cliente-5 debe impedir el acceso a cliente-4
     
 + Participación en clase (10%).
+
+---
+
+**Exámen recuperación 1ª evaluación
+
   
 ---
 **2ª EVALUACIÓN**

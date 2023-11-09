@@ -5,24 +5,38 @@
 12h - 6 sesiones - Del 30/10/2023 al 17/11/2023. *1ª eva*.
 
 1. 27o:
-    + [ ] Java Socket - Hola mundo cliente/servidor.
-3. 3n:
-    + [ ] Chat 1 a 1.
+    + [x] Java Socket - Hola mundo cliente/servidor.
+2. 3n:
+    + [x] Chat 1 a 1.
     + [ ] ~~Chat 1 sala con N clientes (por grupos).~~
-5. 6n:
-    + [ ] Transferencia de objetos entre cliente-servidor. Transferir objeto *Persona(nombre, edad)*.
-    + [ ] Servidor web (de archivos html).
-7. 10n:
+3. 6n:
+    + [x] Transferencia de objetos entre cliente-servidor. Transferir objeto *Persona(nombre, edad)*.
+4. 10n:
     + [ ] Websockets.
-8. 13n:
+5. 13n:
     + [ ] Ejercicios y dudas.
-9. 17n: **Exámen UT3**
+6. 17n: **Examen UT3**
 
 ---
 # UT4 Servicios de red 
 12h - 6 sesiones - Del 20/11/2023 al 11/12/2023. *1ª eva*.
 
+1. 24n:
+    + [ ] Servidor web (de archivos html).
+2. 27n:
+    + [ ] .
+3. 1d:
+    + [ ] .
+4. 4d:
+    + [ ] .
+5. 11d:
+    + [ ] .
+    + [ ] **Examen UT4**
 ---
+
+Examen de recuperación de la primera evaluación: **15 de diciembre de 2023**
+ 
+
 **2ª EVALUACIÓN**
 
 ---
