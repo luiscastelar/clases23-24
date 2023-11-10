@@ -35,9 +35,13 @@
   + [x] Resolución de dudas UT3, UT2 y UT1
 
 8. 10n:
-   + [ ] **Entrega/Defensa PRÁCTICA UT3**
+  + [x] iptables
+  + [x] resolución dudas
+   
+9. 13n:
+ + [ ] **Entrega/Defensa PRÁCTICA UT3**
 
-Evaluación de la unidad:**
+**Evaluación de la unidad:**
 + ~~Exámen~~.
 + Práctica (90%):
   + Estructura completa de VM (pfsense + cliente-desktop + 2 clientes-cli) así como la correcta configuración de las distintas redes.
@@ -54,7 +58,7 @@ Evaluación de la unidad:**
 
 ---
 
-**Exámen recuperación 1ª evaluación
+**Exámen recuperación 1ª evaluación**
 
   
 ---

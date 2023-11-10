@@ -277,12 +277,31 @@ Closing socket and terminating program.
 ![APIs](https://luiscastelar.duckdns.org/2023/assets/PSP/UT3/APIs.png)
 + [tipos](https://hackernoon.com/the-system-design-cheat-sheet-api-styles-rest-graphql-websocket-webhook-rpcgrpc-soap?ref=reactivisima.com&utm_source=substack&utm_medium=email)
 
-### WebSockets
+### ~~WebSockets~~
+*Requiere conocimientos de servlet*
 + [ejercicio websocket sobre servlet](https://www.arquitecturajava.com/java-websockets/)
 + [barra de progreso con websocket](https://www.oscarblancarteblog.com/2017/02/23/websocket-con-java/)
 
-### RPC 
+### ~~RPC~~
 [Brustusin RPC](http://rpc.brutusin.org/)
+
+
+## PRÁCTICA
+
+Deberemos desarrollar un servidor que acepte 2 clientes y realice las funciones de transferencia de objetos de manera asíncrona (hilos) y segura (synchronized).
+
+Los objetos serán de la clase Mensaje que tendrá los campos “comando” y “objeto”.
+
+Los comandos a desarrollar serán: 
++ sms: mandar un mensaje de texto, esto es, el objeto será un String.
++ persona: mandar un objeto del tipo Persona( String nombre, int edad).
++ quit: debe cerrar las conexiones y salir. El objeto podrá ser de cualquier tipo ya que será ignorado (también del tipo Optional).
+
+El servidor deberá llamarse “servidor.java”, el cliente “cliente.java” y deberán tomar la configuración del [archivo de properties](https://www.arquitecturajava.com/java-properties-files-y-como-usarlos/) “config.properties”.
+
+El archivo de properties debe contener las constantes:
++ PUERTO
+
 
 
 ## Desarrollo
