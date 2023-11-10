@@ -297,10 +297,10 @@ Los comandos a desarrollar serán:
 + persona: mandar un objeto del tipo Persona( String nombre, int edad).
 + quit: debe cerrar las conexiones y salir. El objeto podrá ser de cualquier tipo ya que será ignorado (también del tipo Optional).
 
-El servidor deberá llamarse “servidor.java”, el cliente “cliente.java” y deberán tomar la configuración del [archivo de properties](https://www.arquitecturajava.com/java-properties-files-y-como-usarlos/) “config.properties”.
+El servidor deberá llamarse “servidor.java”, el cliente “cliente.java” y deberán tomar la configuración del [archivo de properties](https://www.arquitecturajava.com/java-properties-files-y-como-usarlos/) “config.properties”. Todos estos archivos deberán ubicarse a partir de la raíz de vuestro repositorio en la ruta REPO/UT3/PRATCICA.
 
 El archivo de properties debe contener las constantes:
-+ PUERTO
++ PUERTO=51324
 
 
 
