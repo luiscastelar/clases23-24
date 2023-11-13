@@ -12,9 +12,9 @@
 3. 6n:
     + [x] Transferencia de objetos entre cliente-servidor. Transferir objeto *Persona(nombre, edad)*.
 4. 10n:
-    + [ ] Ejercicios y dudas.
+    + [x] Ejercicios y dudas.
 5. ¿13n?: ~~Exceso de horas~~
-6. 17n: **Examen UT3**
+6. 17n: **Entrega práctica UT3**
 
 ---
 # UT4 Servicios de red 
@@ -32,7 +32,7 @@
 5. 4d:
     + [ ] Continuación trabajo
 . 11d:
-    + [ ] **Examen UT4**
+    + [ ] **Entrega práctica UT4**
 ---
 
 Examen de recuperación de la primera evaluación: **15 de diciembre de 2023**
