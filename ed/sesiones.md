@@ -14,8 +14,8 @@ Esto es un documento vivo donde hacer una planificación diaria y control del tr
    + [x] Modelos de ciclo de vida: espiral, incremental (agile).
    + [x] *Metodologías ágiles. Técnicas. Características*.
    + [x] Fases de desarrollo
- + [ ] 7n:
-     + [ ] Código fuente, código objeto y código ejecutable; tecnologías de virtualización. 
+ + [x] 7n:
+     + [x] Código fuente, código objeto y código ejecutable; tecnologías de virtualización. 
      + [ ] Paradigma imperativo:
          + [ ] Diseño estructurado: Diseño de datos, diseño arquitectónico, diseño de interfaz y diseño procedimental (secuencial, condicional, repetitiva)
          + [ ] Diseño orientado a objetos
@@ -24,7 +24,7 @@ Esto es un documento vivo donde hacer una planificación diaria y control del tr
        + [ ] *Repetitividad* vs *Recursividad*
        + [ ] Su presencia en `Java`
      + [ ] Programación lógica     
- + [ ] 8n: Proceso de obtención de código ejecutable a partir del código fuente; herramientas implicadas según el lenguaje:
+ + [ ] 13n: Proceso de obtención de código ejecutable a partir del código fuente; herramientas implicadas según el lenguaje:
      + [ ] Java
      + [ ] *Requisito Vagrant*
      + [ ] PHP y Python
@@ -43,6 +43,10 @@ Esto es un documento vivo donde hacer una planificación diaria y control del tr
  + [ ] 28n: **RECUPERACIÓN** 1ª evaluación.
 
 Horas de trabajo **en casa** => ==8h== de 22h
+
+----
+
+# Examen recuperación 1ª evaluación -> 21 noviembre 2023
 
 ---
  

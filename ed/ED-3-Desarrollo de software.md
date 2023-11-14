@@ -135,13 +135,68 @@ ib64/ld-linux-x86-64.so.2 -o hola.exe`.
   + *Repetitividad* vs *Recursividad*
   + [Su presencia en `Java`](https://blog.codmind.com/que-es-la-programacion-funcional-en-java/)
 
-## Compilación/Interpretación y ejecución
- + Java
+
+# Compilación/Interpretación y ejecución
+
+## Java: 
+   Bueno, en Java ya sabéis, `javac Main.java` para compilar, `java paquete.Main` para ejecutar.
+
  
- *Requisito Vagrant*
- + PHP y Python
  
- + javascript
+ ## PHP:
+ Vía docker: `docker run -it --rm --name my-running-script --hostname PHP_en_un_contenedor -v "$PWD":/usr/src/myapp -w /usr/src/myapp php:8.2-cli php holaMundo.php`
+
+> Donde:
+  	docker: invocamos al servicio
+  	run: el comando a ejecutar
+  	-i: interactivo
+  	-t: terminal (podemos unirlos como -it o -ti)
+  	--rm: borrar al finalizar
+  	--name *mi_contenedor*: nombre del contenedor
+  	--hostname *PHP_en_un_contenedor*: nombre de la máquina que corre **dentro** del contenedor
+    	-v: un volúmen. Es la conexión entre un directorio del `HOST` y uno del interior del contenedor. También válido para conectar archivos.
+  	"$PWD" o $(pwd): directorio actual. Las rutas deben ser **absolutas**.
+  	-w: directorio de trabajo de DENTRO del contenedor.
+  	php:version => imagen a instanciar(*)
+>
+    > Tras la imagen podrá añadirse el comando a ejecutar DENTRO del contenedor, así como los argumentos que se estímen necesarios. Si no se facilitan tomarán el comando por defecto indicado por el creador de la imagen (lo más habitual).
+> 
+    >	php: llamamos al comando `php` de DENTRO del contenedor
+  	--version: argumento
+  	holaMundo: otro argumento
+	
+El ejemplo anterior es muy completo, pero faltaría añadirle un `-p 8080:80` que nos permitiría que el **puerto 80 del HOST** exponga el **puerto 8080 del CONTENEDOR**.
+
+Cabe subrayar que el puerto del CONTENEDOR, así como los volúmenes expuestos del mismo son decididos por creador de la imagen, por lo que NO podéis cambiarlos. Vosotros expondréis los que queráis (o podáis) del HOST.
+
+## Python
+Vía docker: \
+`docker run -it --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/src/myapp python:3 python holaMundo.py`
+
+Donde:
+	Lo único que hemos cambiado ha sido la imagen `python:3`, el comando y el script a ejecutar.
+
+
+## C:
+`docker run --rm -v "$PWD":/usr/src/myapp -w /usr/src/myapp gcc:4.9 gcc -o myapp myapp.c`
+
+
+## JDK's:
+`docker run --rm -v "$PWD":/usr/src/myapp -w /usr/src/myapp openjdk:11 javac Main.java`
+
+`docker run --rm -v "$PWD":/usr/src/myapp -w /usr/src/myapp openjdk:11 java Main`
+
+Vamos a ver que pasa si ejecutamos un binario compilado en vuestro JDK actual (supongo que OpenJdk 21) y lo queremos ejecutar con el jdk 11.
+
+
+## javascript
+Como en muchos lenguajes, javascrit puede ejecutarse del lado del cliente y del servidor. 
+
+No nos detengamos ahora en qué significa, si no en que del lado del cliente podremos ejecutarlo en cualquier navegador web *moderno* con solo abrir la consola de desarrollo. 
+
+Una vez allí, `console.log("hola mundo")` y tendremos nuestra prueba.
+En el navegador abrimos 
+
  + [C++ en VS Code](https://code.visualstudio.com/docs/cpp/config-mingw) y [C++ con MinGW](https://es.wikihow.com/compilar-un-programa-en-C-usando-el-compilador-GNU-%28GCC%29)
  + [C#](https://desarrolloweb.com/articulos/primer-programa-csharp)
 
