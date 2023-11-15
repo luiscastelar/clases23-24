@@ -57,8 +57,8 @@
   + [x] *Defensa proyecto UT1*
   + [x] Cont. proyecto UT1
 + 14n:
-  + [ ] *Defensa proyecto UT1*
-  + [ ] Examen IPv4/IPv6 (voluntario)
+  + [x] *Defensa proyecto UT1*
+  + [x] Comparativa IPv4-IPv6
 + 15n:
   + [ ] *Defensa proyecto UT1*
 + 16n:

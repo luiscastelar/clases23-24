@@ -43,6 +43,10 @@ Vamos a definir a grandes rasgos las mismas:
   ![espiral](https://3.bp.blogspot.com/-uEYkRrdS0cI/W9nbKU0XxCI/AAAAAAAAABo/0_pqo68Sn-kuBGcnOgSaa4ZB4TNYrYKWQCLcBGAs/s1600/iaaaarasrsat.png)
 + Incremental (métodos `Agile`): Scrum y Kanban
 
+## Continuación:
++ [Desarrollo de software - fases](https://github.com/jamj2000/DAW1-ED-Apuntes/blob/master/1.ELEMENTOS.md#desarrollo-de-software)
++ [Lenguajes de programación](https://github.com/jamj2000/DAW1-ED-Apuntes/blob/master/1.ELEMENTOS.md#lenguajes-de-programaci%C3%B3n)
+
 ### KANBAN
 
 
@@ -113,9 +117,10 @@ Crea un repositorio NUEVO y conviértelo en un KanBoard siguiendo los pasos indi
   + Desde ensamblador: `as hola.s -o hola.o`
   
 + Código máquina enlazado (creación de proceso) <- `gcc hola.c -o hola.exe`
-![multiproceso](https://luiscastelar.duckdns.org/2023/assets/ED/UT3/pcb.png)
   
+![multiproceso](https://luiscastelar.duckdns.org/2023/assets/ED/UT3/pcb.png)  
   ![multiproceso](https://luiscastelar.duckdns.org/2023/assets/ED/UT3/memoria_ppal.png)
+
 También desde el código no enlazado `ld /usr/lib/x86\_64-linux-gnu/crti.o /usr/lib/x86\_64-linux-gnu/crtn.o /usr/lib/x86\_64-linux-gnu/crt1.o -lc hola.o -dynamic-linker /l  
 ib64/ld-linux-x86-64.so.2 -o hola.exe`.
 
@@ -125,6 +130,14 @@ ib64/ld-linux-x86-64.so.2 -o hola.exe`.
 ## Paradigmas de la programación:
 + Paradigma imperativo:
   + Diseño estructurado: Diseño de datos, diseño arquitectónico, diseño de interfaz y diseño procedimental (secuencial, condicional, repetitiva).
+  + Diseño modular:
+  > La programación modular es un paradigma de programación que consiste en dividir un programa en módulos o subprogramas con el fin de hacerlo más legible y manejable.
+  > Se presenta históricamente como una evolución de la programación estructurada para solucionar problemas de programación más grandes y complejos de lo que esta puede resolver. 
+
+    [Ejemplo en python](https://docs.python.org/es/3/tutorial/modules.html). *En Java no existe programación modular*.
+
+    Es muy muy utilizado en el frontend moderno, esto es, Javascript (ECMA Script 6).
+  
   + Diseño orientado a objetos: agregación y composición.
 + Programación funcional \
   > En informática, la programación funcional es un paradigma de programación declarativa basado en el uso de verdaderas funciones matemáticas. En este estilo de programación las funciones son ciudadanas de primera clase, porque sus expresiones pueden ser asignadas a variables como se haría con cualquier otro valor; además de que pueden crearse funciones de orden superior.
@@ -144,30 +157,34 @@ ib64/ld-linux-x86-64.so.2 -o hola.exe`.
  
  
  ## PHP:
- Vía docker: `docker run -it --rm --name my-running-script --hostname PHP_en_un_contenedor -v "$PWD":/usr/src/myapp -w /usr/src/myapp php:8.2-cli php holaMundo.php`
+ Vía docker: `docker run -it --rm --name my-running-script -v "$PWD":/usr/src/myapp -w /usr/src/myapp php:8.2-cli php holaMundo.php`
 
 > Donde:
-  	docker: invocamos al servicio
-  	run: el comando a ejecutar
-  	-i: interactivo
-  	-t: terminal (podemos unirlos como -it o -ti)
-  	--rm: borrar al finalizar
-  	--name *mi_contenedor*: nombre del contenedor
-  	--hostname *PHP_en_un_contenedor*: nombre de la máquina que corre **dentro** del contenedor
-    	-v: un volúmen. Es la conexión entre un directorio del `HOST` y uno del interior del contenedor. También válido para conectar archivos.
-  	"$PWD" o $(pwd): directorio actual. Las rutas deben ser **absolutas**.
-  	-w: directorio de trabajo de DENTRO del contenedor.
-  	php:version => imagen a instanciar(*)
+  	docker: invocamos al servicio \
+  	run: el comando a ejecutar \
+  	-i: interactivo \
+  	-t: terminal (podemos unirlos como -it o -ti) \
+  	--rm: borrar al finalizar \
+  	--name *mi_contenedor*: nombre del contenedor \
+  	-v: un volúmen. Es la conexión entre un directorio del `HOST` y uno del interior del contenedor. También válido para conectar archivos. \
+   	"$PWD" o $(pwd): directorio actual. Las rutas deben ser **absolutas**. \
+  	-w: directorio de trabajo de DENTRO del contenedor. \
+  	php:version => imagen a instanciar(*) \
 >
-    > Tras la imagen podrá añadirse el comando a ejecutar DENTRO del contenedor, así como los argumentos que se estímen necesarios. Si no se facilitan tomarán el comando por defecto indicado por el creador de la imagen (lo más habitual).
+    > Tras la imagen podrá añadirse el comando a ejecutar DENTRO del contenedor, así como los argumentos que se estímen necesarios. Si no se facilitan tomarán el comando por defecto indicado por el creador de la imagen (lo más habitual). \
 > 
-    >	php: llamamos al comando `php` de DENTRO del contenedor
-  	--version: argumento
-  	holaMundo: otro argumento
+    >	php: llamamos al comando `php` de DENTRO del contenedor. \
+  	--version: argumento \
+  	holaMundo: otro argumento \
 	
 El ejemplo anterior es muy completo, pero faltaría añadirle un `-p 8080:80` que nos permitiría que el **puerto 80 del HOST** exponga el **puerto 8080 del CONTENEDOR**.
 
 Cabe subrayar que el puerto del CONTENEDOR, así como los volúmenes expuestos del mismo son decididos por creador de la imagen, por lo que NO podéis cambiarlos. Vosotros expondréis los que queráis (o podáis) del HOST.
+
+### Y algo más real...
+Servidor nginx con intérprete php: `docker run -it --rm --name nginx -v $(pwd)/config_nginx:/conf  
+ig -p 8080:80 lscr.io/linuxserver/nginx`. -> Los archivos servidos deben encontrarse en `config_nginx/www`
+
 
 ## Python
 Vía docker: \
@@ -188,6 +205,42 @@ Donde:
 
 Vamos a ver que pasa si ejecutamos un binario compilado en vuestro JDK actual (supongo que OpenJdk 21) y lo queremos ejecutar con el jdk 11.
 
+### Java default:
+...y otros jdk disponibles en el sistema.
+
+```bash
+profesor@servidor ~ :/$whereis java 
+java: /usr/bin/java /etc/java /usr/share/java /usr/share/man/man1/java.1
+profesor@servidor ~ :/$ls -la /usr/bin/java
+lrwxrwxrwx 1 root root 22 ene 14  2023 /usr/bin/java -> /etc/alternatives/java
+profesor@servidor ~ :/$ls -la /etc/alternatives/java
+lrwxrwxrwx 1 root root 39 oct 18 17:14 /etc/alternatives/java -> /usr/lib/jvm/jdk-21-oracle-x64/bin/java
+profesor@servidor ~ :/$ls -la /usr/lib/jvm/
+default-java/                     .java-1.11.0-openjdk-amd64.jinfo  jdk-21-oracle-x64/                openjdk-11/                       
+java-1.11.0-openjdk-amd64/        java-11-openjdk-amd64/            .jdk-21-oracle-x64.jinfo          
+profesor@servidor ~ :/$java --version
+java 21 2023-09-19 LTS
+Java(TM) SE Runtime Environment (build 21+35-LTS-2513)
+Java HotSpot(TM) 64-Bit Server VM (build 21+35-LTS-2513, mixed mode, sharing)
+profesor@servidor ~ :/$/usr/lib/jvm/java-11-openjdk-amd64/bin/java --version
+openjdk 11.0.21 2023-10-17
+OpenJDK Runtime Environment (build 11.0.21+9-post-Debian-1deb11u1)
+OpenJDK 64-Bit Server VM (build 11.0.21+9-post-Debian-1deb11u1, mixed mode, sharing)
+```
+
+Y ésto, ¿qué quiere decir? 
+
+Pues que el path de mi sistema contiene el directorio `/usr/bin`, por lo que primeramente buscará y ejecutará la versión ahí indicada. 
+
+Ahora bien, si nosotros requerimos ejecutarla con otra versión, sólo tendremos que ejecutar el binario `java` que se encuentra dentro del JRE que deseamos utilizar.
+
+
+## C++:
+`docker run --rm -v "$PWD":/tmp  -w /tmp gcc:4.9 g++ -o HelloWorld ejercicio01.cpp`
+
+En este caso, me parece de especial relevancia dejaros los siguientes enlaces para un desarrollo más tradicional: [C++ en VS Code](https://code.visualstudio.com/docs/cpp/config-mingw) y [C++ con MinGW](https://es.wikihow.com/compilar-un-programa-en-C-usando-el-compilador-GNU-%28GCC%29)
+
+Más información sobre el [desarrollo en C++ mediante docker](https://www.codeguru.com/cplusplus/using-c-with-docker-engine/)
 
 ## javascript
 Como en muchos lenguajes, javascrit puede ejecutarse del lado del cliente y del servidor. 
@@ -197,11 +250,22 @@ No nos detengamos ahora en qué significa, si no en que del lado del cliente pod
 Una vez allí, `console.log("hola mundo")` y tendremos nuestra prueba.
 En el navegador abrimos 
 
- + [C++ en VS Code](https://code.visualstudio.com/docs/cpp/config-mingw) y [C++ con MinGW](https://es.wikihow.com/compilar-un-programa-en-C-usando-el-compilador-GNU-%28GCC%29)
- + [C#](https://desarrolloweb.com/articulos/primer-programa-csharp)
+
+## C-Sharp (C#)
+`docker run --rm -v "$PWD":/code:ro esolang/csharp-dotnet csharp-dotnet /code/hello.cs`
+
+Desarrollo básico en [C-Sharp (C#)](https://desarrolloweb.com/articulos/primer-programa-csharp)
 
 
+## No es lo ideal
+En ocasiones nos encontramos algunas cosas muy bestias, no ideales, pero siempre útiles: `docker run -it --rm -e password='YOUR_VNC_PASSWORD' -p 5901:5901 labeg/devpc`
 
-## Continuación:
-+ [Desarrollo de software - fases](https://github.com/jamj2000/DAW1-ED-Apuntes/blob/master/1.ELEMENTOS.md#desarrollo-de-software)
-+ [Lenguajes de programación](https://github.com/jamj2000/DAW1-ED-Apuntes/blob/master/1.ELEMENTOS.md#lenguajes-de-programaci%C3%B3n)
+¿Y porqué no son ideales? Pues porque aunque es muy rápido y cómodo, va en contra de la filosofía de los contenedores, la cual intenta qeu cada contenedor sea un entorno de desarrollo/producción independiente que ofrezca un **único** servicio. 
+
+¿Y ésto para qué? Pues si tenemos cada uno de los servicios en un contendor podremos desarrollar de forma independiente y aislada la funcionalidad, flexibilizando la adaptación y modificación y maximizando las posiblidades de testear de forma única dicho servicio.
+
+
+# Tarea
+Para la evaluación de esta unidad, además del ejercicio ya realizado de kanban vamos a realizar una batería de ensayos o PoC (pruebas de concepto) donde haremos un “hola mundo” en C, C++, C#, Java 11, Java 21, python y php.
+
+Deberéis elegir 1 de los lenguajes anteriores y realizaréis y documentaréis la instalación del entorno completo para la realización del “hola mundo”, y todos los demás vía `docker-cli`. 

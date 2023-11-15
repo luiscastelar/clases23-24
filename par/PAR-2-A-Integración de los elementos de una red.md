@@ -111,7 +111,6 @@ Direccionamiento IP. Tenemos en la actualidad 2 protocolos funcionando en parale
 *Off-topic*: [**Introducción a Packet-Tracert**](https://github.com/luiscastelar/clases23-24/blob/main/par/PAR-2-D-Introducci%C3%B3n%20a%20Packet-Tracer.md)
 
 
-
 ### Direcciones capa 4:
 
 De puertos y sockets (IP:Puerto)
@@ -129,16 +128,16 @@ Ejemplos:
 + http://[::1]:8081
 
 
-# {[Fold: Fold]} ==PDTE DE REVISIÓN==
-
 ## Medios físicos
 Como ya se ha  ido trabajando en la UT1, en esta sección sólo haremos referencias a distintas documentaciones.
 
 
-### Inalámbricos ==PDTE DE REVISIÓN==
-+ ==Debe incluir tipos de señales/modulaciones==
-+ ==Debe incluir los modos AD-HOC, infraestructura y punto a punto==
-+ ==Debe incluir los protocolos/sistemas de autenticación== 
+### Inalámbricos
++ Atiende a tipos de señales/modulaciones.
++ Modo infraestructura, [AD-HOC](https://es.wikipedia.org/wiki/Red_ad_hoc_inal%C3%A1mbrica) y punto a punto ([Wifi Direct](https://www.boletin.upiita.ipn.mx/index.php/ciencia/771-cyt-numero-67/1551-diferencias-entre-wi-fi-direct-y-el-modo-ad-hoc-del-estandar-ieee-802-11)).
++ Seguridad en protocolos/sistemas de autenticación
+  + WEP <- **No usar**
+  + WPA / WPA2 / WPA3 <- [Sólo WPA3 es seguro](https://es.wikipedia.org/wiki/Wi-Fi_Protected_Access) hoy, al menos que se sepa.
 
 
 Según la extensión:
@@ -216,5 +215,24 @@ Las tarjetas hoy en día se diferencia fundamentalmente en internas
 
 
 ## ==Documentación de la red==
+Implementaremos una propuesta de documentación con `netbox` cuando comenzemos a trabajar con elementos físicos.
 
 ## ==Monitorización==
+Será tratado en posteriores unidades, cuando tengamos las herramientas adecuadas.
+
+# ARP y NDP
+
+## ARP
+[Funcionamiento - YT:ProfeSantiago](https://youtu.be/NemUKjAsVY4?si=KE9WH2NCyzd-X_dJ&t=224)
+
+```bash
+profesor@servidor ~ :/$sudo arp | grep -v incomplete
+Address                  HWtype  HWaddress           Flags Mask            Iface
+192.168.10.202           ether   23:f2:c7:da:53:80   C                     ztr-xxxxx
+www.wifilowi.es          ether   71:92:cd:40:5f:61   C                     wlan0
+192.168.0.44             ether   71:14:df:99:76:c9   C                     wlan0
+172.19.0.2               ether   f2:83:ae:11:85:c9   C                     br-xxxxxx
+```
+
+## NDP
+Tarea: sabiendo que el funcionamiento es similar al ARP, que no tenemos Broadcast y que se reliza mediante grupos ... explica que hace y como lo hace.
