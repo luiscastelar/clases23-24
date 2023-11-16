@@ -417,8 +417,6 @@ Dada la IPv4 172.54.12.26/26 podemos decir de ella:
 + [Subnetting](https://youtu.be/sbpuez96vpo): dividir una red para tener una subred donde podamos tener 12 equipos (16 min)
 
 
-# ==VAMOS POR AQUÍ==
-
 
 ## Evolución 2: Máscara de Subred de Logitud Variable - VLSM
 

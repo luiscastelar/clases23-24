@@ -217,22 +217,11 @@ Las tarjetas hoy en día se diferencia fundamentalmente en internas
 ## ==Documentación de la red==
 Implementaremos una propuesta de documentación con `netbox` cuando comenzemos a trabajar con elementos físicos.
 
++ [netbox]
++ [rack tables](https://www.racktables.org/)
+
+
 ## ==Monitorización==
 Será tratado en posteriores unidades, cuando tengamos las herramientas adecuadas.
 
-# ARP y NDP
 
-## ARP
-[Funcionamiento - YT:ProfeSantiago](https://youtu.be/NemUKjAsVY4?si=KE9WH2NCyzd-X_dJ&t=224)
-
-```bash
-profesor@servidor ~ :/$sudo arp | grep -v incomplete
-Address                  HWtype  HWaddress           Flags Mask            Iface
-192.168.10.202           ether   23:f2:c7:da:53:80   C                     ztr-xxxxx
-www.wifilowi.es          ether   71:92:cd:40:5f:61   C                     wlan0
-192.168.0.44             ether   71:14:df:99:76:c9   C                     wlan0
-172.19.0.2               ether   f2:83:ae:11:85:c9   C                     br-xxxxxx
-```
-
-## NDP
-Tarea: sabiendo que el funcionamiento es similar al ARP, que no tenemos Broadcast y que se reliza mediante grupos ... explica que hace y como lo hace.

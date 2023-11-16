@@ -22,6 +22,7 @@ Cualquiera de las siguientes referencias son **muy** recomendables y se tomarán
 + [Apuntes - José Luis ](https://planificacionadministracionredes.readthedocs.io/es/latest/)
 + [WikiBooks](https://es.wikibooks.org/wiki/Planificaci%C3%B3n_y_Administraci%C3%B3n_de_Redes)
 + [NetworkAcadamy.io](https://www.networkacademy.io/ccna)
++ [Cisco network academy](https://www.sapalomera.cat/moodlecf/RS/4/index.html)
 + ...
 
 ### También podría interesarte:
