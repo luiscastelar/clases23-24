@@ -1,77 +1,42 @@
 #curso23_24 #SAD
 
 
-# UT3 - Instalación y config firewall 
-16h - 8 sesiones - 10o-10n
-
-1. 9o:
-   + [x] Presentación de firewall de perimetral `pfsense` y local `iptables`
-   + [x] Diseño de infraestructura para firewall perimetral (`pfsense`-vm + `vagrant`)
-   + [x] Redes:
-     + [x] Wan (red pública)
-     + [x] Lan (zona-controlada)
-     + [x] solo anfitrión
-
-2. 16o:
-   + [x] Trabajo sobre esquema de red
-3. 20o:
-   + [x] Exposición de práctica.
-   + [x] Cómo realizar preguntas inteligentes
- 
-4. 27o:
-  + [x] Inicio de práctica
-
-5. 30o:
-  + [x] Continuación de la práctica
-  + [x] Resolución de dudas UT3, UT2 y UT1
-
-6. 3n:
-  + [x] Continuación de la práctica
-  + [x] Resolución de dudas UT3, UT2 y UT1
-
-7. 6n:
-  + [x] [Postmorten Cloudflare 4nov23](https://twitter.com/weareDMNTRs/status/1720726674495472120)
-  + [x] Continuación de la práctica
-  + [x] Resolución de dudas UT3, UT2 y UT1
-
-8. 10n:
-  + [x] iptables
-  + [x] resolución dudas
-   
-9. 13n:
- + [ ] **Entrega/Defensa PRÁCTICA UT3**
-
-**Evaluación de la unidad:**
-+ ~~Exámen~~.
-+ Práctica (90%):
-  + Estructura completa de VM (pfsense + cliente-desktop + 2 clientes-cli) así como la correcta configuración de las distintas redes.
-  + DHCP en pfsense
-  + Servidor web en cliente-5
-  + Acceso desde cliente-6 a cliente-5 y al exterior.
-  + Tunel L2TP con credenciales profesor (y manual de configuración de usuario)
-  + Tunel Wireguard con credenciales profesor (y manual de configuración de usuario)
-  + pfsense - Bloqueo de Youtube a toda la red interna
-  + pfsense - Bloqueo de luiscastelar.duckdns.org a toda la red interna excepto al cliente-6 y Permiso de acceso a marca.com a todo la red interna excepto a cliente-4
-  + iptables - cliente-5 debe impedir el acceso a cliente-4
-    
-+ Participación en clase (10%).
-
----
-
-**Exámen recuperación 1ª evaluación**
-
-  
----
-**2ª EVALUACIÓN**
-
----
 # UT4 - Implantación técnicas acceso remoto
 16h - 8 sesiones - 13n-11d
 
++ ~~13n: Defensa UT3~~
++ ~~17n: Examen rec 1ª Evaluación~~
++ 20n:
+  + [ ] SSH
+  + [ ] Hardening SSH
++ 24n:
+  + [ ] Docker
+  + [ ] Continuación Hardening SSH
++ 27n:
+  + [ ] Wireguard / OpenVPN
++ 1d:
+  + [ ] Clientes Tailscale / Zerotier
++ 4d:
+  + [ ] Servidores Headscale / Zerotier-controler
++ 11d:
+  + [ ] **Examen UT4**
 
 ---
 # UT5 - Instalación y configuración de servidores proxy 
 12h - 6 sesiones - 12/12/2023 19/01/2024 2ª
+
++ 20n:
+  + [ ] 
++ 20n:
+  + [ ] 
++ 20n:
+  + [ ] 
++ 20n:
+  + [ ] 
++ 20n:
+  + [ ] 
++ 20n:
+  + [ ] 
 
 ---
 # UT6 - Implantación de soluciones de alta disponibilidad. 
@@ -115,7 +80,6 @@
 + Participación en clase (10%).
 
 
----
 # UT2 - Adopción de pautas
 8h - 4 sesiones - Del 29s al 9o
 
@@ -150,3 +114,58 @@
   + Copias de segurida entre máquinas (virtuales) (40%).
 + Participación en clase (10%).
 
+
+# UT3 - Instalación y config firewall 
+16h - 8 sesiones - 10o-10n
+
+1. 9o:
+   + [x] Presentación de firewall de perimetral `pfsense` y local `iptables`
+   + [x] Diseño de infraestructura para firewall perimetral (`pfsense`-vm + `vagrant`)
+   + [x] Redes:
+     + [x] Wan (red pública)
+     + [x] Lan (zona-controlada)
+     + [x] solo anfitrión
+
+2. 16o:
+   + [x] Trabajo sobre esquema de red
+3. 20o:
+   + [x] Exposición de práctica.
+   + [x] Cómo realizar preguntas inteligentes
+ 
+4. 27o:
+  + [x] Inicio de práctica
+
+5. 30o:
+  + [x] Continuación de la práctica
+  + [x] Resolución de dudas UT3, UT2 y UT1
+
+6. 3n:
+  + [x] Continuación de la práctica
+  + [x] Resolución de dudas UT3, UT2 y UT1
+
+7. 6n:
+  + [x] [Postmorten Cloudflare 4nov23](https://twitter.com/weareDMNTRs/status/1720726674495472120)
+  + [x] Continuación de la práctica
+  + [x] Resolución de dudas UT3, UT2 y UT1
+
+8. 10n:
+  + [x] iptables
+  + [x] resolución dudas
+   
+9. 13n:
+ + [x] **Entrega/Defensa PRÁCTICA UT3**
+
+**Evaluación de la unidad:**
++ ~~Exámen~~.
++ Práctica (90%):
+  + Estructura completa de VM (pfsense + cliente-desktop + 2 clientes-cli) así como la correcta configuración de las distintas redes.
+  + DHCP en pfsense
+  + Servidor web en cliente-5
+  + Acceso desde cliente-6 a cliente-5 y al exterior.
+  + Tunel L2TP con credenciales profesor (y manual de configuración de usuario)
+  + Tunel Wireguard con credenciales profesor (y manual de configuración de usuario)
+  + pfsense - Bloqueo de Youtube a toda la red interna
+  + pfsense - Bloqueo de luiscastelar.duckdns.org a toda la red interna excepto al cliente-6 y Permiso de acceso a marca.com a todo la red interna excepto a cliente-4
+  + iptables - cliente-5 debe impedir el acceso a cliente-4
+    
++ Participación en clase (10%).

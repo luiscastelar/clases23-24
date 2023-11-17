@@ -6,7 +6,7 @@
 # 3 Configuración y administración de conmutadores. 
 28 16/11/2023 20/12/2023 2ª
 + 16n:
-  + [ ] Dispositivos de interconexión de redes (1h).
+  + [x] Dispositivos de interconexión de redes (1h).
 + 21n:
   + [ ] 
 + 22n:

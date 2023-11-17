@@ -1,28 +1,12 @@
   #curso23_24 #PSP
 
----
-# UT3 Comunicaciones de red - Sockets 
-12h - 6 sesiones - Del 30/10/2023 al 17/11/2023. *1ª eva*.
 
-1. 27o:
-    + [x] Java Socket - Hola mundo cliente/servidor.
-2. 3n:
-    + [x] Chat 1 a 1.
-    + [ ] ~~Chat 1 sala con N clientes (por grupos).~~
-3. 6n:
-    + [x] Transferencia de objetos entre cliente-servidor. Transferir objeto *Persona(nombre, edad)*.
-4. 10n:
-    + [x] Ejercicios y dudas.
-5. ¿13n?: ~~Exceso de horas~~
-6. 17n: **Entrega práctica UT3**
-
----
 # UT4 Servicios de red 
 12h - 6 sesiones - Del 20/11/2023 al 11/12/2023. *1ª eva*.
 
 1. 13n:
-    + [ ] Servidor web (de archivos html).
-    + [ ] Planteamiento de trabajo
+    + [x] Servidor web (de archivos html).
+    + [x] Planteamiento de trabajo
 2. 24n:
     + [ ] Ejecución trabajo de creación de servicio y cliente de red
 3. 27n:
@@ -118,3 +102,18 @@ Examen de recuperación de la primera evaluación: **15 de diciembre de 2023**
     * [ ] **Examen UT2**
     * [ ] Aclaración `Runnable worker = new Worker().run()` vs `new Thread( worker ).start()`
 
+
+# UT3 Comunicaciones de red - Sockets 
+12h - 6 sesiones - Del 30/10/2023 al 17/11/2023. *1ª eva*.
+
+1. 27o:
+    + [x] Java Socket - Hola mundo cliente/servidor.
+2. 3n:
+    + [x] Chat 1 a 1.
+    + [ ] ~~Chat 1 sala con N clientes (por grupos).~~
+3. 6n:
+    + [x] Transferencia de objetos entre cliente-servidor. Transferir objeto *Persona(nombre, edad)*.
+4. 10n:
+    + [x] Ejercicios y dudas.
+5. ¿13n?: ~~Exceso de horas~~
+6. 17n: **Entrega práctica UT3**
