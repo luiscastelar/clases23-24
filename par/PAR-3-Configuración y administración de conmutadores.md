@@ -1,7 +1,7 @@
 #curso23_24 #PAR [estado::ToDo]
 
 
-## Dispositivos de interconexión de redes.
+# Dispositivos de interconexión de redes.
 
 Como ya hemos comentado, dada la flexibilidad aportada, la topología en
 estrella se ha impuesto ampliamente en las redes cableadas, por lo que
@@ -94,23 +94,36 @@ Descripción del comando `usr@maquina ~ :/$ arp -n`
 
 
 ## NDP
-Tarea: sabiendo que el funcionamiento es similar al ARP, que no tenemos Broadcast y que se reliza mediante grupos ... explica que hace y como lo hace.
+~~Tarea: sabiendo que el funcionamiento es similar al ARP, que no tenemos Broadcast y que se realiza mediante grupos ... explica que hace y como lo hace.~~
++ [Explicación detallada](https://www.omnisecu.com/tcpip/ipv6/ndp-neighbour-discovery-protocol-functions-of-ndp.php?expand_article=1)
++ [Explicación sencilla](https://ipcisco.com/lesson/ipv6-ndp-neighbour-discovery-protocol/)
+
+
+# Segmentación de la red. Ventajas que presenta.
+
+
+## Conmutadores y dominios de colisión y “broadcast”.
+
+## Segmentación de redes.
+
+# Formas de conexión al conmutador para su configuración.
+
+Cada equipo de red tiene software según el fabricante a través de WEB, APP propia o TELNET (muy obsoleto), pero todos los dispositivos suelen llevar **SSH**.
+
+El motivo por el que todos los dispositivos gestionables son configurables por SSH es porque la misma se puede realizar desde cualquier parte del mundo (LAN o WAN) y sobre dispositivos con interfaz gráfica y sin ella.
+
+
+## Configuración del conmutador.
 
 
 
+## Configuración estática y dinámica de la tabla de direcciones MAC.
 
-## Continuación con a la Simulación de redes:
+# Protocolo Spanning tree.
 
-Packet tracer de CISCO.
-![](https://luiscastelar.duckdns.org/2023/assets/PAR/configuracion_red.png)
+# El diseño de redes locales a tres capas (núcleo, distribución y acceso).
 
-## Software de configuración de los dispositivos de red.
+# Implantación y configuración de redes virtuales.
 
-Cada equipo de red tiene software según el fabricante a través de WEB,
-APP propia o TELNET (muy obsoleto), pero todos los dispositivos suelen
-llevar **SSH**.
-
-El motivo por el que todos los dispositivos gestionables
-son configurables por SSH es porque la misma se puede realizar desde
-cualquier parte del mundo (LAN o WAN) y sobre dispositivos con interfaz
-gráfica y sin ella.
+# Definición de enlaces troncales en los conmutadores y “routers”. El protocolo IEEE802.1Q.
+# Diagnóstico de incidencias.

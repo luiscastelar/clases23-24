@@ -8,9 +8,11 @@
 + 16n:
   + [x] Dispositivos de interconexión de redes (1h).
 + 21n:
-  + [ ] 
+  + [ ] ARP (packet tracer)
+  + [ ] NDP (packet tracer)
 + 22n:
-  + [ ] 
+  + [ ] Segmentación de la red. Ventajas.
+  + [ ] Subredes. Primera aproximación de segmentación.
 + ~~23n: Examen de recuperación 1ª Evaluación~~
 + 28n:
   + [ ] 

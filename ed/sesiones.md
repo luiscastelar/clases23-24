@@ -2,49 +2,6 @@
 
 Esto es un documento vivo donde hacer una planificación diaria y control del trabajo realizado.
 
-# 3 Desarrollo de software
- 14h -> 7 sesiones del 26/10/2023 al 22/11/2023. *1a eva*.
-
- + [x] 24o:
-     + [x] Licencias Copyright, Freeware, Open Source, GPL, MIT, Apache, BSL, etc.
- + [x] 25o:
-   * [x] Ciclo de vida: análisis, diseño, codificación, pruebas y mantenimiento.
-   + [x] Modelos de ciclo de vida: cascada (clásico), en V
- + [x] 31o:
-   + [x] Modelos de ciclo de vida: espiral, incremental (agile).
-   + [x] *Metodologías ágiles. Técnicas. Características*.
-   + [x] Fases de desarrollo
- + [x] 7n:
-     + [x] Código fuente, código objeto y código ejecutable; tecnologías de virtualización. 
-     + [ ] Paradigma imperativo:
-         + [ ] Diseño estructurado: Diseño de datos, diseño arquitectónico, diseño de interfaz y diseño procedimental (secuencial, condicional, repetitiva)
-         + [ ] Diseño orientado a objetos
-     + [ ] Programación funcional
-       + [ ] Características
-       + [ ] *Repetitividad* vs *Recursividad*
-       + [ ] Su presencia en `Java`
-     + [ ] Programación lógica     
- + [ ] 13n: Proceso de obtención de código ejecutable a partir del código fuente; herramientas implicadas según el lenguaje:
-     + [ ] Java
-     + [ ] *Requisito Vagrant*
-     + [ ] PHP y Python
-     + [ ] javascript
-     + [ ] [C++ en VS Code](https://code.visualstudio.com/docs/cpp/config-mingw) y [C++ con MinGW](https://es.wikihow.com/compilar-un-programa-en-C-usando-el-compilador-GNU-%28GCC%29)
-     + [ ] [C#](https://desarrolloweb.com/articulos/primer-programa-csharp)
- + [ ] 14n:
-     + [ ] Documentación
- + [ ] 21n: **Exámen UT3**
-
-# Cierre de trimestre
- + [ ] 22n: *Varios*
-   + [ ] [FC] CSV-II: ramas
-   + [ ] Repaso 1ª eva
-   + [ ] Defensa de prácticas **extraordinarias** (si las hubiera).
- + [ ] 28n: **RECUPERACIÓN** 1ª evaluación.
-
-Horas de trabajo **en casa** => ==8h== de 22h
-
-----
 
 # Examen recuperación 1ª evaluación -> 21 noviembre 2023
 
@@ -54,12 +11,11 @@ Horas de trabajo **en casa** => ==8h== de 22h
  8h del 23/11/2023 al 12/12/2023. *2a eva*.
 
  + [ ] 28n:
-   + [ ] *Recuperación 1ª**
-   + [ ] CSV-II: ramas (para los que no tengan recuperación).
+   + [ ] CSV-II: ramas.
  + [ ] 29n: Ejercicios de ramas.
  + [ ] 5d: Defensa de práctica de ramas.
    + [ ] Individual.
-   + [ ] Por equipos.
+   + [x] Por equipos.
  + [ ] 12d: **Exámen UT4**
  
 # 5 Instalación y uso de entornos de desarrollo
@@ -186,6 +142,49 @@ Horas de trabajo **en casa** => ==22h== de 22h
 * [x] 18o: Ejercicios de **diagramas de actividades**.
 * [x] ~~24o~~: *Exceso de horas*
 * [x] 25o: **Exámen UT2**
+
+
+# 3 Desarrollo de software
+ 14h -> 7 sesiones del 26/10/2023 al 22/11/2023. *1a eva*.
+
+ + [x] 24o:
+     + [x] Licencias Copyright, Freeware, Open Source, GPL, MIT, Apache, BSL, etc.
+ + [x] 25o:
+   * [x] Ciclo de vida: análisis, diseño, codificación, pruebas y mantenimiento.
+   + [x] Modelos de ciclo de vida: cascada (clásico), en V
+ + [x] 31o:
+   + [x] Modelos de ciclo de vida: espiral, incremental (agile).
+   + [x] *Metodologías ágiles. Técnicas. Características*.
+   + [x] Fases de desarrollo
+ + [x] 7n:
+     + [x] Código fuente, código objeto y código ejecutable; tecnologías de virtualización. 
+     + [x] Paradigma imperativo:
+         + [x] Diseño estructurado: Diseño de datos, diseño arquitectónico, diseño de interfaz y diseño procedimental (secuencial, condicional, repetitiva)
+         + [x] Diseño orientado a objetos
+     + [x] Programación funcional
+       + [x] Características
+       + [x] *Repetitividad* vs *Recursividad*
+       + [x] Su presencia en `Java`
+     + [ ] Programación lógica     
+ + [x] 13n: Proceso de obtención de código ejecutable a partir del código fuente; herramientas implicadas según el lenguaje:
+     + [x] Java
+     + [ ] ~~*Requisito Vagrant*~~
+     + [x] PHP y Python
+     + [x] javascript
+     + [ ] [C++ en VS Code](https://code.visualstudio.com/docs/cpp/config-mingw) y [C++ con MinGW](https://es.wikihow.com/compilar-un-programa-en-C-usando-el-compilador-GNU-%28GCC%29)
+     + [ ] [C#](https://desarrolloweb.com/articulos/primer-programa-csharp)
+ + [ ] 14n:
+     + [ ] Documentación
+ + [x] 21n: ~~Exámen UT3**~~
+
+# Cierre de trimestre
+ + [ ] 22n: *Varios*
+   + [ ] [FC] CSV-II: ramas
+   + [ ] ~~Repaso 1ª eva~~
+   + [ ] ~~Defensa de prácticas **extraordinarias** (si las hubiera).~~
+ + [ ] 21n: **RECUPERACIÓN** 1ª evaluación.
+
+Horas de trabajo **en casa** => ==8h== de 22h
 
 ---
 

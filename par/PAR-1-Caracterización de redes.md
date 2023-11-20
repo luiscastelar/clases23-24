@@ -282,12 +282,11 @@ Enfocándonos en la capa 1, la capa física, vamos a estudiar y analizar la orga
 ![](https://luiscastelar.duckdns.org/2023/assets/PAR/structured_cabling.png)
 
 El cableado estructurado es el tendido de cables en el interior de un
-edificio (o campus) para la creación de una LAN (Red de Áreal Local).
+edificio (o campus) para la creación de una LAN (Red de Área Local).
 
-A dia de hoy tratarse de cable de par trenzado de cobre UTP/STP (sin o con envolvente metálica), para redes de tipo Ethernet (norma IEEE
+A día de hoy tratarse de cable de par trenzado de cobre UTP/STP (sin o con envolvente metálica), para redes de tipo Ethernet (norma IEEE
 802.3). No obstante, también puede tratarse de fibra óptica en algún
-punto de interconexión de swie los
-    armarios de planta. Su necesidad de ancho de banda es elevado por lo que suele implementarse mediante conexiones ATM, FDDI o Gigabit
+punto de interconexión de los armarios de planta. Su necesidad de ancho de banda es elevado por lo que suele implementarse mediante conexiones ATM, FDDI o Gigabit
     Ethernet.
 7.  Subsistema distribuidor de edificio: realizan la misma función que
     los distribuidores de planta.

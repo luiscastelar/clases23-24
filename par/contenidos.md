@@ -14,17 +14,17 @@
 - [ ] Tipos de cableado “Ethernet”. Cableado estructurado.
 
 # 2. Integración de elementos en una red:
-- [ ] Los medios físicos.
-- [ ] Ancho de banda y tasa de transferencia.
-- [ ] Los cables metálicos (coaxial, STP y UTP).
-- [ ] Cables LSHZ/LSOH. Ventajas. Normativa.
+- [x] Los medios físicos.
+- [x] Ancho de banda y tasa de transferencia.
+- [x] Los cables metálicos (coaxial, STP y UTP).
+- [x] Cables LSHZ/LSOH. Ventajas. Normativa.
 - [ ] Factores físicos que afectan a la transmisión.
-- [ ] La conexión inalámbrica. Los espectros de onda de microondas y radio. Topologías. Asociación y autenticación en la WLAN.
-- [ ] Direccionamiento.
-- [ ] Dominios de colisión y de “broadcast”.
+- [x] La conexión inalámbrica. Los espectros de onda de microondas y radio. Topologías. Asociación y autenticación en la WLAN.
+- [x] Direccionamiento.
+- [x] Dominios de colisión y de “broadcast”.
 - [x] Direcciones IPv4 y máscaras de red.
 - [ ] Direccionamiento dinámico (DHCP).
-- [ ] Adaptadores.
+- [x] Adaptadores.
 - [ ] Adaptadores alámbricos: instalación y configuración.
 - [ ] Adaptadores inalámbricos: instalación y configuración.
 
