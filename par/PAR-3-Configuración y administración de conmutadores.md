@@ -99,31 +99,46 @@ Descripción del comando `usr@maquina ~ :/$ arp -n`
 + [Explicación sencilla](https://ipcisco.com/lesson/ipv6-ndp-neighbour-discovery-protocol/)
 
 
+
 # Segmentación de la red. Ventajas que presenta.
 
 
 ## Conmutadores y dominios de colisión y “broadcast”.
+Primero tenemos que ver los dominios para apreciar el problema y buscar una solución:
++ [Dominios, segmentos y broadcast](https://planificacionadministracionredes.readthedocs.io/es/latest/Tema06/Teoria.html#dominios)
+
+Vamos a replicar en `packet tracer` la figura siguiente y verificar la problemática de broadcast: \
+![segmentos](https://planificacionadministracionredes.readthedocs.io/es/latest/_images/tema06-116.png)
 
 ## Segmentación de redes.
+1. Cambiar los `hub` por `switch` y ver que pasa.
+2. Cambiar el `switch` central por un `router` y ver que pasa.
+
 
 # Formas de conexión al conmutador para su configuración.
-
 Cada equipo de red tiene software según el fabricante a través de WEB, APP propia o TELNET (muy obsoleto), pero todos los dispositivos suelen llevar **SSH**.
 
 El motivo por el que todos los dispositivos gestionables son configurables por SSH es porque la misma se puede realizar desde cualquier parte del mundo (LAN o WAN) y sobre dispositivos con interfaz gráfica y sin ella.
-
++ [[pub23/par/Cisco-C880|funcionamiento Cisco-C880]]
++ [descripción](https://planificacionadministracionredes.readthedocs.io/es/latest/Tema06/Teoria.html#puertos)
 
 ## Configuración del conmutador.
-
+[IOS Cisco](https://oscarmaestre.github.io/apuntes_redes/t3_conmutadores/apuntes_t3.html#configuracion-del-conmutador)
 
 
 ## Configuración estática y dinámica de la tabla de direcciones MAC.
 
-# Protocolo Spanning tree.
+
+# STP - Protocolo Spanning Tree.
++ [STP](https://planificacionadministracionredes.readthedocs.io/es/latest/Tema06/Teoria.html#stp)
+
 
 # El diseño de redes locales a tres capas (núcleo, distribución y acceso).
++ [redes por capas](https://planificacionadministracionredes.readthedocs.io/es/latest/Tema06/Teoria.html#distribucion)
+
 
 # Implantación y configuración de redes virtuales.
+
 
 # Definición de enlaces troncales en los conmutadores y “routers”. El protocolo IEEE802.1Q.
 # Diagnóstico de incidencias.
