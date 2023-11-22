@@ -4,6 +4,9 @@ Todos los recordatorios son válidos para todo el módulo formativo, salvo cuand
 
 El incumplimiento podrá ser motivo de penalizaciones o dar por no entregado, así como apercibimientos oficiales.
 
+**22 de noviembre**
++ Sobre la documentación de las prácticas: cuando en una práctica se os solicita una enumeración de funcionalidades, deberás crear un apartado específico en la documentación para cada una de ellas. Cualquier ausencia de dicho apartado se tomará como no documentado, y por tanto no podrá ser corregido.
+
 **8 de noviembre**
 + Respecto a las correcciones encuentro que debemos recordar algunos términos que a algunos se les olvida:
   1. Si no existe documentación no continúa la corrección ya que “el cliente” no sabe como comenzar.

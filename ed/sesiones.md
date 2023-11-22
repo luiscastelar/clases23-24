@@ -148,8 +148,7 @@ Horas de trabajo **en casa** => ==22h== de 22h
  14h -> 7 sesiones del 26/10/2023 al 22/11/2023. *1a eva*.
 
  + [x] 24o:
-     + [x] Licencias Copyright, Freeware, Open Source, GPL, MIT, Apache, BSL, etc.
- + [x] 25o:
+   + [x] Licencias Copyright, Freeware, Open Source, GPL, MIT, Apache, BSL, etc.
    * [x] Ciclo de vida: análisis, diseño, codificación, pruebas y mantenimiento.
    + [x] Modelos de ciclo de vida: cascada (clásico), en V
  + [x] 31o:
@@ -174,7 +173,8 @@ Horas de trabajo **en casa** => ==22h== de 22h
      + [ ] [C++ en VS Code](https://code.visualstudio.com/docs/cpp/config-mingw) y [C++ con MinGW](https://es.wikihow.com/compilar-un-programa-en-C-usando-el-compilador-GNU-%28GCC%29)
      + [ ] [C#](https://desarrolloweb.com/articulos/primer-programa-csharp)
  + [ ] 14n:
-     + [ ] Documentación
+     + [ ] No realizado por actividad extraescolar
+     + [ ] ~~Documentación~~
  + [x] 21n: ~~Exámen UT3**~~
 
 # Cierre de trimestre
@@ -182,7 +182,7 @@ Horas de trabajo **en casa** => ==22h== de 22h
    + [ ] [FC] CSV-II: ramas
    + [ ] ~~Repaso 1ª eva~~
    + [ ] ~~Defensa de prácticas **extraordinarias** (si las hubiera).~~
- + [ ] 21n: **RECUPERACIÓN** 1ª evaluación.
+ + [x] 21n: **RECUPERACIÓN** 1ª evaluación.
 
 Horas de trabajo **en casa** => ==8h== de 22h
 
