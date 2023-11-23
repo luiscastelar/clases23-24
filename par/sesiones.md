@@ -9,15 +9,15 @@
   + [x] Dispositivos de interconexión de redes (1h).
 + 21n:
   + [x] Corrección exámen UT2
-  + [x] Ejercicio IPv4
-  + [ ] Segmentación de la red. Ventajas.
+  + [x] Ejercicio IPv4  
 + 22n:
-  + [ ] ARP (packet tracer)
-  + [ ] NDP (packet tracer)
-  + [ ] Subredes. Primera aproximación de segmentación.
+  + [x] Segmentación de la red. Ventajas.
+  + [x] ARP (packet tracer)
 + ~~23n: Examen de recuperación 1ª Evaluación~~
 + 28n:
-  + [ ] 
+  + [ ] NDP (packet tracer).
+  + [ ] Segmentación de la red (cambiar switch central por router).
+  + [ ] Subredes. Primera aproximación de segmentación.
 + 29n:
   + [ ] 
 + 30n:

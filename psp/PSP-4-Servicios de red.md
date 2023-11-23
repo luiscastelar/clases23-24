@@ -7,7 +7,10 @@ Opciones:
 + WWW:
   + Servidor web (debe servir jpg y png) [individual]
 + Capas inferiores (+2 ptos):
-  + DNS
+  + DNS:
+    <details>
+    + [Investigando](https://luiscastelar.duckdns.org/2023/assets/PSP/UT4/tcpdump-zine.pdf)
+    </details>
   + DHCP
   + SNMP
   <details>
@@ -32,3 +35,6 @@ Opciones:
 + Conexión remota:
   + Telnet
 
+
+## Tools:
++ [tcpdump](https://luiscastelar.duckdns.org/2023/assets/PSP/UT4/tcpdump-zine.pdf)
