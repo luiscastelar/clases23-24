@@ -1,7 +1,7 @@
 #curso23_24 #PAR [estado::ToDo]
 
 
-# Dispositivos de interconexión de redes.
+# {[Fold: Fold]} Dispositivos de interconexión de redes.
 
 Como ya hemos comentado, dada la flexibilidad aportada, la topología en
 estrella se ha impuesto ampliamente en las redes cableadas, por lo que
@@ -61,7 +61,7 @@ Un bridge o un puente opera en la capa de enlace de datos. Es un repetidor con f
 
 
 
-# ARP y NDP
+# {[Fold: Fold]} ARP y NDP
 
 ## ARP
 
@@ -314,6 +314,21 @@ El motivo por el que todos los dispositivos gestionables son configurables por S
 
 
 ## Configuración estática y dinámica de la tabla de direcciones MAC.
+Como hemos visto la tabla ARP puede “aprenderse” de forma dinámica o también podremos añadir o eliminar entradas de forma manual:
++ En [CISCO IOS](https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/ipaddr_arp/configuration/15-mt/arp-15-mt-book/arp-config-arp.html#GUID-C88E1ED1-4D42-41E3-85CC-0635857C1F6A)
++ En GNU/Linux:
+```bash
+ - Show the current ARP table:
+   arp -a
+
+ - Delete a specific entry:
+   arp -d {{address}}
+
+ - Create an entry in the ARP table:
+   arp -s {{address}} {{mac_address}}
+```
++ En Windows sustituiremos los “-” por “/“
+
 
 
 # STP - Protocolo Spanning Tree.

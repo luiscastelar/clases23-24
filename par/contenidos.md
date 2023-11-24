@@ -3,13 +3,13 @@
 **Contenidos básicos.**
 # 1. Caracterización de redes:
 - [x] Terminología: redes LAN, MAN y WAN, topologías, arquitecturas, protocolos (20s, 21s).
-- [ ] Sistemas de numeración decimal, binario y hexadecimal. Conversión entre sistemas. -> UT2
+- [x] Sistemas de numeración decimal, binario y hexadecimal. Conversión entre sistemas. -> UT2
 - [x] Arquitectura de redes (21s).
 - [x] Encapsulamiento de la información (21s).
 - [x] El modelo OSI (21s).
 - [x] El modelo TCP/IP (21s).
-- [ ] Las tecnologías “Ethernet”. FDDI.
-- [ ] El modelo OSI y “Ethernet”.
+- [x] Las tecnologías “Ethernet”. FDDI.
+- [x] El modelo OSI y “Ethernet”.
 - [x] Acceso al medio CSMA/CD.
 - [ ] Tipos de cableado “Ethernet”. Cableado estructurado.
 
