@@ -17,7 +17,7 @@
     1. [2FA](https://www.maquinasvirtuales.eu/bastionado-ssh-con-2fa-y-telegram/)
     2. [Fail2ban](https://www.digitalocean.com/community/tutorials/how-to-protect-ssh-with-fail2ban-on-ubuntu-20-04)
 
-3. Montar un servidor de VPN (Wireguard / OpenVPN)
+3. Montar un servidor de VPN (Wireguard ~~/ OpenVPN~~)
 
 4. Utilizar clientes de redes `overlay` mediante conexiones mayadas VPN:  Tailscale / Zerotier
 
@@ -40,22 +40,40 @@ servicio comando [argumentos] imagen [comando [argumentos_de_comando] ]
 + docker rm -> borra contenedor
 + docker exec -> ejecuta comando dentro de contenedor
 
-Ejemplo: 
+Ejemplo: \
+Sevidor Wireguard con GUI web. *Hacer antes **mapa de red***
 ```bash
-docker run --rm \
-  --cap-add sys_module \
-  --cap-add net_admin \
-  -e PUBLIC_IP=1.2.3.4 \
-  -e PORT=55555 \
-  -e DNS=8.8.8.8 \
-  -e SUBNET=10.88 \
-  -e SUBNET_PREFIX=16 \
-  -e SUBNET_IP=10.88.0.1/16 \
-  -v ./wireguard:/etc/wireguard \
-  -p 55555:55555/udp \
-  denisix/wireguard
+version: "3.3"
+services:
+ wg-easy:
+  container_name: wg-easy
+  environment:
+   - PUID=1000
+   - PGID=1000
+   - WG_HOST: 'subdominio.duckdns.org' # también válida la ip pública de vuestro equipo '192.168.40.101' 
+   - PASSWORD: '${passwd}' # argumento en archivo '.env'
+   - WG_PORT: '${port}' # el puerto del endpoint, no del contenedor
+  volumes:
+   - ./config:/etc/wireguard
+  ports:
+   - ${port}:51820/udp # puerto del endpoint. El contenedor SIEMPRE escucha en 51820
+   - ${port_web}:51821/tcp # puerto de la interfaz web
+  cap_add:
+   - NET_ADMIN
+   - SYS_MODULE
+  sysctls:
+   - net.ipv4.conf.all.src_valid_mark=1
+   - net.ipv4.ip_forward=1
+  restart: unless-stopped
+  image: weejewel/wg-easy
 ```
 
-Puff que pereza... ¿pero no hay una forma más sencilla? Pues sí con [`docker compose`](https://hub.docker.com/r/denisix/wireguard)
+Archivo de secretos:
+```.env
+passwd=laQueSeaLargaQueTengaSimbolosNumerosLetras
+port=12345
+port_web=8080
+```
+
 
 
