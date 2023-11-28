@@ -298,8 +298,12 @@ Vamos a replicar en `packet tracer` la figura siguiente y verificar la problemá
 ![segmentos](https://planificacionadministracionredes.readthedocs.io/es/latest/_images/tema06-116.png)
 
 ## Segmentación de redes.
-1. Cambiar los `hub` por `switch` y ver que pasa.
-2. Cambiar el `switch` central por un `router` y ver que pasa.
+
+### En capa 2:
+Trabajaremos sobre los dominios de colisión realizando un cambio de los `hub` por `switch`.
+
+### En capa 3:
+Trabajaremos sobre los dominios de difusión realizando un cambio del `switch` central por un `router` y ver que pasa.
 
 
 # Formas de conexión al conmutador para su configuración.
@@ -310,7 +314,8 @@ El motivo por el que todos los dispositivos gestionables son configurables por S
 + [descripción](https://planificacionadministracionredes.readthedocs.io/es/latest/Tema06/Teoria.html#puertos)
 
 ## Configuración del conmutador.
-[IOS Cisco](https://oscarmaestre.github.io/apuntes_redes/t3_conmutadores/apuntes_t3.html#configuracion-del-conmutador)
++ [IOS Cisco](https://oscarmaestre.github.io/apuntes_redes/t3_conmutadores/apuntes_t3.html#configuracion-del-conmutador)
++ [Auto-MDIX](https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9300/software/release/16-10/configuration_guide/int_hw/b_1610_int_and_hw_9300_cg/configuring_auto_mdix.pdf): protocolo que permite la interconexión de `switch`es utilizando cables directos o cruzados indistintamente.
 
 
 ## Configuración estática y dinámica de la tabla de direcciones MAC.
@@ -332,7 +337,10 @@ Como hemos visto la tabla ARP puede “aprenderse” de forma dinámica o tambi�
 
 
 # STP - Protocolo Spanning Tree.
-+ [STP](https://planificacionadministracionredes.readthedocs.io/es/latest/Tema06/Teoria.html#stp)
++ [Qué es y para qué sirve STP - CCNA desde Cero](https://ccnadesdecero.com/curso/stp/)
++ [STP - PAR.readthedocs.io](https://planificacionadministracionredes.readthedocs.io/es/latest/Tema06/Teoria.html#stp)
++ [Qué es STP - YT:Kalerolinex](https://www.youtube.com/watch?v=bZGLcdRZYXs&pp=ygUDc3Rw)
++ [Cómo trabaja STP - Kalero](https://www.youtube.com/watch?v=6208ZC7avhE)
 
 
 # El diseño de redes locales a tres capas (núcleo, distribución y acceso).
@@ -340,7 +348,27 @@ Como hemos visto la tabla ARP puede “aprenderse” de forma dinámica o tambi�
 
 
 # Implantación y configuración de redes virtuales.
++ [Teoría VLANs - PAR.readthedocs.io](https://planificacionadministracionredes.readthedocs.io/es/latest/Tema09/Teoria.html)
++ [Teoría + ejercicios - JM Huertas](https://juanmhalegre.wordpress.com/2012/01/08/ccnp-switch-642-813-official-certification-guide-part-ii-chapter-4-1-virtual-vlans/)
++ [Troncales - JM Huertas](https://juanmhalegre.wordpress.com/2012/01/12/ccnp-switch-642-813-official-certification-guide-part-ii-chapter-4-2-vlan-trunks/)
++ [Otro de teoría - wikibooks](https://es.wikibooks.org/wiki/Planificaci%C3%B3n_y_Administraci%C3%B3n_de_Redes/Tema_9/Texto_completo)
++ [Configuración de VLANs en CISCO](https://oscarmaestre.github.io/apuntes_redes/t5_vlans/apuntes_t5.html)
++ [VLAN - CCNA desde Cero](https://ccnadesdecero.com/curso/vlan/)  
 
 
 # Definición de enlaces troncales en los conmutadores y “routers”. El protocolo IEEE802.1Q.
+
+
+## Calidad de servicio (QoS - IEEE802.1P)
+Priorización de tráfico de control, voz y vídeo (entre otros).
++ [Wikipedia](https://es.wikipedia.org/wiki/IEEE_802.1p)
+
+
+## VLANs de provedores (Q en Q - IEEE802.1ad)
+Juntos pero no revueltos... o cuando un proveedor de internet mueve nuestro tráfico y claro, él usa una VLANs para cada cliente y nosotros una para cada departamento.
++ [Wikipedia](https://en.wikipedia.org/wiki/IEEE_802.1ad)
+
+
 # Diagnóstico de incidencias.
+
++ [Diagnóstico - ProgamoWeb.com]
