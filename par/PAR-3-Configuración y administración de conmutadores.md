@@ -442,6 +442,11 @@ Juntos pero no revueltos... o cuando un proveedor de internet mueve nuestro trá
 
 + [Wikipedia](https://en.wikipedia.org/wiki/IEEE_802.1ad)
 
+
+# Switching & bridging en GNU/Linux
++ [bridge](https://www.ithands-on.com/2020/12/networking-101-linux-tap-interface-and.html)
+
+
 # Diagnóstico de incidencias.
 
 + [Diagnóstico - ProgamoWeb.com]
