@@ -10,9 +10,11 @@ Esto es un documento vivo donde hacer una planificación diaria y control del tr
 # 4 Sistemas de control de versiones - II
  8h del 23/11/2023 al 12/12/2023. *2a eva*.
 
- + [ ] 28n:
-   + [ ] CSV-II: ramas.
- + [ ] 29n: Ejercicios de ramas.
+ + [x] 28n:
+   + [x] CSV-II: ramas.
+ + [x] 29n:
+   + [x] Información sobre ProgramaMe Nacional, Regional, Navideño y fase previa.
+   + [x] Ejercicios de ramas.
  + [ ] 5d: Defensa de práctica de ramas.
    + [ ] Individual.
    + [x] Por equipos.

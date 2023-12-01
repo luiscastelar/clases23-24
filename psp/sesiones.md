@@ -8,9 +8,9 @@
     + [x] Servidor web (de archivos html).
     + [x] Planteamiento de trabajo
 2. 24n:
-    + [ ] Ejecución trabajo de creación de servicio y cliente de red
+    + [x] Ejecución trabajo de creación de servicio y cliente de red
 3. 27n:
-    + [ ] Continuación trabajo
+    + [x] Continuación trabajo
 4. 1d:
     + [ ] Continuación trabajo
 5. 4d:

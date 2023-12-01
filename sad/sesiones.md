@@ -7,11 +7,11 @@
 + ~~13n: Defensa UT3~~
 + ~~17n: Examen rec 1ª Evaluación~~
 + 20n:
-  + [ ] SSH
-  + [ ] Hardening SSH
+  + [x] SSH
+  + [x] Hardening SSH
 + 24n:
-  + [ ] Docker
-  + [ ] Continuación Hardening SSH
+  + [x] Docker
+  + [x] Continuación Hardening SSH
 + 27n:
   + [ ] Wireguard / OpenVPN
 + 1d:

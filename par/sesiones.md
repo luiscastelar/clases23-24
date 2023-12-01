@@ -15,14 +15,20 @@
   + [x] ARP (packet tracer)
 + ~~23n: Examen de recuperación 1ª Evaluación~~
 + 28n:
-  + [ ] NDP (packet tracer).
-  + [ ] Segmentación de la red (cambiar switch central por router).
-  + [ ] Subredes. Primera aproximación de segmentación.
+  + [x] NDP (packet tracer).
+  + [x] Segmentación de la red (cambiar switch central por router).
+  + [x] Subredes. Primera aproximación de segmentación.
 + 29n:
-  + [ ] 
+  + [ ] Seguridad implícita en la segmentación.
+  + [ ] Análisis de red con wireshark
 + 30n:
-  + [ ] 
+  + [ ] VLANs
+  + [ ] Ejercicio de VLANs en pt y real por equipos (2 equipos de 2 personas) - **entregable**
+  + [ ] Conexión física a Cisco C880 y reseteo
+  + [ ] Definición de práctica de configuración básica C880 **entregable**
+  + [ ] Conexión física a D-Link DES-3226
 + 5d:
+  + [ ] Conexión a otros dispositivos físicos
   + [ ] 
 + 12d:
   + [ ] 
