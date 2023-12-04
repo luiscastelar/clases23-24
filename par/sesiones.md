@@ -19,27 +19,33 @@
   + [x] Segmentación de la red (cambiar switch central por router).
   + [x] Subredes. Primera aproximación de segmentación.
 + 29n:
-  + [ ] Seguridad implícita en la segmentación.
-  + [ ] Análisis de red con wireshark
+  + [x] Seguridad implícita en la segmentación.
+  + [x] Análisis de red con wireshark
 + 30n:
-  + [ ] VLANs
-  + [ ] Ejercicio de VLANs en pt y real por equipos (2 equipos de 2 personas) - **entregable**
-  + [ ] Conexión física a Cisco C880 y reseteo
-  + [ ] Definición de práctica de configuración básica C880 **entregable**
-  + [ ] Conexión física a D-Link DES-3226
+  + [x] VLANs
+  + [x] Ejercicio de VLANs en pt y real por equipos (2 equipos de 2 personas) - **entregable**
+  + [x] Conexión física a Cisco C880 y reseteo
+  + [x] Definición de práctica de configuración básica C880 **entregable**
+  + [x] Conexión física a D-Link DES-3226
 + 5d:
   + [ ] Conexión a otros dispositivos físicos
-  + [ ] 
+  + [ ] Redes Locales: núcleo, distribución y acceso
+  + [ ] STP - Spanning Tree
 + 12d:
-  + [ ] 
+  + [ ] Administración centralizada (VTP)
+  + [ ] Servicio de Voz y datos
 + 13d:
-  + [ ] 
+  + [ ] QoS
+  + [ ] QinQ
 + 14d:
-  + [ ] 
-+ 19d:
-  + [ ] 
+  + [ ] Monitorización SNMP
++ 19d: 
+  + [ ] Jornadas Informática 
 + 20d:
-  + [ ] **Examen UT3**
+  + [ ] Carrera solidaria (para los que participen en la carrera)
+  + [ ] **Exámen UT3** (para los que **no** participen en la carrera)
++ 21d:
+  + [ ] **Exámen UT3** (para los que participaron en la carrera)
 
 # 4 Configuración de redes virtuales. 
 25 20/12/2023 25/01/2024 2ª

@@ -373,7 +373,7 @@ Vamos a replicar en `packet tracer` la figura siguiente y verificar la problemá
 
 
 
-# Formas de conexión al conmutador para su configuración.
+# {[Fold: Fold]}  Formas de conexión al conmutador para su configuración.
 
 Cada equipo de red tiene software según el fabricante a través de WEB, APP propia o TELNET (muy obsoleto), pero todos los dispositivos suelen llevar **SSH**.
 
@@ -408,18 +408,7 @@ Como hemos visto la tabla ARP puede “aprenderse” de forma dinámica o tambi�
 
 + En Windows sustituiremos los “-” por “/“
 
-# STP - Protocolo Spanning Tree.
-
-+ [Qué es y para qué sirve STP - CCNA desde Cero](https://ccnadesdecero.com/curso/stp/)
-+ [STP - PAR.readthedocs.io](https://planificacionadministracionredes.readthedocs.io/es/latest/Tema06/Teoria.html#stp)
-+ [Qué es STP - YT:Kalerolinex](https://www.youtube.com/watch?v=bZGLcdRZYXs&pp=ygUDc3Rw)
-+ [Cómo trabaja STP - Kalero](https://www.youtube.com/watch?v=6208ZC7avhE)
-
-# El diseño de redes locales a tres capas (núcleo, distribución y acceso).
-
-+ [redes por capas](https://planificacionadministracionredes.readthedocs.io/es/latest/Tema06/Teoria.html#distribucion)
-
-# Implantación y configuración de redes virtuales.
+# {[Fold: Fold]} Implantación y configuración de redes virtuales.
 
 + [Teoría VLANs - PAR.readthedocs.io](https://planificacionadministracionredes.readthedocs.io/es/latest/Tema09/Teoria.html)
 + [Teoría + ejercicios - JM Huertas](https://juanmhalegre.wordpress.com/2012/01/08/ccnp-switch-642-813-official-certification-guide-part-ii-chapter-4-1-virtual-vlans/)
@@ -428,6 +417,26 @@ Como hemos visto la tabla ARP puede “aprenderse” de forma dinámica o tambi�
 + [Configuración de VLANs en CISCO](https://oscarmaestre.github.io/apuntes_redes/t5_vlans/apuntes_t5.html)
 + [VLAN - CCNA desde Cero](https://ccnadesdecero.com/curso/vlan/)  
 
+
+## El diseño de redes locales a tres capas (núcleo, distribución y acceso).
++ [redes por capas](https://planificacionadministracionredes.readthedocs.io/es/latest/Tema06/Teoria.html#distribucion)
+
+
+## Administración centralizada de VLANs.
+[VLAN - Oscar Maestre](https://oscarmaestre.github.io/apuntes_redes/t5_vlans/apuntes_t5.html#implantacion-y-configuracion-de-redes-virtuales)
+
+
+### VTP - Virtual Trunk Protocol
++ [VTP - YT:Kalero](https://www.youtube.com/watch?v=DvhtEHUF9Wc)
+
+
+### STP - Protocolo Spanning Tree.
++ [Qué es y para qué sirve STP - CCNA desde Cero](https://ccnadesdecero.com/curso/stp/)
++ [STP - PAR.readthedocs.io](https://planificacionadministracionredes.readthedocs.io/es/latest/Tema06/Teoria.html#stp)
++ [Qué es STP - YT:Kalerolinex](https://www.youtube.com/watch?v=bZGLcdRZYXs&pp=ygUDc3Rw)
++ [Cómo trabaja STP - Kalero](https://www.youtube.com/watch?v=6208ZC7avhE)
+
+
 # Definición de enlaces troncales en los conmutadores y “routers”. El protocolo IEEE802.1Q.
 
 ## Calidad de servicio (QoS - IEEE802.1P)
@@ -435,6 +444,8 @@ Como hemos visto la tabla ARP puede “aprenderse” de forma dinámica o tambi�
 Priorización de tráfico de control, voz y vídeo (entre otros).
 
 + [Wikipedia](https://es.wikipedia.org/wiki/IEEE_802.1p)
+
+**Ejercicio**: crear la configuración necesaria para tener un servicio de [voz](https://www.packettracernetwork.com/tutorials/voipconfiguration.html) y [datos](https://community.cisco.com/t5/networking-knowledge-base/sample-configuration-for-voice-and-data-deployment-on-a-switch/ta-p/3123513) [2](https://www.cisco.com/c/es_mx/support/docs/ip/dynamic-address-allocation-resolution/19580-dhcp-multintwk.pdf)
 
 ## VLANs de provedores (Q en Q - IEEE802.1ad)
 
@@ -448,5 +459,6 @@ Juntos pero no revueltos... o cuando un proveedor de internet mueve nuestro trá
 
 
 # Diagnóstico de incidencias.
-
-+ [Diagnóstico - ProgamoWeb.com]
++ [Diagnóstico de fallos e incidencias](https://www.cisco.com/c/es_mx/support/docs/switches/catalyst-6500-series-switches/12027-53.html)
++ [Monitoreo con zabbix](https://techexpert.tips/es/zabbix-es/zabbix-monitoree-un-switch-a-traves-de-snmp/)
++ [Check fallos](https://www.pluralsight.com/blog/tutorials/cisco-ccna-vlan)
