@@ -36,5 +36,8 @@ Para ello sólo necesitamos conocer su `hash` (1) y, desde la rama `main`  (a la
 # Forks
 + [forks](https://aprendegit.com/fork-de-repositorios-para-que-sirve/)
 
+# Pull request
++ [pull request](https://www.freecodecamp.org/espanol/news/como-hacer-tu-primer-pull-request-en-github/)
+
 # Hooks
 + [Hooks - Jeremy Holcombe](https://kinsta.com/es/blog/git-hooks/)
