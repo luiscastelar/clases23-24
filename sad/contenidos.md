@@ -22,43 +22,43 @@
 - [ ] Análisis forense en sistemas informáticos.
 
 # 2. Implantación de mecanismos de seguridad activa:
-- [ ] Ataques y contramedidas en sistemas personales:
-  - [ ] Clasificación de los ataques.
-  - [ ] Anatomía de ataques y análisis de software malicioso.
-  - [ ] Herramientas preventivas. Instalación y configuración.
-  - [ ] Herramientas paliativas. Instalación y configuración.
-  - [ ] Actualización de sistemas y aplicaciones.
-  - [ ] Seguridad en la conexión con redes públicas.
-  - [ ] Pautas y prácticas seguras.
+- [x] Ataques y contramedidas en sistemas personales:
+  - [x] Clasificación de los ataques.
+  - [x] Anatomía de ataques y análisis de software malicioso.
+  - [x] Herramientas preventivas. Instalación y configuración.
+  - [x] Herramientas paliativas. Instalación y configuración.
+  - [x] Actualización de sistemas y aplicaciones.
+  - [x] Seguridad en la conexión con redes públicas.
+  - [x] Pautas y prácticas seguras.
 - [x] Seguridad en la red corporativa:
-  - [ ] Monitorización del tráfico en redes.
+  - [x] Monitorización del tráfico en redes.
   - [ ] Seguridad en los protocolos para comunicaciones inalámbricas.
-  - [ ] Riesgos potenciales de los servicios de red.
+  - [x] Riesgos potenciales de los servicios de red.
   - [ ] Intentos de penetración.
 
 # 3. Implantación de técnicas de acceso remoto. Seguridad perimetral:
-- [ ] Elementos básicos de la seguridad perimetral.
-- [ ] Perímetros de red. Zonas desmilitarizadas.
-- [ ] Arquitectura débil de subred protegida.
-- [ ] Arquitectura fuerte de subred protegida.
-- [ ] Redes privadas virtuales. VPN.
-- [ ] Beneficios y desventajas con respecto a las líneas dedicadas.
-- [ ] Técnicas de cifrado. Clave pública y clave privada:
-  - [ ] VPN a nivel de red. SSL, IPSec.
-  - [ ] VPN a nivel de aplicación. SSH.
-- [ ] Servidores de acceso remoto:
-  - [ ] Protocolos de autenticación.
-  - [ ] Configuración de parámetros de acceso.
+- [x] Elementos básicos de la seguridad perimetral.
+- [x] Perímetros de red. Zonas desmilitarizadas.
+- [x] Arquitectura débil de subred protegida.
+- [x] Arquitectura fuerte de subred protegida.
+- [x] Redes privadas virtuales. VPN.
+- [x] Beneficios y desventajas con respecto a las líneas dedicadas.
+- [x] Técnicas de cifrado. Clave pública y clave privada:
+  - [x] VPN a nivel de red. SSL, IPSec.
+  - [x] VPN a nivel de aplicación. SSH.
+- [x] Servidores de acceso remoto:
+  - [x] Protocolos de autenticación.
+  - [x] Configuración de parámetros de acceso.
   - [ ] Servidores de autenticación.
 
 # 4. Instalación y configuración de cortafuegos:
-- [ ] Utilización de cortafuegos.
-- [ ] Filtrado de paquetes de datos.
-- [ ] Tipos de cortafuegos. Características. Funciones principales.
-- [ ] Instalación de cortafuegos. Ubicación.
-- [ ] Reglas de filtrado de cortafuegos.
-- [ ] Pruebas de funcionamiento. Sondeo.
-- [ ] Registros de sucesos de un cortafuegos.
+- [x] Utilización de cortafuegos.
+- [x] Filtrado de paquetes de datos.
+- [x] Tipos de cortafuegos. Características. Funciones principales.
+- [x] Instalación de cortafuegos. Ubicación.
+- [x] Reglas de filtrado de cortafuegos.
+- [x] Pruebas de funcionamiento. Sondeo.
+- [x] Registros de sucesos de un cortafuegos.
 
 # 5. Instalación y configuración de servidores “proxy”:
 - [ ] Tipos de “proxy”. Características y funciones.

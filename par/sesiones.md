@@ -32,9 +32,10 @@
   + [ ] Redes Locales: núcleo, distribución y acceso
   + [ ] STP - Spanning Tree
 + 12d:
-  + [ ] Administración centralizada (VTP)
-  + [ ] Servicio de Voz y datos
+  + [ ] Administración centralizada (VTP y DTP)
+  + [ ] Link Aggregation 
 + 13d:
+  + [ ] Servicio de Voz y datos
   + [ ] QoS
   + [ ] QinQ
 + 14d:

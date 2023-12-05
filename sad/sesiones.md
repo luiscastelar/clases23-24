@@ -2,7 +2,7 @@
 
 
 # UT4 - Implantación técnicas acceso remoto
-16h - 8 sesiones - 13n-11d
+16h - 7 sesiones - 13n-11d
 
 + ~~13n: Defensa UT3~~
 + ~~17n: Examen rec 1ª Evaluación~~
@@ -13,38 +13,68 @@
   + [x] Docker
   + [x] Continuación Hardening SSH
 + 27n:
-  + [ ] Wireguard / OpenVPN
+  + [x] Wireguard / OpenVPN
 + 1d:
-  + [ ] Clientes Tailscale / Zerotier
+  + [x] Clientes Tailscale / Zerotier
 + 4d:
-  + [ ] Servidores Headscale / Zerotier-controler
+  + [x] Docker
 + 11d:
-  + [ ] **Examen UT4**
+  + [ ] Servidores Headscale / Zerotier-controler
++ 15d:
+  + [ ] Defensa práctica / **Examen UT4**
 
 ---
 # UT5 - Instalación y configuración de servidores proxy 
-12h - 6 sesiones - 12/12/2023 19/01/2024 2ª
+12h - 4 sesiones - 12/12/2023 19/01/2024 2ª
 
-+ 20n:
-  + [ ] 
-+ 20n:
-  + [ ] 
-+ 20n:
-  + [ ] 
-+ 20n:
-  + [ ] 
-+ 20n:
-  + [ ] 
-+ 20n:
-  + [ ] 
++ 18d:
+  + [ ] Jornadas Informática castelar (evaluable asistencia y participación)
++ 8e:
+  + [ ] Proxy inverso
++ 12e:
+  + [ ] Proxy dns
++ 19e:
+  + [ ] **Defensa UT5** 
 
 ---
 # UT6 - Implantación de soluciones de alta disponibilidad. 
-18h - 9 sesiones - 22/01/2024 26/02/2024 2ª
+18h - 10 sesiones - 22/01/2024 26/02/2024 2ª
+
++ 22e:
+  + [ ] Kubernetes
++ ~~26e: día de la docencia~~
++ 29e: K2
+  + [ ] Funcionamiento ininterrumpido.
+  - [ ] Integridad de datos y recuperación de servicio.
+  - [ ] Servidores redundantes.
++ 2f: K3
+  - [ ] Sistemas de “clusters”.
++ 5f: K4
+  - [ ] Balanceadores de carga.
++ 10f: K5
+  + [ ] Desarrollo de práctica
++ ~~12f: carnavales~~
++ 17f: K6
+  + [ ] Desarrollo de práctica
++ 20f:
+  + [ ] **PRESENTACIÓN y Defensa UT6**
++ 24f:
+  + [ ] **PRESENTACIÓN y Defensa UT6**
 
 ---
 # UT7 - Legislación y normas sobre seguridad 
 2h 27/02/2024 01/03/2024 2ª
+
++ 26f:
+  - [ ] Legislación sobre protección de datos.
+  - [ ] Legislación sobre los servicios de la sociedad de la información y correo electrónico.
+  - [ ] Normas ISO sobre gestión de seguridad de la información.
+  - [ ] Organismos de gestión de incidencias.
+---
+
+# Evaluación ORDINARIA
+
++ 1m: **EXÁMEN eva ORDINARIA**
 
 ---
 ==**YA VISTO**==
