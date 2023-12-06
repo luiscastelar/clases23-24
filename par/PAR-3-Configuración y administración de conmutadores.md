@@ -421,6 +421,13 @@ Como hemos visto la tabla ARP puede “aprenderse” de forma dinámica o tambi�
 ## El diseño de redes locales a tres capas (núcleo, distribución y acceso).
 + [redes por capas](https://planificacionadministracionredes.readthedocs.io/es/latest/Tema06/Teoria.html#distribucion)
 
+### 3 capas:
+![3 capas](https://www.ciscopress.com/content/images/chap1_9781587133329/elementLinks/01fig07.jpg)
+
+### 2 capas:
+![2 capas](https://www.ciscopress.com/content/images/chap1_9781587133329/elementLinks/01fig08.jpg)
+
+
 
 ## Administración centralizada de VLANs.
 [VLAN - Oscar Maestre](https://oscarmaestre.github.io/apuntes_redes/t5_vlans/apuntes_t5.html#implantacion-y-configuracion-de-redes-virtuales)
