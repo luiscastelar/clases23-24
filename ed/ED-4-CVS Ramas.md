@@ -40,4 +40,26 @@ Para ello sólo necesitamos conocer su `hash` (1) y, desde la rama `main`  (a la
 + [pull request](https://www.freecodecamp.org/espanol/news/como-hacer-tu-primer-pull-request-en-github/)
 
 # Hooks
-+ [Hooks - Jeremy Holcombe](https://kinsta.com/es/blog/git-hooks/)
+Algo general: [Hooks - Jeremy Holcombe](https://kinsta.com/es/blog/git-hooks/)
+
+## Pre-commit
+Como estamos trabajando sobre Java, utilizaremos un pre-commit inicial para verificar el estilo de código.
+
+Si estuviéramos en otros lenguajes, especialmente aquellos sin tipado fuerte, podríamos verificar algunas cosas sobre tipos y analizadores sintácticos en lenguajes no compilados.
+
+1. [Instalación](https://bohutskyi.com/improving-code-quality-setting-up-a-pre-commit-hook-for-checkstyle-on-git-4cdb17250279)
+2. Configuración de git para utilizar el analizador
+3. Ajustes de estilos. Podemos querer adaptarlo a nuestra necesidades (de empresa).
+4. Probarlo:
+   ```bash
+      git commit -m"style fix google"
+      Comenzando auditoría...
+      Auditoría concluida.
+      [main e0eaeed] style fix google
+       1 file changed, 128 insertions(+), 105 deletions(-)
+       rewrite Palindromos.java (96%)
+   ```
+
+Podemos ver en las líneas 2 y 3 que realiza la auditoría de código y la pasa sin warnings.
+
+En este punto, podría ser interesante plantearnos si deberá pasar los test antes de los commits, después o antes del push.
