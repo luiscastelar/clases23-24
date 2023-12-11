@@ -12,10 +12,10 @@
 3. 27n:
     + [x] Continuación trabajo
 4. 1d:
-    + [ ] Continuación trabajo
+    + [x] Continuación trabajo
 5. 4d:
-    + [ ] Continuación trabajo
-. 11d:
+    + [x] Continuación trabajo
+6. 11d:
     + [ ] **Entrega práctica UT4**
 ---
 
@@ -28,15 +28,33 @@ Examen de recuperación de la primera evaluación: **15 de diciembre de 2023**
 # UT5 Java Fx y otros GUI
 8h - 4 sesiones - Del 12/12/2023 al 12/01/2024. *2ª eva*.
 
-+ JavaFx
-+ HTML + JS / AJAX(jQuery) + Servlet
+1. 15d: ~~Exceso de horas~~
+2. 18d: ~~Jornadas~~
+3. 8e:
+   + [ ] JavaFx
+   + [ ] JavaEE
+   + [ ] Servlet ECHO
+4. 12e:
+   + [ ] jQuery
+   + [ ] HTML + Tailwind + JS / AJAX(jQuery) + Servlet + Clases
 
 ---
-# UT6 Técnicas de programación segura 4 15/01/2024 19/01/2024 2ª
+# UT6 Técnicas de programación segura 
+4h - 2 sesiones - 15/01/2024 19/01/2024 *2ª eva*
+
+1. 19e:
+   + [ ] 
+   + [ ] 
+3. 22e:
+   + [ ] 
 
 ---
-# UT7 Proyecto integrador 20 22/01/2024 01/03/2024 2ª
+# UT7 Proyecto integrador 
+20h - 22/01/2024 01/03/2024 - *2ª eva*
 
+Defensa por sorteo: 19f, 23f, 26f y 1m. 
+
+Entregas 23f
 
 ---
 **1ª EVALUACIÓN**

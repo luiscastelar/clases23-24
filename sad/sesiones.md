@@ -32,7 +32,8 @@
 + 8e:
   + [ ] Proxy inverso
 + 12e:
-  + [ ] Proxy dns
+  + [ ] Proxy socks
+  + [ ] 
 + 19e:
   + [ ] **Defensa UT5** 
 
