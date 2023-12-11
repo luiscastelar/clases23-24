@@ -28,8 +28,8 @@
   + [x] Definición de práctica de configuración básica C880 **entregable**
   + [x] Conexión física a D-Link DES-3226
 + 5d:
-  + [ ] Conexión a otros dispositivos físicos
-  + [ ] Redes Locales: núcleo, distribución y acceso
+  + [x] Conexión a otros dispositivos físicos
+  + [x] Redes Locales: núcleo, distribución y acceso
   + [ ] STP - Spanning Tree
 + 12d:
   + [ ] Administración centralizada (VTP y DTP)
@@ -89,12 +89,12 @@
   * [x] Panel de parcheo y ejercicio de panel.
   * [x] PoE.
   * [x] Ejercicios.
-* [ ] **Proyecto de instalación**:
+* [x] **Proyecto de instalación**:
   * 12 horas aprox
   * 1 hora por día de clase
   * Finalización y defensa 7 nov   
 * [x] Día del Pilar
-* [ ] 9n: NO ~~Exámen UT1~~
+* [x] 9n: NO ~~Exámen UT1~~
 
 
 
