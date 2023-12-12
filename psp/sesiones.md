@@ -16,7 +16,10 @@
 5. 4d:
     + [x] Continuación trabajo
 6. 11d:
-    + [ ] **Entrega práctica UT4**
+    + [x] **Defensa práctica UT4**
+7. 15d:
+    + [ ] **Exposición trabajo UT4**
+
 ---
 
 Examen de recuperación de la primera evaluación: **15 de diciembre de 2023**

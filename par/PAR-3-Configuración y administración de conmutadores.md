@@ -408,17 +408,7 @@ Como hemos visto la tabla ARP puede “aprenderse” de forma dinámica o tambi�
 
 + En Windows sustituiremos los “-” por “/“
 
-# {[Fold: Fold]} Implantación y configuración de redes virtuales.
-
-+ [Teoría VLANs - PAR.readthedocs.io](https://planificacionadministracionredes.readthedocs.io/es/latest/Tema09/Teoria.html)
-+ [Teoría + ejercicios - JM Huertas](https://juanmhalegre.wordpress.com/2012/01/08/ccnp-switch-642-813-official-certification-guide-part-ii-chapter-4-1-virtual-vlans/)
-+ [Troncales - JM Huertas](https://juanmhalegre.wordpress.com/2012/01/12/ccnp-switch-642-813-official-certification-guide-part-ii-chapter-4-2-vlan-trunks/)
-+ [Otro de teoría - wikibooks](https://es.wikibooks.org/wiki/Planificaci%C3%B3n_y_Administraci%C3%B3n_de_Redes/Tema_9/Texto_completo)
-+ [Configuración de VLANs en CISCO](https://oscarmaestre.github.io/apuntes_redes/t5_vlans/apuntes_t5.html)
-+ [VLAN - CCNA desde Cero](https://ccnadesdecero.com/curso/vlan/)  
-
-
-## El diseño de redes locales a tres capas (núcleo, distribución y acceso).
+# El diseño de redes locales a tres capas (núcleo, distribución y acceso).
 + [redes por capas](https://planificacionadministracionredes.readthedocs.io/es/latest/Tema06/Teoria.html#distribucion)
 
 ### 3 capas:
@@ -428,15 +418,6 @@ Como hemos visto la tabla ARP puede “aprenderse” de forma dinámica o tambi�
 ![2 capas](https://www.ciscopress.com/content/images/chap1_9781587133329/elementLinks/01fig08.jpg)
 
 
-
-## Administración centralizada de VLANs.
-[VLAN - Oscar Maestre](https://oscarmaestre.github.io/apuntes_redes/t5_vlans/apuntes_t5.html#implantacion-y-configuracion-de-redes-virtuales)
-
-
-### VTP - Virtual Trunk Protocol
-+ [VTP - YT:Kalero](https://www.youtube.com/watch?v=DvhtEHUF9Wc)
-
-
 ### STP - Protocolo Spanning Tree.
 + [Qué es y para qué sirve STP - CCNA desde Cero](https://ccnadesdecero.com/curso/stp/)
 + [STP - PAR.readthedocs.io](https://planificacionadministracionredes.readthedocs.io/es/latest/Tema06/Teoria.html#stp)
@@ -444,36 +425,23 @@ Como hemos visto la tabla ARP puede “aprenderse” de forma dinámica o tambi�
 + [Cómo trabaja STP - Kalero](https://www.youtube.com/watch?v=6208ZC7avhE)
 
 
-# Definición de enlaces troncales en los conmutadores y “routers”. El protocolo IEEE802.1Q.
+# Configuración de un switch Cisco IOS
 
-## Calidad de servicio (QoS - IEEE802.1P)
+# [OFF-Topic] Docker
 
-Priorización de tráfico de control, voz y vídeo (entre otros).
-
-+ [Wikipedia](https://es.wikipedia.org/wiki/IEEE_802.1p)
-
-**Ejercicio**: crear la configuración necesaria para tener un servicio de [voz](https://www.packettracernetwork.com/tutorials/voipconfiguration.html) y [datos](https://community.cisco.com/t5/networking-knowledge-base/sample-configuration-for-voice-and-data-deployment-on-a-switch/ta-p/3123513) [2](https://www.cisco.com/c/es_mx/support/docs/ip/dynamic-address-allocation-resolution/19580-dhcp-multintwk.pdf)
-
-## VLANs de provedores (Q en Q - IEEE802.1ad)
-
-Juntos pero no revueltos... o cuando un proveedor de internet mueve nuestro tráfico y claro, él usa una VLANs para cada cliente y nosotros una para cada departamento.
-
-+ [Wikipedia](https://en.wikipedia.org/wiki/IEEE_802.1ad)
-
-
-# Switching & bridging en GNU/Linux
-+ [bridge](https://www.ithands-on.com/2020/12/networking-101-linux-tap-interface-and.html)
+![mv vs contender](https://edteam-media.s3.amazonaws.com/blogs/original/0c000477-ba58-422d-a62c-d0053bcfd291.png)
+![resultado](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fsitelabs.es%2Fwp-content%2Fuploads%2F2015%2F09%2Fcontvsvm.png&f=1&nofb=1&ipt=d6cb670801e9e4cfca59d712906aa0a2b7e31bb87437029787f7112850f77b19&ipo=images)
+[Breve manual de docker](https://github.com/luiscastelar/clases23-24/blob/main/docker.md)
 
 
 # Diagnóstico de incidencias.
 + [Diagnóstico de fallos e incidencias](https://www.cisco.com/c/es_mx/support/docs/switches/catalyst-6500-series-switches/12027-53.html)
-+ [Monitoreo con zabbix](https://techexpert.tips/es/zabbix-es/zabbix-monitoree-un-switch-a-traves-de-snmp/)
 + [Check fallos](https://www.pluralsight.com/blog/tutorials/cisco-ccna-vlan)
 
-# Ejercicios OBLIGATORIOS
-1. Creación de una conexión:
-   `pc <-- (vlan 10) --> sw <-- (trunk) --> sw <-- (vlan 10) --> pc` ... y otros PCs de cada lado en la vlan 20.
-2. Repetir por grupos de 4 alumnos con 2 C8880 físicos (documentar y defender).
-3. STP.
-4. VTP y DTP.
-5. Link-Aggregation
+## Monitorización. Protocolo SNMP.
++ [Protocolo SNMP](http://gssi.det.uvigo.es/users/mramos/public_html/gprsi/gprsi3.pdf)
++ [Monitoreo con zabbix](https://techexpert.tips/es/zabbix-es/zabbix-monitoree-un-switch-a-traves-de-snmp/)
+
+Otros grandes monitores: nagios, centreon, prometheus/grafana, ...
+
+Otros 

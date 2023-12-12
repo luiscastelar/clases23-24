@@ -22,34 +22,44 @@
   + [x] Seguridad implícita en la segmentación.
   + [x] Análisis de red con wireshark
 + 30n:
-  + [x] VLANs
-  + [x] Ejercicio de VLANs en pt y real por equipos (2 equipos de 2 personas) - **entregable**
   + [x] Conexión física a Cisco C880 y reseteo
   + [x] Definición de práctica de configuración básica C880 **entregable**
   + [x] Conexión física a D-Link DES-3226
 + 5d:
   + [x] Conexión a otros dispositivos físicos
   + [x] Redes Locales: núcleo, distribución y acceso
-  + [ ] STP - Spanning Tree
+  + [x] STP - Spanning Tree
 + 12d:
-  + [ ] Administración centralizada (VTP y DTP)
-  + [ ] Link Aggregation 
+  + [ ] Configuración del switch
+  + [ ] Docker
 + 13d:
-  + [ ] Servicio de Voz y datos
-  + [ ] QoS
-  + [ ] QinQ
-+ 14d:
   + [ ] Monitorización SNMP
+  + [ ] Docker (cont)
+  + [ ] Zabbix / Nagios / Centreon / ...
++ 14d:
+  + [ ] Monitorización SNMP (cont)
 + 19d: 
   + [ ] Jornadas Informática 
 + 20d:
   + [ ] Carrera solidaria (para los que participen en la carrera)
-  + [ ] **Exámen UT3** (para los que **no** participen en la carrera)
+  + [ ] **Exámen/defensa UT3** (para los que **no** participen en la carrera)
 + 21d:
-  + [ ] **Exámen UT3** (para los que participaron en la carrera)
+  + [ ] **Exámen/defensa UT3** (para los que participaron en la carrera)
 
 # 4 Configuración de redes virtuales. 
 25 20/12/2023 25/01/2024 2ª
+
++ 30n:
+  + [x] VLANs
+  + [x] Ejercicio de VLANs en pt y real por equipos (2 equipos de 2 personas) - **entregable**
++ 9e:
+  + [ ] Administración centralizada (VTP y DTP)
+  + [ ] Link Aggregation 
++ 10e:
+  + [ ] Servicio de Voz y datos
+  + [ ] QoS
+  + [ ] QinQ
+
 
 # 5 Configuración y administración básica de “routers”. 
 24 29/01/2024 22/02/2024 2ª

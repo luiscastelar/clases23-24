@@ -15,15 +15,16 @@ Esto es un documento vivo donde hacer una planificación diaria y control del tr
  + [x] 29n:
    + [x] Información sobre ProgramaMe Nacional, Regional, Navideño y fase previa.
    + [x] Ejercicios de ramas.
- + [ ] 5d: Defensa de práctica de ramas.
-   + [ ] Individual.
-   + [x] Por equipos.
- + [ ] 12d: **Exámen UT4**
+ + [x] 5d: Defensa de práctica de ramas.
+   + [x] Individual.
+   + [ ] Por equipos.
+ + [ ] 13d: **Exámen UT4**
  
 # 5 Instalación y uso de entornos de desarrollo
  12h del 13/12/2023 al 16/01/2024. *2a eva*.
 
- + [ ] 13d:
+ + [x] 12d:
+   + [x] Concurso programame fase previa
  + [ ] 19d:
  + [ ] 20d:
  + [ ] Navidades
@@ -174,8 +175,8 @@ Horas de trabajo **en casa** => ==22h== de 22h
      + [x] javascript
      + [ ] [C++ en VS Code](https://code.visualstudio.com/docs/cpp/config-mingw) y [C++ con MinGW](https://es.wikihow.com/compilar-un-programa-en-C-usando-el-compilador-GNU-%28GCC%29)
      + [ ] [C#](https://desarrolloweb.com/articulos/primer-programa-csharp)
- + [ ] 14n:
-     + [ ] No realizado por actividad extraescolar
+ + [x] 14n:
+     + [x] No realizado por actividad extraescolar
      + [ ] ~~Documentación~~
  + [x] 21n: ~~Exámen UT3**~~
 

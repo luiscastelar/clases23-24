@@ -19,7 +19,7 @@
 + 4d:
   + [x] Docker
 + 11d:
-  + [ ] Servidores Headscale / Zerotier-controler
+  + [x] Servidores Headscale / Zerotier-controler
 + 15d:
   + [ ] Defensa práctica / **Examen UT4**
 
