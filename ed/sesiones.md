@@ -17,7 +17,7 @@ Esto es un documento vivo donde hacer una planificación diaria y control del tr
    + [x] Ejercicios de ramas.
  + [x] 5d: Defensa de práctica de ramas.
    + [x] Individual.
-   + [ ] Por equipos.
+   + [x] Por equipos.
  + [ ] 13d: **Exámen UT4**
  
 # 5 Instalación y uso de entornos de desarrollo
