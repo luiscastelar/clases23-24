@@ -4,7 +4,7 @@
 
 
 # 3 Configuración y administración de conmutadores. 
-28 16/11/2023 20/12/2023 2ª
+32 16/11/2023 20/12/2023 2ª
 + 16n:
   + [x] Dispositivos de interconexión de redes (1h).
 + 21n:
@@ -22,37 +22,50 @@
   + [x] Seguridad implícita en la segmentación.
   + [x] Análisis de red con wireshark
 + 30n:
-  + [x] VLANs
-  + [x] Ejercicio de VLANs en pt y real por equipos (2 equipos de 2 personas) - **entregable**
   + [x] Conexión física a Cisco C880 y reseteo
   + [x] Definición de práctica de configuración básica C880 **entregable**
   + [x] Conexión física a D-Link DES-3226
 + 5d:
   + [x] Conexión a otros dispositivos físicos
   + [x] Redes Locales: núcleo, distribución y acceso
-  + [ ] STP - Spanning Tree
+  + [x] STP - Spanning Tree
 + 12d:
-  + [ ] Administración centralizada (VTP y DTP)
-  + [ ] Link Aggregation 
+  + [x] Docker
 + 13d:
-  + [ ] Servicio de Voz y datos
-  + [ ] QoS
-  + [ ] QinQ
-+ 14d:
+  + [ ] Configuración del switch
   + [ ] Monitorización SNMP
+  + [ ] Docker (cont)
+  + [ ] Zabbix / Nagios / Centreon / ...
++ 14d:
+  + [ ] Monitorización SNMP (cont)
 + 19d: 
   + [ ] Jornadas Informática 
 + 20d:
   + [ ] Carrera solidaria (para los que participen en la carrera)
-  + [ ] **Exámen UT3** (para los que **no** participen en la carrera)
+  + [ ] Tareas atrasadas
 + 21d:
-  + [ ] **Exámen UT3** (para los que participaron en la carrera)
+  + [ ] Cierre de práctica UT4
++ 9e:
+  + [ ] **Defensa de práctica UT4**
 
 # 4 Configuración de redes virtuales. 
-25 20/12/2023 25/01/2024 2ª
+22 20/12/2023 25/01/2024 2ª
+
++ 30n:
+  + [x] VLANs
+  + [x] Ejercicio de VLANs en pt y real por equipos (2 equipos de 2 personas) - **entregable**
++ 10e:
+  + [ ] Administración centralizada (VTP y DTP)
+  + [ ] Link Aggregation 
++ 11e:
+  + [ ] Servicio de Voz y datos
+  + [ ] QoS
+  + [ ] QinQ
+
+
 
 # 5 Configuración y administración básica de “routers”. 
-24 29/01/2024 22/02/2024 2ª
+22 29/01/2024 22/02/2024 2ª
 
 # 6 Configuración y administración de protocolos dinámicos. 
 35 22/02/2024 04/04/2024 3ª
