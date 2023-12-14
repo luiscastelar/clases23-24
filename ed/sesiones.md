@@ -18,15 +18,15 @@ Esto es un documento vivo donde hacer una planificación diaria y control del tr
  + [x] 5d: Defensa de práctica de ramas.
    + [x] Individual.
    + [x] Por equipos.
- + [ ] 13d: **Exámen UT4**
+ + [x] 13d: **Exámen UT4**
  
 # 5 Instalación y uso de entornos de desarrollo
  12h del 13/12/2023 al 16/01/2024. *2a eva*.
 
  + [x] 12d:
    + [x] Concurso programame fase previa
- + [ ] 19d:
- + [ ] 20d:
+ + [ ] 19d: Jornadas Informática
+ + [ ] 20d: Carrera solidaria
  + [ ] Navidades
  + [ ] 9e:
  + [ ] 10e:

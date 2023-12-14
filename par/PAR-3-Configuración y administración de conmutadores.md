@@ -440,7 +440,11 @@ Como hemos visto la tabla ARP puede “aprenderse” de forma dinámica o tambi�
 
 ## Monitorización. Protocolo SNMP.
 + [Protocolo SNMP](http://gssi.det.uvigo.es/users/mramos/public_html/gprsi/gprsi3.pdf)
++ [Configuración agente SNMP en MV]
 + [Monitoreo con zabbix](https://techexpert.tips/es/zabbix-es/zabbix-monitoree-un-switch-a-traves-de-snmp/)
+
+
+
 
 Otros grandes monitores: nagios, centreon, prometheus/grafana, ...
 
