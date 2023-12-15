@@ -32,12 +32,11 @@
 + 12d:
   + [x] Docker
 + 13d:
-  + [ ] Configuración del switch
-  + [ ] Monitorización SNMP
-  + [ ] Docker (cont)
-  + [ ] Zabbix / Nagios / Centreon / ...
+  + [x] Docker (cont)
 + 14d:
-  + [ ] Monitorización SNMP (cont)
+  + [x] Docker y docker compose
+  + [ ] Monitorización SNMP
+  + [ ] Zabbix / Nagios / Centreon / ...
 + 19d: 
   + [ ] Jornadas Informática 
 + 20d:
@@ -55,6 +54,7 @@
   + [x] VLANs
   + [x] Ejercicio de VLANs en pt y real por equipos (2 equipos de 2 personas) - **entregable**
 + 10e:
+  + [ ] Configuración básica del switch (IP, pass)
   + [ ] Administración centralizada (VTP y DTP)
   + [ ] Link Aggregation 
 + 11e:

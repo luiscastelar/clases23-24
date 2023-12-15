@@ -28,12 +28,13 @@
 12h - 4 sesiones - 12/12/2023 19/01/2024 2ª
 
 + 18d:
+  + [ ] Proxy inverso
   + [ ] Jornadas Informática castelar (evaluable asistencia y participación)
 + 8e:
   + [ ] Proxy inverso
 + 12e:
   + [ ] Proxy socks
-  + [ ] 
+  + [ ] .
 + 19e:
   + [ ] **Defensa UT5** 
 

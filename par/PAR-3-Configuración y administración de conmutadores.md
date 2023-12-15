@@ -427,7 +427,7 @@ Como hemos visto la tabla ARP puede “aprenderse” de forma dinámica o tambi�
 
 # Configuración de un switch Cisco IOS
 
-# [OFF-Topic] Docker
+# {[Fold: Fold]} [OFF-Topic] Docker
 
 ![mv vs contender](https://edteam-media.s3.amazonaws.com/blogs/original/0c000477-ba58-422d-a62c-d0053bcfd291.png)
 ![resultado](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fsitelabs.es%2Fwp-content%2Fuploads%2F2015%2F09%2Fcontvsvm.png&f=1&nofb=1&ipt=d6cb670801e9e4cfca59d712906aa0a2b7e31bb87437029787f7112850f77b19&ipo=images)
@@ -440,7 +440,7 @@ Como hemos visto la tabla ARP puede “aprenderse” de forma dinámica o tambi�
 
 ## Monitorización. Protocolo SNMP.
 + [Protocolo SNMP](http://gssi.det.uvigo.es/users/mramos/public_html/gprsi/gprsi3.pdf)
-+ [Configuración agente SNMP en MV]
++ [Configuración agente SNMP en MV](https://rm-rf.es/como-instalar-y-configurar-snmp/)
 + [Monitoreo con zabbix](https://techexpert.tips/es/zabbix-es/zabbix-monitoree-un-switch-a-traves-de-snmp/)
 
 
