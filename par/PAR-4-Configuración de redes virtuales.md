@@ -19,6 +19,7 @@
 
 ### VTP - Virtual Trunk Protocol
 + [VTP - YT:Kalero](https://www.youtube.com/watch?v=DvhtEHUF9Wc)
++ [Oscar Maestre](https://oscarmaestre.github.io/apuntes_redes/t5_vlans/apuntes_t5.html#protocolos-para-la-administracion-centralizada-de-redes-virtuales-el-protocolo-vtp)
 
 
 # Definición de enlaces troncales en los conmutadores y “routers”. El protocolo IEEE802.1Q.
@@ -36,6 +37,10 @@ Priorización de tráfico de control, voz y vídeo (entre otros).
 Juntos pero no revueltos... o cuando un proveedor de internet mueve nuestro tráfico y claro, él usa una VLANs para cada cliente y nosotros una para cada departamento.
 
 + [Wikipedia](https://en.wikipedia.org/wiki/IEEE_802.1ad)
+
+
+# Etherchannel
+[Etherchannel](https://oscarmaestre.github.io/apuntes_redes/t5_vlans/apuntes_t5.html#etherchannel)
 
 
 # Switching & bridging en GNU/Linux
