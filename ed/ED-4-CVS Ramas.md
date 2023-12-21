@@ -39,6 +39,10 @@ Para ello sólo necesitamos conocer su `hash` (1) y, desde la rama `main`  (a la
 # Pull request
 + [pull request](https://www.freecodecamp.org/espanol/news/como-hacer-tu-primer-pull-request-en-github/)
 
+# Preguntas que todo programador debería conocer
+[Eso](https://pub.aimind.so/git-commands-summaries-that-every-developer-should-know-6b8f8971ccc4)
+
+
 # Hooks
 Algo general: [Hooks - Jeremy Holcombe](https://kinsta.com/es/blog/git-hooks/)
 
