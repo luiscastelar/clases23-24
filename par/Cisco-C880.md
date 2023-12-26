@@ -28,7 +28,7 @@ Por defecto, el usuario es ‘cisco’ y el password es ‘cisco’.
 ## Cisco IOS
 + [Comandos show](https://www.solvetic.com/tutoriales/article/170-comandos-cisco-show/)
 + [documentación de red](https://ccnadesdecero.es/documentacion-red/)
-+ 
++ [configuración C880](https://www.networkstraining.com/basic-cisco-800-router-configuration-for-internet-access/)
 
 ## Referencias:
 + [Configuración inicial - Cisco.com](https://www.cisco.com/c/en/us/td/docs/routers/access/800/hardware/installation/guide/800HIG/initalconfig.html)

@@ -447,6 +447,11 @@ Como hemos visto la tabla ARP puede “aprenderse” de forma dinámica o tambi�
 + [Configuración agente SNMP en MV](https://rm-rf.es/como-instalar-y-configurar-snmp/)
 + [Monitoreo con zabbix](https://techexpert.tips/es/zabbix-es/zabbix-monitoree-un-switch-a-traves-de-snmp/)
 
-
-
 Otros grandes monitores: nagios, centreon, prometheus/grafana, ...
+
+### SNMP en IOS
++ [manual oficial](https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/snmp/configuration/xe-16/snmp-xe-16-book/nm-snmp-cfg-snmp-support.html)
+
+Desgraciadamente, dado que nuestro monitorizador no está integrado en el *packet tracer* no podremos probarlo en entorno simulado, por lo que deberemos activarlo directamente en nuestro *Cisco C800*.
+
+*Nota: El entrono de simulación GNS3 si soporta la conexión al exterior, pero aun así deberemos sortear el problema de que el puerto de comunicaciones del protocolo SNMP es el 161/TCP por lo que es un puerto reservado.*
