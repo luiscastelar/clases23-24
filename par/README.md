@@ -14,24 +14,20 @@
 
 ---
 
-
-## Referencias bibliográficas y web
+# Referencias bibliográficas y web
 Cualquiera de las siguientes referencias son **muy** recomendables y se tomarán como tal. El profesor **no** los tomará como libros de texto.
 
 + [Apuntes - Oscar Maestre](https://oscarmaestre.github.io/apuntes_redes/index.html)
 + [Apuntes - José Luis ](https://planificacionadministracionredes.readthedocs.io/es/latest/)
 + [WikiBooks](https://es.wikibooks.org/wiki/Planificaci%C3%B3n_y_Administraci%C3%B3n_de_Redes)
++ [Cisco - Skills 4 Alls](https://skillsforall.com/es/catalog?category=course)
 + [NetworkAcadamy.io](https://www.networkacademy.io/ccna)
 + [Cisco network academy](https://www.sapalomera.cat/moodlecf/RS/4/index.html)
 + ...
 
-### También podría interesarte:
-
-
 ---
 
-
-## Legislación:
+# Legislación:
 + **Real Decreto 1629/2009**, de 30 de octubre, por el que se establece el título de Técnico Superior en Administración de Sistemas Informáticos en Red y se fijan sus enseñanzas mínimas.
 + **DECRETO 210/2010**, de 19 de noviembre, por el que se establece el currículo del ciclo formativo de Grado Superior de Técnico Superior en Administración de Sistemas Informáticos en Red en la Comunidad Autónoma de Extremadura:
   
@@ -41,7 +37,7 @@ Cualquiera de las siguientes referencias son **muy** recomendables y se tomarán
   > 2. El equipo docente responsable del desarrollo del ciclo formativo elaborará las programaciones para los distintos módulos profesionales. Estas programaciones didácticas deberán contener, al menos, la adecuación de las competencias profesionales, personales y sociales al contexto socioeconómico y cultural dentro del centro educativo y a las características del alumnado, la distribución y el desarrollo de los contenidos, la metodología de carácter general y los criterios sobre el proceso de evaluación, así como los materiales didácticos.
   > ...
 
-## Duración: 
+# Duración: 
 Créditos ECTS: 12 -> 300 h
 Duración en aula: 224 h -> 7 h/sem en 32 sem
 **Trabajo en casa: 76 h** -> 2,4 h/sem
@@ -49,11 +45,11 @@ Duración en aula: 224 h -> 7 h/sem en 32 sem
 *No se considera trabajo personal la visualización o lectura de la bibliografía, si no el razonamiento y ejecución de ejercicios, tareas y prácticas recomendadas u obligatorias.*
 
 
-## Unidad de competencia
+# Unidad de competencia
 Este módulo no cubre ninguna unidad de competencia.
 
 
-## Resultados de aprendizaje
+# Resultados de aprendizaje
 1. Reconoce la estructura de las redes de datos identificando sus elementos y principios de funcionamiento.
 2. Integra ordenadores y periféricos en redes cableadas e  inalámbricas, evaluando su funcionamiento y prestaciones.
 3. Administra conmutadores estableciendo opciones de configuración para su integración en la red.
@@ -64,7 +60,7 @@ Este módulo no cubre ninguna unidad de competencia.
 
 Evaluación
 
-## Evaluaciones ordinaria y extraordinaria
+# Evaluaciones ordinaria y extraordinaria
 El proceso de evaluación, calificación y promoción se rige por lo indicado en la Orden de 20 de junio de 2012 por la que se regula la evaluación, promoción y acreditación académica del alumnado de ciclos formativos, y su posterior modificación de 5 de agosto de 2015, así como la Orden de 9 de junio de 2022 que modifica la primera orden.
 
 El alumnado que asista a una convocatoria ordinaria o extraordinaria y no hayan realizado todos los ejercicios obligatorios podrán tener un examen diferenciado a aquellos que hayan realizado un seguimiento completo del curso. Si se considera necesario el alumnado deberá entregar antes de la fecha de dicha evaluación las actividades prácticas que se establezcan.
@@ -81,10 +77,10 @@ El alumnado tendrá la posibilidad de realizar una prueba objetiva global antes 
 
 El profesorado podrá establecer el instrumento de evaluación que considere más adecuado en cada fase del proceso, desde medios informáticos, manuales, papel, entrevista personal, coevaluación, etc. manteniendo siempre el precepto de objetividad y validez.
 
-## Evaluación de pendientes
+# Evaluación de pendientes
 Este módulo está encuadrado en el segundo curso del Ciclo Formativo, por ello, no se establecen criterios para las evaluaciones pendientes.
 
-## Trabajos y actividades prácticas
+# Trabajos y actividades prácticas
 El alumnado que no haya realizado y entregado antes de la evaluación ordinaria o extraordinaria **todas** las actividades obligatorias no podrá superar la evaluación. El profesorado puede proponer actividades adicionales de entrega obligatoria antes del fin de la evaluación ordinaria o extraordinaria.
 
 Según un acuerdo del Departamento de Informática y Comunicaciones realizado en la reunión de 9 de febrero de 2010, se tiene la siguiente consideración en lo que se refiere a la valoración de las actividades prácticas:
@@ -113,11 +109,11 @@ Con el fin de garantizar que el alumnado matriculado en un módulo formativo cum
 9. El alumnado dispone de 5 días hábiles para reclamar al departamento su disconformidad con el criterio seguido por el profesorado.
 
 
-## Recuperación de evaluaciones perdidas
+# Recuperación de evaluaciones perdidas
 El profesorado podrá realizar una prueba de recuperación o emplear algún otro instrumento para comprobar la adquisición de los contenidos pendientes.
 
 
-## Autoría de prácticas y pruebas específicas
+# Autoría de prácticas y pruebas específicas
 En todos los procesos de evaluación se requiere del alumnado la autoría de los trabajos presentados, así como de las pruebas específicas realizadas. En el caso de emplear fuentes con licencias abiertas se deberán citar convenientemente.
 
 Cualquier plagio, copia entre estudiantes o uso de fuentes no referidas conllevará una calificación negativa, así como cuantas medidas se estimen necesarias por parte del profesorado de acuerdo a la gravedad del caso.
@@ -125,7 +121,7 @@ Cualquier plagio, copia entre estudiantes o uso de fuentes no referidas conlleva
 El auto-plagio y auto-referencia también podrán ser calificados negativamente.
 
 
-## Calificación
+# Calificación
 El alumnado será calificado al finalizar cada trimestre, **en** **s****esi****ón** **de evaluación** y obtendrán una calificación final del módulo resultado de la *media* *ponderada de todas las Unidades de Trabajo evaluadas en el curso* *(la nota de los boletines trimestrales es sólo informativa)*.
 
 La calificación de cada trimestre se obtiene a partir de una media ponderada, en base a los siguientes criterios, cada uno con un peso distinto:
@@ -154,7 +150,7 @@ El profesorado que opte por no aplicar alguno de los criterios o variar los porc
 Será condición necesaria para poder obtener calificación positiva en el trimestre obtener una calificación mínima de 4 puntos tanto en el apartado de trabajos y actividades prácticas como en las pruebas objetivas. Si no se cumpliera esta condición no se obtendrá calificación positiva en el trimestre, optando el profesorado por no realizar la media ponderada de las tres partes.
 
 
-### Prácticas
+## Prácticas
 * ~~**OBLIGATORIO** trabajo sobre máquina expuesta al mundo (salvo cuando se indique lo contrario).~~
 * ~~Todos los ficheros de configuración en sus respectivas rutas de forma que se pueda reproducir vuestra práctica con sólo *clonar* y *levantar*.~~
 * ~~La salida estándar será capturadas con `tee` en Linux o `Tee-Object` en PowerShell. **NO** se aceptan capturas de pantalla.~~
