@@ -1,35 +1,12 @@
 #curso23_24 #SAD
 
 
-# UT4 - Implantación técnicas acceso remoto
-16h - 7 sesiones - 13n-11d
-
-+ ~~13n: Defensa UT3~~
-+ ~~17n: Examen rec 1ª Evaluación~~
-+ 20n:
-  + [x] SSH
-  + [x] Hardening SSH
-+ 24n:
-  + [x] Docker
-  + [x] Continuación Hardening SSH
-+ 27n:
-  + [x] Wireguard / OpenVPN
-+ 1d:
-  + [x] Clientes Tailscale / Zerotier
-+ 4d:
-  + [x] Docker
-+ 11d:
-  + [x] Servidores Headscale / Zerotier-controler
-+ 15d:
-  + [ ] Defensa práctica / **Examen UT4**
-
----
 # UT5 - Instalación y configuración de servidores proxy 
 12h - 4 sesiones - 12/12/2023 19/01/2024 2ª
 
 + 18d:
-  + [ ] Proxy inverso
-  + [ ] Jornadas Informática castelar (evaluable asistencia y participación)
+  + [x] Proxy inverso
+  + [x] Jornadas Informática castelar (evaluable asistencia y participación)
 + 8e:
   + [ ] Proxy inverso
 + 12e:
@@ -201,3 +178,28 @@
   + iptables - cliente-5 debe impedir el acceso a cliente-4
     
 + Participación en clase (10%).
+
+
+# UT4 - Implantación técnicas acceso remoto
+16h - 7 sesiones - 13n-11d
+
++ ~~13n: Defensa UT3~~
++ ~~17n: Examen rec 1ª Evaluación~~
++ 20n:
+  + [x] SSH
+  + [x] Hardening SSH
++ 24n:
+  + [x] Docker
+  + [x] Continuación Hardening SSH
++ 27n:
+  + [x] Wireguard / OpenVPN
++ 1d:
+  + [x] Clientes Tailscale / Zerotier
++ 4d:
+  + [x] Docker
++ 11d:
+  + [x] Servidores Headscale / Zerotier-controler
++ 15d:
+  + [x] Defensa práctica / **Examen UT4**
+ 
+  **Evaluación de la unidad**: ejecución y defensa de la práctica.

@@ -1,28 +1,5 @@
   #curso23_24 #PSP
 
-
-# UT4 Servicios de red 
-12h - 6 sesiones - Del 20/11/2023 al 11/12/2023. *1ª eva*.
-
-1. 13n:
-    + [x] Servidor web (de archivos html).
-    + [x] Planteamiento de trabajo
-2. 24n:
-    + [x] Ejecución trabajo de creación de servicio y cliente de red
-3. 27n:
-    + [x] Continuación trabajo
-4. 1d:
-    + [x] Continuación trabajo
-5. 4d:
-    + [x] Continuación trabajo
-6. 11d:
-    + [x] **Defensa práctica UT4**
-7. 15d:
-    + [ ] **Exposición trabajo UT4**
-
----
-
-Examen de recuperación de la primera evaluación: **15 de diciembre de 2023**
  
 
 **2ª EVALUACIÓN**
@@ -138,3 +115,27 @@ Entregas 23f
     + [x] Ejercicios y dudas.
 5. ¿13n?: ~~Exceso de horas~~
 6. 17n: **Entrega práctica UT3**
+
+
+# UT4 Servicios de red 
+12h - 6 sesiones - Del 20/11/2023 al 11/12/2023. *1ª eva*.
+
+1. 13n:
+    + [x] Servidor web (de archivos html).
+    + [x] Planteamiento de trabajo
+2. 24n:
+    + [x] Ejecución trabajo de creación de servicio y cliente de red
+3. 27n:
+    + [x] Continuación trabajo
+4. 1d:
+    + [x] Continuación trabajo
+5. 4d:
+    + [x] Continuación trabajo
+6. 11d:
+    + [x] **Defensa práctica UT4**
+7. 15d:
+    + [x] **Exposición trabajo UT4**
+
+---
+
+Examen de recuperación de la primera evaluación: **15 de diciembre de 2023**
