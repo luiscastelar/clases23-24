@@ -11,12 +11,12 @@
 1. 15d: ~~Exceso de horas~~
 2. 18d: ~~Jornadas~~
 3. 8e:
-   + [ ] JavaFx
+   + [x] JavaFx
    + [ ] JavaEE
    + [ ] Servlet ECHO
 4. 12e:
    + [ ] jQuery
-   + [ ] HTML + Tailwind + JS / AJAX(jQuery) + Servlet + Clases
+   + [ ] HTML + ~~Tailwind~~ + JS / AJAX(jQuery) + Servlet + Clases
 
 ---
 # UT6 Técnicas de programación segura 
