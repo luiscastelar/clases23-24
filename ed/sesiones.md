@@ -2,33 +2,16 @@
 
 Esto es un documento vivo donde hacer una planificación diaria y control del trabajo realizado.
 
-
-# Examen recuperación 1ª evaluación -> 21 noviembre 2023
-
----
- 
-# 4 Sistemas de control de versiones - II
- 8h del 23/11/2023 al 12/12/2023. *2a eva*.
-
- + [x] 28n:
-   + [x] CSV-II: ramas.
- + [x] 29n:
-   + [x] Información sobre ProgramaMe Nacional, Regional, Navideño y fase previa.
-   + [x] Ejercicios de ramas.
- + [x] 5d: Defensa de práctica de ramas.
-   + [x] Individual.
-   + [x] Por equipos.
- + [x] 13d: **Exámen UT4**
  
 # 5 Instalación y uso de entornos de desarrollo
  12h del 13/12/2023 al 16/01/2024. *2a eva*.
 
  + [x] 12d:
    + [x] Concurso programame fase previa
- + [ ] 19d: Jornadas Informática
- + [ ] 20d: Carrera solidaria
- + [ ] Navidades
- + [ ] 9e:
+ + [x] 19d: Jornadas Informática
+ + [x] 20d: Carrera solidaria
+ + [x] Navidades
+ + [ ] 9e: 
  + [ ] 10e:
  + [ ] 16e: **Exámen UT5**
  
@@ -188,6 +171,24 @@ Horas de trabajo **en casa** => ==22h== de 22h
  + [x] 21n: **RECUPERACIÓN** 1ª evaluación.
 
 Horas de trabajo **en casa** => ==8h== de 22h
+
+---
+
+# Examen recuperación 1ª evaluación -> 21 noviembre 2023
+---
+ 
+# 4 Sistemas de control de versiones - II
+ 8h del 23/11/2023 al 12/12/2023. *2a eva*.
+
+ + [x] 28n:
+   + [x] CSV-II: ramas.
+ + [x] 29n:
+   + [x] Información sobre ProgramaMe Nacional, Regional, Navideño y fase previa.
+   + [x] Ejercicios de ramas.
+ + [x] 5d: Defensa de práctica de ramas.
+   + [x] Individual.
+   + [x] Por equipos.
+ + [x] 13d: **Exámen UT4**
 
 ---
 

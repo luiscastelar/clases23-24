@@ -4,7 +4,7 @@
 
 
 # 3 Configuración y administración de conmutadores. 
-32 16/11/2023 20/12/2023 2ª
+35 16/11/2023 20/12/2023 2ª
 + 16n:
   + [x] Dispositivos de interconexión de redes (1h).
 + 21n:
@@ -35,20 +35,25 @@
   + [x] Docker (cont)
 + 14d:
   + [x] Docker y docker compose
-  + [ ] Monitorización SNMP
-  + [ ] Zabbix / Nagios / Centreon / ...
+  + [x] Monitorización SNMP
+  + [x] Zabbix / Nagios / Centreon / ...
 + 19d: 
-  + [ ] Jornadas Informática 
+  + [x] Jornadas Informática 
 + 20d:
-  + [ ] Carrera solidaria (para los que participen en la carrera)
-  + [ ] Tareas atrasadas
+  + [x] Carrera solidaria (para los que participen en la carrera)
+  + [x] Tareas atrasadas
 + 21d:
-  + [ ] Cierre de práctica UT4
+  + [x] Resolución de dudas
 + 9e:
-  + [ ] **Defensa de práctica UT4**
+  + [ ] Postmortem Hack a OrangeEs
+  + [ ] Monitorización SNMP - Zabbix -> práctica
++ 18e:
+  + [ ] Entrega y **defensa** de memoria de prácticas SNMP.
++ Por definir:
+  + [ ] Entrega y **defensa** de configuración Cisco C880.
 
 # 4 Configuración de redes virtuales. 
-22 20/12/2023 25/01/2024 2ª
+19 20/12/2023 25/01/2024 2ª
 
 + 30n:
   + [x] VLANs
@@ -61,6 +66,16 @@
   + [ ] Servicio de Voz y datos
   + [ ] QoS
   + [ ] QinQ
++ 16e:
+  + [ ] 
++ 17e:
+  + [ ] 
++ 23e:
+  + [ ] 
++ 24e:
+  + [ ] 
++ 25e:
+  + [ ] Entrega/**Defensa** de la práctica
 
 
 
