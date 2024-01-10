@@ -39,9 +39,8 @@ Juntos pero no revueltos... o cuando un proveedor de internet mueve nuestro trá
 + [Wikipedia](https://en.wikipedia.org/wiki/IEEE_802.1ad)
 
 
-# Etherchannel
-[Etherchannel](https://oscarmaestre.github.io/apuntes_redes/t5_vlans/apuntes_t5.html#etherchannel)
-
+# Agregación de enlaces
+[LAPD](https://ipwithease.com/understanding-link-aggregation-with-lacp/) y [Etherchannel](https://oscarmaestre.github.io/apuntes_redes/t5_vlans/apuntes_t5.html#etherchannel) (propietario Cisco) 
 
 # Switching & bridging en GNU/Linux
 + [bridge](https://www.ithands-on.com/2020/12/networking-101-linux-tap-interface-and.html)
