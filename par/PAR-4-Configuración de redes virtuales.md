@@ -12,6 +12,9 @@
 Para que el usuario sepa en todo momento en que modo se encuentra deberá mirar la línea de estado del equipo:
 
 ![Modos de funcionamiento de Cisco IOS - CCNA desde Cero](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fccnadesdecero.es%2Fwp-content%2Fuploads%2F2017%2F11%2FEstructura-jer%25C3%25A1rquica-de-los-modos-Cisco-IOS.png&f=1&nofb=1&ipt=de9629e5a061fb93d2ede6fc626cbef2f90193eb8f25b3dea84e754017b3a317&ipo=images)
+## Cisco Reference Manual:
+[RF - Cisco IOS](https://www.cisco.com/c/en/us/td/docs/ios/fundamentals/command/reference/cf_book.pdf)
+
 
 ## Primeros pasos (de nuevo):
 + [Configurar](https://oscarmaestre.github.io/apuntes_redes/t3_conmutadores/apuntes_t3.html#configuracion-del-conmutador) switch / router:
@@ -27,6 +30,22 @@ Para que el usuario sepa en todo momento en que modo se encuentra deberá mirar 
 > + Así mismo, la pérdida de credenciales por parte del alumno supondrá considerar la unidad como **NO** SUPERADA.
 >
 
+
+### Guardar / Descartar configuración
+```bash
+! Guarda configuración para próximo arranque
+copy running-config startup-config
+
+! Descarta configuración
+copy startup-config running-config
+
+! Programar reinicio en 10 minutos
+reload in 10 
+
+! Cancelar reinicio programado
+reload cancel
+
+````
 
 # Implantación y configuración de redes virtuales.
 
