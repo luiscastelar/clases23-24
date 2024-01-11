@@ -9,9 +9,10 @@
   + [x] Jornadas Informática castelar (evaluable asistencia y participación)
 + 8e:
   + [ ] Proxy inverso
+  + [ ] Post-mortem caída de Orange
 + 12e:
-  + [ ] Proxy socks
-  + [ ] .
+  + [ ] Demostrativo de Proxy socks
+  + [ ] Continuación proxy inverso
 + 19e:
   + [ ] **Defensa UT5** 
 

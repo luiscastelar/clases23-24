@@ -19,7 +19,24 @@ Operan a nivel de circuito (o red) creando una pasarela entre dos puntos.
 1. En la terminal del cliente: `ssh -ND 9999 usr@server`
 2. En el configuración del sistema activar el servidor proxy socks en `localhost:9999`
 
-# Configuración de filtros.
+# Proxy socks
+Conexión a través de proxy socks. Concretamente queremos conectarnos desde una máquina local como si estuviéramos en remoto.
+
+1. Crear en la máquina local un sock dinámico a la máquina remota: `ssh -ND 9999 usr_remoto@ip_remota`
+2. Exportar el proxy sock al sistema: `export http_proxy=socks5://localhost:9999`
+3. Utilizar proxy. P.e.: `curl ifconfig.me`
+4. Desconectar proxy del sistema: `export http_proxy=`
+5. Cerrar túnel ssh (`^c`)
+
+*Nota: Para afianzarlo, lo podemos añadir `.bashrc` para el usuario o a `/etc/environment` para todo el sistema.*
+
+*Nota 2: Si vamos a usarlo esporádicamente... http_proxy=socks5://localhost:9999 curl ifconfig.me`*.
+
+Debemos tener en cuenta el funcinamiento de los navegadores ya que Firefox va independiente de la configuración del sistema de proxy, por lo que deberemos configurarlo a parte o utilizar alguna extensión (p.e. FoxyProxy).
+
+
+
+# ~~Configuración de filtros.~~
 Squid
 
-# Métodos de autenticación en un “proxy”.
+# ~~Métodos de autenticación en un “proxy”.~~
