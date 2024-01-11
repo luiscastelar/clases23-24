@@ -4,7 +4,7 @@
 
 
 # 3 Configuración y administración de conmutadores. 
-35 16/11/2023 20/12/2023 2ª
+37 16/11/2023 20/12/2023 2ª
 + 16n:
   + [x] Dispositivos de interconexión de redes (1h).
 + 21n:
@@ -45,35 +45,33 @@
 + 21d:
   + [x] Resolución de dudas
 + 9e:
-  + [ ] Postmortem Hack a OrangeEs
-  + [ ] Monitorización SNMP - Zabbix -> práctica
+  + [x] Postmortem Hack a OrangeEs
+  + [x] Monitorización SNMP - Zabbix -> práctica
++ 10e:
+  + [x] Monitorización SNMP - Zabbix -> práctica
 + 18e:
   + [ ] Entrega y **defensa** de memoria de prácticas SNMP.
 + Por definir:
   + [ ] Entrega y **defensa** de configuración Cisco C880.
 
 # 4 Configuración de redes virtuales. 
-19 20/12/2023 25/01/2024 2ª
+17 20/12/2023 25/01/2024 2ª
 
 + 30n:
   + [x] VLANs
   + [x] Ejercicio de VLANs en pt y real por equipos (2 equipos de 2 personas) - **entregable**
-+ 10e:
++ 12e:
   + [ ] Configuración básica del switch (IP, pass)
   + [ ] Administración centralizada (VTP y DTP)
++ 16e:
   + [ ] Link Aggregation 
-+ 11e:
++ 17e:
   + [ ] Servicio de Voz y datos
++ 23e:
   + [ ] QoS
   + [ ] QinQ
-+ 16e:
-  + [ ] 
-+ 17e:
-  + [ ] 
-+ 23e:
-  + [ ] 
 + 24e:
-  + [ ] 
+  + [ ] Trabajo en prácticas
 + 25e:
   + [ ] Entrega/**Defensa** de la práctica
 

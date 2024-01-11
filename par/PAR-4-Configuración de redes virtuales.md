@@ -1,6 +1,32 @@
 #curso23_24 #PAR [estado::Working]
 
 
+# [Off-topic] Configuración CISCO
++ Modos CISCO
+
+![Modos de Acceso y Configuración en Cisco - CCNA Desde Cero](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi0.wp.com%2Fccnadesdecero.com%2Fwp-content%2Fuploads%2F2018%2F12%2Fcli-modo-acceso-configuracion-cisco.png%3Fresize%3D768%252C288%26ssl%3D1&f=1&nofb=1&ipt=2d7ed659183f4c1df9c6e2e28b2f232c3a46a490d63c0064d2369abfc2cf5969&ipo=images)
+
++ Modos de configuración:
+
+![Modos de Acceso y Configuración en Cisco - CCNA Desde Cero](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi0.wp.com%2Fccnadesdecero.com%2Fwp-content%2Fuploads%2F2018%2F12%2Fcli-modos-de-configuracion-en-cisco.png%3Fresize%3D800%252C600%26ssl%3D1&f=1&nofb=1&ipt=57873fe7895b92caec700e3fa6796ad1e0067588c88258be08f2688497cff4c0&ipo=images)
+Para que el usuario sepa en todo momento en que modo se encuentra deberá mirar la línea de estado del equipo:
+
+![Modos de funcionamiento de Cisco IOS - CCNA desde Cero](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fccnadesdecero.es%2Fwp-content%2Fuploads%2F2017%2F11%2FEstructura-jer%25C3%25A1rquica-de-los-modos-Cisco-IOS.png&f=1&nofb=1&ipt=de9629e5a061fb93d2ede6fc626cbef2f90193eb8f25b3dea84e754017b3a317&ipo=images)
+
+## Primeros pasos (de nuevo):
++ [Configurar](https://oscarmaestre.github.io/apuntes_redes/t3_conmutadores/apuntes_t3.html#configuracion-del-conmutador) switch / router:
+  + asignando una IP
+  + creando un usr/pass para cada puerto de configuración (consola/aux/ssh)
+
+*Nota: la configuración de IP se realiza de forma distinta para `router`s que para `switch`es*.
+
+>
+> **IMPORTANTE**:
+>
+> + Al finalizar el curso todos los equipos **deben** quedar con el password de root en blanco. De cualquier otra forma se considerará como unidad **NO** SUPERADA.
+> + Así mismo, la pérdida de credenciales por parte del alumno supondrá considerar la unidad como **NO** SUPERADA.
+>
+
 
 # Implantación y configuración de redes virtuales.
 
@@ -10,7 +36,6 @@
 + [Otro de teoría - wikibooks](https://es.wikibooks.org/wiki/Planificaci%C3%B3n_y_Administraci%C3%B3n_de_Redes/Tema_9/Texto_completo)
 + [Configuración de VLANs en CISCO](https://oscarmaestre.github.io/apuntes_redes/t5_vlans/apuntes_t5.html)
 + [VLAN - CCNA desde Cero](https://ccnadesdecero.com/curso/vlan/)  
-
 
 
 ## Administración centralizada de VLANs.
