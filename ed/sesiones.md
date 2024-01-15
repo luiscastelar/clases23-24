@@ -11,9 +11,14 @@ Esto es un documento vivo donde hacer una planificación diaria y control del tr
  + [x] 19d: Jornadas Informática
  + [x] 20d: Carrera solidaria
  + [x] Navidades
- + [ ] 9e: 
- + [ ] 10e:
- + [ ] 16e: **Exámen UT5**
++ 9e:
+   + [x] Refactorización
++ 10e:
+  + [x] Compilación con y sin ide
+  + [x] Generación de artefactos jar con y sin ide
++ 16e:
+  + [ ] Continuación generación de artefacto jar
+  + [ ] **Entrega de práctica UT5**
  
 # 6 Optimización y documentación
  14h del 17/01/2024 al 07/02/2024. *2a eva*.
