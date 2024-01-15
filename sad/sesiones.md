@@ -2,26 +2,30 @@
 
 
 # UT5 - Instalación y configuración de servidores proxy 
-12h - 4 sesiones - 12/12/2023 19/01/2024 2ª
+13h - 4,5 sesiones - 12/12/2023 19/01/2024 2ª
 
 + 18d:
   + [x] Proxy inverso
   + [x] Jornadas Informática castelar (evaluable asistencia y participación)
 + 8e:
-  + [ ] Proxy inverso
-  + [ ] Post-mortem caída de Orange
+  + [x] Proxy inverso
+  + [x] Post-mortem caída de Orange
 + 12e:
-  + [ ] Demostrativo de Proxy socks
-  + [ ] Continuación proxy inverso
+  + [x] Demostrativo de Proxy socks
+  + [x] Continuación proxy inverso
++ 15e:
+  + [ ] Refuerzo rezagados
 + 19e:
   + [ ] **Defensa UT5** 
 
 ---
 # UT6 - Implantación de soluciones de alta disponibilidad. 
-18h - 10 sesiones - 22/01/2024 26/02/2024 2ª
+19h - 9,5 sesiones - 22/01/2024 26/02/2024 2ª
 
-+ 22e:
-  + [ ] Kubernetes
++ 19e: Kubernetes
+  + [ ] Instalación 
++ 22e: K2
+  + [ ] Introducción.
 + ~~26e: día de la docencia~~
 + 29e: K2
   + [ ] Funcionamiento ininterrumpido.
