@@ -64,10 +64,11 @@
   + [x] Configuración básica del switch (IP, pass)
   + [x] Administración centralizada (VTP y DTP)
 + 16e:
-  + [ ] Servicio de Voz y datos
+  + [x] Servicio de Voz y datos
+  + [ ] ~~QoS~~ (en UT6)
 + 17e:
-  + [ ] QoS
   + [ ] QinQ
+  + [ ] Zabbix (**con docker**) 
 + 23e:
   + [ ] Link Aggregation
 + 24e:

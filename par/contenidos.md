@@ -2,16 +2,24 @@
 
 **Contenidos básicos.**
 
-# UT3. Configuración y administración de conmutadores:
+# RA3. Configuración y administración de conmutadores:
 - [x] Segmentación de la red. Ventajas que presenta.
 - [x] Conmutadores y dominios de colisión y “broadcast”.
 - [x] Segmentación de redes.
 - [x] Formas de conexión al conmutador para su configuración.
-- [ ] Configuración del conmutador.
+- [x] Configuración del conmutador.
 - [x] Configuración estática y dinámica de la tabla de direcciones MAC.
 - [x] Protocolo Spanning tree.
 
-# UT4. Configuración y administración básica de “routers”:
+# RA5. Configuración de redes virtuales:
+- [x] El diseño de redes locales a tres capas (núcleo, distribución y acceso).
+- [x] Implantación y configuración de redes virtuales.
+- [x] Definición de enlaces troncales en los conmutadores y “routers”. El protocolo IEEE802.1Q.
+- [ ] Diagnóstico de incidencias.
+
+*El desarrollo del RA5 corresponde a la UT4*. 
+
+# RA4. Configuración y administración básica de “routers”:
 - [ ] Los “routers” en las LAN, WAN y WLAN.
 - [ ] Componentes del “router”.
 - [ ] Formas de conexión al “router” para su configuración inicial.
@@ -20,24 +28,20 @@
 - [ ] Configuración del enrutamiento estático.
 - [ ] Definición y ubicación de listas de control de acceso (ACLs).
 
-# UT5. Configuración de redes virtuales:
-- [ ] El diseño de redes locales a tres capas (núcleo, distribución y acceso).
-- [ ] Implantación y configuración de redes virtuales.
-- [ ] Definición de enlaces troncales en los conmutadores y “routers”. El protocolo IEEE802.1Q.
-- [ ] Diagnóstico de incidencias.
+*El desarrollo del RA4 corresponde a la UT5.*
 
-# UT6. Configuración y administración de protocolos dinámicos:
+# RA6. Configuración y administración de protocolos dinámicos:
 - [ ] Protocolos enrutables y protocolos de enrutamiento.
 - [ ] Protocolos de enrutamiento interior y exterior.
 - [ ] El enrutamiento sin clase.
-- [ ] La subdivisión de redes y el uso de máscaras de longitud variable (VLMs).
+- [x] La subdivisión de redes y el uso de máscaras de longitud variable (VLMs).
 - [ ] El protocolo RIPv2; comparación con RIPv1.
 - [ ] Configuración y administración de RIPv1.
 - [ ] Configuración y administración de RIPv2.
 - [ ] Configuración OSPF.
 
-# UT7. Configuración del acceso a Internet desde una LAN:
-- [ ] Direccionamiento interno y direccionamiento externo.
+# RA7. Configuración del acceso a Internet desde una LAN:
+- [x] Direccionamiento interno y direccionamiento externo.
 - [ ] NAT origen y NAT destino.
 - [ ] NAT estático, dinámico, de sobrecarga (PAT) e inverso.
 - [ ] Configuración de NAT.
