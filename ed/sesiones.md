@@ -4,9 +4,9 @@ Esto es un documento vivo donde hacer una planificación diaria y control del tr
 
  
 # 5 Instalación y uso de entornos de desarrollo
- 12h del 13/12/2023 al 16/01/2024. *2a eva*.
+ 14h del 13/12/2023 al 16/01/2024. *2a eva*.
 
- + [x] 12d:
+ + 12d:
    + [x] Concurso programame fase previa
  + [x] 19d: Jornadas Informática
  + [x] 20d: Carrera solidaria
@@ -17,18 +17,28 @@ Esto es un documento vivo donde hacer una planificación diaria y control del tr
   + [x] Compilación con y sin ide
   + [x] Generación de artefactos jar con y sin ide
 + 16e:
-  + [ ] Continuación generación de artefacto jar
+  + [ ] Generación de jar con librería externa (jdbc)
++ 17e:
+
+  + [ ] Generación de war
   + [ ] **Entrega de práctica UT5**
  
 # 6 Optimización y documentación
  14h del 17/01/2024 al 07/02/2024. *2a eva*.
 
-+ [ ] 17e:
-+ [ ] 23e:
-+ [ ] 24e:
-+ [ ] 30e:
-+ [ ] 31e:
-+ [ ] 6f:
++ 23e:
+  + [ ] JavaDoc
+  + [ ] JS Doc
++ 24e:  
+  + [ ] Git hook -> Pre-push -> Generar Doc
++ 30e:
+  + [ ] Optimización
+  + [ ] Git hook -> Pre-commit
++ 31e:
+  + [ ] Servidor Git -> Git BARE
+  + [ ] Git hook servidor -> Post-recibe
++ 6f:
+  + [ ] Despliegue web con Git + Git Bare + Git Hook + 
 + [ ] 7f: **Exámen UT6**
  
 # 7 Elaboración de diagramas de clase

@@ -61,15 +61,15 @@
   + [x] VLANs
   + [x] Ejercicio de VLANs en pt y real por equipos (2 equipos de 2 personas) - **entregable**
 + 12e:
-  + [ ] Configuración básica del switch (IP, pass)
-  + [ ] Administración centralizada (VTP y DTP)
+  + [x] Configuración básica del switch (IP, pass)
+  + [x] Administración centralizada (VTP y DTP)
 + 16e:
-  + [ ] Link Aggregation 
-+ 17e:
   + [ ] Servicio de Voz y datos
-+ 23e:
++ 17e:
   + [ ] QoS
   + [ ] QinQ
++ 23e:
+  + [ ] Link Aggregation
 + 24e:
   + [ ] Trabajo en prácticas
 + 25e:

@@ -14,7 +14,7 @@
   + [x] Demostrativo de Proxy socks
   + [x] Continuación proxy inverso
 + 15e:
-  + [ ] Refuerzo rezagados
+  + [x] Refuerzo rezagados
 + 19e:
   + [ ] **Defensa UT5** 
 

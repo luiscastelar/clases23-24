@@ -24,11 +24,11 @@ Fuente: [aws](https://aws.amazon.com/es/what-is/ide/)
 ## Sin IDE (A mano)
 1. [x] ejecutando scripts con `java`
 2. [x] javac + java
-3. [ ] `package` -> `javac -d ./ ArchivoClase.java && java package.ArchivoClase`
-4. [ ] creación de `jar`‘s: `jar cfve Main.jar org.example.Main org/example/\*.class` 
-5. [ ] ejecución de `jar`: `java -jar Main.jar`
+3. [x] `package` -> `javac -d ./ ArchivoClase.java && java package.ArchivoClase`
+4. [x] creación de `jar`‘s: `jar cfve Main.jar org.example.Main org/example/\*.class` 
+5. [x] ejecución de `jar`: `java -jar Main.jar`
 6. [ ] importación de clases: `java -cp "A.jar:B.jar:bin-folder" your.main.class.Here` (sustituir “:“ por “;“ en windows).
-7. [ ] firmado de `jar`: 
+7. [x] firmado de `jar`: 
     ```bash
     # Generar auto-certificado
     keytool -genkey -alias firmacontrato -keystore AlmacenClaves -keyalg rsa -storepass 1234567
@@ -46,8 +46,70 @@ Fuente: [aws](https://aws.amazon.com/es/what-is/ide/)
 
     ```
 
-8. [ ] creación de `war`‘s -> se puede... pero no merece. Lo habitual es hacerlo con IDE, Maven o Gradle.
-9. [ ] ejecución de `war` -> dentro del directorio aplicacion de tomcat
+8. [ ] creación de jar con lib externa(jdbc) mediante IDE.
+9. [ ] creación de `war`‘s -> se puede... pero no merece. Lo habitual es hacerlo con IDE, Maven o Gradle.
+10. [ ] ejecución de `war` -> dentro del directorio aplicacion de tomcat
+
+
+## Jar con jdbc - Paso a paso
+
+La idea es que lo intentéis ejecutar paso a paso para ver que errores nos va dado.
+1. **Nos arroja que no tiene driver:** \
+Dentro del archivo `pom.xml` de un proyecto maven, justo antes del `</project>`:
+```xml
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.32</version>
+        </dependency>
+
+    </dependencies>
+```
+
+Después se hace click sobre el icono de recargar maven y ya podremos utilizar el driver sin problemas.
+
+2. **Nos dice que no tienen conexión** \
+Vamos a levantar una bbdd mysql mediante docker compose. Archivo `compose.yml`:
+```yaml
+version: '3.3'
+services:
+  sql-opos:
+    ports:
+      - 3306:3306
+    volumes:
+      - ./:/home/:ro
+    environment:
+      - MYSQL_ROOT_PASSWORD=${R_PASS}
+      - MYSQL_USER=${USER}
+      - MYSQL_PASSWORD=${PASS}
+      - MYSQL_DATABASE=dbDefault
+    image: mysql:latest
+
+```
+
+Con el archivo de secretos `.env`:
+```.env
+R_PASS=1234
+USER=usr
+PASS=pass
+```
+dcvb 
+4. Nos dice que no hay tabla:
+```sql
+#-- seleccionamos db
+USE dbDefault;
+#-- creamos tabla personas
+CREATE TABLE personas(id SERIAL,
+                      nombre VARCHAR(20),
+                      edad INT(11),
+                      PRIMARY KEY( id )
+);
+
+#-- insertamos datos de ejemplo
+INSERT INTO personas (nombre, edad) VALUES ('Pedro', 25), ('Juani', 30);
+```
 
 
 ## Con Maven
