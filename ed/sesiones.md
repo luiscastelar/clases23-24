@@ -17,10 +17,10 @@ Esto es un documento vivo donde hacer una planificación diaria y control del tr
   + [x] Compilación con y sin ide
   + [x] Generación de artefactos jar con y sin ide
 + 16e:
-  + [ ] Generación de jar con librería externa (jdbc)
+  + [x] Generación de jar con librería externa (jdbc)
 + 17e:
-
   + [ ] Generación de war
++ 24e:
   + [ ] **Entrega de práctica UT5**
  
 # 6 Optimización y documentación
@@ -38,7 +38,7 @@ Esto es un documento vivo donde hacer una planificación diaria y control del tr
   + [ ] Servidor Git -> Git BARE
   + [ ] Git hook servidor -> Post-recibe
 + 6f:
-  + [ ] Despliegue web con Git + Git Bare + Git Hook + 
+  + [ ] Despliegue web con Git + Git Bare + Git Hook + Docker + NginX
 + [ ] 7f: **Exámen UT6**
  
 # 7 Elaboración de diagramas de clase

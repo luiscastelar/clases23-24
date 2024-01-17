@@ -46,9 +46,9 @@ Fuente: [aws](https://aws.amazon.com/es/what-is/ide/)
 
     ```
 
-8. [ ] creación de jar con lib externa(jdbc) mediante IDE.
+8. [x] creación de jar con lib externa(jdbc) mediante IDE.
 9. [ ] creación de `war`‘s -> se puede... pero no merece. Lo habitual es hacerlo con IDE, Maven o Gradle.
-10. [ ] ejecución de `war` -> dentro del directorio aplicacion de tomcat
+10. [ ] ejecución de `war` -> dentro del directorio `aplicacion` de tomcat
 
 
 ## Jar con jdbc - Paso a paso
@@ -71,11 +71,18 @@ Dentro del archivo `pom.xml` de un proyecto maven, justo antes del `</project>`:
 Después se hace click sobre el icono de recargar maven y ya podremos utilizar el driver sin problemas.
 
 2. **Nos dice que no tienen conexión** \
-Vamos a levantar una bbdd mysql mediante docker compose. Archivo `compose.yml`:
+Los datos de conexión a la bbdd son:
++ host: `luiscastelar.duckdns.org`
++ puerto: `45682`
++ socket: `luiscastelar.duckdns.org:45682`
++ user: `alumno`
++ pass: `alumno`
+
+También podéis levantar vuestro propio servidor...mediante docker compose. Archivo `compose.yml`:
 ```yaml
 version: '3.3'
 services:
-  sql-opos:
+  mysql:
     ports:
       - 3306:3306
     volumes:
@@ -95,8 +102,19 @@ R_PASS=1234
 USER=usr
 PASS=pass
 ```
-dcvb 
-4. Nos dice que no hay tabla:
+ 
+4. **Nos dice que no hay tabla**: \
+>
+>  **Sólo para los que la tenéis en local**: Debemos importar el archivo donde inicializamos los datos.
+> 
+> Para ello deberemos cargar el archivo. Existen muchas formas de realizarlo, pero la más sencilla será mediante la ejecución del siquiente comando: `cat datos.sql | docker exec -i NOMBRE_CONTENEDOR mysql -uusr -ppass --`
+>
+> Donde deberemos poner el nombre del contenedor generado, normalmente DIRECTORIO-MYSQL-1.
+> No debéis dejar espacio entre el -p y el password ya que daría error.
+> Los dos guiones “--” indican que debe tomar la entrada de la salida del comando anterior (cat datos.sql).
+>
+
+Donde `datos.sql`:
 ```sql
 #-- seleccionamos db
 USE dbDefault;
@@ -152,7 +170,7 @@ public class Conexion {
             "?useLegacyDatetimeCode=false&serverTimezone=Europe/Madrid";
   }
   Conexion(){
-    this("usr","pass","localhost","3306","dbDefault");
+    this("alumno","alumno","luiscastelar.duckdns.org","45682","dbDefault");
   }
 
   public void select(String sql){
@@ -184,6 +202,45 @@ public class Conexion {
 } // class Conexion
 
 ```
+
+## War: echo
+El siguiente programa realiza un echo de lo recibido. Servlet `Echo.java`:
+```java
+package com.ejemplo.servlets;
+
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.*;
+import jakarta.servlet.annotation.*;
+
+import java.io.PrintWriter;
+import java.io.IOException;
+
+@WebServlet(name = "com.ejemplo.servlets.Echo", value = "/echo")
+public class Echo  extends HttpServlet {
+
+  // Peticiones GET
+  protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    // Tipo de respuesta ofrecida (texto, imagen, etc)
+    response.setContentType("text/html");
+
+    // Declaraciones
+    PrintWriter pw = response.getWriter();
+
+    // Obtengo los datos de la peticion
+    String operacion = request.getParameter("texto");
+
+    // Verificamos que hemos recibido algo
+    if( null == operacion ){
+      pw.print("No has mandado ningún argumento.\nDebes mandar un \"texto=algun texto\"");
+    } else if( 0 == operacion.length() ){
+      pw.print("Debes mandar algún \"texto\"");
+    } else {
+      pw.print( operacion );
+    } // if
+  } // doGet()
+} // class Echo
+```
+
 
 ## Con Maven
 + [curso YT: MitoCode](https://www.youtube.com/watch?v=91DamlXb7bE&list=PLvimn1Ins-40atMWQkxD8r8pRyPLAU0iQ)

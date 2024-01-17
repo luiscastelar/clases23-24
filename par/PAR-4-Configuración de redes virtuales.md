@@ -69,24 +69,26 @@ reload cancel
 # Definición de enlaces troncales en los conmutadores y “routers”. El protocolo IEEE802.1Q.
 
 ## Calidad de servicio (QoS - IEEE802.1P)
-
 Priorización de tráfico de control, voz y vídeo (entre otros).
 + [Voice VLAN - Óscar Gerometta](https://librosnetworking.blogspot.com/2019/02/voice-vlan.html?m=1)
 + [Wikipedia](https://es.wikipedia.org/wiki/IEEE_802.1p)
 
 **Ejercicio**: crear la configuración necesaria para tener un servicio de [voz y datos](https://ccnadesdecero.com/curso/vlan-voz/).
 
+
 ### ~~DHCP VoIP~~
 [voz](https://www.packettracernetwork.com/tutorials/voipconfiguration.html) y [datos](https://community.cisco.com/t5/networking-knowledge-base/sample-configuration-for-voice-and-data-deployment-on-a-switch/ta-p/3123513) [DHCP - Cisco](https://www.cisco.com/c/es_mx/support/docs/ip/dynamic-address-allocation-resolution/19580-dhcp-multintwk.pdf)
 
-## VLANs de provedores (Q en Q - IEEE802.1ad)
 
+## VLANs de provedores (Q en Q - IEEE802.1ad)
 Juntos pero no revueltos... o cuando un proveedor de internet mueve nuestro tráfico y claro, él usa una VLANs para cada cliente y nosotros una para cada departamento.
 + [Wikipedia](https://en.wikipedia.org/wiki/IEEE_802.1ad)
-+ [Q in Q - Cisco](https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus5600/sw/interfaces/7x/b_5600_Interfaces_Config_Guide_Release_7x/configuring_q_in_q___vlan_tunnels.pdf) y [2](https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst4500/12-2/15-02SG/configuration/guide/config/tunnel.html)
++ [Q in Q - Cisco](https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus5600/sw/interfaces/7x/b_5600_Interfaces_Config_Guide_Release_7x/configuring_q_in_q___vlan_tunnels.pdf) y [**2** - Cisco](https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst4500/12-2/15-02SG/configuration/guide/config/tunnel.html)
+
 
 # Agregación de enlaces
 [LAPD](https://ipwithease.com/understanding-link-aggregation-with-lacp/) y [Etherchannel](https://oscarmaestre.github.io/apuntes_redes/t5_vlans/apuntes_t5.html#etherchannel) (propietario Cisco) 
+
 
 # Switching & bridging en GNU/Linux
 + [bridge](https://www.ithands-on.com/2020/12/networking-101-linux-tap-interface-and.html)
