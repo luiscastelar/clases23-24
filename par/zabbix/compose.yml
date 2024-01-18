@@ -36,7 +36,7 @@ services:
             - MYSQL_DATABASE=${mysql_database}
             - ZBX_SERVER_HOST=zabbix-server-mysql
             - PHP_TZ=Europe/Madrid
-        ports: 
+        ports:
             - 8080
             - 8443
             - 80
@@ -46,12 +46,12 @@ services:
             - mariadb
             - zabbix-server-mysql
 
-  zabbix-agent:
-    hostname: some-zabbix-agent
-    privileged: true
-    environment:
-      - ZBX_HOSTNAME=some-hostname
-      - ZBX_SERVER_HOST=zabbix-server-mysql
-    image: zabbix/zabbix-agent
-    depends_on:
-      - zabbix-server-mysql
+#  zabbix-agent:
+#    hostname: some-zabbix-agent
+#    privileged: true
+#    environment:
+#      - ZBX_HOSTNAME=some-hostname
+#      - ZBX_SERVER_HOST=zabbix-server-mysql
+#    image: zabbix/zabbix-agent
+#    depends_on:
+#      - zabbix-server-mysql
