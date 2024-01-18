@@ -4,7 +4,7 @@
 
 
 # 3 Configuración y administración de conmutadores. 
-37 16/11/2023 20/12/2023 2ª
+39 16/11/2023 20/12/2023 2ª
 + 16n:
   + [x] Dispositivos de interconexión de redes (1h).
 + 21n:
@@ -49,13 +49,18 @@
   + [x] Monitorización SNMP - Zabbix -> práctica
 + 10e:
   + [x] Monitorización SNMP - Zabbix -> práctica
++ 17e:
+  + [x] Zabbix (**con docker**)
+  + [x] Agente SNMP
 + 18e:
+  + [ ] Zabbix (tabla users)
++ 24e:
   + [ ] Entrega y **defensa** de memoria de prácticas SNMP.
 + Por definir:
   + [ ] Entrega y **defensa** de configuración Cisco C880.
 
 # 4 Configuración de redes virtuales. 
-17 20/12/2023 25/01/2024 2ª
+15 20/12/2023 25/01/2024 2ª
 
 + 30n:
   + [x] VLANs
@@ -67,11 +72,10 @@
   + [x] Servicio de Voz y datos
   + [ ] ~~QoS~~ (en UT6)
 + 17e:
-  + [ ] QinQ
-  + [ ] Zabbix (**con docker**) 
-+ 23e:
+  + [x] QinQ
++ 18e:
   + [ ] Link Aggregation
-+ 24e:
++ 23e:
   + [ ] Trabajo en prácticas
 + 25e:
   + [ ] Entrega/**Defensa** de la práctica

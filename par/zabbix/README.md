@@ -34,9 +34,9 @@ docker compose down
 5. En una máquina virtual (puede ser la misma) levantaremos el AGENTE SNMP según [manual visto en clase](https://tecnocratica.net/wikicratica/books/monitorizacion-y-snmp)
 6. Dentro de la interfaz web de Zabbix añadiremos el seguimiento de dicho agente.
 
-
-
 >
 > **IMPORTANTE**:
 > El servicio se levantará mediante contenedores docker únicamente. **NO** debemos instalar Zabbix en local **NI** tocar **NINGUNA** base de datos.
 >
+
+***Nota***: *Sólo en caso de necesidad podremos importar la tabla users mediante el archivo `tabla_usuarios_inicial.sql`*.

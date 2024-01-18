@@ -1,24 +1,6 @@
 #curso23_24 #SAD
 
 
-# UT5 - Instalación y configuración de servidores proxy 
-13h - 4,5 sesiones - 12/12/2023 19/01/2024 2ª
-
-+ 18d:
-  + [x] Proxy inverso
-  + [x] Jornadas Informática castelar (evaluable asistencia y participación)
-+ 8e:
-  + [x] Proxy inverso
-  + [x] Post-mortem caída de Orange
-+ 12e:
-  + [x] Demostrativo de Proxy socks
-  + [x] Continuación proxy inverso
-+ 15e:
-  + [x] Refuerzo rezagados
-+ 19e:
-  + [ ] **Defensa UT5** 
-
----
 # UT6 - Implantación de soluciones de alta disponibilidad. 
 19h - 9,5 sesiones - 22/01/2024 26/02/2024 2ª
 
@@ -58,7 +40,7 @@
 
 # Evaluación ORDINARIA
 
-+ 1m: **EXÁMEN eva ORDINARIA**
++ Lunes 4 marzo: **EXÁMEN eva ORDINARIA**
 
 ---
 ==**YA VISTO**==
@@ -208,3 +190,23 @@
   + [x] Defensa práctica / **Examen UT4**
  
   **Evaluación de la unidad**: ejecución y defensa de la práctica.
+
+  
+# UT5 - Instalación y configuración de servidores proxy 
+13h - 4,5 sesiones - 12/12/2023 19/01/2024 2ª
+
++ 18d:
+  + [x] Proxy inverso
+  + [x] Jornadas Informática castelar (evaluable asistencia y participación)
++ 8e:
+  + [x] Proxy inverso
+  + [x] Post-mortem caída de Orange
++ 12e:
+  + [x] Demostrativo de Proxy socks
+  + [x] Continuación proxy inverso
++ 15e:
+  + [x] Refuerzo rezagados
++ 19e:
+  + [x] **Defensa UT5** 
+
+ **Evaluación de la unidad**: ejecución y defensa de la práctica.

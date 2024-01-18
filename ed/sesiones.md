@@ -19,7 +19,7 @@ Esto es un documento vivo donde hacer una planificación diaria y control del tr
 + 16e:
   + [x] Generación de jar con librería externa (jdbc)
 + 17e:
-  + [ ] Generación de war
+  + [x] Generación de war
 + 24e:
   + [ ] **Entrega de práctica UT5**
  

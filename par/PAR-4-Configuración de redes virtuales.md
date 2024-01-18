@@ -89,6 +89,21 @@ Juntos pero no revueltos... o cuando un proveedor de internet mueve nuestro trá
 # Agregación de enlaces
 [LAPD](https://ipwithease.com/understanding-link-aggregation-with-lacp/) y [Etherchannel](https://oscarmaestre.github.io/apuntes_redes/t5_vlans/apuntes_t5.html#etherchannel) (propietario Cisco) 
 
+**Ejercicio:**
+Siguiendo el vídeo de Kalero, realizar las adaptaciones necesarias para crear la agregación de los puertos Gi 0/1 y Gi 0/2 de los switch 1 y 2.
++ [Vídeo tutorial](https://www.youtube.com/watch?v=Cgj0nlCys8s)
+
+## Comandos a utilizar:
+1. enable
+2. conf t
+3. int range
+4. channel-protocol lacp
+5. channel-group 1 mode active *(para el sw1 y pasive para el sw2)*
+6. end
+7. show etherchannel summary 
+8. show etherchannel 
+9. show interface etherchannel
+
 
 # Switching & bridging en GNU/Linux
 + [bridge](https://www.ithands-on.com/2020/12/networking-101-linux-tap-interface-and.html)

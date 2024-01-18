@@ -12,21 +12,24 @@
 2. 18d: ~~Jornadas~~
 3. 8e:
    + [x] JavaFx
-   + [ ] JavaEE
-   + [ ] Servlet ECHO
+   + [x] JavaEE
+   + [x] Servlet ECHO
 4. 12e:
-   + [ ] jQuery
-   + [ ] HTML + ~~Tailwind~~ + JS / AJAX(jQuery) + Servlet + Clases
+   + [x] jQuery
+   + [x] HTML + ~~Tailwind~~ + JS / AJAX(jQuery) + Servlet + Clases
+5. 15e:
+   + [x] Servlet comunicación con Json
 
 ---
 # UT6 Técnicas de programación segura 
 4h - 2 sesiones - 15/01/2024 19/01/2024 *2ª eva*
 
 1. 19e:
-   + [ ] 
-   + [ ] 
+   + [ ] Criptografía 
 3. 22e:
-   + [ ] 
+   + [ ] Firma
+
+**Evaluación**: sobre proyecto integrador.
 
 ---
 # UT7 Proyecto integrador 
@@ -97,8 +100,8 @@ Entregas 23f
     + [x] Ejercicios y dudas
 6. ~~¿27o?:~~ Exceso de horas
 7. 30o:
-    * [ ] **Examen UT2**
-    * [ ] Aclaración `Runnable worker = new Worker().run()` vs `new Thread( worker ).start()`
+    * [x] **Examen UT2**
+    * [x] Aclaración `Runnable worker = new Worker().run()` vs `new Thread( worker ).start()`
 
 
 # UT3 Comunicaciones de red - Sockets 
