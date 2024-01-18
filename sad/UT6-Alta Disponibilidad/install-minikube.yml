@@ -1,0 +1,324 @@
+- hosts: all
+  become: yes
+  become_method: sudo
+  vars:
+    minikube_version: 1.32.0
+    docker_version: 5:24.0.7-1~ubuntu.22.04~jammy
+    # docker_version: 24.0.7
+    cridockerd_version: 0.3.8~3-0~ubuntu-jammy
+    critools_version: 1.26.0-00
+    # 1.28
+    cni_plugins_version: 1.4.0
+    kubectl_version: 1.28.2-00
+    # 1.29
+    helm_version: 3.13.0
+    kubetail_version: 1.6.18
+    # ubuntu 1.6.5-2
+    kubelogs_version: 1.0.0
+  tasks:
+
+    - name: download minikube version {{ minikube_version }} deb
+      ansible.builtin.get_url:
+        url: https://github.com/kubernetes/minikube/releases/download/v{{ minikube_version }}/minikube_{{ minikube_version }}-0_amd64.deb
+        dest: /var/tmp/minikube_{{ minikube_version }}-0_amd64.deb
+        mode: '0644'
+
+    - name: install minikube version {{ minikube_version }} deb
+      ansible.builtin.apt:
+        deb: /var/tmp/minikube_{{ minikube_version }}-0_amd64.deb
+
+    - name: delete minikube version {{ minikube_version }} deb
+      ansible.builtin.file:
+        path: /var/tmp/minikube_{{ minikube_version }}-0_amd64.deb
+        state: absent
+
+    - name: download docker ubuntu apt key
+      ansible.builtin.get_url:
+        url: https://download.docker.com/linux/ubuntu/gpg
+        dest: /var/tmp/docker-archive-keyring.gpg
+
+    - name: delete downloaded docker apt key
+      ansible.builtin.file:
+        path: /usr/share/keyrings/docker-archive-keyring.gpg
+        state: absent
+
+    - name: convert docker ubuntu apt key with gpg
+      ansible.builtin.shell: gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg /var/tmp/docker-archive-keyring.gpg
+
+    - name: delete downloaded docker ubuntu apt key
+      ansible.builtin.file:
+        path: /var/tmp/docker-archive-keyring.gpg
+        state: absent
+
+    - name: add docker repository
+      ansible.builtin.apt_repository:
+        repo: "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu jammy stable"
+        state: present
+
+    - name: install docker-ce version {{ docker_version }}
+      ansible.builtin.apt:
+        pkg:
+          - containerd.io
+          - docker-ce={{ docker_version }}
+          - docker-ce-cli={{ docker_version }}
+        state: present
+        update_cache: true
+
+    - name: start and enable docker service
+      ansible.builtin.service:
+        name: docker
+        enabled: yes
+        state: started
+
+    - name: add vagrant user to docker group
+      ansible.builtin.user:
+        name: vagrant
+        groups: docker
+        append: yes
+
+    - name: set bridge-nf-call-iptables = 1
+      ansible.builtin.lineinfile:
+        path: /etc/sysctl.conf
+        line: net.bridge.bridge-nf-call-iptables = 1
+
+    - name: set fs.protected_regular = 0
+      ansible.builtin.lineinfile:
+        path: /etc/sysctl.conf
+        line: fs.protected_regular = 0
+
+    - name: apply sysctl config
+      ansible.builtin.shell: sysctl -p
+
+    - name: install cri-dockerd version {{ cridockerd_version }}
+      ansible.builtin.apt:
+        pkg:
+          - cri-dockerd={{ cridockerd_version }}
+        state: present
+        update_cache: true
+    #- name: download cri-dockerd version {{ cridockerd_version }} deb
+    #  ansible.builtin.get_url:
+    #    url: https://github.com/Mirantis/cri-dockerd/releases/download/v{{ cridockerd_version }}/cri-dockerd_{{ cridockerd_version }}.3-0.ubuntu-jammy_amd64.deb
+    #    dest: /var/tmp/cri-dockerd_{{ cridockerd_version }}.3-0.ubuntu-jammy_amd64.deb
+    #    mode: '0644'
+
+    #- name: install cri-dockerd version {{ cridockerd_version }} deb
+    #  ansible.builtin.apt:
+    #    deb: /var/tmp/cri-dockerd_{{ cridockerd_version }}.3-0.ubuntu-jammy_amd64.deb
+
+    #- name: delete cri-dockerd version {{ cridockerd_version }} deb
+    #  ansible.builtin.file:
+    #    path: /var/tmp/cri-dockerd_{{ cridockerd_version }}.3-0.ubuntu-jammy_amd64.deb
+    #    state: absent
+
+    - name: start and enable cri-dockerd systemd service
+      ansible.builtin.systemd:
+        daemon_reload: yes
+        name: cri-docker.service
+        state: started
+        enabled: yes
+
+    - name: start and enable cri-dockerd systemd socket
+      ansible.builtin.systemd:
+        name: cri-docker.socket
+        enabled: yes
+
+    - name: download google ubuntu apt key
+      ansible.builtin.get_url:
+        url: https://packages.cloud.google.com/apt/doc/apt-key.gpg
+        dest: /var/tmp/google-archive-keyring.gpg
+
+    - name: delete downloaded key google last
+      ansible.builtin.file:
+        path: /usr/share/keyrings/google-archive-keyring.gpg
+        state: absent
+        
+    - name: convert google ubuntu apt key with gpg
+      ansible.builtin.shell: gpg --dearmor -o /usr/share/keyrings/google-archive-keyring.gpg /var/tmp/google-archive-keyring.gpg
+
+    - name: delete downloaded google ubuntu apt key
+      ansible.builtin.file:
+        path: /var/tmp/google-archive-keyring.gpg
+        state: absent
+
+    - name: add google kubernetes repository
+      ansible.builtin.apt_repository:
+        repo: "deb [arch=amd64 signed-by=/usr/share/keyrings/google-archive-keyring.gpg] https://apt.kubernetes.io/ kubernetes-xenial main"
+        state: present
+
+    - name: install cri-tools version {{ critools_version }}
+      ansible.builtin.apt:
+        pkg:
+          - cri-tools={{ critools_version }}
+        state: present
+        update_cache: true
+
+    - name: download cni_plugins {{ cni_plugins_version }}
+      ansible.builtin.get_url:
+        url: https://github.com/containernetworking/plugins/releases/download/v{{ cni_plugins_version }}/cni-plugins-linux-amd64-v{{ cni_plugins_version }}.tgz
+        dest: /var/tmp/cni-plugins-linux-amd64-v{{ cni_plugins_version }}.tgz
+        mode: '0755'
+
+    - name: create dir /opt/cni/bin
+      ansible.builtin.file:
+        path: /opt/cni/bin
+        state: directory
+        mode: '0755'
+
+    - name: extract cni_plugins version {{ cni_plugins_version }}
+      ansible.builtin.unarchive:
+        src: /var/tmp/cni-plugins-linux-amd64-v{{ cni_plugins_version }}.tgz
+        remote_src: yes
+        dest: /opt/cni/bin
+        mode: '0755'
+
+    - name: delete downloaded cni_plugins version {{ cni_plugins_version }} installer
+      ansible.builtin.file:
+        path: /var/tmp/cni-plugins-linux-amd64-v{{ cni_plugins_version }}.tgz
+        state: absent
+
+    - name: start minikube
+      ansible.builtin.shell: minikube start --driver=none --cni=bridge
+
+    # TODO Remove this section if this bug ever gets fixed for real: https://github.com/Mirantis/cri-dockerd/pull/99
+    # In file '/etc/systemd/system/cri-docker.service.d/10-cni.conf' '--network-plugin=' should be set to the empty string. Executing 'minikube start' again will overwrite this!
+    - name: set correct network-plugin for cri-docker.service in systemd
+      ansible.builtin.replace:
+        path: /etc/systemd/system/cri-docker.service.d/10-cni.conf
+        regexp: "--network-plugin=cni"
+        replace: "--network-plugin="
+
+    # After modifying the file, restart the cri-docker service for the Kubernetes cluster to start working
+    - name: re-start cri-docker.service after network-plugin modification
+      ansible.builtin.systemd:
+        daemon_reload: yes
+        name: cri-docker.service
+        state: restarted
+    # TODO Ends here
+
+    - name: add service-node-port-range parameter to minikube config file
+      ansible.builtin.lineinfile:
+        state: present
+        path: /etc/kubernetes/manifests/kube-apiserver.yaml
+        line: '    - --service-node-port-range=1024-65535'
+        insertafter: '^.*service-account-key-file.*$'
+
+    - name: start and enable kubelet service
+      ansible.builtin.service:
+        name: kubelet
+        enabled: yes
+        state: started
+    
+    - name: create dir /home/vagrant/bin
+      ansible.builtin.file:
+        path: /home/vagrant/bin
+        state: directory
+
+    - name: install kubectl version {{ kubectl_version }}
+      ansible.builtin.apt:
+        pkg: kubectl={{ kubectl_version }}
+        update_cache: yes
+        state: present
+
+    - name: copy kubectl conf
+      ansible.builtin.copy:
+        src: /root/.kube
+        dest: /home/vagrant/
+        remote_src: yes
+        owner: vagrant
+        group: vagrant
+
+    - name: fix kubectl conf
+      ansible.builtin.replace:
+        path: /home/vagrant/.kube/config
+        regexp: '/root'
+        replace: '/home/vagrant'
+
+    - name: enable kubectl autocompletion
+      ansible.builtin.lineinfile:
+        path: /home/vagrant/.bashrc
+        line: source <(kubectl completion bash)
+        insertafter: EOF
+
+    - name: enable kubectl alias k
+      ansible.builtin.lineinfile:
+        path: /home/vagrant/.bashrc
+        line: alias k="kubectl"
+        insertafter: EOF
+
+    - name: enable bash autocomplete for alias k
+      ansible.builtin.lineinfile:
+        path: /home/vagrant/.bashrc
+        line: complete -F __start_kubectl k
+        insertafter: EOF
+
+    - name: enable kubectl alias kc
+      ansible.builtin.lineinfile:
+        path: /home/vagrant/.bashrc
+        line: alias kc="kubectl"
+        insertafter: EOF
+
+    - name: enable bash autocomplete for alias kc
+      ansible.builtin.lineinfile:
+        path: /home/vagrant/.bashrc
+        line: complete -F __start_kubectl kc
+        insertafter: EOF
+
+    - name: copy minikube conf
+      ansible.builtin.copy:
+        src: /root/.minikube
+        dest: /home/vagrant/
+        remote_src: yes
+        owner: vagrant
+        group: vagrant
+
+    - name: download helm version {{ helm_version }}
+      ansible.builtin.get_url:
+        url: https://get.helm.sh/helm-v{{ helm_version }}-linux-amd64.tar.gz
+        dest: /var/tmp/helm-v{{ helm_version }}-linux-amd64.tar.gz
+        mode: '0755'
+
+    - name: extract helm version {{ helm_version }}
+      ansible.builtin.unarchive:
+        src: /var/tmp/helm-v{{ helm_version }}-linux-amd64.tar.gz
+        remote_src: yes
+        dest: /home/vagrant/bin
+        extra_opts:
+          - "linux-amd64/helm"
+          - "--strip-components=1"
+        mode: '0755'
+
+    - name: delete downloaded helm version {{ helm_version }} installer
+      ansible.builtin.file:
+        path: /var/tmp/helm-v{{ helm_version }}-linux-amd64.tar.gz
+        state: absent
+
+    - name: change helm executable ownership to vagrant
+      ansible.builtin.file:
+        path: /home/vagrant/bin/helm
+        mode: '0755'
+        owner: vagrant
+        group: vagrant
+      
+    - name: download kubetail version {{ kubetail_version }}
+      ansible.builtin.get_url:
+        url: https://github.com/johanhaleby/kubetail/archive/refs/tags/{{ kubetail_version }}.tar.gz
+        #url: https://codeload.github.com/johanhaleby/kubetail/tar.gz/{{ kubetail_version }}
+        dest: /var/tmp/kubetail-{{ kubetail_version }}.tar.gz
+
+    - name: extract kubetail
+      ansible.builtin.unarchive:
+        src: /var/tmp/kubetail-{{ kubetail_version }}.tar.gz
+        dest: /opt
+        remote_src: yes
+
+    - name: install kubetail version {{ kubetail_version }}
+      ansible.builtin.file:
+        src: /opt/kubetail-{{ kubetail_version }}/kubetail
+        dest: /usr/bin/kubetail
+        state: link
+
+    - name: delete kubetail version {{ kubetail_version }} installer
+      ansible.builtin.file:
+        path: /var/tmp/kubetail-{{ kubetail_version }}.tar.gz
+        state: absent
+
