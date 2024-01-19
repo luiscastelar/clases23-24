@@ -4,7 +4,7 @@
 # Kubernetes (K8s)
 Esta unidad la trabajaremos con orquestación de contenedores para la puesta en marcha de servicios de alta disponibilidad a través del escalado horizontal y la programación declarativa de requisitos.
 
-En primer lugar nos familiarizaremos con el funcionamiento de 
+En primer lugar nos familiarizaremos con el funcionamiento del servicio de orquestación.
 
 ## 1. Levantando minikube
 Opción simple: [oficial](https://minikube.sigs.k8s.io/docs/start/)
