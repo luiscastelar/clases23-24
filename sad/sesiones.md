@@ -5,7 +5,7 @@
 19h - 9,5 sesiones - 22/01/2024 26/02/2024 2ª
 
 + 19e: Kubernetes
-  + [ ] Instalación 
+  + [x] Instalación 
 + 22e: K2
   + [ ] Introducción.
 + ~~26e: día de la docencia~~
