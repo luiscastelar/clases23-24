@@ -53,7 +53,7 @@
   + [x] Zabbix (**con docker**)
   + [x] Agente SNMP
 + 18e:
-  + [ ] Zabbix (tabla users)
+  + [x] Zabbix (tabla users)
 + 24e:
   + [ ] Entrega y **defensa** de memoria de prácticas SNMP.
 + Por definir:
@@ -74,7 +74,7 @@
 + 17e:
   + [x] QinQ
 + 18e:
-  + [ ] Link Aggregation
+  + [x] Link Aggregation
 + 23e:
   + [ ] Trabajo en prácticas
 + 25e:
@@ -84,15 +84,94 @@
 
 # 5 Configuración y administración básica de “routers”. 
 22 29/01/2024 22/02/2024 2ª
++ 30e:
+  + [ ] .
++ 31e:
+  + [ ] .
++ 1f:
+  + [ ] .
++ 6f:
+  + [ ] .
++ 7f:
+  + [ ] .
++ 8f:
+  + [ ] .
++ 13f: 
+  + [ ] Carnavales
++ 14f:
+  + [ ] .
++ 15f:
+  + [ ] .
++ 22f:
+  + [ ] **Exámen**
+
 
 # 6 Configuración y administración de protocolos dinámicos. 
-35 22/02/2024 04/04/2024 3ª
+38 22/02/2024 04/04/2024 3ª
++ 20f:
+  + [ ] .
++ 21f:
+  + [ ] .
++ 27f:
+  + [ ] .
++ 28f:
+  + [ ] .
++ 29f:
+  + [ ] .
++ 5m:
+  + [ ] .
++ 6m:
+  + [ ] .
++ 7m:
+  + [ ] .
++ 12m:
+  + [ ] .
++ 13m:
+  + [ ] .
++ 14m:
+  + [ ] .
++ 19m:
+  + [ ] .
++ 20m:
+  + [ ] .
++ 21m:
+  + [ ] .
++ 2a:
+  + [ ] .
++ 3a:
+  + [ ] .
++ 4a: 
+  + [ ] **Exámen**
 
 # 7 Configuración del acceso a Internet desde una LAN. 
-28 04/04/2024 02/05/2024 3ª
-
+26 04/04/2024 02/05/2024 3ª
++ 9a:
+  + [ ] .
++ 10a:
+  + [ ] .
++ 11a:
+  + [ ] .
++ 16a:
+  + [ ] .
++ 17a:
+  + [ ] .
++ 18a:
+  + [ ] .
++ 23a:
+  + [ ] .
++ 24a:
+  + [ ] .
++ 25a:
+  + [ ] .
++ 30a:
+  + [ ] .
++ 2m:
+  + [ ] **Exámen**
+        
 # 8 Proyecto integrador (dual). 
 28 03/05/2024 30/05/2024 3ª
+
+
 
 ---
 
