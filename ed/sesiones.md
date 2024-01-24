@@ -30,16 +30,19 @@ Esto es un documento vivo donde hacer una planificación diaria y control del tr
   + [ ] JavaDoc
   + [ ] JS Doc
 + 24e:  
+  + [ ] Sorteo defensa
   + [ ] Git hook -> Pre-push -> Generar Doc
 + 30e:
-  + [ ] Optimización
-  + [ ] Git hook -> Pre-commit
-+ 31e:
+  + [ ] ~~Git hook -> Pre-commit~~
   + [ ] Servidor Git -> Git BARE
   + [ ] Git hook servidor -> Post-recibe
-+ 6f:
++ 31e:
   + [ ] Despliegue web con Git + Git Bare + Git Hook + Docker + NginX
-+ [ ] 7f: **Exámen UT6**
++ 6f:
+  + [ ] Continuación despliegue
+  + [ ] **Defensa** de la práctica UT6
++ 7f: 
+  + [ ] **Defensa** de la práctica UT6
  
 # 7 Elaboración de diagramas de clase
  10h del 08/02/2024 al 28/02/2024. *2a eva*.

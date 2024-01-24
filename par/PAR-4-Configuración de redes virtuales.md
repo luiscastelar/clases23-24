@@ -112,7 +112,7 @@ Siguiendo el vídeo de Kalero, realizar las adaptaciones necesarias para crear l
 # Ejercicios OBLIGATORIOS
 1. Creación de una conexión:
    `pc <-- (vlan 10) --> sw <-- (trunk) --> sw <-- (vlan 10) --> pc` ... y otros PCs de cada lado en la vlan 20.
-2. Repetir por grupos de 4 alumnos con 2 C8880 físicos (documentar y defender).
+2. Repetir por grupos de 4 alumnos con 2 C880 físicos (documentar y defender).
 3. STP.
 4. VTP y DTP.
 5. Link-Aggregation

@@ -50,12 +50,17 @@ Como siempre, podemos tirar de docker cli para hacer evitar instalar: `docker ru
 + --name para darle nombre
 
 ### Screencast:
-[asciinema](https://asciinema.org/a/rQFbPKOmp8VaReHKRj2hG3WHc) (sólo visible los próximos 7 días)
+[Generación de documentación JS](https://ascii.luiscastelar.duckdns.org/a/2)
+
 
 # Optimización
 
+## Hook pre-commit
+Para verificar la calidad de código o el estilo.
+
 ## Hook pre-push
 [Ver repositorio](https://github.com/luiscastelar/ed_hooks)
+
 
 
 ## Fuentes:

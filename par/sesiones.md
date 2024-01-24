@@ -85,23 +85,29 @@
 # 5 Configuración y administración básica de “routers”. 
 22 29/01/2024 22/02/2024 2ª
 + 30e:
-  + [ ] .
+  + [ ] Repaso IPv4
+  + [ ] Repaso IPv4 VSLM
+  + [ ] Repaso IPv6
 + 31e:
-  + [ ] .
+  + [ ] Los “routers” en las LAN, WAN y WLAN.
+  + [ ] Componentes del “router”.
 + 1f:
-  + [ ] .
+  + [ ] Formas de conexión al “router” para su configuración inicial.
+  + [ ] Comandos para configuración del “router”.
+  + [ ] Comandos para administración del “router”.
 + 6f:
-  + [ ] .
+  + [ ] Configuración del enrutamiento estático.
 + 7f:
-  + [ ] .
+  + [ ] Cont.
 + 8f:
-  + [ ] .
+  + [ ] Definición y ubicación de listas de control de acceso (ACLs).
+  + [ ] [QoS en L3](https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9400/software/release/16-6/configuration_guide/qos/b_166_qos_9400_cg/b_166_qos_9400_cg_chapter_01.html#concept_qzp_12b_p1b) [QoS en YT](https://www.youtube.com/watch?v=qL8p4u-dxwg)
 + 13f: 
   + [ ] Carnavales
 + 14f:
-  + [ ] .
+  + [ ] DHCP
 + 15f:
-  + [ ] .
+  + [ ] Repaso
 + 22f:
   + [ ] **Exámen**
 
