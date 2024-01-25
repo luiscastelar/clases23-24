@@ -991,6 +991,7 @@ Se queda como ejercicio, ¡inténtalo!
 
 ## Práctica:
 ![enrutamiento estático](https://luiscastelar.duckdns.org/2023/practicas/par/ut5-static-routing.png)
+
 Dada la figura:\
 1. Obten el archivo **11-config.pkt**
    + Configura todos los dispositivos (securizar e ip).
