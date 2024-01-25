@@ -3,35 +3,15 @@
 Esto es un documento vivo donde hacer una planificación diaria y control del trabajo realizado.
 
  
-# 5 Instalación y uso de entornos de desarrollo
- 14h del 13/12/2023 al 16/01/2024. *2a eva*.
-
- + 12d:
-   + [x] Concurso programame fase previa
- + [x] 19d: Jornadas Informática
- + [x] 20d: Carrera solidaria
- + [x] Navidades
-+ 9e:
-   + [x] Refactorización
-+ 10e:
-  + [x] Compilación con y sin ide
-  + [x] Generación de artefactos jar con y sin ide
-+ 16e:
-  + [x] Generación de jar con librería externa (jdbc)
-+ 17e:
-  + [x] Generación de war
-+ 24e:
-  + [ ] **Entrega de práctica UT5**
- 
 # 6 Optimización y documentación
  14h del 17/01/2024 al 07/02/2024. *2a eva*.
 
 + 23e:
-  + [ ] JavaDoc
-  + [ ] JS Doc
+  + [x] JavaDoc
+  + [x] JS Doc
 + 24e:  
-  + [ ] Sorteo defensa
-  + [ ] Git hook -> Pre-push -> Generar Doc
+  + [x] Sorteo defensa
+  + [x] Git hook -> Pre-push -> Generar Doc
 + 30e:
   + [ ] ~~Git hook -> Pre-commit~~
   + [ ] Servidor Git -> Git BARE
@@ -53,7 +33,7 @@ Esto es un documento vivo donde hacer una planificación diaria y control del tr
 + [ ] 21f:
 + [ ] 27f: **Exámen UT7**
 
-# Cierre de trimestre
+# Cierre 2º de trimestre
  + [ ] 28f: *Varios*
    + [ ] [FC] Diseño y realización de pruebas
    + [ ] Repaso 2ª eva
@@ -100,13 +80,22 @@ Horas de trabajo **en casa** => ==14h== de 22h
  + [ ] 21m:
  + [ ] 22m: **Examen UT10**
 
-# Cierre de trimestre
+---
+
+# Cierre 3er de trimestre
  + [ ] 28m: *Varios*
    + [ ] [FC] Proyecto final (subir nota)
    + [ ] Defensa de prácticas **extraordinarias** (si las hubiera).
  + [ ] 29m: **RECUPERACIÓN** 3ª evaluación.
 
 Horas de trabajo **en casa** => ==22h== de 22h
+
+
+---
+
+# Cierre de curso
+
+Resto de horas de repaso y ejecución de ejercicios.
 
 ---
 
@@ -181,7 +170,7 @@ Horas de trabajo **en casa** => ==22h== de 22h
      + [ ] ~~Documentación~~
  + [x] 21n: ~~Exámen UT3**~~
 
-# Cierre de trimestre
+# Cierre 1er de trimestre
  + [ ] 22n: *Varios*
    + [ ] [FC] CSV-II: ramas
    + [ ] ~~Repaso 1ª eva~~
@@ -208,8 +197,24 @@ Horas de trabajo **en casa** => ==8h== de 22h
    + [x] Por equipos.
  + [x] 13d: **Exámen UT4**
 
----
 
-# Cierre de curso
+# 5 Instalación y uso de entornos de desarrollo
+ 14h del 13/12/2023 al 16/01/2024. *2a eva*.
 
-Resto de horas de repaso y ejecución de ejercicios.
+ + 12d:
+   + [x] Concurso programame fase previa
+ + [x] 19d: Jornadas Informática
+ + [x] 20d: Carrera solidaria
+ + [x] Navidades
++ 9e:
+   + [x] Refactorización
++ 10e:
+  + [x] Compilación con y sin ide
+  + [x] Generación de artefactos jar con y sin ide
++ 16e:
+  + [x] Generación de jar con librería externa (jdbc)
++ 17e:
+  + [x] Generación de war
++ 24e:
+  + [x] **Entrega de práctica UT5**
+ 

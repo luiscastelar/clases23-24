@@ -49,8 +49,9 @@ Como siempre, podemos tirar de docker cli para hacer evitar instalar: `docker ru
 + -rm para que borre el contenedor al finalizar.
 + --name para darle nombre
 
-### Screencast:
-[Generación de documentación JS](https://ascii.luiscastelar.duckdns.org/a/2)
+## Screencast:
+1. [Generación de documentación JS](https://ascii.luiscastelar.duckdns.org/a/2)
+2. [Generación y sincronización con servidor](https://ascii.luiscastelar.duckdns.org/a/3)
 
 
 # Optimización
