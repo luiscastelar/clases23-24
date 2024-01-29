@@ -1,91 +1,11 @@
 #curso23_24 #PAR [estado:: Working] 
 
-*Examen de recuperación 1ª evaluación:* **23 de noviembre**
-
-
-# 3 Configuración y administración de conmutadores. 
-39 16/11/2023 20/12/2023 2ª
-+ 16n:
-  + [x] Dispositivos de interconexión de redes (1h).
-+ 21n:
-  + [x] Corrección exámen UT2
-  + [x] Ejercicio IPv4  
-+ 22n:
-  + [x] Segmentación de la red. Ventajas.
-  + [x] ARP (packet tracer)
-+ ~~23n: Examen de recuperación 1ª Evaluación~~
-+ 28n:
-  + [x] NDP (packet tracer).
-  + [x] Segmentación de la red (cambiar switch central por router).
-  + [x] Subredes. Primera aproximación de segmentación.
-+ 29n:
-  + [x] Seguridad implícita en la segmentación.
-  + [x] Análisis de red con wireshark
-+ 30n:
-  + [x] Conexión física a Cisco C880 y reseteo
-  + [x] Definición de práctica de configuración básica C880 **entregable**
-  + [x] Conexión física a D-Link DES-3226
-+ 5d:
-  + [x] Conexión a otros dispositivos físicos
-  + [x] Redes Locales: núcleo, distribución y acceso
-  + [x] STP - Spanning Tree
-+ 12d:
-  + [x] Docker
-+ 13d:
-  + [x] Docker (cont)
-+ 14d:
-  + [x] Docker y docker compose
-  + [x] Monitorización SNMP
-  + [x] Zabbix / Nagios / Centreon / ...
-+ 19d: 
-  + [x] Jornadas Informática 
-+ 20d:
-  + [x] Carrera solidaria (para los que participen en la carrera)
-  + [x] Tareas atrasadas
-+ 21d:
-  + [x] Resolución de dudas
-+ 9e:
-  + [x] Postmortem Hack a OrangeEs
-  + [x] Monitorización SNMP - Zabbix -> práctica
-+ 10e:
-  + [x] Monitorización SNMP - Zabbix -> práctica
-+ 17e:
-  + [x] Zabbix (**con docker**)
-  + [x] Agente SNMP
-+ 18e:
-  + [x] Zabbix (tabla users)
-+ 24e:
-  + [ ] Entrega y **defensa** de memoria de prácticas SNMP.
-+ Por definir:
-  + [ ] Entrega y **defensa** de configuración Cisco C880.
-
-# 4 Configuración de redes virtuales. 
-15 20/12/2023 25/01/2024 2ª
-
-+ 30n:
-  + [x] VLANs
-  + [x] Ejercicio de VLANs en pt y real por equipos (2 equipos de 2 personas) - **entregable**
-+ 12e:
-  + [x] Configuración básica del switch (IP, pass)
-  + [x] Administración centralizada (VTP y DTP)
-+ 16e:
-  + [x] Servicio de Voz y datos
-  + [ ] ~~QoS~~ (en UT6)
-+ 17e:
-  + [x] QinQ
-+ 18e:
-  + [x] Link Aggregation
-+ 23e:
-  + [ ] Trabajo en prácticas
-+ 25e:
-  + [ ] Entrega/**Defensa** de la práctica
-
 
 
 # 5 Configuración y administración básica de “routers”. 
 22 29/01/2024 22/02/2024 2ª
 + 30e:
-  + [ ] Repaso IPv4
+  + [x] Repaso IPv4
   + [ ] Repaso IPv4 VSLM
   + [ ] Repaso IPv6
 + 31e:
@@ -279,3 +199,86 @@
 + 16n:
   + [x] **Exámen UT2**
   
+---
+
+# Recuperación 1ª evaluación: 23 de noviembre
+
+----
+
+# 3 Configuración y administración de conmutadores. 
+39 16/11/2023 20/12/2023 2ª
++ 16n:
+  + [x] Dispositivos de interconexión de redes (1h).
++ 21n:
+  + [x] Corrección exámen UT2
+  + [x] Ejercicio IPv4  
++ 22n:
+  + [x] Segmentación de la red. Ventajas.
+  + [x] ARP (packet tracer)
++ ~~23n: Examen de recuperación 1ª Evaluación~~
++ 28n:
+  + [x] NDP (packet tracer).
+  + [x] Segmentación de la red (cambiar switch central por router).
+  + [x] Subredes. Primera aproximación de segmentación.
++ 29n:
+  + [x] Seguridad implícita en la segmentación.
+  + [x] Análisis de red con wireshark
++ 30n:
+  + [x] Conexión física a Cisco C880 y reseteo
+  + [x] Definición de práctica de configuración básica C880 **entregable**
+  + [x] Conexión física a D-Link DES-3226
++ 5d:
+  + [x] Conexión a otros dispositivos físicos
+  + [x] Redes Locales: núcleo, distribución y acceso
+  + [x] STP - Spanning Tree
++ 12d:
+  + [x] Docker
++ 13d:
+  + [x] Docker (cont)
++ 14d:
+  + [x] Docker y docker compose
+  + [x] Monitorización SNMP
+  + [x] Zabbix / Nagios / Centreon / ...
++ 19d: 
+  + [x] Jornadas Informática 
++ 20d:
+  + [x] Carrera solidaria (para los que participen en la carrera)
+  + [x] Tareas atrasadas
++ 21d:
+  + [x] Resolución de dudas
++ 9e:
+  + [x] Postmortem Hack a OrangeEs
+  + [x] Monitorización SNMP - Zabbix -> práctica
++ 10e:
+  + [x] Monitorización SNMP - Zabbix -> práctica
++ 17e:
+  + [x] Zabbix (**con docker**)
+  + [x] Agente SNMP
++ 18e:
+  + [x] Zabbix (tabla users)
++ 24e:
+  + [x] Entrega y **defensa** de memoria de prácticas SNMP.
++ Por definir:
+  + [ ] Entrega y **defensa** de configuración Cisco C880.
+ 
+
+# 4 Configuración de redes virtuales. 
+15 20/12/2023 25/01/2024 2ª
+
++ 30n:
+  + [x] VLANs
+  + [x] Ejercicio de VLANs en pt y real por equipos (2 equipos de 2 personas) - **entregable**
++ 12e:
+  + [x] Configuración básica del switch (IP, pass)
+  + [x] Administración centralizada (VTP y DTP)
++ 16e:
+  + [x] Servicio de Voz y datos
+  + [ ] ~~QoS~~ (en UT6)
++ 17e:
+  + [x] QinQ
++ 18e:
+  + [x] Link Aggregation
++ 23e:
+  + [x] Trabajo en prácticas
++ 25e:
+  + [x] Entrega/**Defensa** de la práctica
