@@ -61,6 +61,26 @@ Hacer los archivos `Vagrantfile` (7 distintos) que resuelva los siguientes supue
 7. Instalar el paquete `git` en una de las mv
 
 
+#### UUID
+  Uno de los problemas que podemos tener al generar varias máquinas partiendo desde el mismo box base es que las mismas pueden tener el mismo uuid (machine-id) por lo que al solicitar ip al servidor DHCP pudiera ser que obtengan la misma IP (no todos los dhcp tienen con esta funcionalidad).
+
+  Para solucionarlo podemos generar un nuevo uuid por una vez y ya tendríamos suficiente, aunque lo ideal será añadirlo al fichero de `provision` con lo que nos aseguraremos que será ejecutado cada vez que recreemos la `vm`.
+
+```bash
+# Generar nuevo uuid
+     rm -f /etc/machine-id`
+     dbus-uuidgen --ensure=/etc/machine-id
+
+# Obtenemos nueva IP del DHCP
+     dhclient -r eth1
+     dhclient eth1
+     ip link set eth1 down
+     ip link set eth1 up
+
+# Fuente: David G.S. - Alumno de ASIR2 curso 23/24
+```
+
+
 
 #### Referencias: 
 + [Manual completo - Friends of Vagrant](https://friendsofvagrant.github.io/v1/docs/boxes.html)
