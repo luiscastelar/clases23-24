@@ -63,7 +63,7 @@ Para verificar la calidad de código o el estilo.
 [Ver repositorio](https://github.com/luiscastelar/ed_hooks)
 
 ## Git BARE
-El comando `git --init bare` genera un repositorio básico. 
+El comando `git init --bare` genera un repositorio básico. 
 
 Un repositorio git bare está diseñado para usarse como un **repositorio remoto donde el código se comparte entre los miembros del equipo**. El repositorio de Git básico no está destinado al desarrollo local.
 
@@ -84,22 +84,27 @@ Vamos a utilizar este hook para desplegar nuestro código a un servidor de produ
 + [Ejemplos hooks - Hostinger](https://www.hostinger.es/tutoriales/como-usar-git-hooks)
 
 
-# Práctica:
-Crearemos una librería matemática sencilla con apenas un par de métodos (sumar y factorial), pero **bien** documentada.
+# Prácticas
+## Documentación:
+1. Documentar un programa/clase con JavaDoc.
+2. Documentar un programa/archivo con JSDoc.
 
-Buscamos automatizar el proceso lo máximo posible, por lo que utilizaremos los **hooks** vistos para generar la documentación (pre-push), y desplegar los cambios realizados (post-receive) sobre un servidor “remoto” ubicado en el mismo host que nuestro repositorio BARE de producción.
+## Hooks
+3. Crear un hook que permita automatizar cualquiera de las anteriores.
+4. Crear un repositorio BARE y conectar nuestro repositorio (el de ésta práctica) con él.
+5. Crear un hook que registre (logger) los push contra el repositorio BARE.
+```bash
+#!/bin/bash
+FECHA=$(date "+%Y-%m-%d_%H:%M")
+echo "$FECHA -> Push recibido correctamente" >> ~/log-post-receive.log
+```
 
-Deberemos añadir un archivo índice (index.html) de forma que los visitantes puedan consultar la información básica de nuestro proyecto.
-
-El contenido de index.html:
+6. Crear un hook que despliegue el archivo siguiente:
 ```html
 <html>
   <body>
-    <h1>Librería matemática (Práctica UT6)</h1>
-    <div>Esto es un ejemplo de uso de nuestra librería js</div>
-    <div><b>Nombre:</b><i>Aquí vuestros datos</i></div>
-    <h2>Métodos</h2>
-    <div>... aquí iría el contenido real</div>
+    <div>Hola mundo!</div>
+    <div>Soy {nombre alumno} </div>
   </body>
 </html>
 ```
