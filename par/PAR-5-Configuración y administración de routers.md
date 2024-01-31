@@ -71,9 +71,13 @@ origen y una de destino.
 8. ¿Cuántas redes privadas de clase C tenemos? ¿Cuántos equipos tiene cada una?
 
 
-### VSLM:
+### VLSM:
 ![mapa de red](https://planificacionadministracionredes.readthedocs.io/es/latest/_images/tema08-228.png)
 Dado el mapa anterior, crea las redes con el mínimo desperdicio de IPs.
+
+![pregunta ccna](https://luiscastelar.duckdns.org/2023/assets/PAR/UT5/vlsm-ccna.jpg)
+
+
 
 
 ### IPv6
@@ -95,8 +99,11 @@ Dado el mapa anterior, crea las redes con el mínimo desperdicio de IPs.
 12. EUI-64 modificado. ¿Cuál es la MAC de tu tarjeta de red? Basándote en la dirección MAC de tu tarjeta calcula la dirección IPv6 automática global unicast (2001::/32).
 
 
-
 *Fuente: [Planificación y administración de redes](https://planificacionadministracionredes.readthedocs.io/es/latest/Tema08/Actividades.html)*
+
+*Nota: EUI-64 modificado*
+
+![eui-64 modificado](https://1.bp.blogspot.com/-DbDiVevyrbw/WZCxBEOdwdI/AAAAAAAAfrg/0VrKD7S-r0MGbFWXPf_cWh1lyGfRngnHwCEwYBhgL/s1600/1.jpg)
 
 
 ## Sockets
