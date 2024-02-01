@@ -99,7 +99,7 @@ FECHA=$(date "+%Y-%m-%d_%H:%M")
 echo "$FECHA -> Push recibido correctamente" >> ~/log-post-receive.log
 ```
 
-6. Crear un hook que despliegue el archivo siguiente:
+~~6. Crear un hook que despliegue el archivo siguiente:~~
 ```html
 <html>
   <body>
@@ -108,3 +108,5 @@ echo "$FECHA -> Push recibido correctamente" >> ~/log-post-receive.log
   </body>
 </html>
 ```
+
+*Nota*: Ver [resultado](https://luiscastelar.duckdns.org/2023/practicas/ed/index.html) del apartado 6

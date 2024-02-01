@@ -4,7 +4,7 @@ Esto es un documento vivo donde hacer una planificación diaria y control del tr
 
  
 # 6 Optimización y documentación
- 14h del 17/01/2024 al 07/02/2024. *2a eva*.
+ 12h del 17/01/2024 al 07/02/2024. *2a eva*.
 
 + 23e:
   + [x] JavaDoc
@@ -14,10 +14,10 @@ Esto es un documento vivo donde hacer una planificación diaria y control del tr
   + [x] Git hook -> Pre-push -> Generar Doc
 + 30e:
   + [ ] ~~Git hook -> Pre-commit~~
-  + [ ] Servidor Git -> Git BARE
-  + [ ] Git hook servidor -> Post-recibe
+  + [x] Servidor Git -> Git BARE
+  + [x] Git hook servidor -> Post-recibe
 + 31e:
-  + [ ] Despliegue web con Git + Git Bare + Git Hook + Docker + NginX
+  + [x] Despliegue web con Git + Git Bare + Git Hook + Docker + NginX
 + 6f:
   + [ ] Continuación despliegue
   + [ ] **Defensa** de la práctica UT6
@@ -199,7 +199,7 @@ Horas de trabajo **en casa** => ==8h== de 22h
 
 
 # 5 Instalación y uso de entornos de desarrollo
- 14h del 13/12/2023 al 16/01/2024. *2a eva*.
+ 12h del 13/12/2023 al 16/01/2024. *2a eva*.
 
  + 12d:
    + [x] Concurso programame fase previa

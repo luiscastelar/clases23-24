@@ -6,15 +6,17 @@
 22 29/01/2024 22/02/2024 2ª
 + 30e:
   + [x] Repaso IPv4
-  + [ ] Repaso IPv4 VSLM
-  + [ ] Repaso IPv6
+  + [x] Repaso IPv4 VSLM
+  + [x] Repaso IPv6
 + 31e:
-  + [ ] Los “routers” en las LAN, WAN y WLAN.
-  + [ ] Componentes del “router”.
+  + [x] Los “routers” en las LAN, WAN y WLAN.
+  + [x] Componentes del “router”.
 + 1f:
+  + [ ] Proceso y tipos de NAT
   + [ ] Formas de conexión al “router” para su configuración inicial.
   + [ ] Comandos para configuración del “router”.
   + [ ] Comandos para administración del “router”.
+  + [ ] Configurar el DHCP del “router”.
 + 6f:
   + [ ] Configuración del enrutamiento estático.
 + 7f:
@@ -25,11 +27,11 @@
 + 13f: 
   + [ ] Carnavales
 + 14f:
-  + [ ] DHCP
+  + [ ] Enrutamiento entre VLANs
 + 15f:
   + [ ] Repaso
 + 22f:
-  + [ ] **Exámen**
+  + [ ] **Práctica** y/o **Exámen**
 
 
 # 6 Configuración y administración de protocolos dinámicos. 

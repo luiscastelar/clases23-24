@@ -494,7 +494,7 @@ Así, para enseñarle a un router que si necesita enviar paquetes a la red
 
 Examina la figura siguiente:
 
-![](https://luiscastelar.duckdns.org/2023/assets/PAR/UT5/05-ej-enrutamiento.png)
+![](https://luiscastelar.duckdns.org/2023/assets/PAR/UT5/05.png)
 
 En ella hay cuatro redes, que son respectivamente:
 
@@ -775,7 +775,7 @@ Dadas dos redes (puedes ver la topología abajo) con las direcciones
 - En la red 20 hay un servidor con la IP 20.0.0.200 que sirve webs y
   FTP
 
-![](img/06-ej-acls.png)
+![](https://luiscastelar.duckdns.org/2023/assets/PAR/UT5/06-ej-acls.png)
 
 Se nos pide poner en marcha los escenarios siguientes (cada escenario es
 independiente, reinicia los routers o borra las reglas antes de pasar de
@@ -987,6 +987,12 @@ Los comandos serían:
 Se queda como ejercicio, ¡inténtalo!
 
 
+### Fuentes:
++ [ACL standard - Kalero](https://www.youtube.com/watch?v=hliq-UZ1Heo&t=782s&pp=ygUSa2FsZXJvIGFjY2VzcyBsaXN0) y [ACL extended - Kalero](https://www.youtube.com/watch?v=xI065U7JFpc&t=16s&pp=ygUSa2FsZXJvIGFjY2VzcyBsaXN0)
++ [ConfiguKarar ACL de IP de uso general - Cisco.com](https://www.cisco.com/c/es_mx/support/docs/ip/access-lists/26448-ACLsamples.html)
++ [Configuración y filtrado de listas de acceso - Cisco.com](https://www.cisco.com/c/es_mx/support/docs/security/ios-firewall/23602-confaccesslists.html)
++ [CCNA desde cero](https://ccnadesdecero.es/tipos-acl-ipv4/)
+
 ## Enrutamiento estático con backup
 
     ! Ruta principal
@@ -1000,18 +1006,34 @@ Se queda como ejercicio, ¡inténtalo!
 ![enrutamiento estático](https://luiscastelar.duckdns.org/2023/practicas/par/ut5-static-routing.png)
 
 Dada la figura:\
-1. Obten el archivo **11-config.pkt**
+1. Obtén el archivo **11-config.pkt**
    + Configura todos los dispositivos (securizar e ip).
 2. Obten el archivo **12-rutas-principales.pkt**
    + Crea el camino desde el PC0 al PC1 por la ruta principal (triángulos verdes).
    + Crea el camino opuesto por la ruta secundaria (triángulos rojos).
-3. Obten el archivo **13-rutas-backup.pkt**
+3. Obtén el archivo **13-rutas-backup.pkt**
    + Crea la ruta backup (triángulos rojos) del camino de ida.
    + Crea la ruta backup (triángulos verdes) del camino de vuelta.
 4. Una excavadora ha roto la línea 10.0.0.0 ¿que ocurre?.
-5. Obten el archivo **14-dhcp.pkt**
+5. Obtén el archivo **14-dhcp.pkt**
    + Elimina las ips estáticas de los equipos y haz que sigan comunicando.
+6. Obtén el archivo **15-acl-standar.pkt**
+   + Crea una ACL standard que bloquee el acceso del equipo 192.168.0.3 a la red 192.168.1/24
+   + Crea una ACL standard que bloquee el acceso a la subred 192.168.0.128/25 a la red 192.168.1/24
+7. Obtén el archivo **16-acl-extended.pkt**
+   + Añade los equipos 192.168.0.3 y 192.168.0.132
+   + Crea una ACL extended que bloquee el acceso del equipo 192.168.0.3 a la red 192.168.1/24
+   + Crea una ACL extended que bloquee el acceso a la subred 192.168.0.128/25 a la red 192.168.1/24
+8. Obtén el archivo **17-rutas-en-ipv6.pkt**
+   + Borra la configuración IPv4 de TODOS los dispositivos
+   + Asigna IPv6 a los dispositivos y crea una ruta de comunicación en IPv6
+9. Obtén el archivo **18-acl-en-ipv6.pkt**
+   + Crea una ACL extended que bloquee el acceso a la subred 192.168.0.128/25 a la red 192.168.1/24
+
+**NOTA**: Debéis cambiar la red 192.168.1/24 por vuestro “reino”, esto es, la red 192.168.X/24, donde X es el número de vuestro puesto de trabajo.
+
+**NOTA 2:** Guarda la configuración de los dispostivos en un fichero de texto copiando desde la consola la configuración que nos muestra el comando `show startup-config`. Estos archivos los necesitaremos más adelante.
 
 
 ## Fuente:
-a [Oscar Maestre](https://oscarmaestre.github.io/apuntes_redes/t4_routers/apuntes_t4.html)
++ [Oscar Maestre](https://oscarmaestre.github.io/apuntes_redes/t4_routers/apuntes_t4.html)
