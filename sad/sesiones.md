@@ -10,14 +10,15 @@
   + [ ] Introducción.
 + ~~26e: día de la docencia~~
 + 29e: K2
-  + [ ] Funcionamiento ininterrumpido.
+  + [x] Formateo ordenador profesor
++ 2f: K3
+  - [ ] Funcionamiento ininterrumpido.
   - [ ] Integridad de datos y recuperación de servicio.
   - [ ] Servidores redundantes.
-+ 2f: K3
-  - [ ] Sistemas de “clusters”.
 + 5f: K4
-  - [ ] Balanceadores de carga.
+  - [ ] Sistemas de “clusters”.
 + 10f: K5
+  + [ ] Balanceadores de carga.
   + [ ] Desarrollo de práctica
 + ~~12f: carnavales~~
 + 17f: K6
