@@ -12,12 +12,13 @@
   + [x] Los “routers” en las LAN, WAN y WLAN.
   + [x] Componentes del “router”.
 + 1f:
-  + [ ] Proceso y tipos de NAT
-  + [ ] Formas de conexión al “router” para su configuración inicial.
-  + [ ] Comandos para configuración del “router”.
-  + [ ] Comandos para administración del “router”.
-  + [ ] Configurar el DHCP del “router”.
+  + [x] Proceso y tipos de NAT
+  + [x] Formas de conexión al “router” para su configuración inicial.
+  + [x] Comandos para configuración del “router”.
+  + [x] Comandos para administración del “router”.
+  + [x] Configurar el DHCP del “router”.
 + 6f:
+  + [ ] Breve inciso sobre DNS.
   + [ ] Configuración del enrutamiento estático.
 + 7f:
   + [ ] Cont.

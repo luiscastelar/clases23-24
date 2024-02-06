@@ -24,14 +24,22 @@ Esto es un documento vivo donde hacer una planificación diaria y control del tr
 + 7f: 
   + [ ] **Defensa** de la práctica UT6
  
-# 7 Elaboración de diagramas de clase
+# 7 Elaboración de diagramas de clases
  10h del 08/02/2024 al 28/02/2024. *2a eva*.
 
 + [ ] Carnavales
-+ [ ] 14f:
-+ [ ] 20f:
-+ [ ] 21f:
-+ [ ] 27f: **Exámen UT7**
++ 14f:
+  + [ ] Elementos: nombre, atributos, métodos y visibilidades.
+  + [ ] Relaciones: nombre, cardinalidad y tipos
+  + [ ] Tipos: asociación, agregación, composición, dependencia, herencia.
++ 20f:
+  + [ ] Ejercicios
+  + [ ] Práctica
++ 21f:
+  + [ ] cont
++ 27f:
+  + [ ] Entrega/Defensa práctica UT7
+  + [ ] O, **Exámen UT7**
 
 # Cierre 2º de trimestre
  + [ ] 28f: *Varios*

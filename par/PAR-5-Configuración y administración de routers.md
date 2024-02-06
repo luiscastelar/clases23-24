@@ -413,12 +413,6 @@ Los comandos son estos:
 
 El parámetro *default-router* será el que los clientes utilicen como *default gateway* o ‘puerta al mundo por defecto’.
 
-#### Breve inciso sobre DNS
-[wikipedia](https://es.wikipedia.org/wiki/Sistema_de_nombres_de_dominio)
-
-![recursivo](https://cf-assets.www.cloudflare.com/slt3lc6tev37/3NOmAzkfPG8FTA8zLc7Li8/8efda230b212c0de2d3bbcb408507b1e/dns_record_request_sequence_recursive_resolver.png)![Definición de DNS - Significado y definición de DNS](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.NSYza4PayfcZJA5w1-IImwHaDy%26pid%3DApi&f=1&ipt=d35e57f3b7ad14fdf7d72e9f11d50344bf34d9f41c3ccda948847babbd732bef&ipo=images)
-
-
 
 ### Excluir direcciones de la asignación DHCP
 
@@ -442,6 +436,11 @@ Tipos de NAT:
 
 *Referencias*: [ccna desde cero](https://ccnadesdecero.es/nat-tipos-ventajas-desventajas/)
 
+
+#### Breve inciso sobre DNS
+[wikipedia](https://es.wikipedia.org/wiki/Sistema_de_nombres_de_dominio)
+
+![recursivo](https://cf-assets.www.cloudflare.com/slt3lc6tev37/3NOmAzkfPG8FTA8zLc7Li8/8efda230b212c0de2d3bbcb408507b1e/dns_record_request_sequence_recursive_resolver.png)![Definición de DNS - Significado y definición de DNS](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.NSYza4PayfcZJA5w1-IImwHaDy%26pid%3DApi&f=1&ipt=d35e57f3b7ad14fdf7d72e9f11d50344bf34d9f41c3ccda948847babbd732bef&ipo=images)
 
 #### Activar NAT en un router
 
@@ -478,7 +477,7 @@ de origen.
 
 ## Configuración del enrutamiento estático.
 
-Se debe empezar por ir al modo de configuración globa. En líneas
+Se debe empezar por ir al modo de configuración global. En líneas
 generales el comando tiene estas partes:
 
 1. En primer lugar se escribe `ip route`.
