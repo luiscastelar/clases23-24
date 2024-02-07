@@ -567,6 +567,27 @@ Comandos necesarios:
     ip route 30.0.0.0 255.0.0.0 3.3.3.1
     ip route 10.0.0.0 255.0.0.0 3.3.3.1
 
+
+### Rutas como firewall de salida
+En la empresa tenemos un problema de competitividad ya que nuestros trabajadores están muy enganchados a leer el “marca”. 
+
+Para solucionarlo, hemos pensado que podemos crear una ruta en el router de borde que capture las peticiones al marca y las descarte. 
+
+Para la implementación:
+```bash
+# Dominio a capturar
+FQDN="marca.com"
+
+# IP del dominio
+IP=$(dig $FQDN | egrep "^$FQDN" | cut -f6)
+
+# Captura de ruta
+sudo ip route add $IP via 127.0.0.1 
+```
+
+Para liberarla, tan fácil como eliminar dicha ruta `sudo ip r del $IP via 127.0.0.1`
+
+
 ## Ejercicio completo de configuración de routers
 
 Observa la figura siguiente. En ella hay tres router que interconectan
