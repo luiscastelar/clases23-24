@@ -18,11 +18,15 @@
   + [x] Comandos para administración del “router”.
   + [x] Configurar el DHCP del “router”.
 + 6f:
-  + [ ] Breve inciso sobre DNS.
-  + [ ] Configuración del enrutamiento estático.
+  + [x] Tablas de enrutamiento.
+  + [x] Ejercicio de enrutamiento (en papel).
+  + [x] Detalles sobre DHCP.
 + 7f:
-  + [ ] Cont.
+  + [ ] Capturando rutas.
+  + [ ] Añadiendo y eliminando rutas en GNU/Linux con `ip-link` (alias `ip link route`) y en CISCO con `ip route`
+  + [ ] Breve inciso sobre DNS.
 + 8f:
+  + [ ] Resolviendo ejercicio sobre enrutamiento estático.
   + [ ] Definición y ubicación de listas de control de acceso (ACLs).
   + [ ] [QoS en L3](https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9400/software/release/16-6/configuration_guide/qos/b_166_qos_9400_cg/b_166_qos_9400_cg_chapter_01.html#concept_qzp_12b_p1b) [QoS en YT](https://www.youtube.com/watch?v=qL8p4u-dxwg)
 + 13f: 

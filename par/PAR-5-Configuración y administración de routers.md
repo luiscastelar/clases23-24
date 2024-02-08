@@ -212,81 +212,6 @@ operativo sino también algunos parámetros configurables:
   segundo curso, en el módulo "Servicios de red".
 
 
-## Los routers en las LAN y en las WAN.
-
-En las redes LAN el router toma decisiones sencillas. En líneas
-generales solo deciden "¿se envía este paquete al otro lado o no?".
-
-En redes WAN, los routers tienen conexión con muchas otras redes. Al
-tener muchas redes, estos routers tienen que "intentar averiguar todas
-las conexiones y decidir cuales son los mejores caminos".
-
-
-### El proceso de NAT paso a paso
-**AVISO:** la conexión entre los routers de todas las imágenes siguientes deberían reflejar que es realizada mediante la conexión pública a través de internet (una "nubecita"). **NO** existe conexión directa entre ambos routers, aunque podemos representarlo simbólicamente así.
-
-Paso 1: un usuario quiere iniciar una conexión y conectarse a un
-servidor en otro lugar remoto.
-
-![1](https://luiscastelar.duckdns.org/2023/assets/PAR/UT5/nat01.png)
-
-Paso 2: el usuario pide al servidor la IP pública de su router y usando
-su programa intenta conectarse a la IP pública del otro router y al
-puerto del juego o servicio. El puerto de origen se elige al azar.
-
-![2](https://luiscastelar.duckdns.org/2023/assets/PAR/UT5/nat02.png)Paso 3: el paquete llega al router. El router observa que el paquete va
-al exterior. Como no se pueden usar IPs privadas en el exterior, el
-router **CAMBIA LA IP DE ORIGEN Y TOMA NOTA DE ESA TRADUCCIÓN POR SI EN
-EL FUTURO SE NECESITA ESA INFORMACIÓN**.
-
-![3](https://luiscastelar.duckdns.org/2023/assets/PAR/UT5/nat03.png)
-
-Paso 4: el paquete (con la IP de origen cambiada) viaja por la red y
-llega al router de destino. Como los router **por defecto no aceptan
-conexiones entrantes, en principio el paquete no entraría** Es necesario
-que primero el router derecho tenga *el puerto 6003 abierto.* Abrir un
-puerto consiste en poner una regla que indique que si llega una conexión
-entrante iniciada en el exterior se va a dejar pasar enviando el paquete
-a una cierta IP.
-
-![4](https://luiscastelar.duckdns.org/2023/assets/PAR/UT5/nat04.png)
-Paso 5: si hubiera la regla correcta,el paquete entrará pero con la IP
-de destino modificada.
-
-![5](https://luiscastelar.duckdns.org/2023/assets/PAR/UT5/nat05.png)
-Paso 6: el paquete que intentaba iniciar la conexión **llega
-correctamente a su destino**.
-
-![6](https://luiscastelar.duckdns.org/2023/assets/PAR/UT5/nat06.png)
-
-Paso 7: el servidor va a responder y genera un paquete de respuesta.
-
-![7](https://luiscastelar.duckdns.org/2023/assets/PAR/UT5/nat07.png)Paso 8: el paquete llega al router **que vuelve a modificar la IP de
-origen porque no se aceptan IPs privadas en Internet.** Por supuesto, el
-router vuelve a apuntar esa traducción.
-
-![8](https://luiscastelar.duckdns.org/2023/assets/PAR/UT5/nat08.png)
-
-Paso 9: el paquete intenta entrar. Lo primero que podríamos pensar es
-que el paquete no entrará, sin embargo **SÍ VA A CONSEGUIR ENTRAR**
-
-![9](https://luiscastelar.duckdns.org/2023/assets/PAR/UT5/nat09.png)
-
-Paso 10: el router observa que el paquete **coincide perfectamente** con
-la información de una traducción que se hizo en el pasado. Es decir **el
-paquete puede pasar**. De nuevo, se vuelve a cambiar la IP de destino y
-el paquete se inyecta en la red izquierda.
-
-![10](https://luiscastelar.duckdns.org/2023/assets/PAR/UT5/nat10.png)
-
-Paso 10b: se modifica la IP y se envía al interior.
-
-![10b](https://luiscastelar.duckdns.org/2023/assets/PAR/UT5/nat11.png)
-
-Paso 11: el paquete **llega a su destino**
-
-![12](https://luiscastelar.duckdns.org/2023/assets/PAR/UT5/nat12.png)
-
 ## Formas de conexión al router para su configuración inicial.
 
 ### Routers domésticos
@@ -442,38 +367,6 @@ Tipos de NAT:
 
 ![recursivo](https://cf-assets.www.cloudflare.com/slt3lc6tev37/3NOmAzkfPG8FTA8zLc7Li8/8efda230b212c0de2d3bbcb408507b1e/dns_record_request_sequence_recursive_resolver.png)![Definición de DNS - Significado y definición de DNS](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.NSYza4PayfcZJA5w1-IImwHaDy%26pid%3DApi&f=1&ipt=d35e57f3b7ad14fdf7d72e9f11d50344bf34d9f41c3ccda948847babbd732bef&ipo=images)
 
-#### Activar NAT en un router
-
-En los router de gama alta, hay que dar varios pasos:
-
-En primer lugar hay que identificar qué tarjeta va conectada a la red
-interna y qué tarjeta va a la red externa.
-
-- La tarjeta interna debe recibir el comando `ip nat inside`.
-- La tarjeta externa el comando `ip nat outside`.
-- Si tenemos subinterfaces, se deben definir los `ip nat` en los
-  subinterfaces correspondientes (probablemente en todos)
-
-En segundo lugar hay que crear una lista de control de acceso que
-permita la entrada de tráfico en el router cuando el tráfico provenga de
-la red interna. Si suponemos que nuestra red es algo como
-`10.9.0.0/255.255.0.0` tendremos que lanzar esto:
-
-    access-list 100 permit ip 10.9.0.0 0.0.255.255 any
-
-En tercer lugar hay que indicar al router que haga la sobrecarga de
-puertos indicándole la interfaz en la que se va a hacer la sobrecarga.
-Si por ejemplo, la tarjeta de salida de un router es la
-`GigabitEthernet 0/1` pondremos esto:
-
-    ip nat inside source list 100 interface GigabitEthernet0/1 overload 
-
-Una vez dados estos tres pasos, el router comenzará a modificar las IP
-de origen.
-
-> **Note**: En realidad, técnicamente lo que se realiza no es NAT sino **PAT** o
-> Port Address Translation. Cisco llama "overload" a este proceso de
-> "traducción de puertos".
 
 ## Configuración del enrutamiento estático.
 
@@ -698,7 +591,9 @@ Y para Router2 también muy similar:
     no shutdown
 
 
-## Definición y ubicación de listas de control de acceso (ACLs).
+## ACL (Listas de Control de Acceso)
+
+### Definición y ubicación de listas de control de acceso (ACLs).
 
 Cisco define las listas de control de acceso como *una herramienta para
 hacer definir perfiles en el tráfico de red que luego puedan utilizarse
@@ -713,7 +608,28 @@ Para realizar operaciones de filtrado necesitaremos hacer lo siguiente:
 4. Aplicar la lista indicando si es para el tráfico de entrada (in) o
    de salida (out)
 
-### Definiendo ACLs y añadiendo acciones
+### Tipos de ACLs
++ [CCNA desde Cero](https://ccnadesdecero.es/listas-control-acceso-acl-router-cisco/)
+
+### Wildcard
+El wildcard es la inversión bit a bit de la máscara de red.
+
+Ejemplos de wildcard:
+| CIDR | Máscara | Wildcard | Significado |
+| --- | --- | --- | --- |
+| /0 | 0.0.0.0 | 255.255.255.255 | todo INTERNET |
+| /8 | 255.0.0.0 | 0.255.255.255 | clase A |
+| /23 | 255.255.254.0 | 0.0.1.255 | 512 IPs |
+| /24 | 255.255.255.0 | 0.0.0.255 | clase C |
+| /25 | 255.255.255.128 | 0.0.0.127 | 128 IPs |
+| /26 | 255.255.255.196 | 0.0.0.63 | 64 IPs |
+| /30 | 255.255.255.252 | 0.0.0.3 | 4 IPs |
+| /31 | 255.255.255.254 | 0.0.0.1 | 2 IPs |
+| /32 | 255.255.255.255 | 0.0.0.0 | un HOST |
+
+
+
+### Definiendo ACLs STANDARD y añadiendo acciones
 
 El comando básico tiene esta estructura:
 
@@ -739,6 +655,15 @@ condición 1 permite cierto tipo de tráfico y resulta que en la condición
 5 queríamos denegar justo ese tráfico?** Pasará que sin querer lo hemos
 autorizado por lo que se debe revisar con cuidado el orden de las
 condiciones.
+
+#### Ejercicio:
+Queremos bloquear todos las comunicaciones a 192.168.10.0/24 desde 192.168.1.0/24, con excepción del servidor TFTP (IP .2) del siguiente mapa de red:
+![inspeccion ACL](https://luiscastelar.duckdns.org/2023/assets/PAR/UT5/ACL-standard-mapa.png)
+
+Resultado:
+![inspeccion ACL](https://luiscastelar.duckdns.org/2023/assets/PAR/UT5/ACL-standard-inspeccion.png)
+
+==POR REVISAR==
 
 ### Definición de condiciones
 
@@ -1011,7 +936,7 @@ Se queda como ejercicio, ¡inténtalo!
 + [ACL standard - Kalero](https://www.youtube.com/watch?v=hliq-UZ1Heo&t=782s&pp=ygUSa2FsZXJvIGFjY2VzcyBsaXN0) y [ACL extended - Kalero](https://www.youtube.com/watch?v=xI065U7JFpc&t=16s&pp=ygUSa2FsZXJvIGFjY2VzcyBsaXN0)
 + [ConfiguKarar ACL de IP de uso general - Cisco.com](https://www.cisco.com/c/es_mx/support/docs/ip/access-lists/26448-ACLsamples.html)
 + [Configuración y filtrado de listas de acceso - Cisco.com](https://www.cisco.com/c/es_mx/support/docs/security/ios-firewall/23602-confaccesslists.html)
-+ [CCNA desde cero](https://ccnadesdecero.es/tipos-acl-ipv4/)
++ [CCNA desde 0](https://ccnadesdecero.es/?s=acl)
 
 ## Enrutamiento estático con backup
 
