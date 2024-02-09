@@ -353,19 +353,6 @@ direcciones:
     Router(config)#ip dhcp excluded-address 192.168.1.1
     Router(config)#ip dhcp excluded-address 192.168.1.20 192.168.1.30
 
-### NAT
-Tipos de NAT:
-+ NAT estático: IP pública a IP privada (1 a 1).
-+ NAT dinámico: IPs públicas a IPs privadas (N a M).
-+ NAT sobrecargado o **PAT** (port address translate): 1 IP pública a N IPs privadas.
-
-*Referencias*: [ccna desde cero](https://ccnadesdecero.es/nat-tipos-ventajas-desventajas/)
-
-
-#### Breve inciso sobre DNS
-[wikipedia](https://es.wikipedia.org/wiki/Sistema_de_nombres_de_dominio)
-
-![recursivo](https://cf-assets.www.cloudflare.com/slt3lc6tev37/3NOmAzkfPG8FTA8zLc7Li8/8efda230b212c0de2d3bbcb408507b1e/dns_record_request_sequence_recursive_resolver.png)![Definición de DNS - Significado y definición de DNS](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.NSYza4PayfcZJA5w1-IImwHaDy%26pid%3DApi&f=1&ipt=d35e57f3b7ad14fdf7d72e9f11d50344bf34d9f41c3ccda948847babbd732bef&ipo=images)
 
 
 ## Configuración del enrutamiento estático.
@@ -946,6 +933,17 @@ Se queda como ejercicio, ¡inténtalo!
     ! Ruta backup (le añadimos métrica)
     ip route 172.16.3.0 255.255.255.0 S0/0/2 10
 
+
+## Enrutamiento entre VLANs
+Históricamente se realizaban mediante enrutado entre interfaces, por lo que debíamos duplicar el conexionado router-switch.
+
+Posteriormente, gracias a las *subinterface*s realizaremos el mismo procedimiento, pero reduciendo el hardware (cableado y puertos) necesario.
+
+En la actualidad, se suele recurrir a switchs de capa 3 que permiten dicho enrutado por hardware, acelerando el proceso y descargando a los routers de dicha tarea.
+
+Fuente:
++ [CCNA desde cero](https://ccnadesdecero.es/funcionamiento-enrutamiento-entre-vlan/)
+ 
 
 ## Práctica:
 ![enrutamiento estático](https://luiscastelar.duckdns.org/2023/practicas/par/ut5-static-routing.png)

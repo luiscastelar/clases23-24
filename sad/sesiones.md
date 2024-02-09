@@ -7,16 +7,16 @@
 + 19e: Kubernetes
   + [x] Instalación 
 + 22e: K2
-  + [ ] Introducción.
+  + [x] Introducción.
 + ~~26e: día de la docencia~~
 + 29e: K2
   + [x] Formateo ordenador profesor
 + 2f: K3
-  - [ ] Funcionamiento ininterrumpido.
-  - [ ] Integridad de datos y recuperación de servicio.
-  - [ ] Servidores redundantes.
+  - [x] Funcionamiento ininterrumpido.
+  - [x] Integridad de datos y recuperación de servicio.
+  - [x] Servidores redundantes.
 + 5f: K4
-  - [ ] Sistemas de “clusters”.
+  - [x] Sistemas de “clusters”.
 + 10f: K5
   + [ ] Balanceadores de carga.
   + [ ] Desarrollo de práctica

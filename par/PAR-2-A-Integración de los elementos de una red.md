@@ -4,7 +4,7 @@
 ## Mapa conceptual de la unidad
 ![mapa conceptual](https://luiscastelar.duckdns.org/2023/assets/PAR/UT2_MapaConceptual.jpg)
 
-## {[Fold: Fold]} Direccionamiento
+## Direccionamiento
 
 Antes de comenzar con el direccionamiento debemos repasar algunos conceptos sobre sistemas de numeración ya que los utilizaremos intensivamente en esta unidad.
 

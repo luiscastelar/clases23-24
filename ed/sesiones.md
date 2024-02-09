@@ -3,31 +3,10 @@
 Esto es un documento vivo donde hacer una planificación diaria y control del trabajo realizado.
 
  
-# 6 Optimización y documentación
- 12h del 17/01/2024 al 07/02/2024. *2a eva*.
-
-+ 23e:
-  + [x] JavaDoc
-  + [x] JS Doc
-+ 24e:  
-  + [x] Sorteo defensa
-  + [x] Git hook -> Pre-push -> Generar Doc
-+ 30e:
-  + [ ] ~~Git hook -> Pre-commit~~
-  + [x] Servidor Git -> Git BARE
-  + [x] Git hook servidor -> Post-recibe
-+ 31e:
-  + [x] Despliegue web con Git + Git Bare + Git Hook + Docker + NginX
-+ 6f:
-  + [ ] Continuación despliegue
-  + [ ] **Defensa** de la práctica UT6
-+ 7f: 
-  + [ ] **Defensa** de la práctica UT6
- 
 # 7 Elaboración de diagramas de clases
  10h del 08/02/2024 al 28/02/2024. *2a eva*.
 
-+ [ ] Carnavales
++ [x] 13f Carnavales
 + 14f:
   + [ ] Elementos: nombre, atributos, métodos y visibilidades.
   + [ ] Relaciones: nombre, cardinalidad y tipos
@@ -225,4 +204,26 @@ Horas de trabajo **en casa** => ==8h== de 22h
   + [x] Generación de war
 + 24e:
   + [x] **Entrega de práctica UT5**
+
+ 
+# 6 Optimización y documentación
+ 12h del 17/01/2024 al 07/02/2024. *2a eva*.
+
++ 23e:
+  + [x] JavaDoc
+  + [x] JS Doc
++ 24e:  
+  + [x] Sorteo defensa
+  + [x] Git hook -> Pre-push -> Generar Doc
++ 30e:
+  + [ ] ~~Git hook -> Pre-commit~~
+  + [x] Servidor Git -> Git BARE
+  + [x] Git hook servidor -> Post-recibe
++ 31e:
+  + [x] Despliegue web con Git + Git Bare + Git Hook + Docker + NginX
++ 6f:
+  + [x] Continuación despliegue
+  + [x] **Defensa** de la práctica UT6
++ 7f: 
+  + [x] **Defensa** de la práctica UT6
  

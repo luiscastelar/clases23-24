@@ -2,7 +2,7 @@
 
 
 
-# {[Fold: Fold]} Dispositivos de interconexión de redes.
+# Dispositivos de interconexión de redes.
 
 Como ya hemos comentado, dada la flexibilidad aportada, la topología en
 estrella se ha impuesto ampliamente en las redes cableadas, por lo que
@@ -95,7 +95,7 @@ Un bridge o un puente opera en la capa de enlace de datos. Es un repetidor con f
 
 
 
-# {[Fold: Fold]} ARP y NDP
+# ARP y NDP
 
 ## ARP
 
@@ -332,7 +332,7 @@ Más info sobre [multidifusión](https://en.wikipedia.org/wiki/Multicast_address
 
 
 
-# {[Fold: Fold]} Segmentación de la red. Ventajas que presenta.
+# Segmentación de la red. Ventajas que presenta.
 
 ## Conmutadores y dominios de colisión y “broadcast”.
 
@@ -373,7 +373,7 @@ Vamos a replicar en `packet tracer` la figura siguiente y verificar la problemá
 
 
 
-# {[Fold: Fold]}  Formas de conexión al conmutador para su configuración.
+# Formas de conexión al conmutador para su configuración.
 
 Cada equipo de red tiene software según el fabricante a través de WEB, APP propia o TELNET (muy obsoleto), pero todos los dispositivos suelen llevar **SSH**.
 
@@ -430,7 +430,7 @@ Como hemos visto la tabla ARP puede “aprenderse” de forma dinámica o tambi�
 [Primeros pasos](https://oscarmaestre.github.io/apuntes_redes/t5_vlans/apuntes_t5.html#anexo-primeros-pasos-con-un-switch-cisco)
 
 
-# {[Fold: Fold]} [OFF-Topic] Docker
+# [OFF-Topic] Docker
 
 ![mv vs contender](https://edteam-media.s3.amazonaws.com/blogs/original/0c000477-ba58-422d-a62c-d0053bcfd291.png)
 ![resultado](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fsitelabs.es%2Fwp-content%2Fuploads%2F2015%2F09%2Fcontvsvm.png&f=1&nofb=1&ipt=d6cb670801e9e4cfca59d712906aa0a2b7e31bb87437029787f7112850f77b19&ipo=images)

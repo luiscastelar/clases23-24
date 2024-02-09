@@ -25,9 +25,9 @@
 4h - 2 sesiones - 15/01/2024 19/01/2024 *2ª eva*
 
 1. 19e:
-   + [ ] Criptografía 
+   + [x] Criptografía 
 3. 22e:
-   + [ ] Firma
+   + [x] Firma
 
 **Evaluación**: sobre proyecto integrador.
 

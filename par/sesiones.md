@@ -3,7 +3,7 @@
 
 
 # 5 Configuración y administración básica de “routers”. 
-22 29/01/2024 22/02/2024 2ª
+24 29/01/2024 22/02/2024 2ª
 + 30e:
   + [x] Repaso IPv4
   + [x] Repaso IPv4 VSLM
@@ -22,27 +22,29 @@
   + [x] Ejercicio de enrutamiento (en papel).
   + [x] Detalles sobre DHCP.
 + 7f:
-  + [ ] Capturando rutas.
-  + [ ] Añadiendo y eliminando rutas en GNU/Linux con `ip-link` (alias `ip link route`) y en CISCO con `ip route`
-  + [ ] Breve inciso sobre DNS.
+  + [x] Capturando rutas.
+  + [x] Añadiendo y eliminando rutas en GNU/Linux con `ip-link` (alias `ip link route`) y en CISCO con `ip route`
+  + [x] Breve inciso sobre DNS.
 + 8f:
-  + [ ] Resolviendo ejercicio sobre enrutamiento estático.
-  + [ ] Definición y ubicación de listas de control de acceso (ACLs).
-  + [ ] [QoS en L3](https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9400/software/release/16-6/configuration_guide/qos/b_166_qos_9400_cg/b_166_qos_9400_cg_chapter_01.html#concept_qzp_12b_p1b) [QoS en YT](https://www.youtube.com/watch?v=qL8p4u-dxwg)
+  + [x] Resolviendo ejercicio sobre enrutamiento estático.
+  + [x] Definición y ubicación de listas de control de acceso (ACLs).
+  + [ ] **NO** [QoS en L3](https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9400/software/release/16-6/configuration_guide/qos/b_166_qos_9400_cg/b_166_qos_9400_cg_chapter_01.html#concept_qzp_12b_p1b) [QoS en YT](https://www.youtube.com/watch?v=qL8p4u-dxwg)
 + 13f: 
-  + [ ] Carnavales
+  + [x] Carnavales
 + 14f:
   + [ ] Enrutamiento entre VLANs
+  + [ ] Continuación de trabajos.
 + 15f:
   + [ ] Repaso
++ 20f:
+  + [ ] Repaso
 + 22f:
-  + [ ] **Práctica** y/o **Exámen**
+  + [ ] **Práctica** y **Examen**
 
 
 # 6 Configuración y administración de protocolos dinámicos. 
-38 22/02/2024 04/04/2024 3ª
-+ 20f:
-  + [ ] .
+36 22/02/2024 04/04/2024 3ª
+
 + 21f:
   + [ ] .
 + 27f:
@@ -74,7 +76,7 @@
 + 3a:
   + [ ] .
 + 4a: 
-  + [ ] **Exámen**
+  + [ ] **Examen**
 
 # 7 Configuración del acceso a Internet desde una LAN. 
 26 04/04/2024 02/05/2024 3ª
