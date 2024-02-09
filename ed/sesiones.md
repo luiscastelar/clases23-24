@@ -6,6 +6,11 @@ Esto es un documento vivo donde hacer una planificación diaria y control del tr
 # 7 Elaboración de diagramas de clases
  10h del 08/02/2024 al 28/02/2024. *2a eva*.
 
++ 6f:
+  + [x] Elementos: nombre, atributos, métodos y visibilidades.
+  + [x] Relaciones: nombre, cardinalidad y tipos
++ 7f:
+  + [x] Tipos: asociación, agregación, composición, dependencia, herencia.
 + [x] 13f Carnavales
 + 14f:
   + [ ] Elementos: nombre, atributos, métodos y visibilidades.
