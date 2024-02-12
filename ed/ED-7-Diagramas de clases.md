@@ -110,7 +110,7 @@ información está estructurada de la siguiente manera:
 + Cuidadores: los cuidadores vienen definidos por el nombre, dirección, teléfono y fecha de ingreso en el parque. Hay que tener en cuenta que un cuidador puede estar a cargo de varias especies y que una especie puede ser atendida por varios cuidadores, siendo de interés la fecha en la que un cuidador se hace cargo de una especie.
 
   
-## Práctica
+## Práctica (voluntaria)
 Se desea implementar un sistema de gestión de una liga nacional de canicas. 
 
 Como es bien sabido, la profesionalización del juego de canicas ha llevado a tener 3 divisiones donde se celebran torneos cada semana hasta que todos los equipos se hayan enfrentado al resto de su división en su campo (como local) y en del contrario (como visitante).
@@ -125,3 +125,6 @@ De cada equipo desearemos conocer el nombre, ciudad y puntuación actual.
    + No podrás implementar nada que no esté en el diagrama visado por el profesor.
 
 *Nota: piensa en colecciones como primera aproximación.*
+
+# Evaluación
+Examen día 27 de febrero de 2024.
