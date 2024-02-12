@@ -22,8 +22,7 @@ Esto es un documento vivo donde hacer una planificación diaria y control del tr
 + 21f:
   + [ ] cont
 + 27f:
-  + [ ] Entrega/Defensa práctica UT7
-  + [ ] O, **Exámen UT7**
+  + [ ] **Examen UT7**
 
 # Cierre 2º de trimestre
  + [ ] 28f: *Varios*
