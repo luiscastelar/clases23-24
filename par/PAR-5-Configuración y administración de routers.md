@@ -941,6 +941,13 @@ Posteriormente, gracias a las *subinterface*s realizaremos el mismo procedimient
 
 En la actualidad, se suele recurrir a switchs de capa 3 que permiten dicho enrutado por hardware, acelerando el proceso y descargando a los routers de dicha tarea.
 
+Dado un switch de capa 3, vamos a describir los pasos:
+1. Crear VLANs en el switch y asignar a los puertos.
+2. Crear las subinterfaces (SVI) en el switch y asignarles IPs. *Normalmente, comenzaríamos por ahí y serán éstas las que ofrezcan un  pool dhcp a los clientes*.
+3. Habilitar el enrutamiento con el comando `ip routing` (ojo i.
+4. Activar filtros ACL que deseemos para limitar el routing entre VLANs.
+
+
 Fuente:
 + [CCNA desde cero](https://ccnadesdecero.es/funcionamiento-enrutamiento-entre-vlan/)
  
