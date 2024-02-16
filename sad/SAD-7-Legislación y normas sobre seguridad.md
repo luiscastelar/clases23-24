@@ -20,3 +20,5 @@
 
 
 ## LSSICE - Ley de Servicios de la Sociedad de la Información y de Comercio Electrónico
+
++ [Ley 34/2002, de 11 de julio, de servicios de la sociedad de la información y de comercio electrónico](https://noticias.juridicas.com/base_datos/Admin/l34-2002.html)
