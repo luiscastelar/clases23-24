@@ -17,9 +17,9 @@
   - [x] Servidores redundantes.
 + 5f: K4
   - [x] Sistemas de “clusters”.
-+ 10f: K5
-  + [ ] Balanceadores de carga.
-  + [ ] Desarrollo de práctica
++ 9f: K5
+  + [x] Balanceadores de carga.
+  + [x] Desarrollo de práctica
 + ~~12f: carnavales~~
 + 17f: K6
   + [ ] Desarrollo de práctica
@@ -41,9 +41,10 @@
 
 # Evaluación ORDINARIA
 
-+ Lunes 4 marzo: **EXÁMEN eva ORDINARIA**
++ EXÁMEN eva ORDINARIA: **Lunes 4 marzo**
 
 ---
+
 ==**YA VISTO**==
 
 ---

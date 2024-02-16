@@ -13,4 +13,10 @@
    + Consentimiento parental (<16)
    + Avisos de procesamiento
 
+**Enlaces de interés:**
++ [Hoja de ruta - AEPD](https://www.aepd.es/documento/hoja-de-ruta.pdf)
++ [**Ojo con los fraudes**: coste cero](https://www.aepd.es/documento/coste-cero.pdf)
++ [Adecuación IA](https://www.aepd.es/sites/default/files/2020-02/adecuacion-rgpd-ia.pdf)
+
+
 ## LSSICE - Ley de Servicios de la Sociedad de la Información y de Comercio Electrónico

@@ -965,15 +965,19 @@ Dada la figura:\
    + Crea la ruta backup (triángulos rojos) del camino de ida.
    + Crea la ruta backup (triángulos verdes) del camino de vuelta.
 4. Una excavadora ha roto la línea 10.0.0.0 ¿que ocurre?.
-5. Obtén el archivo **14-dhcp.pkt**
-   + Elimina las ips estáticas de los equipos y haz que sigan comunicando.
-6. Obtén el archivo **15-acl-standar.pkt**
+5. Obtén el archivo **15-acl-standar.pkt**
    + Crea una ACL standard que bloquee el acceso del equipo 192.168.0.3 a la red 192.168.1/24
    + Crea una ACL standard que bloquee el acceso a la subred 192.168.0.128/25 a la red 192.168.1/24
+6. Obtén el archivo **14-dhcp.pkt**
+   + Elimina las ips estáticas de los equipos y haz que sigan comunicando.
+   + 
+<!--
 7. Obtén el archivo **16-acl-extended.pkt**
    + Añade los equipos 192.168.0.3 y 192.168.0.132
    + Crea una ACL extended que bloquee el acceso del equipo 192.168.0.3 a la red 192.168.1/24
    + Crea una ACL extended que bloquee el acceso a la subred 192.168.0.128/25 a la red 192.168.1/24
+   -->
+   
 8. Obtén el archivo **17-rutas-en-ipv6.pkt**
    + Borra la configuración IPv4 de TODOS los dispositivos
    + Asigna IPv6 a los dispositivos y crea una ruta de comunicación en IPv6

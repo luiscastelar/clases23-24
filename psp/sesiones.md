@@ -1,35 +1,10 @@
   #curso23_24 #PSP
 
  
+# Evaluación ORDINARIA 
 
-**2ª EVALUACIÓN**
+Examen de evaluación ordinaria será : **4 de marzo de 2023**
 
----
-# UT5 Java Fx y otros GUI
-8h - 4 sesiones - Del 12/12/2023 al 12/01/2024. *2ª eva*.
-
-1. 15d: ~~Exceso de horas~~
-2. 18d: ~~Jornadas~~
-3. 8e:
-   + [x] JavaFx
-   + [x] JavaEE
-   + [x] Servlet ECHO
-4. 12e:
-   + [x] jQuery
-   + [x] HTML + ~~Tailwind~~ + JS / AJAX(jQuery) + Servlet + Clases
-5. 15e:
-   + [x] Servlet comunicación con Json
-
----
-# UT6 Técnicas de programación segura 
-4h - 2 sesiones - 15/01/2024 19/01/2024 *2ª eva*
-
-1. 19e:
-   + [x] Criptografía 
-3. 22e:
-   + [x] Firma
-
-**Evaluación**: sobre proyecto integrador.
 
 ---
 # UT7 Proyecto integrador 
@@ -37,9 +12,11 @@
 
 Defensa por sorteo: 19f, 23f, 26f y 1m. 
 
-Entregas 23f
+**Entregas 23f**
 
 ---
+---
+
 **1ª EVALUACIÓN**
 
 ---
@@ -142,3 +119,35 @@ Entregas 23f
 ---
 
 Examen de recuperación de la primera evaluación: **15 de diciembre de 2023**
+
+
+**2ª EVALUACIÓN**
+
+---
+# UT5 Java Fx y otros GUI
+8h - 4 sesiones - Del 12/12/2023 al 12/01/2024. *2ª eva*.
+
+1. 15d: ~~Exceso de horas~~
+2. 18d: ~~Jornadas~~
+3. 8e:
+   + [x] JavaFx
+   + [x] JavaEE
+   + [x] Servlet ECHO
+4. 12e:
+   + [x] jQuery
+   + [x] HTML + ~~Tailwind~~ + JS / AJAX(jQuery) + Servlet + Clases
+5. 15e:
+   + [x] Servlet comunicación con Json
+
+**Evaluación**: sobre proyecto integrador.
+
+---
+# UT6 Técnicas de programación segura 
+4h - 2 sesiones - 15/01/2024 19/01/2024 *2ª eva*
+
+1. 19e:
+   + [x] Criptografía 
+3. 22e:
+   + [x] Firma
+
+**Evaluación**: sobre proyecto integrador.

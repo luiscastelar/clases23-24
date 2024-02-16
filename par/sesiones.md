@@ -32,10 +32,10 @@
 + 13f: 
   + [x] Carnavales
 + 14f:
-  + [ ] Enrutamiento entre VLANs
-  + [ ] Continuación de trabajos.
+  + [x] Enrutamiento entre VLANs
+  + [x] Continuación de trabajos.
 + 15f:
-  + [ ] Repaso
+  + [x] Repaso
 + 20f:
   + [ ] Repaso
 + 22f:
