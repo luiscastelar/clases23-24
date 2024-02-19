@@ -22,7 +22,7 @@
   + [x] Desarrollo de práctica
 + ~~12f: carnavales~~
 + 17f: K6
-  + [ ] Desarrollo de práctica
+  + [x] Desarrollo de práctica
 + 20f:
   + [ ] **PRESENTACIÓN y Defensa UT6**
 + 24f:
@@ -33,10 +33,10 @@
 2h 27/02/2024 01/03/2024 2ª
 
 + 26f:
-  - [ ] Legislación sobre protección de datos.
-  - [ ] Legislación sobre los servicios de la sociedad de la información y correo electrónico.
-  - [ ] Normas ISO sobre gestión de seguridad de la información.
-  - [ ] Organismos de gestión de incidencias.
+  - [x] Legislación sobre protección de datos.
+  - [x] Legislación sobre los servicios de la sociedad de la información y correo electrónico.
+  - [x] Normas ISO sobre gestión de seguridad de la información.
+  - [x] Organismos de gestión de incidencias.
 ---
 
 # Evaluación ORDINARIA
