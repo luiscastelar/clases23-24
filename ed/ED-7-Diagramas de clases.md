@@ -68,6 +68,14 @@ Ejercicio de clases con sus atributos que podrías incluir en un diagrama de cla
     comentario: Contenido del comentario.
     fecha: Fecha de creación del comentario.
 
+#### Resolución por fases:
+Primero tendríamos que pensar en que entidades, relaciones, atributos y métodos vamos a encontrarnos en el desarrollo.
+
+
+Luego pasaríamos a [diagramar por fases](https://luiscastelar.duckdns.org/2023/assets/ED/UT7/tienda.drawio.pdf).
+
+*Aprovechamos para remarcar algunos puntos interesantes*.
+
 
 ### Rent a car:
 Se desea diseñar un diagrama de clases sobre la información de las reservas de una empresa dedicada

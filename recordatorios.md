@@ -4,6 +4,10 @@ Todos los recordatorios son válidos para todo el módulo formativo, salvo cuand
 
 El incumplimiento podrá ser motivo de penalizaciones o dar por no entregado, así como apercibimientos oficiales.
 
+**17 de febrero**
++ Sobre la documentación de las prácticas (parte II): La documentación de vuestras prácticas debe permitir que otro técnico reproduzca **exactamente** lo configurado/implementado/desarrollado. Esto es, tan exactamente que debería tener los mismos “aciertos” y errores con el fin de que este otro técnico pueda investigar/mejorar el sistema “fuera de línea” (entorno de laboratorio).
++ Para lograr el objetivo, deberá adjuntarse todos los archivos necesarios (con comentarios si procede), así como un pequeño documento que explique todo lo necesario para utilizar dichos archivos.
+
 **22 de noviembre**
 + Sobre la documentación de las prácticas: cuando en una práctica se os solicita una enumeración de funcionalidades, deberás crear un apartado específico en la documentación para cada una de ellas. Cualquier ausencia de dicho apartado se tomará como no documentado, y por tanto no podrá ser corregido.
 
