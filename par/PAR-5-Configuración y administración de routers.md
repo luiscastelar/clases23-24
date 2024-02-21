@@ -221,6 +221,8 @@ el navegador y conectarse a su IP de gestión, que en la mayoría de casos
 es la <http://192.168.1.1>
 
 ### Routers de gama alta
+![Conectarse a router CISCO 4321 — Modo consola — Windows | by Cristian ...](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmiro.medium.com%2Fmax%2F6528%2F1*pn8Vbjyyo0npl5z2VcQU9w.jpeg&f=1&nofb=1&ipt=0fde03b78b4bb2b7a0d01c48723676f6f53d15804d69271e70f38e34e8ff26f6&ipo=images)
+
 El proceso es el mismo que en los switches:
 
 - Cable de consola.
@@ -268,6 +270,9 @@ El proceso era el siguiente:
     Router(config)# line aux 0
     ...
     
+Diferencias entre el [puerto de consola y el auxiliar](http://www.networkchatter.com/configure-an-aux-port-cisco-router/)
+
+Puerto ¿MGMT?
 
 ### Quitar una clave o valor de configuración
 
