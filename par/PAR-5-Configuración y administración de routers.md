@@ -972,7 +972,7 @@ Dada la figura:\
 4. Una excavadora ha roto la línea 10.0.0.0 ¿que ocurre?.
 5. Obtén el archivo **15-acl-standar.pkt**
    + Crea una ACL standard que bloquee el acceso del equipo 192.168.0.3 a la red 192.168.1/24
-   + Crea una ACL standard que bloquee el acceso a la subred 192.168.0.128/25 a la red 192.168.1/24
+   + Crea una ACL standard que bloquee el acceso desde la subred 192.168.0.128/25 a la red 192.168.1/24
 6. Obtén el archivo **14-dhcp.pkt**
    + Elimina las ips estáticas de los equipos y haz que sigan comunicando.
    + 
@@ -980,14 +980,14 @@ Dada la figura:\
 7. Obtén el archivo **16-acl-extended.pkt**
    + Añade los equipos 192.168.0.3 y 192.168.0.132
    + Crea una ACL extended que bloquee el acceso del equipo 192.168.0.3 a la red 192.168.1/24
-   + Crea una ACL extended que bloquee el acceso a la subred 192.168.0.128/25 a la red 192.168.1/24
+   + Crea una ACL extended que bloquee el acceso desde la subred 192.168.0.128/25 a la red 192.168.1/24
    -->
    
 8. Obtén el archivo **17-rutas-en-ipv6.pkt**
    + Borra la configuración IPv4 de TODOS los dispositivos
    + Asigna IPv6 a los dispositivos y crea una ruta de comunicación en IPv6
 9. Obtén el archivo **18-acl-en-ipv6.pkt**
-   + Crea una ACL extended que bloquee el acceso a la subred 192.168.0.128/25 a la red 192.168.1/24
+   + Crea una ACL extended que bloquee el acceso desde la subred 2001:DB8:0:1::/64 a la red 2001:DB8::/24
 
 **NOTA**: Debéis cambiar la red 192.168.1/24 por vuestro “reino”, esto es, la red 192.168.X/24, donde X es el número de vuestro puesto de trabajo.
 
