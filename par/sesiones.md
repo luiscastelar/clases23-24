@@ -1,66 +1,37 @@
 #curso23_24 #PAR [estado:: Working] 
 
-
-
-# 5 Configuración y administración básica de “routers”. 
-24 29/01/2024 22/02/2024 2ª
-+ 30e:
-  + [x] Repaso IPv4
-  + [x] Repaso IPv4 VSLM
-  + [x] Repaso IPv6
-+ 31e:
-  + [x] Los “routers” en las LAN, WAN y WLAN.
-  + [x] Componentes del “router”.
-+ 1f:
-  + [x] Proceso y tipos de NAT
-  + [x] Formas de conexión al “router” para su configuración inicial.
-  + [x] Comandos para configuración del “router”.
-  + [x] Comandos para administración del “router”.
-  + [x] Configurar el DHCP del “router”.
-+ 6f:
-  + [x] Tablas de enrutamiento.
-  + [x] Ejercicio de enrutamiento (en papel).
-  + [x] Detalles sobre DHCP.
-+ 7f:
-  + [x] Capturando rutas.
-  + [x] Añadiendo y eliminando rutas en GNU/Linux con `ip-link` (alias `ip link route`) y en CISCO con `ip route`
-  + [x] Breve inciso sobre DNS.
-+ 8f:
-  + [x] Resolviendo ejercicio sobre enrutamiento estático.
-  + [x] Definición y ubicación de listas de control de acceso (ACLs).
-  + [ ] **NO** [QoS en L3](https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9400/software/release/16-6/configuration_guide/qos/b_166_qos_9400_cg/b_166_qos_9400_cg_chapter_01.html#concept_qzp_12b_p1b) [QoS en YT](https://www.youtube.com/watch?v=qL8p4u-dxwg)
-+ 13f: 
-  + [x] Carnavales
-+ 14f:
-  + [x] Enrutamiento entre VLANs
-  + [x] Continuación de trabajos.
-+ 15f:
-  + [x] Repaso
-+ 20f:
-  + [ ] Repaso
-+ 22f:
-  + [ ] **Práctica** y **Examen**
+# Recuperación 2ª EVALUACIÓN
+Día 29 de febrero.
 
 
 # 6 Configuración y administración de protocolos dinámicos. 
-36 22/02/2024 04/04/2024 3ª
+32 22/02/2024 04/04/2024 3ª
 
-+ 21f:
-  + [ ] .
 + 27f:
-  + [ ] .
+  + [ ] [Off-topic] Configuración remota (SSH)
+  + [ ] Protocolos enrutables y no enrutables
+  + [ ] Del enrutamiento estático al dinámico
+  + [ ] Protocolos de enrutamiento interior y exterior
+  + [ ] Enrutamiento sin clases y VLSM
+  + [ ] RIP
 + 28f:
-  + [ ] .
-+ 29f:
-  + [ ] .
+  + [ ] Ejercicio RIPv2
++ 29f: ~~Rec 2ª EVA~~
 + 5m:
-  + [ ] .
+  + [ ] cont Ejercicio RIPv2
+  + [ ] Ejercicio RIPng
 + 6m:
-  + [ ] .
+  + [ ] OSPF: Áreas, LSDB, LSA y Adyacencias
+  + [ ] DR (router designado), BDR (backup DR) y DRO[thers].
+  + [ ] ASBR (router frontera) y ABR (router que interconecta 2 o más áreas)
+  + [ ] Ejercicio OSPF de área única.
 + 7m:
-  + [ ] .
+  + [ ] cont ejercicio OSPF de área única.
+  + [ ] Ejercicio IPv6.
+  + [ ] Ejercicio multiárea.
 + 12m:
-  + [ ] .
+  + [ ] Ejercicio multiárea.
+  + [ ] Protocol exterior -> BGP
 + 13m:
   + [ ] .
 + 14m:
@@ -292,4 +263,45 @@
 + 25e:
   + [x] Entrega/**Defensa** de la práctica
 + 20f:
-  + [ ] **Examen** 
+  + [x] **Examen**
+ 
+  
+# 5 Configuración y administración básica de “routers”. 
+28 29/01/2024 22/02/2024 2ª
++ 30e:
+  + [x] Repaso IPv4
+  + [x] Repaso IPv4 VSLM
+  + [x] Repaso IPv6
++ 31e:
+  + [x] Los “routers” en las LAN, WAN y WLAN.
+  + [x] Componentes del “router”.
++ 1f:
+  + [x] Proceso y tipos de NAT
+  + [x] Formas de conexión al “router” para su configuración inicial.
+  + [x] Comandos para configuración del “router”.
+  + [x] Comandos para administración del “router”.
+  + [x] Configurar el DHCP del “router”.
++ 6f:
+  + [x] Tablas de enrutamiento.
+  + [x] Ejercicio de enrutamiento (en papel).
+  + [x] Detalles sobre DHCP.
++ 7f:
+  + [x] Capturando rutas.
+  + [x] Añadiendo y eliminando rutas en GNU/Linux con `ip-link` (alias `ip link route`) y en CISCO con `ip route`
+  + [x] Breve inciso sobre DNS.
++ 8f:
+  + [x] Resolviendo ejercicio sobre enrutamiento estático.
+  + [x] Definición y ubicación de listas de control de acceso (ACLs).
+  + [ ] **NO** [QoS en L3](https://www.cisco.com/c/en/us/td/docs/switches/lan/catalyst9400/software/release/16-6/configuration_guide/qos/b_166_qos_9400_cg/b_166_qos_9400_cg_chapter_01.html#concept_qzp_12b_p1b) [QoS en YT](https://www.youtube.com/watch?v=qL8p4u-dxwg)
++ 13f: 
+  + [x] Carnavales
++ 14f:
+  + [x] Enrutamiento entre VLANs
+  + [x] Continuación de trabajos.
++ 15f:
+  + [x] Repaso
++ 21f:
+  + [x] Repaso
++ 22f:
+  + [x] **Práctica** y **Examen**
+  + [x] Diferencias entre puerto de consola, auxiliar y mgmt-port (management).
