@@ -106,18 +106,48 @@ R*   0.0.0.0/0 [120/1] via 10.0.0.2, 00:00:21, Serial0/3/0
 #### RIPng
 RIP para IPv6
 
-## Configuración OSPF.
-Fuente: [OSPF - Óscar Maestre](https://oscarmaestre.github.io/apuntes_redes/t6_enrutamiento_dinamico/apuntes_t6.html#configuracion-y-administracion-en-ospf)
 
-https://eclassvirtual.com/que-es-un-protocolo-de-enrutamiento-y-como-funciona/
+## OSPF - Open Shortest Path First.
+> Interior gateway protocols can be split into two main types:
+> + Distance Vector routing protocols
+> + Link State routing protocols
+>
+> In Distance Vector protocols, each router sends its directly connected neighbours a list of all its known networks along with its own distance to each of those networks. Distance vector routing protocols do not advertise the entire network topology - a router only knows its directly connected neighbours and the lists of networks those neighbours have advertised. It doesn’t have detailed topology information beyond its directly connected neighbours. Because of this, Distance Vector routing protocols are sometimes called ‘Routing by rumour’.
+>
+> In Link State routing protocols, each router describes itself and its interfaces to its directly connected neighbours (information is directly exchanged only between directly connected neighbours in both Distance Vector and Link State protocols). This information is passed unchanged from one router to another. Every router learns the full picture of the network area including every router, its interfaces and what they connect to.
+>
+> Fuente: study-ccna.com
 
-https://www.ccnablog.com/ospf-part-1/
+Fuente: 
++ [OSPF - Óscar Maestre](https://oscarmaestre.github.io/apuntes_redes/t6_enrutamiento_dinamico/apuntes_t6.html#configuracion-y-administracion-en-ospf)
++ https://eclassvirtual.com/que-es-un-protocolo-de-enrutamiento-y-como-funciona/
++ https://www.ccnablog.com/ospf-part-1/
+
+
+#### Config
+https://ccnadesdecero.com/curso/como-configurar-ospf/
+
+> For neighbour relationship to work:
+> + Interfaces must be up/up
+> + ACL must not filter routing protocol messages
+> + Interfaces must be in same IP subnet
+> + Interfaces must be authenticated, if authentication is used
+> + Hello/Dead timers must match
+> + RIDs must be unique
+> + Interfaces must be in the same area
+> + OSPF process must not be shutdown
+> + Matching MTU setting
+> + Matching network type
+
 
 #### OSPFv3 Adress Families
-
+OSPF para IP versión 6
 
 # Enrutamiento externo -> BGP
 BGP - Border Gateway Protocol.
+
+iBGP y **eBGP**.
+[]
 https://ccnadesdecero.es/bgp-border-gateway-protocol/
 
 https://www.cisco.com/c/es_mx/support/docs/ip/border-gateway-protocol-bgp/26634-bgp-toc.html

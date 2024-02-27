@@ -4,7 +4,7 @@ Esto es un documento vivo donde hacer una planificación diaria y control del tr
 
  
 # 7 Elaboración de diagramas de clases
- 10h del 08/02/2024 al 28/02/2024. *2a eva*.
+ 12h del 08/02/2024 al 28/02/2024. *2a eva*.
 
 + 6f:
   + [x] Elementos: nombre, atributos, métodos y visibilidades.
@@ -13,14 +13,14 @@ Esto es un documento vivo donde hacer una planificación diaria y control del tr
   + [x] Tipos: asociación, agregación, composición, dependencia, herencia.
 + [x] 13f Carnavales
 + 14f:
-  + [ ] Elementos: nombre, atributos, métodos y visibilidades.
-  + [ ] Relaciones: nombre, cardinalidad y tipos
-  + [ ] Tipos: asociación, agregación, composición, dependencia, herencia.
+  + [x] Elementos: nombre, atributos, métodos y visibilidades.
+  + [x] Relaciones: nombre, cardinalidad y tipos
+  + [x] Tipos: asociación, agregación, composición, dependencia, herencia.
 + 20f:
-  + [ ] Ejercicios
-  + [ ] Práctica
+  + [x] Ejercicios
+  + [x] Práctica
 + 21f:
-  + [ ] cont
+  + [x] cont
 + 27f:
   + [ ] **Examen UT7**
 
@@ -36,9 +36,8 @@ Horas de trabajo **en casa** => ==14h== de 22h
 ---
 
 # 8 Diseño y realización de pruebas
- 18h del 29/02/2024 al 09/04/2024. *3a eva*.
+ 16h del 29/02/2024 al 09/04/2024. *3a eva*.
 
- + [ ] 5m:
  + [ ] 6m:
  + [ ] 12m:
  + [ ] 13m:
