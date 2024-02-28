@@ -35,6 +35,10 @@ También tendremos las pruebas de instalación/desinstalación, actualización y
 + [ ] [Medición de cobertura](https://www.guru99.com/es/code-coverage.html) / [en intellij](https://es.helpr.me/8679-how-do-i-see-code-coverage-in-intellij)
 
 
+## TAP - Test Anything Protocol
+https://testanything.org/
+
+
 ### Bash_unit      
 [Repositorio Oficial](https://github.com/pgrange/bash_unit)
 
@@ -42,7 +46,16 @@ También tendremos las pruebas de instalación/desinstalación, actualización y
 [Tema](https://rcasalla.gitbooks.io/libro-desarrollo-de-software/content/libro/temas/t_pruebas/prue_junit.html)
 
 ### DBUnit
-
++ MYSQL / MariaDB:
+  + https://hepabolu.github.io/mytap/tests/
+  + https://datacharmer.blogspot.com/2006/01/mysql-5-general-purpose-routine_27.html
+  + .
+  + Hazlas pruebas tú:
+    1. Para cada consulta, función o procedimiento crea un procedimiento que lo testee.
+    2. Comienza cada procedimiento con un inicio de transacción (**start transaction**) y finaliza con un **rollback**.
+    3. Comprueba que retorna lo que esperas que retorne.
+    4. Captura las excepciones.
+    5. Reporta el resultado en **TAP**.
          
 ## Documentación de las incidencias.
 

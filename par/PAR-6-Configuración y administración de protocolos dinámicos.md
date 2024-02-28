@@ -60,10 +60,10 @@ Valor por defecto: 120
 ```ios
   conf t
     router rip
-    version 2
-    network 10.0.0.0
-    network 172.16.0.0
-    network 192.168.10.0
+      version 2
+      network 10.0.0.0
+      network 172.16.0.0
+      network 192.168.10.0
 ```
 *No se pueden añadir máscaras, las deduce de la ip asignada a la interfaz*
 
@@ -147,7 +147,7 @@ OSPF para IP versión 6
 BGP - Border Gateway Protocol.
 
 iBGP y **eBGP**.
-[]
+
 https://ccnadesdecero.es/bgp-border-gateway-protocol/
 
 https://www.cisco.com/c/es_mx/support/docs/ip/border-gateway-protocol-bgp/26634-bgp-toc.html
