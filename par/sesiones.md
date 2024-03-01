@@ -5,19 +5,17 @@ Día 29 de febrero.
 
 
 # 6 Configuración y administración de protocolos dinámicos. 
-32 22/02/2024 04/04/2024 3ª
+28 22/02/2024 04/04/2024 3ª
 
-+ 27f:
++ 29f: ~~Rec 2ª EVA~~
++ 5m:
   + [ ] [Off-topic] Configuración remota (SSH)
   + [ ] Protocolos enrutables y no enrutables
   + [ ] Del enrutamiento estático al dinámico
   + [ ] Protocolos de enrutamiento interior y exterior
   + [ ] Enrutamiento sin clases y VLSM
   + [ ] RIP
-+ 28f:
   + [ ] Ejercicio RIPv2
-+ 29f: ~~Rec 2ª EVA~~
-+ 5m:
   + [ ] cont Ejercicio RIPv2
   + [ ] Ejercicio RIPng
 + 6m:
@@ -267,7 +265,7 @@ Día 29 de febrero.
  
   
 # 5 Configuración y administración básica de “routers”. 
-28 29/01/2024 22/02/2024 2ª
+32 29/01/2024 22/02/2024 2ª
 + 30e:
   + [x] Repaso IPv4
   + [x] Repaso IPv4 VSLM
@@ -305,3 +303,8 @@ Día 29 de febrero.
 + 22f:
   + [x] **Práctica** y **Examen**
   + [x] Diferencias entre puerto de consola, auxiliar y mgmt-port (management).
++ 27f:
+  + [x] Repaso tema
++ 28f:
+  + [x] Repaso tema
+        
