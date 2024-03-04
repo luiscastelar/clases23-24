@@ -16,7 +16,6 @@ Día 29 de febrero.
   + [ ] Enrutamiento sin clases y VLSM
   + [ ] RIP
   + [ ] Ejercicio RIPv2
-  + [ ] cont Ejercicio RIPv2
   + [ ] Ejercicio RIPng
 + 6m:
   + [ ] OSPF: Áreas, LSDB, LSA y Adyacencias

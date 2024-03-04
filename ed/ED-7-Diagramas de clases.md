@@ -9,7 +9,7 @@ nombre, cardinalidad y tipos.
 ### Tipos de relaciones: 
 asociación, agregación, composición, dependencia, herencia.
 
-### Resúmen:
+### Resumen:
 ![Diagrama introductorio](https://camo.githubusercontent.com/bc44c58440490d367a3065eadabf867059bcb1d91d66b34e0c63150ab1790727/687474703a2f2f6a616d6a323030302e6769746875622e696f2f656e746f726e6f736465736172726f6c6c6f2f352f6173736574732f636c6173732d6469616772616d2d646f6d61696e2d6f766572766965772e706e67)
 
 ## Referencias:

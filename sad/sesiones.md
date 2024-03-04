@@ -1,51 +1,9 @@
 #curso23_24 #SAD
 
 
-# UT6 - Implantación de soluciones de alta disponibilidad. 
-19h - 9,5 sesiones - 22/01/2024 26/02/2024 2ª
-
-+ 19e: Kubernetes
-  + [x] Instalación 
-+ 22e: K2
-  + [x] Introducción.
-+ ~~26e: día de la docencia~~
-+ 29e: K2
-  + [x] Formateo ordenador profesor
-+ 2f: K3
-  - [x] Funcionamiento ininterrumpido.
-  - [x] Integridad de datos y recuperación de servicio.
-  - [x] Servidores redundantes.
-+ 5f: K4
-  - [x] Sistemas de “clusters”.
-+ 9f: K5
-  + [x] Balanceadores de carga.
-  + [x] Desarrollo de práctica
-+ ~~12f: carnavales~~
-+ 17f: K6
-  + [x] Desarrollo de práctica
-+ 20f:
-  + [ ] **PRESENTACIÓN y Defensa UT6**
-+ 24f:
-  + [ ] **PRESENTACIÓN y Defensa UT6**
-
----
-# UT7 - Legislación y normas sobre seguridad 
-2h 27/02/2024 01/03/2024 2ª
-
-+ 26f:
-  - [x] Legislación sobre protección de datos.
-  - [x] Legislación sobre los servicios de la sociedad de la información y correo electrónico.
-  - [x] Normas ISO sobre gestión de seguridad de la información.
-  - [x] Organismos de gestión de incidencias.
----
-
 # Evaluación ORDINARIA
 
 + EXÁMEN eva ORDINARIA: **Lunes 4 marzo**
-
----
-
-==**YA VISTO**==
 
 ---
 
@@ -212,3 +170,41 @@
   + [x] **Defensa UT5** 
 
  **Evaluación de la unidad**: ejecución y defensa de la práctica.
+
+ 
+# UT6 - Implantación de soluciones de alta disponibilidad. 
+19h - 9,5 sesiones - 22/01/2024 26/02/2024 2ª
+
++ 19e: Kubernetes
+  + [x] Instalación 
++ 22e: K2
+  + [x] Introducción.
++ ~~26e: día de la docencia~~
++ 29e: K2
+  + [x] Formateo ordenador profesor
++ 2f: K3
+  - [x] Funcionamiento ininterrumpido.
+  - [x] Integridad de datos y recuperación de servicio.
+  - [x] Servidores redundantes.
++ 5f: K4
+  - [x] Sistemas de “clusters”.
++ 9f: K5
+  + [x] Balanceadores de carga.
+  + [x] Desarrollo de práctica
++ ~~12f: carnavales~~
++ 17f: K6
+  + [x] Desarrollo de práctica
++ 20f:
+  + [x] **PRESENTACIÓN y Defensa UT6**
++ 24f:
+  + [x] **PRESENTACIÓN y Defensa UT6**
+
+---
+# UT7 - Legislación y normas sobre seguridad 
+2h 27/02/2024 01/03/2024 2ª
+
++ 26f:
+  - [x] Legislación sobre protección de datos.
+  - [x] Legislación sobre los servicios de la sociedad de la información y correo electrónico.
+  - [x] Normas ISO sobre gestión de seguridad de la información.
+  - [x] Organismos de gestión de incidencias.

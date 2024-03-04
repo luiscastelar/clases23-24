@@ -11,7 +11,7 @@
 | --- | --- |
 | Test Unitarios | Verificación de funciones de forma aislada |
 | [Test de integración](https://qalified.com/es/blog/pruebas-de-integracion-que-son/) | Prueba de comportamiento de objetos y relación entre éstos |
-| API Test | Pruebas de cada “caso de prueba” del backend |
+| API Test | Pruebas de cada “caso de prueba” del backend ([curl](https://terminalcheatsheet.com/es/guides/curl-rest-api) y [postman](https://www.postman.com/api-platform/api-testing/)) |
 | Test de sistema | Pruebas completas de funcionalidades del sistema completo (front + back) |
 
 También tendremos las pruebas de instalación/desinstalación, actualización y de metodología *Agile*.
@@ -42,8 +42,46 @@ https://testanything.org/
 ### Bash_unit      
 [Repositorio Oficial](https://github.com/pgrange/bash_unit)
 
+
 ### JUnit
 [Tema](https://rcasalla.gitbooks.io/libro-desarrollo-de-software/content/libro/temas/t_pruebas/prue_junit.html)
+
+
+### Python - unittest
+Fuentes:
++ [Documentación unitTest](https://docs.python.org/es/3/library/unittest.html)
++ [Tappy - test en TAP](https://tappy.readthedocs.io/en/latest/index.html)
++ [Realpython](https://realpython.com/python-testing/)
+
+#### Ejemplo:
+```python
+import unittest
+
+class TestSum(unittest.TestCase):
+    def test_sum(self):
+        self.assertEqual(sum([1, 2, 3]), 6, "Should be 6")
+        
+    def test_sum_tuple(self):
+        self.assertEqual(sum((1, 2, 2)), 6, "Should be 6")
+        
+    def test_true(self):
+        self.assertTrue( True, "Fue falso")
+        
+    def test_true_falla(self):
+        self.assertTrue( False, "Fue falso")
+
+if __name__ == '__main__':
+    unittest.main()
+```
+
+```bash
+# Test con unittest
+python3 -m unittest discover . -p "*_test.py"
+
+# Test con tappy (formato TAP)
+pip install tap.py
+python3 -m tap discover . -p "*_test.py"
+```
 
 ### DBUnit
 + MYSQL / MariaDB:
@@ -56,7 +94,8 @@ https://testanything.org/
     3. Comprueba que retorna lo que esperas que retorne.
     4. Captura las excepciones.
     5. Reporta el resultado en **TAP**.
-         
+
+
 ## Documentación de las incidencias.
 
 
