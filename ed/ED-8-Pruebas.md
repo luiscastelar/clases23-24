@@ -22,13 +22,8 @@ También tendremos las pruebas de instalación/desinstalación, actualización y
    + [ ] Cubrimiento: indica el porcentaje de código que se ejecutó dado un conjunto de pruebas y de casos de prueba.
    + [ ] valores límite
    + [ ] [clases de equivalencia](https://sarreplec.caib.es/pluginfile.php/11333/mod_resource/content/8/ED03_Contenidos/a1_determinar_las_clases_de_equivalencia.html)
-   
-### TDD - Test-Driven Development (desarrollo dirigido por tests)
-1. **Fase ROJA**: Primero hacemos los test -> ergo falla ya que no tenemos la funcionalidad.
-2. **Fase VERDE**: Realizamos la implementación que permita que pase el test -> pasa el test?
-3. **Refactorización**: Ahora reescribimos el código de forma limpia -> [**CLEAN CODE**](https://www.ivoox.com/importancia-clean-code-script-time-audios-mp3_rf_123494197_1.html).
 
-       
+   
 ## Pruebas unitarias y herramientas de automatización.
 + [ ] ¿Anotaciones? (en JAVA)
 + [ ] Pruebas parametrizadas
@@ -38,6 +33,20 @@ También tendremos las pruebas de instalación/desinstalación, actualización y
 ## TAP - Test Anything Protocol
 https://testanything.org/
 
+   
+# TDD - Test-Driven Development (desarrollo dirigido por tests)
+1. **Fase ROJA**: Primero hacemos los test -> ergo falla ya que no tenemos la funcionalidad.
+2. **Fase VERDE**: Realizamos la implementación que permita que pase el test -> pasa el test?
+3. **Refactorización**: Ahora reescribimos el código de forma limpia -> [**CLEAN CODE**](https://www.ivoox.com/importancia-clean-code-script-time-audios-mp3_rf_123494197_1.html).
+
+### Ejercicio guía 
+![](pub23/ed/8-ejercicio.png)
+Para simplificar el desarrollo de la calculadora, realizaremos una implementación mediante la [notación RPN](https://es.wikipedia.org/wiki/Notaci%C3%B3n_polaca_inversa), donde `3 5 + 2 *` se lee como: `Cálculo de la multiplicación de 2 y la suma de 5 y 3`.
+
+Como puede observarse, se simplifica el cálculo complejo al no tener que recurrir al uso de paréntesis.
+
+
+## Frameworks
 
 ### Bash_unit      
 [Repositorio Oficial](https://github.com/pgrange/bash_unit)
