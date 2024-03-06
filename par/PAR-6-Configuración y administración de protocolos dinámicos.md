@@ -19,6 +19,7 @@ crypto key generate rsa 2048
 ip ssh version 2
 line vty 0 4
 transport input ssh
+password {{PASS}}
 login
 ```
 
@@ -47,7 +48,7 @@ Fuente: [cont - Óscar Maestre](https://oscarmaestre.github.io/apuntes_redes/t6_
 ## El protocolo RIPv2
 
 ### Configuración y administración de RIPv1.
-¿Porqué empezamos por v2 y no por v1? ... porque RIPv1 es un protocolo con clases y por tanto no permite el uso de CIDR, y por tanto no lo utilizaremos.
+¿Porqué empezamos por v2 y no por v1? ... porque RIPv1 es un protocolo con clases y por tanto no permite el uso de prefijos de red (CIDR), y por tanto no lo utilizaremos.
 
 ### Configuración y administración de RIPv2.
 Vector distancia: conteo de los saltos realizados. 
@@ -69,9 +70,9 @@ Valor por defecto: 120
 
 
 #### Otros comandos:
-*   `passive-interface <interfaz> -> por donde **NO propagar** rutas por seguridad y eficiencia
+*   `passive-interface <interfaz>` -> por donde **NO propagar** rutas por seguridad y eficiencia
 *   `redistribute static` -> ¿debemos propagar rutas estáticas?
-*   `ip router 0.0.0.0 0.0.0.0 <interfaz>`
+*   `ip router 0.0.0.0 0.0.0.0 IP_del_DG` o, en enlaces punto a punto `ip router 0.0.0.0 0.0.0.0 <interfaz>`
 
 
 #### Ver tabla de rutas:

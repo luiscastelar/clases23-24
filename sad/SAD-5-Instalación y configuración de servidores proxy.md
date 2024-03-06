@@ -35,6 +35,10 @@ Conexión a través de proxy socks. Concretamente queremos conectarnos desde una
 Debemos tener en cuenta el funcinamiento de los navegadores ya que Firefox va independiente de la configuración del sistema de proxy, por lo que deberemos configurarlo a parte o utilizar alguna extensión (p.e. FoxyProxy).
 
 
+## SSHuttle - VPN over SSH
+[DOC oficial](https://sshuttle.readthedocs.io/en/stable/index.html)
+
+`sshuttle \-r username@sshserver 0.0.0.0/0`
 
 # ~~Configuración de filtros.~~
 Squid

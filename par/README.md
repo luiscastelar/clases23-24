@@ -19,6 +19,7 @@ Cualquiera de las siguientes referencias son **muy** recomendables y se tomarán
 
 + [Apuntes - Oscar Maestre](https://oscarmaestre.github.io/apuntes_redes/index.html)
 + [Apuntes - José Luis ](https://planificacionadministracionredes.readthedocs.io/es/latest/)
++ [Apuntes PAR - ApuntesInformaticaFP.com](https://www.apuntesinformaticafp.com/modulos/par.html)
 + [WikiBooks](https://es.wikibooks.org/wiki/Planificaci%C3%B3n_y_Administraci%C3%B3n_de_Redes)
 + [Cisco - Skills 4 Alls](https://skillsforall.com/es/catalog?category=course)
 + [NetworkAcadamy.io](https://www.networkacademy.io/ccna)
