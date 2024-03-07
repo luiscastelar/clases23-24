@@ -2,38 +2,7 @@
 
 Esto es un documento vivo donde hacer una planificación diaria y control del trabajo realizado.
 
- 
-# 7 Elaboración de diagramas de clases
- 12h del 08/02/2024 al 28/02/2024. *2a eva*.
 
-+ 6f:
-  + [x] Elementos: nombre, atributos, métodos y visibilidades.
-  + [x] Relaciones: nombre, cardinalidad y tipos
-+ 7f:
-  + [x] Tipos: asociación, agregación, composición, dependencia, herencia.
-+ [x] 13f Carnavales
-+ 14f:
-  + [x] Elementos: nombre, atributos, métodos y visibilidades.
-  + [x] Relaciones: nombre, cardinalidad y tipos
-  + [x] Tipos: asociación, agregación, composición, dependencia, herencia.
-+ 20f:
-  + [x] Ejercicios
-  + [x] Práctica
-+ 21f:
-  + [x] cont
-+ 27f:
-  + [ ] **Examen UT7**
-
-# Cierre 2º de trimestre
- + [ ] 28f: *Varios*
-   + [ ] [FC] Diseño y realización de pruebas
-   + [ ] Repaso 2ª eva
-   + [ ] Defensa de prácticas **extraordinarias** (si las hubiera).
- + [ ] 5m: **RECUPERACIÓN** 2ª evaluación.
-
-Horas de trabajo **en casa** => ==14h== de 22h
-
----
 
 # 8 Diseño y realización de pruebas
  16h del 29/02/2024 al 09/04/2024. *3a eva*.
@@ -229,4 +198,36 @@ Horas de trabajo **en casa** => ==8h== de 22h
   + [x] **Defensa** de la práctica UT6
 + 7f: 
   + [x] **Defensa** de la práctica UT6
+
+
+# 7 Elaboración de diagramas de clases
+ 12h del 08/02/2024 al 28/02/2024. *2a eva*.
+
++ 6f:
+  + [x] Elementos: nombre, atributos, métodos y visibilidades.
+  + [x] Relaciones: nombre, cardinalidad y tipos
++ 7f:
+  + [x] Tipos: asociación, agregación, composición, dependencia, herencia.
++ [x] 13f Carnavales
++ 14f:
+  + [x] Elementos: nombre, atributos, métodos y visibilidades.
+  + [x] Relaciones: nombre, cardinalidad y tipos
+  + [x] Tipos: asociación, agregación, composición, dependencia, herencia.
++ 20f:
+  + [x] Ejercicios
+  + [x] Práctica
++ 21f:
+  + [x] cont
++ 27f:
+  + [x] **Examen UT7**
+
+# Cierre 2º de trimestre
+ + [x] 28f: *Varios*
+   + [x] [FC] Diseño y realización de pruebas
+   + [x] Repaso 2ª eva
+   + [x] Defensa de prácticas **extraordinarias** (si las hubiera).
+ + [x] 5m: **RECUPERACIÓN** 2ª evaluación.
+
+Horas de trabajo **en casa** => ==14h== de 22h
+
  

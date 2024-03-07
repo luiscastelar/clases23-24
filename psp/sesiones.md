@@ -5,16 +5,6 @@
 
 Examen de evaluación ordinaria será : **4 de marzo de 2023**
 
-
----
-# UT7 Proyecto integrador 
-20h - 22/01/2024 01/03/2024 - *2ª eva*
-
-Defensa por sorteo: 19f, 23f, 26f y 1m. 
-
-**Entregas 23f**
-
----
 ---
 
 **1ª EVALUACIÓN**
@@ -151,3 +141,11 @@ Examen de recuperación de la primera evaluación: **15 de diciembre de 2023**
    + [x] Firma
 
 **Evaluación**: sobre proyecto integrador.
+
+
+# UT7 Proyecto integrador 
+20h - 22/01/2024 01/03/2024 - *2ª eva*
+
+Defensa por sorteo: 19f, 23f, 26f y 1m. 
+
+**Entregas 23f**

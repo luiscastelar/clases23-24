@@ -105,7 +105,35 @@ R*   0.0.0.0/0 [120/1] via 10.0.0.2, 00:00:21, Serial0/3/0
 ```
 
 #### RIPng
-RIP para IPv6
+```ios
+conf t
+  ! Habilitamos ipv6
+  ipv6 unicast-routing
+  !
+  ! Habilitamos RIP y le asignamos el nombre del proceso NG.
+  ipv6 router rip NG
+  !
+  ! En cada interfaz que queramos añadir a RIP
+  interface Loopback10
+  no ip address
+  ipv6 address 1111::1/128
+  ipv6 rip NG enable 
+  !
+  interface GigabitEthernet0/0/0
+  no ip address
+  ipv6 address 2001:DB8::1/64
+  ipv6 rip NG enable 
+  !
+  ! ¿Qué significan los prefijos /128 y /64?
+  !
+  end
+!
+! Para verificar
+show ipv6 route
+show ipv6 route riprip
+```
+
+Fuente: [RIP para IPv6](https://networklessons.com/ipv6/how-to-configure-ripng-on-cisco-ios-router)
 
 
 ## OSPF - Open Shortest Path First.

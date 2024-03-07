@@ -9,28 +9,27 @@ Día 29 de febrero.
 
 + 29f: ~~Rec 2ª EVA~~
 + 5m:
-  + [ ] [Off-topic] Configuración remota (SSH)
-  + [ ] Protocolos enrutables y no enrutables
-  + [ ] Del enrutamiento estático al dinámico
-  + [ ] Protocolos de enrutamiento interior y exterior
-  + [ ] Enrutamiento sin clases y VLSM
-  + [ ] RIP
-  + [ ] Ejercicio RIPv2
-  + [ ] Ejercicio RIPng
+  + [x] [Off-topic] Configuración remota (SSH)
+  + [x] Protocolos enrutables y no enrutables
+  + [x] Del enrutamiento estático al dinámico
+  + [x] Protocolos de enrutamiento interior y exterior
+  + [x] Enrutamiento sin clases y VLSM
 + 6m:
+  + [x] RIP
+  + [x] Ejercicio RIPv2
++ 7m:
+  + [ ] Ejercicio RIPng
   + [ ] OSPF: Áreas, LSDB, LSA y Adyacencias
   + [ ] DR (router designado), BDR (backup DR) y DRO[thers].
   + [ ] ASBR (router frontera) y ABR (router que interconecta 2 o más áreas)
   + [ ] Ejercicio OSPF de área única.
-+ 7m:
++ 12m:
   + [ ] cont ejercicio OSPF de área única.
   + [ ] Ejercicio IPv6.
-  + [ ] Ejercicio multiárea.
-+ 12m:
+  
++ 13m:
   + [ ] Ejercicio multiárea.
   + [ ] Protocol exterior -> BGP
-+ 13m:
-  + [ ] .
 + 14m:
   + [ ] .
 + 19m:
