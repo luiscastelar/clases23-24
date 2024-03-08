@@ -117,12 +117,14 @@ conf t
   interface Loopback10
   no ip address
   ipv6 address 1111::1/128
-  ipv6 rip NG enable 
+  ipv6 rip NG enable
+  no shutdown
   !
   interface GigabitEthernet0/0/0
   no ip address
   ipv6 address 2001:DB8::1/64
-  ipv6 rip NG enable 
+  ipv6 rip NG enable
+  no shutdown
   !
   ! ¿Qué significan los prefijos /128 y /64?
   !
@@ -130,7 +132,7 @@ conf t
 !
 ! Para verificar
 show ipv6 route
-show ipv6 route riprip
+show ipv6 route rip
 ```
 
 Fuente: [RIP para IPv6](https://networklessons.com/ipv6/how-to-configure-ripng-on-cisco-ios-router)

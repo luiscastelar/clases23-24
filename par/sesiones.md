@@ -18,20 +18,18 @@ Día 29 de febrero.
   + [x] RIP
   + [x] Ejercicio RIPv2
 + 7m:
-  + [ ] Ejercicio RIPng
+  + [x] Ejercicio RIPng
++ 12m:
   + [ ] OSPF: Áreas, LSDB, LSA y Adyacencias
   + [ ] DR (router designado), BDR (backup DR) y DRO[thers].
   + [ ] ASBR (router frontera) y ABR (router que interconecta 2 o más áreas)
   + [ ] Ejercicio OSPF de área única.
-+ 12m:
++ 13m:
   + [ ] cont ejercicio OSPF de área única.
   + [ ] Ejercicio IPv6.
-  
-+ 13m:
++ 14m:
   + [ ] Ejercicio multiárea.
   + [ ] Protocol exterior -> BGP
-+ 14m:
-  + [ ] .
 + 19m:
   + [ ] .
 + 20m:
