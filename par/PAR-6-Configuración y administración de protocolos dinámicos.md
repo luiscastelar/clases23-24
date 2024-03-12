@@ -184,3 +184,9 @@ https://ccnadesdecero.es/bgp-border-gateway-protocol/
 https://www.cisco.com/c/es_mx/support/docs/ip/border-gateway-protocol-bgp/26634-bgp-toc.html
 
 https://eclassvirtual.com/que-es-un-protocolo-de-enrutamiento-y-como-funciona/
+
+
+## BGP y OSPF
+Uniéndolo todo:
+1. [Vídeo 1](https://www.youtube.com/watch?v=7d7IMTEAFLI)
+2. [Vídeo 2](https://www.youtube.com/watch?v=n-AaEOUNPMA)
