@@ -7,10 +7,18 @@ Esto es un documento vivo donde hacer una planificación diaria y control del tr
 # 8 Diseño y realización de pruebas
  16h del 29/02/2024 al 09/04/2024. *3a eva*.
 
- + [ ] 6m:
- + [ ] 12m:
- + [ ] 13m:
- + [ ] 19m:
++ 6m:
+   + [x] Bash_unit
++ 12m:
+   + [x] Planificación de test
+   + [x] Tipos de test
+   + [x] Alcance de test
+   + [x] Inicio de TDD
++ 13m:
+   + [ ] Batería de test `assert_equals`
+   + [ ] Batería `assert_exit_code`
++ 19m:
+   + [ ] JUnit
  + [ ] 20m:
  + [ ] Semana Santa
  + [ ] 2a:

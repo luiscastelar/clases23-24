@@ -174,6 +174,8 @@ https://ccnadesdecero.com/curso/como-configurar-ospf/
 #### OSPFv3 Adress Families
 OSPF para IP versión 6
 
+[Tutorial](https://www.youtube.com/watch?v=AMTMtCVISJY)
+
 # Enrutamiento externo -> BGP
 BGP - Border Gateway Protocol.
 
@@ -188,5 +190,9 @@ https://eclassvirtual.com/que-es-un-protocolo-de-enrutamiento-y-como-funciona/
 
 ## BGP y OSPF
 Uniéndolo todo:
-1. [Vídeo 1](https://www.youtube.com/watch?v=7d7IMTEAFLI)
-2. [Vídeo 2](https://www.youtube.com/watch?v=n-AaEOUNPMA)
+1. En los procesos OSPF debemos activar la redistribución BGP `redistribute bgp 20 subnets` (donde 20 es el número del AS)
+2. En los procesos BGP debemos activar la redistribución OSPF `redistribute ospf 1 match internal` (donde 1 es el número del proceso OSPF)
+
+En ocasiones desde BGP querremos redistribuir las redes conectadas, para eso: `redistribute connected`.
+
+Existen formas más complejas de realizarlo, consiguiendo que los routers externos (los conectados por BGP) no obtengan tengan información de las rutas internas. Ver los vídeos [1](https://www.youtube.com/watch?v=7d7IMTEAFLI) y [2](https://www.youtube.com/watch?v=n-AaEOUNPMA).
