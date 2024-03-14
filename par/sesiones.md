@@ -25,8 +25,8 @@ Día 29 de febrero.
   + [x] ASBR (router frontera) y ABR (router que interconecta 2 o más áreas)
   + [x] Ejercicio OSPF de área única.
 + 13m:
-  + [ ] cont ejercicio OSPF de área única (añadir un router más).
-  + [ ] Ejercicio IPv6.
+  + [x] cont ejercicio OSPF de área única (añadir un router más).
+  + [x] Ejercicio IPv6.
 + 14m:
   + [ ] Ejercicio multiárea.
   + [ ] Protocol exterior -> BGP
