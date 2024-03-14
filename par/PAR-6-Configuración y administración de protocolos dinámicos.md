@@ -171,10 +171,36 @@ https://ccnadesdecero.com/curso/como-configurar-ospf/
 > + Matching network type
 
 
-#### OSPFv3 Adress Families
+### OSPFv3 Adress Families
 OSPF para IP versión 6
 
 [Tutorial](https://www.youtube.com/watch?v=AMTMtCVISJY)
+
+### OSPF multiárea
+El funcionamiento es igual, pero sectorizaremos por áreas los grupos de routers.
+
+**Tipos de áreas:**
+
+    There are four stub area types:
+    *   Stub Area – Filters Type-5 LSAs.
+    *   Totally Stubby Area – Filters Type-3 and Type-5 LSAs. These LSAs are summarized into a single Type-3 LSA which is the default route.
+    *   Not-So-Stubby Area (NSSA) – Filter Type-5 LSAs. Allows local redistribution in the area. The router doing redistribution in the NSSA area generates LSA Type-7 for the redistributed prefixes. The ABR translates the Type-7 LSA into Type-5 LSA when advertised to the backbone Area.  In NSSA, the ABR does not automatically originate a default route.
+    *   Totally-Not-So-Stubby-Area – Like Totally Stubby Area, filters Type-3, Type-4, and Type-5 LSAs and also allows local redistribution. It is, in essence, a combination of the Totally Stubby Area and NSSA.  It also generates Type-7 LSAs for the redistributed prefixes, the ABR translate this Type-7 into Type-5 LSAs when entering the backbone area. In Totally-Not-So-Stubby-Area, the ABR automatically originates the default route.
+Fuente: [R&S Journey](https://lpmazariegos.com/2016/02/10/ospf-stub-areas/)
+
+**Tipos de LSAs**
+![](https://1.bp.blogspot.com/-iaLVmWJWf6Y/XWFl2665MpI/AAAAAAAAok0/O251beTEmdEYY3vFxpjVSacTlTmlol5kgCLcBGAs/s1600/Captura581.png)Fuente: [libros networking](https://librosnetworking.blogspot.com/2019/08/tipos-de-lsa-en-ospfv2.html)
+
+**Aislamiento parcial**:
+Nos centraremos en la configuración *Totally Stubby Area* en la disponemos de una topología de zonas en árbol, que deseamos que todas las zonas tengan salida a internet, pero no sean accesibles entre ellas. Para ello sólo deberemos añadir `area 10 stub no-summary` a cada router, esto es, el de dentro de la zona y el de borde **ABR**
+
+
+**Requisitos**:
+Por último, todas las áreas deben estar en contacto con el área 0, esto es, tener un **ABR** en contacto con el área 0. Ésto en ocasiones no es posible de forma directa, pero podremos crear enlaces virtuales entre ABR’s:
+
+![](https://imgs.search.brave.com/L9o8E9hrGF-rCiVN6P8xhKhfjJlKeUll3VGQAEZCJZQ/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/Y2lzY28uY29tL2Mv/ZGFtL2VuL3VzL3N1/cHBvcnQvZG9jcy9p/cC9vcGVuLXNob3J0/ZXN0LXBhdGgtZmly/c3Qtb3NwZi8xMzcw/My04LTAyLmdpZg.jpeg)
+
+
 
 # Enrutamiento externo -> BGP
 BGP - Border Gateway Protocol.
