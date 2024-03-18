@@ -180,6 +180,16 @@ OSPF para IP versión 6
 El funcionamiento es igual, pero sectorizaremos por áreas los grupos de routers.
 
 **Tipos de áreas:**
+| Área  | 	Restricción |
+| --- | --- |
+| Normal |	Ninguno |
+| Fragmentada | 	No se permiten LSA externos AS de tipo 4 o 5. |
+|Totalmente Stub | 	No se permiten LSA de tipo 3, 4 o 5, excepto la ruta de resumen predeterminada. |
+|NSSA | 	No se permite ningún LSA externo AS de tipo 5, pero los LSA de tipo 7 que se convierten al tipo 5 en el ABR NSSA pueden atravesar. |
+| NSSA totalmente stub | 	No hay ningún LSA de tipo 3, 4 o 5 excepto la ruta de resumen predeterminada, pero se permiten los LSA de tipo 7 que se convierten al tipo 5 en la ABR NSSA. |
+
+Consulte la sección Tipos de Áreas OSPF de Cómo OSPF Genera Rutas Predeterminadas para obtener más información sobre los diferentes tipos de áreas.
+Fuente: [Cisco](https://www.cisco.com/c/es_mx/support/docs/ip/open-shortest-path-first-ospf/13703-8.html)
 
     There are four stub area types:
     *   Stub Area – Filters Type-5 LSAs.
@@ -192,14 +202,17 @@ Fuente: [R&S Journey](https://lpmazariegos.com/2016/02/10/ospf-stub-areas/)
 ![](https://1.bp.blogspot.com/-iaLVmWJWf6Y/XWFl2665MpI/AAAAAAAAok0/O251beTEmdEYY3vFxpjVSacTlTmlol5kgCLcBGAs/s1600/Captura581.png)Fuente: [libros networking](https://librosnetworking.blogspot.com/2019/08/tipos-de-lsa-en-ospfv2.html)
 
 **Aislamiento parcial**:
-Nos centraremos en la configuración *Totally Stubby Area* en la disponemos de una topología de zonas en árbol, que deseamos que todas las zonas tengan salida a internet, pero no sean accesibles entre ellas. Para ello sólo deberemos añadir `area 10 stub no-summary` a cada router, esto es, el de dentro de la zona y el de borde **ABR**
+Nos centraremos en la configuración *Totally Stubby Area* en la disponemos de una topología de zonas en árbol, que deseamos que todas las zonas tengan salida a internet, pero no recibir resumen de rutas entre áreas. Para ello sólo deberemos añadir `area 10 stub no-summary` a cada router, esto es, el de dentro de la zona y el de borde **ABR**
 
 
-**Requisitos**:
-Por último, todas las áreas deben estar en contacto con el área 0, esto es, tener un **ABR** en contacto con el área 0. Ésto en ocasiones no es posible de forma directa, pero podremos crear enlaces virtuales entre ABR’s:
+### links virtuales
+Todas las áreas en un sistema autónomo OSPF deben estar físicamente conectadas al área troncal (área 0). En algunos casos donde esta conexión física no es posible, puede usar un link virtual para conectar la estructura básica a través de un área sin estructura básica. Tal como se mencionó anteriormente, también puede utilizar enlaces virtuales para conectar dos partes de una estructura básica particionadas a través de un área de estructura no básica. El área, conocida como área de tránsito, a través de la cual se configura el link virtual debe contar con la información completa de ruteo. La zona de tránsito no puede ser una zona fragmentada.
 
+Use el comando `area area-id virtual-link router-id` para configurar un link virtual, donde *area-id* es el ID de área asignado al área de tránsito (puede ser una dirección IP válida o un valor decimal), y donde router-id es el ID de router asociado con el vecino de link virtual. En este ejemplo, el link virtual conecta el área 7 a la estructura básica por el área 5.
+
+En este ejemplo, se crea un link virtual entre los routers con ID de router 10.1.1.1 y con ID de router 10.2.2.2. Para crear el link virtual, configure el `area 5 virtual-link 2.2.2.2` subcomando en el router 10.1.1.1 y el `area 5 virtual-link 1.1.1.1` en el router 10.2.2.2. Consulte [Configuración de la autenticación OSPF en un enlace virtual](https://www.cisco.com/c/es_mx/support/docs/ip/open-shortest-path-first-ospf/8313-27.html) para obtener más información.
 ![](https://imgs.search.brave.com/L9o8E9hrGF-rCiVN6P8xhKhfjJlKeUll3VGQAEZCJZQ/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/Y2lzY28uY29tL2Mv/ZGFtL2VuL3VzL3N1/cHBvcnQvZG9jcy9p/cC9vcGVuLXNob3J0/ZXN0LXBhdGgtZmly/c3Qtb3NwZi8xMzcw/My04LTAyLmdpZg.jpeg)
-
+Fuente: [Cisco](https://www.cisco.com/c/es_mx/support/docs/ip/open-shortest-path-first-ospf/13703-8.html)
 
 
 # Enrutamiento externo -> BGP
