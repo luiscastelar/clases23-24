@@ -1,0 +1,111 @@
+# In this example, we want to test a script which depends on
+# the external world (here, the current time). To do so,
+# we decide to adapt the script by extracting the time
+# querying in a dedicated function named current_hour.
+# That way, we can fake the current hour in the test.
+# Unfortunately, we also need to adapt the script under
+# test so that, when the current_time function is already
+# defined, the script does not override this definition.
+# Otherwise, the fake created in the test would never be
+# used.
+# See ../hello_timed
+
+
+# -------------------
+# funciones especiales
+#function setup(){ echo "Nuevo test"; }
+#function teardown(){ echo "----------------------------"; }
+#function setup_suite(){ echo "Preparación de la suite de test"; echo ""; }
+#function teardown_suite(){ echo "Todo ha acabado"; }
+
+
+# -------------------
+# funciones auxiliares
+function code(){ return $1; }
+
+
+# -------------------
+# fail => Siempre falla
+#   Se utiliza para probar que fallamos
+#   Al no ser condicional, debemos desactivarlo para ver todo verde
+#test_fail(){ fail 'Test tipo "fail" '; }
+
+
+# -------------------
+# assert $_MSG => falla si retorna != de 0 (requiere shellcheck)
+test_00_existeCalculadora(){
+  assert "test -f calculadora" "No has recibido un 0"
+}
+
+
+# -------------------
+# assert_status_code $_CODE $_MSG => falla si no recibe un CODE
+#test_assert_status_code(){
+#  N=2
+#  assert_status_code $N "code 3" "No has recibido un código $N,"
+#}
+
+
+# -------------------
+# assert_equals $_ESPERADO $_RECIBIDO $_MSG => falla sin no recibe lo esperado
+test_01_suma(){
+  assert_equals 5 $(./calculadora 3 2 s )
+  assert_equals -1 $(./calculadora -3 2 s )
+  assert_equals 1 $(./calculadora 3 -2 s )
+  assert_equals 3 $(./calculadora 3 0 s )
+  assert_equals -5 $(./calculadora -3 -2 s )
+}
+
+test_01_debordamiento_suma(){
+  assert_status_code 127 $(./calculadora 9223372036854775807 2 s ) "Desbordamiento"
+}
+
+test_02_resta(){
+  assert_equals 1 $(./calculadora 3 2 r )
+  assert_equals -5 $(./calculadora -3 2 r )
+  assert_equals 5 $(./calculadora 3 -2 r )
+  assert_equals -1 $(./calculadora -3 -2 r )
+  assert_equals -2 $(./calculadora 0 2 r )
+}
+
+test_02_desbordamiento_resta(){
+  assert_status_code 127 $(./calculadora -9223372036854775807 2 r ) "Desbordamiento"
+}
+
+test_03_mult(){
+  assert_equals 6 $(./calculadora 3 2 p )
+  assert_equals -6 $(./calculadora 3 -2 p )
+  assert_equals -6 $(./calculadora -3 2 p )
+  assert_equals 6 $(./calculadora -3 -2 p )
+  assert_equals 0 $(./calculadora 3 0 p )
+}
+
+test_03_debordamiento_multiplicacion(){
+  assert_status_code 127 $(./calculadora 9223372036854775807 2 p ) "Desbordamiento"
+}
+
+test_04_div(){
+  assert_equals 1.5000 $(./calculadora 3 2 d )
+  assert_equals .6666 $(./calculadora 2 3 d )
+  assert_equals 0 $(./calculadora 0 3 d )
+}
+test_04_div_by_0(){
+  assert_status_code 2 $(./calculadora 2 0 d 2> /dev/null)
+}
+
+test_05_abs(){
+  assert_equals 3 $(./calculadora -3 mod )
+  assert_equals 3 $(./calculadora 3 mod )
+}
+test_05_abs_input_error(){
+  assert_status_code 127 $(./calculadora a mod )
+}
+
+test_06_fact(){
+  assert_equals 24 $(./calculadora 4 F )
+  assert_equals 6 $(./calculadora 3 F )
+  assert_equals 1 $(./calculadora 1 F )
+  assert_equals 1 $(./calculadora 0 F )
+  assert_status_code 2 $(./calculadora -1 F )
+  assert_status_code 127 $(./calculadora 25 F )
+}
