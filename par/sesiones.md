@@ -28,18 +28,18 @@ Día 29 de febrero.
   + [x] cont ejercicio OSPF de área única (añadir un router más).
   + [x] Ejercicio IPv6.
 + 14m:
-  + [ ] Ejercicio multiárea.
-  + [ ] Protocol exterior -> BGP
+  + [x] Ejercicio multiárea.
 + 19m:
-  + [ ] .
+  + [x] Festivo local
 + 20m:
-  + [ ] .
+  + [x] Resolución ejercicio multiárea: sumarización de rutas externas en DG
+  + [x] Enlaces virtuales
 + 21m:
-  + [ ] .
+  + [ ] Protocolo exterior -> BGP.
 + 2a:
-  + [ ] .
+  + [ ] `Redistribute` rutas
 + 3a:
-  + [ ] .
+  + [ ] `Redistribute` rutas
 + 4a: 
   + [ ] **Examen**
 

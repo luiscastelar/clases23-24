@@ -15,15 +15,22 @@ Esto es un documento vivo donde hacer una planificación diaria y control del tr
    + [x] Alcance de test
    + [x] Inicio de TDD
 + 13m:
-   + [ ] Batería de test `assert_equals`
-   + [ ] Batería `assert_exit_code`
+   + [x] Batería de test `assert_equals`
+   + [x] Batería `assert_exit_code`
 + 19m:
-   + [ ] JUnit
- + [ ] 20m:
- + [ ] Semana Santa
- + [ ] 2a:
- + [ ] 3a:
- + [ ] 9a: **Examen UT8**
+  + [x] festivo local
++ 20m:
+   + [x] Importancia de la fase roja
+   + [x] Uso de arrays en *BASH*
+   + [x] Introducción a JUnit
+ + [x] Semana Santa
+ + 2a:
+   + [ ] JUnit: Asserts
+   + [ ] JUnit: @Before, @After, ... 
+ + 3a:
+  + [ ] Ejercicio calculadora
+ + 9a:
+  + [ ] **Examen UT8**
  
 # 9 Desarrollo con contenedores
  14h del 10/04/2024 al 07/05/2024. *3a eva*.

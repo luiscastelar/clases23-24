@@ -218,13 +218,34 @@ Fuente: [Cisco](https://www.cisco.com/c/es_mx/support/docs/ip/open-shortest-path
 # Enrutamiento externo -> BGP
 BGP - Border Gateway Protocol.
 
-iBGP y **eBGP**.
+## iBGP y **eBGP**.
++ Mismo sistema autónomo => iBGP
++ Distinto sistema autónomo => eBGP
 
-https://ccnadesdecero.es/bgp-border-gateway-protocol/
+**Ejemplo eBGP**:
+```ios
+! En Router del AS 10
+conf t
+  router bgp 10
+  neighbor 10.0.0.2 remote-as 20
+  ! + redes a anunciar
+  network 10.0.0.4 mask 255.255.255.252
+  network 192.168.10.0
 
-https://www.cisco.com/c/es_mx/support/docs/ip/border-gateway-protocol-bgp/26634-bgp-toc.html
+! En Router del AS 20
+conf t
+  router bgp 20
+  neighbor 10.0.0.1 remote-as 10
+  ! + redes a anunciar
+  network 10.0.0.4 mask 255.255.255.252
+  network 192.168.10.0
+```
 
-https://eclassvirtual.com/que-es-un-protocolo-de-enrutamiento-y-como-funciona/
+
+**Fuentes:**
++ https://ccnadesdecero.es/bgp-border-gateway-protocol/
++ https://www.cisco.com/c/es_mx/support/docs/ip/border-gateway-protocol-bgp/26634-bgp-toc.html
++ https://eclassvirtual.com/que-es-un-protocolo-de-enrutamiento-y-como-funciona/
 
 
 ## BGP y OSPF
