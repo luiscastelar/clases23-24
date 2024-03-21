@@ -224,21 +224,25 @@ BGP - Border Gateway Protocol.
 
 **Ejemplo eBGP**:
 ```ios
-! En Router del AS 10
+! En Router0, el del AS 10
 conf t
   router bgp 10
   neighbor 10.0.0.2 remote-as 20
   ! + redes a anunciar
-  network 10.0.0.4 mask 255.255.255.252
+  network 10.0.0.0 mask 255.255.255.252
   network 192.168.10.0
-
-! En Router del AS 20
+!
+! En Router 1, el del AS 20
 conf t
   router bgp 20
   neighbor 10.0.0.1 remote-as 10
   ! + redes a anunciar
-  network 10.0.0.4 mask 255.255.255.252
-  network 192.168.10.0
+  network 10.0.0.0 mask 255.255.255.252
+  network 192.168.20.0
+  end
+!
+! Comprobamos (apareceran las rutas precedidas de una **B**)
+sh ip route
 ```
 
 
