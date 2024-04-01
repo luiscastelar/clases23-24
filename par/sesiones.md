@@ -35,8 +35,9 @@ Día 29 de febrero.
   + [x] Resolución ejercicio multiárea: sumarización de rutas externas en DG
   + [x] Enlaces virtuales
 + 21m:
-  + [ ] Protocolo exterior -> BGP.
+  + [x] Protocolo exterior -> BGP.
 + 2a:
+  + [ ] `Packet Tracer Activities`
   + [ ] `Redistribute` rutas
 + 3a:
   + [ ] `Redistribute` rutas

@@ -90,3 +90,46 @@ void restaCSV(int diferencia, int minuendo, int sustraendo) {
 
 También desde csv externo
 
+
+## Paso a paso:
+1. pom.xml:
+```xml
+...
+</proporties
+<dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>RELEASE</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+...
+```
+
+2. Calculadora.java
+```java
+public class Calculadora {
+    private static final String VERSION = "0";
+    public static String version(){ return VERSION; }
+}
+```
+***Nota:** En Java, para poder aplicar la técnica TDD, deberemos partir desde un mínimo de implementación ya que de otra forma directamente no compilará y no podremos lanzar la batería de test.*
+
+3. TDD.java
+```java
+public class TDD {
+    @Test
+    @DisplayName("¿Existe  com.iescastelar.Calculadora?")
+    void existencia(){
+        assertEquals(Boolean.TRUE, Calculadora.version() instanceof String, "No implemantada");
+        assertNotEquals("No implemantada", Boolean.FALSE, Double.valueOf( Calculadora.version() ) > 0);
+    }
+}
+```
+***Nota:** La personalización de los mensajes son opcionales... pero deberemos mirar los métodos disponibles y sus correspondientes argumentos (y orden).*
