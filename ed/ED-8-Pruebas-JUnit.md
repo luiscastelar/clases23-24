@@ -34,17 +34,8 @@ Crear las pruebas para una ~Calculadora~ básica que implemente los métodos est
 | @AfterClass | call the method after all tests have finished. |
 | @Ignore | marks to ignore the test and that test will not be executed. |
 
-
-## Test sencillos
-```java
-@Test
-@DisplayName("Probando suma")
-public void testPrintMessage() {  
-   assertEquals(1, 1+1);     
-}
-```
-
-Métodos **Assert** más utilizados:
+## Assert’s (afirmaciones)
+Métodos **Assert** más usuales:
 | Método | Descripción |
 | --- | --- |
 | void assertArrayEquals(expectedArray, resultArray); | Compara si 2 arrays son iguales |
@@ -56,43 +47,12 @@ Métodos **Assert** más utilizados:
 | void assertSame(Object ref1, Object ref2) | Verifica si son 2 referencias al mismo objeto |
 | void assertTrue(boolean condition)| Verifica si es verdadero |
 | void fail() | Siempre falla |
+| [void assertAll(Executables... executables)](https://junit.org/junit5/docs/5.0.1/api/org/junit/jupiter/api/Assertions.html#assertAll-org.junit.jupiter.api.function.Executable...-) | Verifica todos los lambda |
+| Exception assertThrows(Exception.class, Executable exe) | Verifica y captura si arroja excepción del tipo |
 
 
-## Test múltiples 
-```java
-@org.junit.jupiter.api.Test
-@DisplayName("Probando resta")
-void resta() {
-    assertAll(
-            () -> assertEquals(0, Calculadora.resta(2, 2)),
-            () -> assertEquals(4, Calculadora.resta(2, -2)),
-            () -> assertEquals(0, Calculadora.resta(-2, -2)),
-            () -> assertEquals(1, Calculadora.resta(1, 0))
-    );
-}
-```
-
-## Test parametrizados
-```java
-@ParameterizedTest
-@DisplayName("Probando resta")
-@CsvSource({
-        "1, 3, 2",
-        "-5, -3, 2",
-        "5, 3, -2",
-        "-1, -3, -2",
-        "-2, 0, 2"
-})
-void restaCSV(int diferencia, int minuendo, int sustraendo) {
-    assertEquals( diferencia, Calculadora.resta( minuendo, sustraendo ));
-}
-```
-
-También desde csv externo
-
-
-## Paso a paso:
-1. pom.xml:
+## Añandiendo el framework JUnit
+En el **pom.xml**:
 ```xml
 ...
 </proporties
@@ -112,7 +72,8 @@ También desde csv externo
 ...
 ```
 
-2. Calculadora.java
+## La clase a testear:
+**Calculadora.java**:
 ```java
 public class Calculadora {
     private static final String VERSION = "0";
@@ -121,11 +82,12 @@ public class Calculadora {
 ```
 ***Nota:** En Java, para poder aplicar la técnica TDD, deberemos partir desde un mínimo de implementación ya que de otra forma directamente no compilará y no podremos lanzar la batería de test.*
 
-3. TDD.java
+## Test sencillos:
+**TDD.java**:
 ```java
 public class TDD {
     @Test
-    @DisplayName("¿Existe  com.iescastelar.Calculadora?")
+    @DisplayName("¿Existe com.iescastelar.Calculadora?")
     void existencia(){
         assertEquals(Boolean.TRUE, Calculadora.version() instanceof String, "No implemantada");
         assertNotEquals("No implemantada", Boolean.FALSE, Double.valueOf( Calculadora.version() ) > 0);
@@ -133,3 +95,64 @@ public class TDD {
 }
 ```
 ***Nota:** La personalización de los mensajes son opcionales... pero deberemos mirar los métodos disponibles y sus correspondientes argumentos (y orden).*
+
+## Multi-test:
+**assertAll**:
+```java
+    @Test
+    @DisplayName("Evalua todos e informa de fallos")
+    void evaluaTodos(){
+        assertAll(
+                () -> assertEquals(1, Calculadora.retornaCodigo(0)),
+                () -> assertEquals(2, Calculadora.retornaCodigo(0)),
+                () -> assertEquals(3, Calculadora.retornaCodigo(0)),
+                () -> assertEquals(4, Calculadora.retornaCodigo(0))
+        );
+    }
+```
+
+1. *assertAll* nos verifica todos los ejecutables que le pasemos.
+2. Los ejecutables serán pasados a través de la implementación a través de una **función lambda** de la **interfaz *funcional* Executable**.
+
+
+## Test parametrizados
+```java
+    @ParameterizedTest
+    @DisplayName("Probando resta")
+    @CsvSource({
+            "1, 3, 2",
+            "-5, -3, 2",
+            "5, 3, -2",
+            "-1, -3, -2",
+            "-2, 0, 2"
+    })
+    void restaCSV(int diferencia, int minuendo, int sustraendo) {
+        assertEquals( diferencia, Calculadora.resta( minuendo, sustraendo ));
+    }
+```
+
+También desde csv externo:
+```java
+    @ParameterizedTest(name = "test[{index}] => {1} - {2} = {0}")
+    @CsvFileSource(resources = "./resta.csv", numLinesToSkip = 1)
+    void restaDesdeCSV(int diferencia, int minuendo, int sustraendo){
+        assertEquals( diferencia, Calculadora.resta( minuendo, sustraendo ));
+    }
+```
+Donde “resta.csv” deberá ubicarse en el directorio `src/test/resources`.
+
+## Y probando excepciones:
+```java
+    @Test
+    @DisplayName("Excepción: división por cero")
+    public void divisionPorCero() {
+        Exception exception = assertThrows(ArithmeticException.class, () -> { int value = 5/0; } );
+    }
+
+    @Test
+    @DisplayName("Excepción: fuera de rango")
+    public void excepcionFueraDeRango(){
+        int[] vector = {1, 2};
+        Exception e = assertThrows(ArrayIndexOutOfBoundsException.class, () -> { int r = vector[2]; });
+    }
+```
