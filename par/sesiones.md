@@ -1,73 +1,37 @@
 #curso23_24 #PAR [estado:: Working] 
 
-# Recuperación 2ª EVALUACIÓN
-Día 29 de febrero.
-
-
-# 6 Configuración y administración de protocolos dinámicos. 
-28 22/02/2024 04/04/2024 3ª
-
-+ 29f: ~~Rec 2ª EVA~~
-+ 5m:
-  + [x] [Off-topic] Configuración remota (SSH)
-  + [x] Protocolos enrutables y no enrutables
-  + [x] Del enrutamiento estático al dinámico
-  + [x] Protocolos de enrutamiento interior y exterior
-  + [x] Enrutamiento sin clases y VLSM
-+ 6m:
-  + [x] RIP
-  + [x] Ejercicio RIPv2
-+ 7m:
-  + [x] Ejercicio RIPng
-+ 12m:
-  + [x] OSPF: Áreas, LSDB, LSA y Adyacencias
-  + [x] DR (router designado), BDR (backup DR) y DRO[thers].
-  + [x] ASBR (router frontera) y ABR (router que interconecta 2 o más áreas)
-  + [x] Ejercicio OSPF de área única.
-+ 13m:
-  + [x] cont ejercicio OSPF de área única (añadir un router más).
-  + [x] Ejercicio IPv6.
-+ 14m:
-  + [x] Ejercicio multiárea.
-+ 19m:
-  + [x] Festivo local
-+ 20m:
-  + [x] Resolución ejercicio multiárea: sumarización de rutas externas en DG
-  + [x] Enlaces virtuales
-+ 21m:
-  + [x] Protocolo exterior -> BGP.
-+ 2a:
-  + [ ] `Packet Tracer Activities`
-  + [ ] `Redistribute` rutas
-+ 3a:
-  + [ ] `Redistribute` rutas
-+ 4a: 
-  + [ ] **Examen**
 
 # 7 Configuración del acceso a Internet desde una LAN. 
-26 04/04/2024 02/05/2024 3ª
+25 04/04/2024 02/05/2024 3ª
 + 9a:
-  + [ ] .
-+ 10a:
-  + [ ] .
+  + [ ] Resolver examen (UT6)
+  + [ ] Mapa de unidad
++ [x] 10a: Día del centro
 + 11a:
-  + [ ] .
+  + [ ] Teoría NAT
+  + [ ] Implementación NAT
 + 16a:
-  + [ ] .
+  + [ ] ACL Extendidas
+
+  + [ ] Firewall básicos con ACL Extendidas
 + 17a:
-  + [ ] .
+  + [ ] ACL Reflexivas
+  + [ ] Implementación de ACL Reflexivas
 + 18a:
-  + [ ] .
+  + [ ] Túneles 6to4
 + 23a:
-  + [ ] .
+  + [ ] Túneles 6to4
 + 24a:
-  + [ ] .
+  + [ ] NAT64 y NAT46
 + 25a:
-  + [ ] .
+  + [ ] NAT64 y NAT46
+  + [ ] PPPoE
+  + [ ] SDN
 + 30a:
-  + [ ] .
+  + [ ] Wifi y Wimax
+  + [ ] Otras tecnologías
 + 2m:
-  + [ ] **Exámen**
+  + [ ] **Examen**
         
 # 8 Proyecto integrador (dual). 
 28 03/05/2024 30/05/2024 3ª
@@ -304,4 +268,49 @@ Día 29 de febrero.
   + [x] Repaso tema
 + 28f:
   + [x] Repaso tema
-        
+
+
+# Recuperación 2ª EVALUACIÓN: 29 de febrero.
+
+  
+# 6 Configuración y administración de protocolos dinámicos. 
+29 22/02/2024 04/04/2024 3ª
+
++ 29f: ~~Rec 2ª EVA~~
++ 5m:
+  + [x] [Off-topic] Configuración remota (SSH)
+  + [x] Protocolos enrutables y no enrutables
+  + [x] Del enrutamiento estático al dinámico
+  + [x] Protocolos de enrutamiento interior y exterior
+  + [x] Enrutamiento sin clases y VLSM
++ 6m:
+  + [x] RIP
+  + [x] Ejercicio RIPv2
++ 7m:
+  + [x] Ejercicio RIPng
++ 12m:
+  + [x] OSPF: Áreas, LSDB, LSA y Adyacencias
+  + [x] DR (router designado), BDR (backup DR) y DRO[thers].
+  + [x] ASBR (router frontera) y ABR (router que interconecta 2 o más áreas)
+  + [x] Ejercicio OSPF de área única.
++ 13m:
+  + [x] cont ejercicio OSPF de área única (añadir un router más).
+  + [x] Ejercicio IPv6.
++ 14m:
+  + [x] Ejercicio multiárea.
++ 19m:
+  + [x] Festivo local
++ 20m:
+  + [x] Resolución ejercicio multiárea: sumarización de rutas externas en DG
+  + [x] Enlaces virtuales
++ 21m:
+  + [x] Protocolo exterior -> BGP.
++ 2a:
+  + [x] `Packet Tracer Activities`
+  + [x] `Redistribute` rutas
++ 3a:
+  + [x] `Redistribute` rutas
++ 4a: 
+  + [x] **Examen**
++ 9a:
+  + [x] Resolver examen

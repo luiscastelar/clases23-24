@@ -5,7 +5,7 @@ Esto es un documento vivo donde hacer una planificación diaria y control del tr
 
 
 # 8 Diseño y realización de pruebas
- 16h del 29/02/2024 al 09/04/2024. *3a eva*.
+ 18h del 29/02/2024 al 09/04/2024. *3a eva*.
 
 + 6m:
    + [x] Bash_unit
@@ -25,18 +25,19 @@ Esto es un documento vivo donde hacer una planificación diaria y control del tr
    + [x] Introducción a JUnit
  + [x] Semana Santa
  + 2a:
-   + [ ] JUnit: Asserts
-   + [ ] JUnit: @Before, @After, ... 
+   + [x] JUnit: Asserts
+   + [x] JUnit: @Before, @After, ... 
  + 3a:
-  + [ ] Ejercicio calculadora
+  + [x] Ejercicio calculadora
  + 9a:
+  + [ ] Ejercicios JUnit
+ + [x] 10a: Día del centro
+ + 16a:
   + [ ] **Examen UT8**
  
 # 9 Desarrollo con contenedores
- 14h del 10/04/2024 al 07/05/2024. *3a eva*.
+ 10h del 10/04/2024 al 07/05/2024. *3a eva*.
 
-+ [ ] 10a:
-+ [ ] 16a:
 + [ ] 17a:
 + [ ] 23a:
 + [ ] 24a:
