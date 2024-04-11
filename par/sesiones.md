@@ -12,31 +12,41 @@
   + [ ] Implementación NAT
 + 16a:
   + [ ] ACL Extendidas
-
-  + [ ] Firewall básicos con ACL Extendidas
-+ 17a:
   + [ ] ACL Reflexivas
-  + [ ] Implementación de ACL Reflexivas
+  + [ ] Firewall básicos con ACL Extendidas y Reflexivas 
++ 17a:
+  + [ ] Túneles 6to4
 + 18a:
-  + [ ] Túneles 6to4
+  + [ ] Jornada: Herramientas de Análisis de Vulnerabilidades.
+  + [ ] NAT64 y NAT46
 + 23a:
-  + [ ] Túneles 6to4
+  + [ ] NAT64 y NAT46
 + 24a:
-  + [ ] NAT64 y NAT46
+  + [ ] EsNOG 31 - REDES LORAWAN
+  + [ ] EsNOG 31 - RED DE COMUNICACIONES CUÁNTICAS
+  + [ ] 
 + 25a:
-  + [ ] NAT64 y NAT46
+  + [ ] EsNOG 31
++ 30a:
   + [ ] PPPoE
   + [ ] SDN
-+ 30a:
   + [ ] Wifi y Wimax
   + [ ] Otras tecnologías
 + 2m:
   + [ ] **Examen**
-        
+
+---
+# RECUPERACIÓN
+Semana del 6 al 10 de mayo.
+
+**EXAMEN 9 mayo.**
+
 # 8 Proyecto integrador (dual). 
 28 03/05/2024 30/05/2024 3ª
 
+Los alumnos que en este momento hayan superado TODAS las unidades del módulo formativo comenzarán a definir su proyecto final integrador de la materia.
 
+Los alumnos con materia por recuperar se unirán tras la semana de recuperación.
 
 ---
 

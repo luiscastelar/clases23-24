@@ -53,8 +53,7 @@ No leer aún:
 > Otro - Habrá que pasar a binario para conocer cuantos bits son de
   red y cuantos de host, dentro de una dirección IP. \
   P.e: 224 -> 1110 0000 -> 3 bits de red y 5 de host -> 2³ redes y 2⁵ direcciones
-  de `host` -> 8 redes y 64 direcciones de `host`
-> 
+  de IP -> 8 redes y 64 direcciones de IP.
 
 
 ## IPv4 con CLASES
