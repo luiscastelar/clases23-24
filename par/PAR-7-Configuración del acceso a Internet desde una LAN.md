@@ -119,9 +119,10 @@ interna y qué tarjeta va a la red externa.
 En segundo lugar hay que crear una lista de control de acceso que
 permita la entrada de tráfico en el router cuando el tráfico provenga de
 la red interna. Si suponemos que nuestra red es algo como
-`10.9.0.0/255.255.0.0` tendremos que lanzar esto:
+`192.168.10.0 / 24` tendremos que lanzar esto:
 
-    access-list 100 permit ip 10.9.0.0 0.0.255.255 any
+    access-list 100 deny ip 192.168.10.0 0.0.0.255 host 34.147.120.111
+    access-list 100 permit ip 192.168.10.0 0.0.0.255 any
 
 *Nota: hemos cogido la primera de las ACL-EXTENDED. Si ésta coincide pasará.*
 
@@ -133,13 +134,17 @@ Si por ejemplo, la tarjeta de salida de un router es la `GigabitEthernet 0/1` po
     ip nat inside source list 100 pool EXTERNA overload
 ```
 
-Una vez dados estos tres pasos, el router comenzará a modificar las IP
-de origen.
+Una vez dados estos tres pasos, el router comenzará a modificar las IP de origen.
 
 Petición de PC0 a Internet:
+
 ![Petición](https://luiscastelar.duckdns.org/2023/assets/PAR/UT5/NAT-peticion.png)
+
 Respuesta desde Internet a PC0:
+
 ![Petición](https://luiscastelar.duckdns.org/2023/assets/PAR/UT5/NAT-respuesta.png)
+#### Port forwarding:
+Por otro lado, si deseamos realizar el reenvío de puertos deberemos realizarlo con el comando `ip nat inside source static tcp 172.16.10.8 8080 172.16.10.8 80`
 
 
 > **Note**: En realidad, técnicamente lo que se realiza no es NAT sino **PAT** o
