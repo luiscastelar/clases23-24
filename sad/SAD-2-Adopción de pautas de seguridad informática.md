@@ -1,5 +1,7 @@
 #curso23_24 #SAD [estado:: Done] 
 
+
+
 ## =={casa}== 
 1. Revisar ***[Apuntes de Oscar Maestre](https://oscarmaestre.github.io/apuntes_sad/tema_pautas_seguridad_informatica/tema_pautas_seguridad_informatica.html)***
 2. Plantear la solución de todos los ejercicios propuestos en esta unidad.
