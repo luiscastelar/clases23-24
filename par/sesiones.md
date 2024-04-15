@@ -23,15 +23,19 @@
   + [ ] NAT64 y NAT46
 + 24a:
   + [ ] EsNOG 31 - REDES LORAWAN
-  + [ ] EsNOG 31 - RED DE COMUNICACIONES CUÁNTICAS
-  + [ ] 
-+ 25a:
-  + [ ] EsNOG 31
-+ 30a:
+  + [ ] EsNOG 31 - PROTOCOLO QUIC
   + [ ] PPPoE
++ 25a:
+  + [ ] EsNOG 31 - ANALIZANDO CAPTURAS CON WIRESHARK
   + [ ] SDN
   + [ ] Wifi y Wimax
+  + [ ] EsNOG 31 - ATAQUES SIP Y OTRAS HIERVAS (off-line)
++ 30a:
   + [ ] Otras tecnologías
+  + [ ] EsNOG 31 - COMO MIKROTIK ARRUINÓ MI VIDA (off-line)
+  + [ ] EsNOG 31 - ULTRA ETHERNET (off-line)
+  + [ ] EsNOG 31 - HOW A META DATACENTER WORKS (off-line)
+
 + 2m:
   + [ ] **Examen**
 
