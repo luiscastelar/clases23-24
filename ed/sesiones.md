@@ -38,9 +38,9 @@ Esto es un documento vivo donde hacer una planificación diaria y control del tr
 # 9 Desarrollo con contenedores
  10h del 10/04/2024 al 07/05/2024. *3a eva*.
 
-+ [ ] 17a:
-+ [ ] 23a:
-+ [ ] 24a:
++ [ ] 17a: Dockerfile
++ [ ] 23a: Contenerizar un *hola mundo*
++ [ ] 24a: Contenerizar un *hola X* con archivo de *properties*
 + [ ] 30a: **Examen UT9**
  
  

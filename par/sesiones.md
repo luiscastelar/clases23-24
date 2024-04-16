@@ -4,12 +4,12 @@
 # 7 Configuración del acceso a Internet desde una LAN. 
 25 04/04/2024 02/05/2024 3ª
 + 9a:
-  + [ ] Resolver examen (UT6)
-  + [ ] Mapa de unidad
+  + [x] Resolver examen (UT6)
+  + [x] Mapa de unidad
 + [x] 10a: Día del centro
 + 11a:
-  + [ ] Teoría NAT
-  + [ ] Implementación NAT
+  + [x] Teoría NAT
+  + [x] Implementación NAT
 + 16a:
   + [ ] ACL Extendidas
   + [ ] ACL Reflexivas
