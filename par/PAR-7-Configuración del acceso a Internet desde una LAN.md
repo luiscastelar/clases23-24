@@ -6,8 +6,9 @@
 + [x] [DHCP](https://github.com/luiscastelar/clases23-24/blob/main/par/PAR-5-Configuraci%C3%B3n%20y%20administraci%C3%B3n%20de%20routers.md) {UT5}
 + [x] [ARP](https://github.com/luiscastelar/clases23-24/blob/main/par/PAR-3-Configuraci%C3%B3n%20y%20administraci%C3%B3n%20de%20conmutadores.md#arp) y [NDP](https://github.com/luiscastelar/clases23-24/blob/main/par/PAR-3-Configuraci%C3%B3n%20y%20administraci%C3%B3n%20de%20conmutadores.md#ndp) {UT3}
 + [x] DNS
-+ [ ] NAT (estático, dinámico y sobrecargado)
-+ [ ] ACL Extendidas y Reflexivas
++ [x] NAT (estático, dinámico y sobrecargado)
++ [x] ACL Extendidas
++ [ ] ACL Reflexivas
 + [ ] Sin cables -> Wifi y Wimax
 + [ ] PPPoE
 + [ ] SDN (Redes Definidas por Software)
@@ -155,8 +156,40 @@ Por otro lado, si deseamos realizar el reenvío de puertos deberemos realizarlo 
 
 
 # ACL Extendidas y ACL Reflexivas
+## ACL Extendidas
+Hay dos formatos de definición (desde la versión 11.2):
++ **ACL numeradas**:
+  ```ios
+  access-list NUMERO { permit | deny } { ip | icmp | tcp | udp | proto } SRC DST [mod]
+  !  Formato SRC y DST => { any | host IP | IP Willcard }
+  !  mod => si seleccionamos tcp o udp debemos establecer las reglas de puerto, que pueden ser:
+  ! { eq N | neq N | gt N | lt N | range Nmin Nmax }
+   ```
++ **ACL nominadas**:
+  ```ios
+  ip access-list {extended | standard} {NOMBRE | NUMERO}
+    ! entramos en la lista
+    [ORDEN] { permit | deny } { ip | icmp | tcp | udp | proto } SRC DST [mod]
+
+  !  ORDEN es opcional y nos permite indicar el ordinal donde aplicar la nueva regla. Además, para borrar una regla bastará con indicar "no ORDEN".
+  !  Formato SRC y DST => { any | host IP | IP Willcard }
+  !  mod => si seleccionamos tcp o udp debemos establecer las reglas de puerto, que pueden ser:
+  ! { eq N | neq N | gt N | lt N | range Nmin Nmax }
+   ```
+
+### Referencias:
 +  [CCNA desde Cero](https://ccnadesdecero.es/configurar-acl-extendidas/)
-+  [CISCO](https://www.cisco.com/c/es_mx/support/docs/security/ios-firewall/23602-confaccesslists.html)
++  [CISCO](https://www.cisco.com/c/es_mx/support/docs/security/ios-firewall/23602-confaccesslists.html#toc-hId-1966246354)
+
+### Ejercicios:
+[Interactivos cisco](https://www.sapalomera.cat/moodlecf/RS/2/course/module9/index.html#9.3.2.7)
+
+
+## ACL Reflexivas
+No evaluable en packet tracer 8.2.1
+
+Fuente: [CISCO](https://www.cisco.com/c/es_mx/support/docs/security/ios-firewall/23602-confaccesslists.html#toc-hId--466955766)
+
 
 
 # Conversión IPv6 a IPv4 y viceversa
