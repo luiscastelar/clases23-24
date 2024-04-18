@@ -8,7 +8,7 @@
 + [x] DNS
 + [x] NAT (estático, dinámico y sobrecargado)
 + [x] ACL Extendidas
-+ [ ] ACL Reflexivas
++ [ ] ~~ACL Reflexivas~~
 + [ ] Sin cables -> Wifi y Wimax
 + [ ] PPPoE
 + [ ] SDN (Redes Definidas por Software)
@@ -194,7 +194,13 @@ Fuente: [CISCO](https://www.cisco.com/c/es_mx/support/docs/security/ios-firewall
 
 # Conversión IPv6 a IPv4 y viceversa
 ### Túnel 6to4:
-[Túneles automáticos](https://community.cisco.com/t5/blogs-general/t%C3%BAneles-autom%C3%A1ticos-6to4/ba-p/4822594)
++ [Túneles automáticos](https://community.cisco.com/t5/blogs-general/t%C3%BAneles-autom%C3%A1ticos-6to4/ba-p/4822594)
++ [Otro](https://packetlife.net/blog/2010/mar/15/6to4-ipv6-tunneling/)
+
+No funciona en *packet tracer*
+
+### Túnel ISATAP
++ [Cisco](https://community.cisco.com/t5/networking-knowledge-base/ipv6-isatap-configuration-example/ta-p/3152483)
 
 ### NAT64 y NAT46:
 + [NAT64 y NAT46](https://www.cisco.com/c/es_mx/support/docs/ip/network-address-translation-nat/217208-understanding-nat64-and-its-configuratio.html)

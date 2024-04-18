@@ -10,7 +10,7 @@ Para los que no, o para los que quieran control total de su sistema docker (incl
 + Vagrantfile:
 ```ruby
 Vagrant.configure("2") do |config|
-  config.vm.box = "debian/debian12"
+  config.vm.box = "generic/debian12"
    config.vm.network "public_network"
    config.vm.synced_folder "./", "/vagrant"
    config.vm.provision "shell", path: "provision.sh"

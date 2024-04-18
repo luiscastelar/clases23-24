@@ -2,38 +2,15 @@
 
 **Contenidos básicos.**
 
-# RA4. Configuración y administración básica de “routers”:
-- [x] Los “routers” en las LAN, WAN y WLAN.
-- [x] Componentes del “router”.
-- [x] Formas de conexión al “router” para su configuración inicial.
-- [x] Comandos para configuración del “router”.
-- [x] Comandos para administración del “router”.
-- [x] Configuración del enrutamiento estático.
-- [ ] Definición y ubicación de listas de control de acceso (ACLs).
-
-*El desarrollo del RA4 corresponde a la UT5.*
-
----
-
 ==3a EVA==
-
-# RA6. Configuración y administración de protocolos dinámicos:
-- [ ] Protocolos enrutables y protocolos de enrutamiento.
-- [ ] Protocolos de enrutamiento interior y exterior.
-- [ ] El enrutamiento sin clase.
-- [x] La subdivisión de redes y el uso de máscaras de longitud variable (VLMs).
-- [ ] El protocolo RIPv2; comparación con RIPv1.
-- [ ] Configuración y administración de RIPv1.
-- [ ] Configuración y administración de RIPv2.
-- [ ] Configuración OSPF.
 
 # RA7. Configuración del acceso a Internet desde una LAN:
 - [x] Direccionamiento interno y direccionamiento externo.
-- [ ] NAT origen y NAT destino.
-- [ ] NAT estático, dinámico, de sobrecarga (PAT) e inverso.
-- [ ] Configuración de NAT.
-- [ ] Diagnóstico de incidencias de NAT.
-- [ ] Configuración de PAT.
+- [x] NAT origen y NAT destino.
+- [x] NAT estático, dinámico, de sobrecarga (PAT) e inverso.
+- [x] Configuración de NAT.
+- [x] Diagnóstico de incidencias de NAT.
+- [x] Configuración de PAT.
 - [ ] Tecnologías WIFI y WIMAX.
 
 ---
@@ -88,3 +65,27 @@
 - [x] Diagnóstico de incidencias.
 
 *El desarrollo del RA5 corresponde a la UT4*. 
+
+
+# RA4. Configuración y administración básica de “routers”:
+- [x] Los “routers” en las LAN, WAN y WLAN.
+- [x] Componentes del “router”.
+- [x] Formas de conexión al “router” para su configuración inicial.
+- [x] Comandos para configuración del “router”.
+- [x] Comandos para administración del “router”.
+- [x] Configuración del enrutamiento estático.
+- [x] Definición y ubicación de listas de control de acceso (ACLs).
+
+*El desarrollo del RA4 corresponde a la UT5.*
+
+== Ya vistos 3ªEVA==
+
+# RA6. Configuración y administración de protocolos dinámicos:
+- [x] Protocolos enrutables y protocolos de enrutamiento.
+- [x] Protocolos de enrutamiento interior y exterior.
+- [x] El enrutamiento sin clase.
+- [x] La subdivisión de redes y el uso de máscaras de longitud variable (VLMs).
+- [x] El protocolo RIPv2; comparación con RIPv1.
+- [x] Configuración y administración de RIPv1.
+- [x] Configuración y administración de RIPv2.
+- [x] Configuración OSPF.
