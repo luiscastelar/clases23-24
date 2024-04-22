@@ -1,12 +1,11 @@
 #curso23_24 #ED [estado:: Working] 
 
-# Docker
+# Desarrollo con contenedores
 
-## Dockerfile
-### El previo:
+## 0. PREPARACIÓN:
 Instalar *Docker Desktop* en aquellos equipos que lo permitan.
 
-Para los que no, o para los que quieran control total de su sistema docker (incluida la red):
+Para los que **NO**, o para los que quieran control total de su sistema docker (incluida la red):
 + Vagrantfile:
 ```ruby
 Vagrant.configure("2") do |config|
@@ -21,6 +20,7 @@ Vagrant.configure("2") do |config|
   # end
 end
 ```
+
 + provision.sh:
 ```bash
 apt-get update && apt-get install -y curl
@@ -36,13 +36,11 @@ fi
 sudo -u vagrant docker --version
 
 ip a | grep "inet "
-
-cd /vagrant
-sudo -u vagrant docker build -t luistest:version001 .
 ```
 
-### [Lo básico](https://luisiblogdeinformatica.com/crear-dockerfile/)
-+ Dockerfile 1:
+## 1. DEFINIENDO la imagen:
+Comenzamos con un ejemplo sencillo para ver los pasos de construcción de la imagen e instanciación del contenedor.
++ Dockerfile:
 ```Dockerfile
 FROM debian:latest
 RUN apt-get update && apt-get upgrade -y && apt-get install -y git
@@ -56,14 +54,22 @@ COPY archivo.txt /home/$minombre/archiv.txt
 ENTRYPOINT echo "Hola $minombre"
 ```
 
-Luego la instanciamos y corremos con `docker run --rm luistest` (*Deberemos añadir el tag a la imagen que corresponda*).
+Para construir la imágen: `docker build -t luistest:version001 .`
 
-Para hacer las cosas algo más cómodas podemos crear un alias del tag a *latest*:
-`sudo -u vagrant docker tag luistest:version001 luistest:latest`
+Luego la instanciamos y corremos con `docker run --rm luistest:version001`
+
+Para hacer las cosas algo más cómodas podemos crear un alias del tag a *latest* `docker tag luistest:version001 luistest:latest`, con lo que ahora podremos correrla con un simple `docker run --rm luistest`.
 
 ¿Pero y si queremos mostrar el contenido de archiv.txt? ` docker run --rm luistest cat /home/luis/archiv.txt`
 
-### [Siendo más fino -> cmd vs entrypoint](https://programacionymas.com/blog/docker-diferencia-entrypoint-cmd)
+### Fuentes: 
++ [Lo básico](https://luisiblogdeinformatica.com/crear-dockerfile/)
++ [Creando mi primera imagen](https://www.freecodecamp.org/espanol/news/guia-de-docker-para-principiantes-como-crear-tu-primera-aplicacion-docker/)
+
+
+## 2. FLEXIBILIZANDO la imagen:
+Comenzamos viendo la diferencia entre [cmd y entrypoint](https://programacionymas.com/blog/docker-diferencia-entrypoint-cmd)
+
 Sustituiremos por tanto el *ENTRYPOINT* por:
 ```Dockerfile
 ...
@@ -73,7 +79,101 @@ CMD ["echo $minombre"]
 
 Y ahora ejecutaremos ` docker run --rm luistest cat /home/luis/archiv.txt`
 
-### [Creando mi primera imagen](https://www.freecodecamp.org/espanol/news/guia-de-docker-para-principiantes-como-crear-tu-primera-aplicacion-docker/)
+Para construir la imágen: `docker build -t luistest:version002 .`
 
-### [Subiéndola a docker hub]()
+*EL `ENTRYPOINT ["/bin/sh", "-c"]` es en realidad el valor por defecto, por lo que podremos omitirlo en realidad*.
 
+## 3. Una imagen con aplicación Java stand-alone:
+Vamos a realizar una base sobre la que podremos en realidad ejecutar aplicaciones Java (versión < 22) incluso con las *preview features*.
+
++ Dockerfile:
+```Dockerfile
+FROM eclipse-temurin:21
+RUN mkdir -p /opt/app && mkdir /opt/app/src
+
+COPY Main.java conf.properties /opt/app/src/
+
+WORKDIR /opt/app/src
+RUN javac --enable-preview --source 21 Main.java
+
+CMD ["java", "--enable-preview", "Main"]
+```
+
++ Main.java:
+```java
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Properties;
+
+void main(){
+    Properties properties= new Properties();
+    
+    try {
+      properties.load(new FileInputStream(new File("conf.properties")));
+      
+      System.out.println(properties.get("DRIVER"));
+      System.out.println(properties.get("URL"));
+      System.out.println(properties.get("USUARIO"));
+      System.out.println(properties.get("CLAVE"));
+    } catch (FileNotFoundException e) {
+      // TODO Auto-generated catch block
+      e.printStackTrace();
+    } catch (IOException e) {
+      // TODO Auto-generated catch block
+      e.printStackTrace();
+    }
+} // main()
+```
+
++ Archivo de configuración (*properties*):
+```properties
+DRIVER=mysql
+URL=mi.servidor.en.mi.dominio.es
+USUARIO=3l.Pr0f3
+CLAVE=4.Ti.T3.10.v0y.4.c0nt4r
+```
+
+Para construir la imágen: `docker build -t luistest:version003 .`
+
+## 4. FLEXIBILIZANDO la ejecución
+Podemos querer modificar los parámetros del archivo de configuración o incluso distribuir la imagen y que cada usuario pueda personalizarlo. 
+
+Para ello, tan sólo tendremos que instanciar la imagen vinculando el archivo de `conf.properties` con otro externo `docker run -it --rm -v ./conf-per.properties:/opt/app/src/conf.properties luistest:version003` 
+
+
+## 5. OPTIMIZANDO la imagen (2 pasos)
+A veces, necesitamos algunos o muchos recursos para construir una imagen, pero no tantos para ejecutarla por lo que podemos recurrir a la utilización de 2 etapas con imagenes base diferentes.
+
+```Dockerfile
+# -----------------------------------------------
+# Etapa 1: COMPILACIÓN
+# -----------------------------------------------
+FROM eclipse-temurin:21 AS builder
+RUN mkdir -p /opt/app && mkdir /opt/app/src
+
+COPY Main.java conf.properties /opt/app/src/
+
+WORKDIR /opt/app/src
+RUN javac --enable-preview --source 21 Main.java
+
+# -----------------------------------------------
+# Etapa 2: EJECUCIÓN
+# -----------------------------------------------
+FROM eclipse-temurin:21-alpine
+WORKDIR /root/
+COPY --from=builder /opt/app/src/Main.class /opt/app/src/conf.properties .
+CMD ["java", "--enable-preview", "Main"]
+```
+
+Para construir la imágen: `docker build -t luistest:version005 .`
+
+Podemos ver la obvia diferencia con `docker system df -v | head`, aun habiendo realizado apenas un simple cambio de imagen.
+
+**Ejercicio:** Reduce la imagen por debajo de los 200 MB (version006).
+
+## 6. COMPARTIENDO la imagen
+Subiéndola a [docker hub](https://hub.docker.com/) con simple `docker push luistest:version006` tras habernos *identificado* `docker login`.
+
+O, incluso a [repositorios privados](https://www.baeldung.com/ops/docker-push-image-self-hosted-registry).
