@@ -11,19 +11,21 @@
   + [x] Teoría NAT
   + [x] Implementación NAT
 + 16a:
-  + [ ] ACL Extendidas
+  + [x] ACL Extendidas
   + [ ] ACL Reflexivas
-  + [ ] Firewall básicos con ACL Extendidas y Reflexivas 
+  + [x] Firewall básicos con ACL Extendidas y Reflexivas 
 + 17a:
-  + [ ] Túneles 6to4
+  + [x] Túneles 6to4
 + 18a:
+  + [ ] GNS3
   + [ ] Jornada: Herramientas de Análisis de Vulnerabilidades.
-  + [ ] NAT64 y NAT46
 + 23a:
-  + [ ] NAT64 y NAT46
+  + [ ] **Examen sobre Jornada de Herramientas de Análisis de Vulnerabilidades.**
+  + [ ] Túneles 6to4
 + 24a:
   + [ ] EsNOG 31 - REDES LORAWAN
   + [ ] EsNOG 31 - PROTOCOLO QUIC
+  + [ ] NAT64 y NAT46
   + [ ] PPPoE
 + 25a:
   + [ ] EsNOG 31 - ANALIZANDO CAPTURAS CON WIRESHARK
