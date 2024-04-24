@@ -17,26 +17,26 @@
 + 17a:
   + [x] Túneles 6to4
 + 18a:
-  + [ ] GNS3
-  + [ ] Jornada: Herramientas de Análisis de Vulnerabilidades.
+  + [x] GNS3
+  + [x] Jornada: Herramientas de Análisis de Vulnerabilidades.
 + 23a:
-  + [ ] **Examen sobre Jornada de Herramientas de Análisis de Vulnerabilidades.**
-  + [ ] Túneles 6to4
+  + [x] GNS3
+  + [x] Túneles 6to4
 + 24a:
-  + [ ] EsNOG 31 - REDES LORAWAN
-  + [ ] EsNOG 31 - PROTOCOLO QUIC
+  + [ ] EsNOG 31 - **OSI**ficación de Internet. PROTOCOLO QUIC - Octavio Alfageme
   + [ ] NAT64 y NAT46
   + [ ] PPPoE
 + 25a:
-  + [ ] EsNOG 31 - ANALIZANDO CAPTURAS CON WIRESHARK
+  + [ ] EsNOG 31 - ANALIZANDO CAPTURAS CON WIRESHARK - Eva Mª Castro
   + [ ] SDN
   + [ ] Wifi y Wimax
-  + [ ] EsNOG 31 - ATAQUES SIP Y OTRAS HIERVAS (off-line)
+  + [ ] EsNOG 31 - ATAQUES SIP Y OTRAS HIERVAS - Ángel Elena (off-line - 8ª tarde)
 + 30a:
   + [ ] Otras tecnologías
   + [ ] EsNOG 31 - COMO MIKROTIK ARRUINÓ MI VIDA (off-line)
-  + [ ] EsNOG 31 - ULTRA ETHERNET (off-line)
-  + [ ] EsNOG 31 - HOW A META DATACENTER WORKS (off-line)
+  + [ ] EsNOG 31 - ULTRA ETHERNET - Eduardo Collado (off-line - 2ª)
+  + [ ] EsNOG 31 - REDES LORAWAN - Ivan Boluda (off-line - 4ª)
+  + [ ] EsNOG 31 - HOW A META DATACENTER WORKS - Mohsen Dalil (off-line - 6ª tarde)
 
 + 2m:
   + [ ] **Examen**

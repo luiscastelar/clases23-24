@@ -177,3 +177,21 @@ Podemos ver la obvia diferencia con `docker system df -v | head`, aun habiendo r
 Subiéndola a [docker hub](https://hub.docker.com/) con simple `docker push luistest:version006` tras habernos *identificado* `docker login`.
 
 O, incluso a [repositorios privados](https://www.baeldung.com/ops/docker-push-image-self-hosted-registry).
+
+
+# Docker COMPOSE vs Docker CLI
+
+> ***IMPORTANTE***: *Docker COMPOSE v1 (comando docker-compose) es obsoleto por lo que **NO** deberá utilizarse. Para utilizar la versión 2 eliminaremos el guión/dash, esto es, utilizaremos el comando docker con el modificador compose, **docker compose**.*
+
+Docker COMPOSE es una herramienta para definir y correr aplicaciones multicontenedor, permitiendo la configuración de los contenedores vía ficheros yamel (yml).
+
+El “lenguaje” de marcado **yml** puede ser difícil de entender en principio, pero afortunadamente tenemos la herramienta on-line [**composerize**](https://www.composerize.com/) que traduce de docker CLI a docker COMPOSE.
+
+Vamos a repetir los apartados anteriores vía COMPOSE, abriendo una puerta nueva para el trabajo con contenedores.
+
+Los ficheros yml además nos proporcionan un plus, poder integrarlos en nuestro flujo de trabajo **GIT**, realizando seguimiento de cambios y compartir dichas recetas con facilidad.
+
+
+## Securizando COMPOSE
+
+Para guardar nuestros *secretos* y no compartirlos con GIT tenemos los ficheros “.env” donde podremos definir variables de entorno en nuestros yamel que dejaremos fuera del repositorio GIT mediante la inclusión del patrón correspondiente en el fichero “.gitignore”.

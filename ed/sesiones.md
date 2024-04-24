@@ -33,7 +33,7 @@ Esto es un documento vivo donde hacer una planificación diaria y control del tr
   + [ ] Ejercicios JUnit
  + [x] 10a: Día del centro
  + 16a:
-  + [ ] **Examen UT8**
+  + [x] **Examen UT8**
  
 # 9 Desarrollo con contenedores
  8h del 17/04/2024 al 30/04/2024. *3a eva*.
@@ -41,7 +41,7 @@ Esto es un documento vivo donde hacer una planificación diaria y control del tr
 + 17a:
   + [x] Fase 0: requisitos
   + [x] Fase 1: Dockerfile básico
-+ [ ] 23a: Fiware Space
++ [x] 23a: Fiware Space
 + 24a:
   + [ ] Fase 2: cmd vs entrypoint
   + [ ] Fase 3: Imagen JAVA
