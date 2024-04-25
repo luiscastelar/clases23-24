@@ -211,12 +211,9 @@ No funciona en *packet tracer*
 
 
 # PPPoE
-https://learningnetwork.cisco.com/s/article/pppoe-concepts-amp-configuration
-https://ccnadesdecero.es/pppoe-definicion-y-configuracion/
++ https://learningnetwork.cisco.com/s/article/pppoe-concepts-amp-configuration
++ https://ccnadesdecero.es/pppoe-definicion-y-configuracion/
 
-
-# SDN - Redes Definidas por Software
-[Introduction to Linux interfaces for virtual networking](https://developers.redhat.com/blog/2018/10/22/introduction-to-linux-interfaces-for-virtual-networking#netdevsim_interface)
 
 
 # Wifi y Wimax

@@ -54,7 +54,7 @@ COPY archivo.txt /home/$minombre/archiv.txt
 ENTRYPOINT echo "Hola $minombre"
 ```
 
-Para construir la imágen: `docker build -t luistest:version001 .`
+Para construir la imagen: `docker build -t luistest:version001 .`
 
 Luego la instanciamos y corremos con `docker run --rm luistest:version001`
 
@@ -79,7 +79,7 @@ CMD ["echo $minombre"]
 
 Y ahora ejecutaremos ` docker run --rm luistest cat /home/luis/archiv.txt`
 
-Para construir la imágen: `docker build -t luistest:version002 .`
+Para construir la imagen: `docker build -t luistest:version002 .`
 
 *EL `ENTRYPOINT ["/bin/sh", "-c"]` es en realidad el valor por defecto, por lo que podremos omitirlo en realidad*.
 
@@ -118,10 +118,10 @@ void main(){
       System.out.println(properties.get("USUARIO"));
       System.out.println(properties.get("CLAVE"));
     } catch (FileNotFoundException e) {
-      // TODO Auto-generated catch block
+      // Gestión de excepción por no existir archivo
       e.printStackTrace();
     } catch (IOException e) {
-      // TODO Auto-generated catch block
+      // Gestión de excepción genérica
       e.printStackTrace();
     }
 } // main()
@@ -135,16 +135,16 @@ USUARIO=3l.Pr0f3
 CLAVE=4.Ti.T3.10.v0y.4.c0nt4r
 ```
 
-Para construir la imágen: `docker build -t luistest:version003 .`
+Para construir la imagen: `docker build -t luistest:version003 .`
 
 ## 4. FLEXIBILIZANDO la ejecución
 Podemos querer modificar los parámetros del archivo de configuración o incluso distribuir la imagen y que cada usuario pueda personalizarlo. 
 
-Para ello, tan sólo tendremos que instanciar la imagen vinculando el archivo de `conf.properties` con otro externo `docker run -it --rm -v ./conf-per.properties:/opt/app/src/conf.properties luistest:version003` 
+Para ello, tan sólo tendremos que instanciar la imagen vinculando el archivo de `conf.properties` con otro externo `docker run --rm -v ./conf-per.properties:/opt/app/src/conf.properties luistest:version003` 
 
 
 ## 5. OPTIMIZANDO la imagen (2 pasos)
-A veces, necesitamos algunos o muchos recursos para construir una imagen, pero no tantos para ejecutarla por lo que podemos recurrir a la utilización de 2 etapas con imagenes base diferentes.
+A veces, necesitamos algunos o muchos recursos para construir una imagen, pero no tantos para ejecutarla por lo que podemos recurrir a la utilización de 2 etapas con imágenes base diferentes.
 
 ```Dockerfile
 # -----------------------------------------------
@@ -167,7 +167,7 @@ COPY --from=builder /opt/app/src/Main.class /opt/app/src/conf.properties .
 CMD ["java", "--enable-preview", "Main"]
 ```
 
-Para construir la imágen: `docker build -t luistest:version005 .`
+Para construir la imagen: `docker build -t luistest:version005 .`
 
 Podemos ver la obvia diferencia con `docker system df -v | head`, aun habiendo realizado apenas un simple cambio de imagen.
 

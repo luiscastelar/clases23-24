@@ -23,20 +23,20 @@
   + [x] GNS3
   + [x] Túneles 6to4
 + 24a:
-  + [ ] EsNOG 31 - **OSI**ficación de Internet. PROTOCOLO QUIC - Octavio Alfageme
-  + [ ] NAT64 y NAT46
-  + [ ] PPPoE
+  + [x] EsNOG 31 - **OSI**ficación de Internet. PROTOCOLO QUIC - Octavio Alfageme -> problemas de audio
+  + [x] GNS3. Resolución de problemas.
+  + [ ] ~~NAT64 y NAT46~~
 + 25a:
   + [ ] EsNOG 31 - ANALIZANDO CAPTURAS CON WIRESHARK - Eva Mª Castro
-  + [ ] SDN
+  + [ ] PPPoE
   + [ ] Wifi y Wimax
-  + [ ] EsNOG 31 - ATAQUES SIP Y OTRAS HIERVAS - Ángel Elena (off-line - 8ª tarde)
 + 30a:
   + [ ] Otras tecnologías
   + [ ] EsNOG 31 - COMO MIKROTIK ARRUINÓ MI VIDA (off-line)
-  + [ ] EsNOG 31 - ULTRA ETHERNET - Eduardo Collado (off-line - 2ª)
-  + [ ] EsNOG 31 - REDES LORAWAN - Ivan Boluda (off-line - 4ª)
-  + [ ] EsNOG 31 - HOW A META DATACENTER WORKS - Mohsen Dalil (off-line - 6ª tarde)
+  + [ ] EsNOG 31 - **OSI**ficación de Internet. PROTOCOLO QUIC - Octavio Alfageme ([off-line - 4ª](https://www.youtube.com/live/B5JeqPVVRRI?si=upxO1iMgU0aXXNKp&t=2811))
+  + [ ] EsNOG 31 - ATAQUES SIP Y OTRAS HIERVAS - Ángel Elena (off-line - 8ª tarde)
+  + [ ] EsNOG 31 - REDES LORAWAN - Ivan Boluda ([off-line - 3ª](https://www.youtube.com/live/B5JeqPVVRRI?si=I0l6vdha1oBdJFIL&t=913))
+  + [ ] EsNOG 31 - ULTRA ETHERNET - Eduardo Collado (off-line - 2ª [DMA y RDMA](https://www.youtube.com/live/Fp7Rq5jw69w?si=a0mIqOQztt22HKab&t=1849) y [UltraEthernet](https://www.youtube.com/live/lWdVeZ5Y4kM?si=0OMc_mSSi0kzhEIy&t=890))
 
 + 2m:
   + [ ] **Examen**

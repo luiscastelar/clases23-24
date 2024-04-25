@@ -41,14 +41,17 @@ Esto es un documento vivo donde hacer una planificación diaria y control del tr
 + 17a:
   + [x] Fase 0: requisitos
   + [x] Fase 1: Dockerfile básico
+  + [x] Fase 2: cmd vs entrypoint
 + [x] 23a: Fiware Space
 + 24a:
-  + [ ] Fase 2: cmd vs entrypoint
-  + [ ] Fase 3: Imagen JAVA
+  + [x] Fase 3: Imagen JAVA
+  + [x] Fase 4: Flexibilizando con volúmenes
+  + [x] Revisión de examen UT8
 + 30a:
-  + [ ] Fase 4: Flexibilizando con volúmenes
+  + [ ] Repaso fases 1 a 4. 
   + [ ] Fase 5: Imagen en 2 etapas
   + [ ] Fase 6: Compartiendo imagen
+  + [ ] Docker COMPOSE
  
  
 # 10 Introducción al CI/CD
