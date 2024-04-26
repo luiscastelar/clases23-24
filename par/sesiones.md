@@ -27,17 +27,19 @@
   + [x] GNS3. Resolución de problemas.
   + [ ] ~~NAT64 y NAT46~~
 + 25a:
-  + [ ] EsNOG 31 - ANALIZANDO CAPTURAS CON WIRESHARK - Eva Mª Castro
-  + [ ] PPPoE
-  + [ ] Wifi y Wimax
+  + [x] EsNOG 31 - [ANALIZANDO CAPTURAS CON WIRESHARK](https://www.youtube.com/live/vy4ivvqNyH4?feature=shared&t=190) - Eva Mª Castro
+  + [x] PPPoE
+  + [x] Wifi y Wimax
+  + [x] Otras tecnologías
 + 30a:
-  + [ ] Otras tecnologías
-  + [ ] EsNOG 31 - COMO MIKROTIK ARRUINÓ MI VIDA (off-line)
-  + [ ] EsNOG 31 - **OSI**ficación de Internet. PROTOCOLO QUIC - Octavio Alfageme ([off-line - 4ª](https://www.youtube.com/live/B5JeqPVVRRI?si=upxO1iMgU0aXXNKp&t=2811))
-  + [ ] EsNOG 31 - ATAQUES SIP Y OTRAS HIERVAS - Ángel Elena (off-line - 8ª tarde)
-  + [ ] EsNOG 31 - REDES LORAWAN - Ivan Boluda ([off-line - 3ª](https://www.youtube.com/live/B5JeqPVVRRI?si=I0l6vdha1oBdJFIL&t=913))
+  + [ ] Resolución de dudas
+  + [ ] EsNOG 31 - [**OSI**ficación de Internet. PROTOCOLO QUIC - Octavio Alfageme](https://www.youtube.com/live/B5JeqPVVRRI?si=upxO1iMgU0aXXNKp&t=2811)
+  + [ ] EsNOG 31 - [ATAQUES SIP Y OTRAS HIERVAS - Ángel Elena](https://www.youtube.com/live/oD8IsG22-1I?feature=shared&t=349)
+  + [ ] EsNOG 31 - [REDES LORAWAN - Ivan Boluda](https://www.youtube.com/live/B5JeqPVVRRI?si=I0l6vdha1oBdJFIL&t=913))
   + [ ] EsNOG 31 - ULTRA ETHERNET - Eduardo Collado (off-line - 2ª [DMA y RDMA](https://www.youtube.com/live/Fp7Rq5jw69w?si=a0mIqOQztt22HKab&t=1849) y [UltraEthernet](https://www.youtube.com/live/lWdVeZ5Y4kM?si=0OMc_mSSi0kzhEIy&t=890))
-
+  + [ ] EsNOG 31 - [¿Cómo debe ser mi CPD? - Virginia Sainz](https://www.youtube.com/live/BFUeCX6i2BQ?si=Fp1CXLMX4L86o4bu&t=1482)
+  + [ ] EsNOG 31 - [COMO MIKROTIK ARRUINÓ MI VIDA - Felipe Cañizares (DMNTR)](https://www.youtube.com/live/BFUeCX6i2BQ?si=3EUaHTnwgig1oHNh&t=622)
+  
 + 2m:
   + [ ] **Examen**
 

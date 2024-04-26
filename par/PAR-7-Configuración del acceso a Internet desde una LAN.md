@@ -269,4 +269,4 @@ Implementación del estándar IEEE 802.15.4 -> WPAN
 + 5G
 + 6G (para 2035)
 
-## 
+ 
