@@ -145,7 +145,7 @@ Respuesta desde Internet a PC0:
 
 ![Petición](https://luiscastelar.duckdns.org/2023/assets/PAR/UT5/NAT-respuesta.png)
 #### Port forwarding:
-Por otro lado, si deseamos realizar el reenvío de puertos deberemos realizarlo con el comando `ip nat inside source static tcp 172.16.10.8 8080 172.16.10.8 80`
+Por otro lado, si deseamos realizar el reenvío de puertos deberemos realizarlo con el comando `ip nat inside source static tcp 168.168.10.10 8080 80.0.1.1 80`
 
 
 > **Note**: En realidad, técnicamente lo que se realiza no es NAT sino **PAT** o
