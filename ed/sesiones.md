@@ -36,7 +36,7 @@ Esto es un documento vivo donde hacer una planificación diaria y control del tr
   + [x] **Examen UT8**
  
 # 9 Desarrollo con contenedores
- 8h del 17/04/2024 al 30/04/2024. *3a eva*.
+ 12h del 17/04/2024 al 30/04/2024. *3a eva*.
 
 + 17a:
   + [x] Fase 0: requisitos
@@ -48,18 +48,20 @@ Esto es un documento vivo donde hacer una planificación diaria y control del tr
   + [x] Fase 4: Flexibilizando con volúmenes
   + [x] Revisión de examen UT8
 + 30a:
-  + [ ] Repaso fases 1 a 4. 
-  + [ ] Fase 5: Imagen en 2 etapas
-  + [ ] Fase 6: Compartiendo imagen
+  + [x] Repaso fases 1 a 4. 
+  + [x] Fase 5: Imagen en 2 etapas
+  + [x] Fase 6: Compartiendo imagen
   + [ ] Docker COMPOSE
++ [x] 1m: Día del trabajador
++ 7m:
+  + [ ] Docker COMPOSE continuación.
  
  
 # 10 Introducción al CI/CD
- 12h del 08/05/2024 al 29/05/2024. *3a eva*.
+ 8h del 08/05/2024 al 29/05/2024. *3a eva*.
 
- + [ ] 1m: Día del trabajador
- + [ ] 7m: Desarrollo e Integración continua
- + [ ] 8m: 
+ 
+ + [ ] 8m: Desarrollo e Integración continua
  + [ ] 14m:
  + [ ] 15m:
  + [ ] 21m:
