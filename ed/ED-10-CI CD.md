@@ -1,6 +1,6 @@
 #curso23_24 #ED [estado:: Working] 
 
-
+.
 # Integración y desarrollo continuo
 [Pruebas de integración](https://qalified.com/es/blog/pruebas-de-integracion-que-son/)
 
