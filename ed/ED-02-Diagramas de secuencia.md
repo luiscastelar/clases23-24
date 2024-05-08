@@ -1,4 +1,4 @@
-#curso23_24 #ED [estado:: Working] 
+#curso23_24 #ED [estado:: done] 
 
 ![1](https://luiscastelar.duckdns.org/2023/assets/ED/UT2_secuencia_d1.png)
 
