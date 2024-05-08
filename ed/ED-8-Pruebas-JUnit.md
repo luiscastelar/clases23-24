@@ -1,4 +1,4 @@
-#curso23_24 #ED
+#curso23_24 #ED [estado::done] 
 
 # Introducción
 Habiendo realizado la última semana bastantes ejercicios de ~AceptaElReto.com~ para prepararnos para el concurso ~ProgramaMe.com~ hemos visto (y sufrido) el sistema automatizado de corrección de soluciones.

@@ -1,4 +1,4 @@
-#curso23_24 #ED [estado:: Working] 
+#curso23_24 #ED [estado::done] 
 
 ## Elementos de un diagrama de clases: 
 nombre, atributos, métodos y visibilidades.

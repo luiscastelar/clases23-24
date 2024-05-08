@@ -1,4 +1,4 @@
-#curso23_24 #ED [estado:: Working] 
+#curso23_24 #ED [estado::done] 
 
 
 [FC] -> [Apuntes](./UT2-Diagramas UML/UA6-Diagramas_de_comportamiento.pdf)

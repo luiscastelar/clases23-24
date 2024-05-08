@@ -1,60 +1,34 @@
 #curso23_24 #PAR [estado:: Working] 
 
 
-# 7 Configuración del acceso a Internet desde una LAN. 
-25 04/04/2024 02/05/2024 3ª
-+ 9a:
-  + [x] Resolver examen (UT6)
-  + [x] Mapa de unidad
-+ [x] 10a: Día del centro
-+ 11a:
-  + [x] Teoría NAT
-  + [x] Implementación NAT
-+ 16a:
-  + [x] ACL Extendidas
-  + [ ] ACL Reflexivas
-  + [x] Firewall básicos con ACL Extendidas y Reflexivas 
-+ 17a:
-  + [x] Túneles 6to4
-+ 18a:
-  + [x] GNS3
-  + [x] Jornada: Herramientas de Análisis de Vulnerabilidades.
-+ 23a:
-  + [x] GNS3
-  + [x] Túneles 6to4
-+ 24a:
-  + [x] EsNOG 31 - **OSI**ficación de Internet. PROTOCOLO QUIC - Octavio Alfageme -> problemas de audio
-  + [x] GNS3. Resolución de problemas.
-  + [ ] ~~NAT64 y NAT46~~
-+ 25a:
-  + [x] EsNOG 31 - [ANALIZANDO CAPTURAS CON WIRESHARK](https://www.youtube.com/live/vy4ivvqNyH4?feature=shared&t=190) - Eva Mª Castro
-  + [x] PPPoE
-  + [x] Wifi y Wimax
-  + [x] Otras tecnologías
-+ 30a:
-  + [ ] Resolución de dudas
-  + [ ] EsNOG 31 - [**OSI**ficación de Internet. PROTOCOLO QUIC - Octavio Alfageme](https://www.youtube.com/live/B5JeqPVVRRI?si=upxO1iMgU0aXXNKp&t=2811)
-  + [ ] EsNOG 31 - [ATAQUES SIP Y OTRAS HIERVAS - Ángel Elena](https://www.youtube.com/live/oD8IsG22-1I?feature=shared&t=349)
-  + [ ] EsNOG 31 - [REDES LORAWAN - Ivan Boluda](https://www.youtube.com/live/B5JeqPVVRRI?si=I0l6vdha1oBdJFIL&t=913))
-  + [ ] EsNOG 31 - ULTRA ETHERNET - Eduardo Collado (off-line - 2ª [DMA y RDMA](https://www.youtube.com/live/Fp7Rq5jw69w?si=a0mIqOQztt22HKab&t=1849) y [UltraEthernet](https://www.youtube.com/live/lWdVeZ5Y4kM?si=0OMc_mSSi0kzhEIy&t=890))
-  + [ ] EsNOG 31 - [¿Cómo debe ser mi CPD? - Virginia Sainz](https://www.youtube.com/live/BFUeCX6i2BQ?si=Fp1CXLMX4L86o4bu&t=1482)
-  + [ ] EsNOG 31 - [COMO MIKROTIK ARRUINÓ MI VIDA - Felipe Cañizares (DMNTR)](https://www.youtube.com/live/BFUeCX6i2BQ?si=3EUaHTnwgig1oHNh&t=622)
-  
-+ 2m:
-  + [ ] **Examen**
-
----
-# RECUPERACIÓN
+# REPASO 
 Semana del 6 al 10 de mayo.
 
-**EXAMEN 9 mayo.**
++ 7m:  
+  + [x] Repaso UT5:
+    + [ ] DHCP
+    + [ ] Direccionamiento estático
++ 8m:
+  + Direccionamiento estático
++ 9m:
+  + Direccionamiento estático
+
 
 # 8 Proyecto integrador (dual). 
-28 03/05/2024 30/05/2024 3ª
+28 07/05/2024 30/05/2024 3ª
 
 Los alumnos que en este momento hayan superado TODAS las unidades del módulo formativo comenzarán a definir su proyecto final integrador de la materia.
 
 Los alumnos con materia por recuperar se unirán tras la semana de recuperación.
+
+---
+
+# RECUPERACIÓN 3a **3a EVALUACIÓN
+**Examen -> 30 mayo.**
+
+
+# Final ORDINARIA
+**EXAMEN -> 13 junio.**
 
 ---
 
@@ -287,9 +261,9 @@ Los alumnos con materia por recuperar se unirán tras la semana de recuperación
 + 28f:
   + [x] Repaso tema
 
-
+---
 # Recuperación 2ª EVALUACIÓN: 29 de febrero.
-
+---
   
 # 6 Configuración y administración de protocolos dinámicos. 
 29 22/02/2024 04/04/2024 3ª
@@ -332,3 +306,5 @@ Los alumnos con materia por recuperar se unirán tras la semana de recuperación
   + [x] **Examen**
 + 9a:
   + [x] Resolver examen
+
+

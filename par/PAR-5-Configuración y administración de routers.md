@@ -453,12 +453,18 @@ Comandos necesarios:
     ip route 10.0.0.0 255.0.0.0 3.3.3.1
 
 
+### Video-grafía (papel)
++ [Tablas de enrutamiento](https://www.youtube.com/watch?v=K72qDhoYcMs)
++ [Tablas - otro](https://www.youtube.com/watch?v=Sl33-ok4f5E)
++ [Ejercicio de tablas](https://www.youtube.com/watch?v=wIJkr9CCDD8)
+
+
 ### Rutas como firewall de salida
 En la empresa tenemos un problema de competitividad ya que nuestros trabajadores están muy enganchados a leer el “marca”. 
 
 Para solucionarlo, hemos pensado que podemos crear una ruta en el router de borde que capture las peticiones al marca y las descarte. 
 
-Para la implementación:
+Para la implementación en Linux (`ip-link`):
 ```bash
 # Dominio a capturar
 FQDN="marca.com"

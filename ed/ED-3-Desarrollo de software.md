@@ -1,4 +1,4 @@
-#curso23_24 #ED [estado:: Working] 
+#curso23_24 #ED [estado::done] 
 
 ## Licencias de software
 

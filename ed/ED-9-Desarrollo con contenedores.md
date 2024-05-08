@@ -1,4 +1,4 @@
-#curso23_24 #ED [estado:: Working] 
+#curso23_24 #ED [estado::done] 
 
 # Desarrollo con contenedores
 
@@ -144,7 +144,7 @@ Para ello, tan sólo tendremos que instanciar la imagen vinculando el archivo de
 
 
 ## 5. OPTIMIZANDO la imagen (2 pasos)
-A veces, necesitamos algunos o muchos recursos para construir una imagen, pero no tantos para ejecutarla por lo que podemos recurrir a la utilización de 2 etapas con imágenes base diferentes.
+A veces, necesitamos algunos o muchos recursos para construir una imagen, pero no tantos para ejecutarla por lo que podemos recurrir a la utilización de 2 etapas con [imágenes base diferentes](https://hub.docker.com/_/eclipse-temurin/tags).
 
 ```Dockerfile
 # -----------------------------------------------
@@ -174,7 +174,15 @@ Podemos ver la obvia diferencia con `docker system df -v | head`, aun habiendo r
 **Ejercicio:** Reduce la imagen por debajo de los 200 MB (version006).
 
 ## 6. COMPARTIENDO la imagen
-Subiéndola a [docker hub](https://hub.docker.com/) con simple `docker push luistest:version006` tras habernos *identificado* `docker login`.
+Subiéndola a [docker hub](https://hub.docker.com/):
+1. creando un repositorio `luisfe02/java_hola_mundo`
+2. Subiendo la imágen con:
+```bash
+docker login
+docker tag local-image:tagname new-repo:tagname
+docker push new-repo:tagname
+#Make sure to replace `tagname` with your desired image repository tag.
+```
 
 O, incluso a [repositorios privados](https://www.baeldung.com/ops/docker-push-image-self-hosted-registry).
 
