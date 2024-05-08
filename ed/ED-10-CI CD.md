@@ -21,7 +21,7 @@
 Aunque el workflow habitual es el superior, nosotros vamos a continuar con la metodología TDD. *Para ello deberéis crear los paquetes `roja` y `verde` y aseguraros que la roja contempla TODOS los casos de uso.*
 
 ### MVN
-Plantilla básica `pom.xml` en 
+Plantilla básica [`pom.xml`](https://github.com/luiscastelar/clases23-24/blob/main/ed/UT10-CI_CD/pom.xml)
 
 Ciclo de vida mvn:
 1.  **Validate:** This step validates if the project structure is correct. For example – It checks if all the dependencies have been downloaded and are available in the local repository.
@@ -54,10 +54,10 @@ Fuente: [geek4geeks](https://www.geeksforgeeks.org/maven-lifecycle-and-basic-mav
 
 
 # PROYECTO
-Deberéis crear un proyecto completo que utilice el workflow mostrado para una calculadora de pila que inicialmente implemente la interfaz *CalculadoraDePila*. 
+Deberéis crear un proyecto completo que utilice el workflow mostrado para una calculadora de pila que inicialmente implemente la interfaz [*CalculadoraDePila*](https://github.com/luiscastelar/clases23-24/blob/main/ed/UT10-CI_CD/CalculadoraDePila.java). 
 
 ## Fase TUI (librería)
-Se adjunta la clase controlador *MainCalculadoraDePila* y se pide:
+Se adjunta la clase controlador [*MainCalculadoraDePila*](https://github.com/luiscastelar/clases23-24/blob/main/ed/UT10-CI_CD/MainCalculadoraDePila.java) y se pide:
 1. Crear una batería de test siguiendo la metodología TDD.
 2. Pasar los test de la fase roja.
 3. Implementar la calculadora.
