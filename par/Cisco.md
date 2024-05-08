@@ -1,6 +1,8 @@
 #curso23_24 #PAR [estado:: Working] 
 
-# Router series 800, 2600 y 2800
+# RESET Router series 800, 2600 y 2800
+
+## Por software
 Reset a Cisco 2800 (y 2600) series router to factory default without the enable password.
 
 So you have a router you want to reset, but don't know the enable password. Here's what to do:
@@ -34,27 +36,42 @@ So you have a router you want to reset, but don't know the enable password. Here
 9. Reload the router to check it worked properly
 
 
-# Router se-C880
+## Con botón de reset
+1. Pulsar el botón de reset trasero.
+2. Enchufar el router.
+3. Esperar 5-7 segundos y soltar el reset.
+4. Esperar el arranque
 
-## Reset a fábrica
+
+# Terminal
 
 1. Una vez conectado \
 > router <--- cable de consola -> terminal RJ45-to-rs232 <---> cable rs232-to-usb ---> pc
 
-2. Abrir el software de gestión de la consola (putty o `screen /dev/ttyUSB0`).
+### Desde Linux:
+Abrir el software de gestión de la consola (putty o `screen /dev/ttyUSB0`).
 ```bash
 sudo dmesg
 screen /dev/ttyUSB0 9600
 # también con minicom -s
 ```
 
-Desde Windows con [PuTTY](https://teklager.se/en/knowledge-base/serial-connection-putty-windows/)
 
-    
-4. Pulsar el botón de reset trasero.
-5. Enchufar el router.
-6. Esperar 5-7 segundos y soltar el reset.
-7. Esperar el arranque
+### Desde Windows 
+Con [PuTTY](https://teklager.se/en/knowledge-base/serial-connection-putty-windows/)
+
+
+### Desde Alpine (live)
+1. Acceso como `root` sin password.
+2. Configurar `setup-alpine` . **Importante:** No guardar la configuración sobre el disco duro, puede haber pérdida de datos.
+3. Actualizar lista de paquetes: `apk update`
+4. Instalar screen: `apk add screen`
+5. Conectar cable.
+6. Ver puerto de conexión: `dmesg | tail` -> mostrará algo como `ttyUSB0` por lo que nos conectaremos a `/dev/ttyUSB0`.
+7. Aplicación: `screen /dev/ttyUSB0 9600`
+8. Programar dispositivo.
+9. Desconectar cable para cerrar.
+
 
 ## Primer acceso
 

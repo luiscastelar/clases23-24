@@ -60,6 +60,18 @@ Deberéis crear un proyecto completo que utilice el workflow mostrado para una c
 Se adjunta la clase controlador [*MainCalculadoraDePila*](https://github.com/luiscastelar/clases23-24/blob/main/ed/UT10-CI_CD/MainCalculadoraDePila.java) y se pide:
 1. Crear una batería de test siguiendo la metodología TDD.
 2. Pasar los test de la fase roja.
+   Dependencias (añadir al pom.xml):
+    ```xml
+    <dependencies>
+      <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-engine -->
+      <dependency>
+          <groupId>org.junit.jupiter</groupId>
+          <artifactId>junit-jupiter-engine</artifactId>
+          <version>5.11.0-M1</version>
+          <scope>test</scope>
+      </dependency>
+    <dependencies>
+    ```
 3. Implementar la calculadora.
 4. Verificar que el texto está escrito siguiendo nomenclatura Sun o Google (a elegir).
 5. Compilar (con mvn).
@@ -89,8 +101,8 @@ Tu “scaffolding” debería quedar similar a:
           │           └── CalculadoraDePilaImplTest.java
           └── resources
               └── casosDePrueba.csv
->
-> 12 directories, 7 files
+
+  12 directories, 7 files
 ```
 
 ***Nota:** Deberéis subirlo a la `UT10-CI_CD/TUI` de vuestro repositorio del módulo formativo.*
