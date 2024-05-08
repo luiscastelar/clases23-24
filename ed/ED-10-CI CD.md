@@ -68,7 +68,8 @@ Se adjunta la clase controlador [*MainCalculadoraDePila*](https://github.com/lui
 8. Ejecutar TUI.
 
 Tu “scaffolding” debería quedar similar a:
-> .
+```bash  
+  .
   ├── pom.xml
   └── src
       ├── main
@@ -90,14 +91,15 @@ Tu “scaffolding” debería quedar similar a:
               └── casosDePrueba.csv
 >
 > 12 directories, 7 files
+```
 
-***Nota:** Deberéis subirlo a la `UT10-CI_CD/` de vuestro repositorio del módulo formativo.*
+***Nota:** Deberéis subirlo a la `UT10-CI_CD/TUI` de vuestro repositorio del módulo formativo.*
 
 **Fase GUI-Web:**
 1. Modificar los test para recoger la integración GUI-Web.
 2. Pasar los test de la fase roja.
 3. Integrar la CalculadoraDePilaImpl como librería en proyecto web GUI-Web.
-4. Vefiricar texto.
+4. Verificar texto.
 5. Compilar.
 6. Pasar test (fase verde).
 7. Empaquetar a **war**.
