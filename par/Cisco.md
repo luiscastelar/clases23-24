@@ -81,9 +81,10 @@ Por defecto, el usuario es ‘cisco’ y el password es ‘cisco’.
 
 # Práctica con dispositivos físicos serie C880
 ## Apartado 1: VLANs
-![](pub23/par/assets/cisco-fisico-vlan.png)
+![http://par/assets/cisco-fisico-vlan.png](https://raw.githubusercontent.com/luiscastelar/clases23-24/main/par/assets/cisco-fisico-vlan.png)
 ## Apartado 2: Enrutamiento ESTÁTICO
-![](pub23/par/assets/cisco-fisico-static-route.png)![](pub23/par/assets/cisco-fisico-static-route-result.png)
+![](https://raw.githubusercontent.com/luiscastelar/clases23-24/main/par/assets/cisco-fisico-static-route.png)
+![](https://raw.githubusercontent.com/luiscastelar/clases23-24/main/par/assets/cisco-fisico-static-route-result.png)
 
 
 # Referencias:
