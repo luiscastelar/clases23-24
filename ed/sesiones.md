@@ -30,7 +30,7 @@ Esto es un documento vivo donde hacer una planificación diaria y control del tr
  + 3a:
   + [x] Ejercicio calculadora
  + 9a:
-  + [ ] Ejercicios JUnit
+  + [x] Ejercicios JUnit
  + [x] 10a: Día del centro
  + 16a:
   + [x] **Examen UT8**
@@ -51,29 +51,30 @@ Esto es un documento vivo donde hacer una planificación diaria y control del tr
   + [x] Repaso fases 1 a 4. 
   + [x] Fase 5: Imagen en 2 etapas
   + [x] Fase 6: Compartiendo imagen
-  + [ ] Docker COMPOSE
+  + [x] Docker COMPOSE
 + [x] 1m: Día del trabajador
 + 7m:
-  + [ ] Docker COMPOSE continuación.
+  + [x] Docker COMPOSE continuación.
  
  
 # 10 Introducción al CI/CD
- 8h del 08/05/2024 al 29/05/2024. *3a eva*.
+ 10h del 08/05/2024 al 29/05/2024. *3a eva*.
 
  
- + [ ] 8m: Desarrollo e Integración continua
- + [ ] 14m:
- + [ ] 15m:
- + [ ] 21m:
- + [ ] 22m: **Examen UT9 y UT10**
+ + [x] 8m: Desarrollo e Integración continua
+ + [ ] 14m: Validate(Linter) + Compile + Test
+ + [ ] 15m: V + C + T + Package
+ + [ ] 21m: V + C + T + P + Despliegue (tomcat)
+ + [ ] 22m: Persentaciones 1
+ + [ ] 28m: Presentaciones 2
+ + [ ] 29m: Presentaciones 3
 
 ---
 
 # Cierre 3er de trimestre
- + [ ] 28m: *Varios*
-   + [ ] [FC] Proyecto final (subir nota)
+ + [ ] 29m: *Varios*
    + [ ] Defensa de prácticas **extraordinarias** (si las hubiera).
- + [ ] 29m: **RECUPERACIÓN** 3ª evaluación.
+ + [ ] 4j: **RECUPERACIÓN** 3ª evaluación.
 
 Horas de trabajo **en casa** => ==22h== de 22h
 

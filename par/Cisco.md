@@ -1,4 +1,12 @@
-#curso23_24 #PAR [estado:: Working] 
+#curso23_24 #PAR [estado::done] 
+
+# Cambiar PASSWORD de entrada
+1. Ingresar en el modo ROMMON.
+2. Cambiar el registro de configuración.
+3. Copiar el startup-config en la running-config.
+4. **Cambiar la contraseña**.
+5. Guardar el running-config como el nuevo startup-config.
+6. Recargar el dispositivo.
 
 # RESET Router series 800, 2600 y 2800
 

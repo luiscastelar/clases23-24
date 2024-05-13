@@ -67,3 +67,18 @@ Si estuviéramos en otros lenguajes, especialmente aquellos sin tipado fuerte, p
 Podemos ver en las líneas 2 y 3 que realiza la auditoría de código y la pasa sin warnings.
 
 En este punto, podría ser interesante plantearnos si deberá pasar los test antes de los commits, después o antes del push.
+
+
+# VARIOS interesantes
+## Mover ramas
+Resulta que me he liado y he creado una rama *main* en remoto y en local no leí y deje por defecto la rama *master*. ¿Qué puedo hacer?
+
+Tenemos varias opciones, pero voy a simplificarlas en 2:
+1. Renombrar la rama remota de *main* a *master* y seguir las indicaciones que nos proporciona *github*:
+    ```bash
+    git branch -m main master
+    git fetch origin
+    git branch -u origin/master master
+    git remote set-head origin -a
+    ```
+2. Clonar la rama *main* en un nuevo repositorio remoto, aplicar los cambios en local a mano (sugiero la aplicación *Meld*) y subir los cambios.

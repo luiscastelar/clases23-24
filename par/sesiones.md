@@ -6,12 +6,14 @@ Semana del 6 al 10 de mayo.
 
 + 7m:  
   + [x] Repaso UT5:
-    + [ ] DHCP
-    + [ ] Direccionamiento estático
+    + [x] DHCP
+    + [x] Direccionamiento estático
 + 8m:
-  + Direccionamiento estático
+  + [x] Direccionamiento estático
+  + [x] Uso de cable no original USB-2-consola a través de alpine-linux + screen
 + 9m:
-  + Direccionamiento estático
+  + [x] Direccionamiento estático
+  + [x] Trabajo de configuración en router físico C880
 
 
 # 8 Proyecto integrador (dual). 
@@ -20,6 +22,10 @@ Semana del 6 al 10 de mayo.
 Los alumnos que en este momento hayan superado TODAS las unidades del módulo formativo comenzarán a definir su proyecto final integrador de la materia.
 
 Los alumnos con materia por recuperar se unirán tras la semana de recuperación.
+
++ 8m: Se comentas las posibilidades de proyectos y se abre periodo de investigación.
++ 9m: Continúa la investigación.
++ 2m: Reparto de proyectos
 
 ---
 
