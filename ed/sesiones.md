@@ -3,59 +3,6 @@
 Esto es un documento vivo donde hacer una planificación diaria y control del trabajo realizado.
 
 
-
-# 8 Diseño y realización de pruebas
- 18h del 29/02/2024 al 09/04/2024. *3a eva*.
-
-+ 6m:
-   + [x] Bash_unit
-+ 12m:
-   + [x] Planificación de test
-   + [x] Tipos de test
-   + [x] Alcance de test
-   + [x] Inicio de TDD
-+ 13m:
-   + [x] Batería de test `assert_equals`
-   + [x] Batería `assert_exit_code`
-+ 19m:
-  + [x] festivo local
-+ 20m:
-   + [x] Importancia de la fase roja
-   + [x] Uso de arrays en *BASH*
-   + [x] Introducción a JUnit
- + [x] Semana Santa
- + 2a:
-   + [x] JUnit: Asserts
-   + [x] JUnit: @Before, @After, ... 
- + 3a:
-  + [x] Ejercicio calculadora
- + 9a:
-  + [x] Ejercicios JUnit
- + [x] 10a: Día del centro
- + 16a:
-  + [x] **Examen UT8**
- 
-# 9 Desarrollo con contenedores
- 12h del 17/04/2024 al 30/04/2024. *3a eva*.
-
-+ 17a:
-  + [x] Fase 0: requisitos
-  + [x] Fase 1: Dockerfile básico
-  + [x] Fase 2: cmd vs entrypoint
-+ [x] 23a: Fiware Space
-+ 24a:
-  + [x] Fase 3: Imagen JAVA
-  + [x] Fase 4: Flexibilizando con volúmenes
-  + [x] Revisión de examen UT8
-+ 30a:
-  + [x] Repaso fases 1 a 4. 
-  + [x] Fase 5: Imagen en 2 etapas
-  + [x] Fase 6: Compartiendo imagen
-  + [x] Docker COMPOSE
-+ [x] 1m: Día del trabajador
-+ 7m:
-  + [x] Docker COMPOSE continuación.
- 
  
 # 10 Introducción al CI/CD
  10h del 08/05/2024 al 29/05/2024. *3a eva*.
@@ -158,6 +105,8 @@ Resto de horas de repaso y ejecución de ejercicios.
      + [ ] ~~Documentación~~
  + [x] 21n: ~~Exámen UT3**~~
 
+---
+
 # Cierre 1er de trimestre
  + [ ] 22n: *Varios*
    + [ ] [FC] CSV-II: ramas
@@ -166,8 +115,6 @@ Resto de horas de repaso y ejecución de ejercicios.
  + [x] 21n: **RECUPERACIÓN** 1ª evaluación.
 
 Horas de trabajo **en casa** => ==8h== de 22h
-
----
 
 # Examen recuperación 1ª evaluación -> 21 noviembre 2023
 ---
@@ -250,6 +197,8 @@ Horas de trabajo **en casa** => ==8h== de 22h
 + 27f:
   + [x] **Examen UT7**
 
+---
+
 # Cierre 2º de trimestre
  + [x] 28f: *Varios*
    + [x] [FC] Diseño y realización de pruebas
@@ -259,4 +208,57 @@ Horas de trabajo **en casa** => ==8h== de 22h
 
 Horas de trabajo **en casa** => ==14h== de 22h
 
+--- 
+
+# 8 Diseño y realización de pruebas
+ 18h del 29/02/2024 al 09/04/2024. *3a eva*.
+
++ 6m:
+   + [x] Bash_unit
++ 12m:
+   + [x] Planificación de test
+   + [x] Tipos de test
+   + [x] Alcance de test
+   + [x] Inicio de TDD
++ 13m:
+   + [x] Batería de test `assert_equals`
+   + [x] Batería `assert_exit_code`
++ 19m:
+  + [x] festivo local
++ 20m:
+   + [x] Importancia de la fase roja
+   + [x] Uso de arrays en *BASH*
+   + [x] Introducción a JUnit
+ + [x] Semana Santa
+ + 2a:
+   + [x] JUnit: Asserts
+   + [x] JUnit: @Before, @After, ... 
+ + 3a:
+  + [x] Ejercicio calculadora
+ + 9a:
+  + [x] Ejercicios JUnit
+ + [x] 10a: Día del centro
+ + 16a:
+  + [x] **Examen UT8**
+ 
+# 9 Desarrollo con contenedores
+ 12h del 17/04/2024 al 30/04/2024. *3a eva*.
+
++ 17a:
+  + [x] Fase 0: requisitos
+  + [x] Fase 1: Dockerfile básico
+  + [x] Fase 2: cmd vs entrypoint
++ [x] 23a: Fiware Space
++ 24a:
+  + [x] Fase 3: Imagen JAVA
+  + [x] Fase 4: Flexibilizando con volúmenes
+  + [x] Revisión de examen UT8
++ 30a:
+  + [x] Repaso fases 1 a 4. 
+  + [x] Fase 5: Imagen en 2 etapas
+  + [x] Fase 6: Compartiendo imagen
+  + [x] Docker COMPOSE
++ [x] 1m: Día del trabajador
++ 7m:
+  + [x] Docker COMPOSE continuación.
  

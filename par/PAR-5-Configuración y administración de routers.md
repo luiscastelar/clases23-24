@@ -589,7 +589,27 @@ Y para Router2 también muy similar:
     no shutdown
 
 
-## ACL (Listas de Control de Acceso)
+### Ejercicios de refuerzo:
+1. Según el mapa de red siguiente, crea las tablas de rutas:
+![](pub23/par/assets/ejercicio-enrutamiento-estatico-1.png)
+   + PC0, Router11 y Router12:
+     + de forma que el PC0 pueda alcanzar el Router12 y viceversa.
+   + Router21, Router22 y PC2:
+     + de forma que el PC0 pueda alcancar al Router21 y viceversa.
+     + de forma que el PC0 pueda alcancar al Router22 y viceversa.
+     + de forma que el PC0 pueda alcancar al PC2 y viceversa.
+   + Router31, Router32 y PC1:
+     + de forma que el PC0 pueda alcancar al Router31 y viceversa.
+     + de forma que el PC0 pueda alcancar al Router32 y viceversa.
+     + de forma que el PC0 pueda alcancar al PC2 y viceversa.
+   + Modifica las tablas necesarias de forma que PC1 y PC2 establezcan comunicación.
+
+2. Se ha realizado la siguiente modificación:
+![](pub23/par/assets/ejercicio-enrutamiento-estatico-2.png)
+Modifica las tablas necesarias para reflejar las nueva configuración.
+
+
+## ACL (Lis2tas de Control de Acceso)
 
 ### Definición y ubicación de listas de control de acceso (ACLs).
 
@@ -661,8 +681,6 @@ Queremos bloquear todos las comunicaciones a 192.168.10.0/24 desde 192.168.1.0/2
 Resultado:
 ![inspeccion ACL](https://luiscastelar.duckdns.org/2023/assets/PAR/UT5/ACL-standard-inspeccion.png)
 
-==POR REVISAR==
-
 ### Definición de condiciones
 
 Se pueden definir condiciones con estos parámetros
@@ -691,7 +709,7 @@ Se pueden definir condiciones con estos parámetros
 En realidad es tan sencillo como hacer esto:
 
     interface fastethernet 0/0
-    ip access-group 100 in
+       ip access-group 100 in
 
 Esto entra en la tarjeta 0/0 y aplica la lista de acceso 100 al tráfico
 de entrada.

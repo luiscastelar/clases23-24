@@ -38,20 +38,16 @@ sudo -u vagrant docker --version
 ip a | grep "inet "
 ```
 
-## 1. DEFINIENDO la imagen:
+## 1. DEFINIENDO la imagen básica:
 Comenzamos con un ejemplo sencillo para ver los pasos de construcción de la imagen e instanciación del contenedor.
 + Dockerfile:
 ```Dockerfile
+# Etiqueta obligatoria -> FROM
 FROM debian:latest
-RUN apt-get update && apt-get upgrade -y && apt-get install -y git
 
-CMD ping google.es > /test.txt
+COPY archivo.txt /home/alumno/archiv.txt
 
-ENV minombre Luis
-
-COPY archivo.txt /home/$minombre/archiv.txt
-
-ENTRYPOINT echo "Hola $minombre"
+ENTRYPOINT echo "Hola alumno"
 ```
 
 Para construir la imagen: `docker build -t luistest:version001 .`
@@ -60,14 +56,15 @@ Luego la instanciamos y corremos con `docker run --rm luistest:version001`
 
 Para hacer las cosas algo más cómodas podemos crear un alias del tag a *latest* `docker tag luistest:version001 luistest:latest`, con lo que ahora podremos correrla con un simple `docker run --rm luistest`.
 
-¿Pero y si queremos mostrar el contenido de archiv.txt? ` docker run --rm luistest cat /home/luis/archiv.txt`
+¿Pero y si queremos mostrar el contenido de archiv.txt? ` docker run --rm luistest cat /home/alumno/archiv.txt`
 
-### Fuentes: 
+**Fuentes:**
 + [Lo básico](https://luisiblogdeinformatica.com/crear-dockerfile/)
 + [Creando mi primera imagen](https://www.freecodecamp.org/espanol/news/guia-de-docker-para-principiantes-como-crear-tu-primera-aplicacion-docker/)
 
 
 ## 2. FLEXIBILIZANDO la imagen:
+### CMD vs ENTRYPOINT
 Comenzamos viendo la diferencia entre [cmd y entrypoint](https://programacionymas.com/blog/docker-diferencia-entrypoint-cmd)
 
 Sustituiremos por tanto el *ENTRYPOINT* por:
@@ -77,11 +74,58 @@ ENTRYPOINT ["/bin/sh", "-c"]
 CMD ["echo $minombre"]
 ```
 
-Y ahora ejecutaremos ` docker run --rm luistest cat /home/luis/archiv.txt`
+Y ahora ejecutaremos ` docker run --rm luistest cat /home/alumno/archiv.txt`
 
 Para construir la imagen: `docker build -t luistest:version002 .`
 
 *EL `ENTRYPOINT ["/bin/sh", "-c"]` es en realidad el valor por defecto, por lo que podremos omitirlo en realidad*.
+
+### ARG vs ENV
+```Dockerfile
+FROM debian:latest
+
+ARG usuario=profesor
+ENV minombre=${usuario}
+
+COPY entrypoint.sh /home/$minombre/entrypoint.sh
+WORKDIR /home/$minombre
+
+CMD ["sh", "entrypoint.sh"]
+# o tambien
+#CMD sh entrypoint.sh
+```
+
+Donde `entrypoint.sh` es:
+```sh
+echo "Directorio de trabajo $(pwd $minombre)"
+echo "Variable de entorno \$minombre=$minombre"
+```
+
+Ejecuta:
+1. build + `docker run --rm luistest:v2`
+2. `docker run --rm -e minombre=luis luistest:v2`
+3. `docker build --build-arg usuario=UNO -t luistest:v2` + `docker run --rm luistest:v2`
+4. `docker run --rm -e minombre=luis luistest:v2`
+
+Por tanto, **ARG** permite personalizar en *tiempo de construcción de imagen* y **ENV** lo hace en *tiempo de instanciación a contenedor*.
+
+
+**Aplicado**:
+```Dockerfile
+FROM debian:latest
+
+RUN apt-get update \
+    && apt-get upgrade -y \
+    && apt-get install -y iputils \
+    && apt-get autoremove \
+    && apt-get autoclean
+
+ARG dst=marca.com
+ENV destino=${dst}
+
+CMD ping -c4 $destino
+```
+
 
 ## 3. Una imagen con aplicación Java stand-alone:
 Vamos a realizar una base sobre la que podremos en realidad ejecutar aplicaciones Java (versión < 22) incluso con las *preview features*.
