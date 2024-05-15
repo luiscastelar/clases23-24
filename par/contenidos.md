@@ -2,17 +2,6 @@
 
 **Contenidos básicos.**
 
-==3a EVA==
-
-# RA7. Configuración del acceso a Internet desde una LAN:
-- [x] Direccionamiento interno y direccionamiento externo.
-- [x] NAT origen y NAT destino.
-- [x] NAT estático, dinámico, de sobrecarga (PAT) e inverso.
-- [x] Configuración de NAT.
-- [x] Diagnóstico de incidencias de NAT.
-- [x] Configuración de PAT.
-- [ ] Tecnologías WIFI y WIMAX.
-
 ---
 
 == Ya vistos 1ªEVA==
@@ -41,8 +30,8 @@
 - [x] Direcciones IPv4 y máscaras de red.
 - [x] Direccionamiento dinámico (DHCP) [[pub23/par/PAR-5-Configuración y administración de routers]]
 - [x] Adaptadores.
-- [ ] Adaptadores alámbricos: instalación y configuración [[pub23/par/PAR-7-Configuración del acceso a Internet desde una LAN]]
-- [ ] Adaptadores inalámbricos: instalación y configuración [[pub23/par/PAR-7-Configuración del acceso a Internet desde una LAN]]
+- [ ] ~~Adaptadores alámbricos: instalación y configuración [[pub23/par/PAR-7-Configuración del acceso a Internet desde una LAN]]~~ (en módulo Fundamentos Hardware)
+- [ ] ~~Adaptadores inalámbricos: instalación y configuración [[pub23/par/PAR-7-Configuración del acceso a Internet desde una LAN]]~~ (en módulo Fundamentos Hardware)
 
 ---
 
@@ -89,3 +78,12 @@
 - [x] Configuración y administración de RIPv1.
 - [x] Configuración y administración de RIPv2.
 - [x] Configuración OSPF.
+
+# RA7. Configuración del acceso a Internet desde una LAN:
+- [x] Direccionamiento interno y direccionamiento externo.
+- [x] NAT origen y NAT destino.
+- [x] NAT estático, dinámico, de sobrecarga (PAT) e inverso.
+- [x] Configuración de NAT.
+- [x] Diagnóstico de incidencias de NAT.
+- [x] Configuración de PAT.
+- [x] Tecnologías WIFI y WIMAX.
