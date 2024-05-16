@@ -94,6 +94,11 @@ Por defecto, el usuario es ‘cisco’ y el password es ‘cisco’.
 ![](https://raw.githubusercontent.com/luiscastelar/clases23-24/main/par/assets/cisco-fisico-static-route.png)
 ![](https://raw.githubusercontent.com/luiscastelar/clases23-24/main/par/assets/cisco-fisico-static-route-result.png)
 
+## Apartado 3: Monitorización de equipos
+
+![](https://raw.githubusercontent.com/luiscastelar/clases23-24/main/par/assets/cisco-fisico-static-route.png)
+Configura los equipos R1, R2 y PC4 (windows) para ser monitorizados por Zabbix en PC2 (linux).
+
 
 # Referencias:
 + [Configuración C880](https://www.networkstraining.com/basic-cisco-800-router-configuration-for-internet-access/)
