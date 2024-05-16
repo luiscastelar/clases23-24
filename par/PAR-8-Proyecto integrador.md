@@ -4,7 +4,7 @@
 Los alumnos deberán realizar la conectividad solicitada en la topología que le corresponde.
 
 ## Topología Castelar:
-![](privadas/par/assets/u8-mapa-instituto.png)
+![](https://raw.githubusercontent.com/luiscastelar/clases23-24/main/par/assets/u8-mapa-instituto.png)
 1. Router ISP debe hacer NAT (IP publica 10.99.0.2)  
 2. ROUTERs deben establecer comunicación:  
    + Por rutas estáticas
@@ -20,8 +20,7 @@ Los alumnos deberán realizar la conectividad solicitada en la topología que le
 
    
 ## Topología Internet:
-![](privadas/par/assets/topo-internet.png)Fuente: [cómo internet trabaja](https://howdoesinternetwork.com/2013/gns3-topology-ine-workbook)
-
+![](https://raw.githubusercontent.com/luiscastelar/clases23-24/main/par/assets/topo-internet.png)
 1. Verifica la conectividad de las redes
 2. Apaga R3 y repite el punto 1.
 3. Apaga R4 y repite el punto 1.
@@ -36,7 +35,8 @@ Conectividades externas con BGP e internas con OSPF.
 
 
 ## Topología Internet 3:
-![topo-3](privadas/par/assets/topo-internet-3.png)
+![topo-3](https://raw.githubusercontent.com/luiscastelar/clases23-24/main/par/assets/topo-internet-3.png)
+
 1. Verifica la conectividad de las redes
 2. Apaga R0(5) y repite el punto 1.
 3. Apaga R0(9) y repite el punto 1.
