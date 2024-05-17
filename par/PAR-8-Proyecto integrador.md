@@ -9,7 +9,7 @@ Los alumnos deberán realizar la conectividad solicitada en la topología que le
 2. ROUTERs deben establecer comunicación:  
    + Por rutas estáticas
    + Por OSPF  
-3. Los Sw deben tener una VLAN por aula, más una para el profesorado (PCs en f0/0 de cada sw)  
+3. Los Sw deben tener una VLAN por aula, más una para el profesorado (PCs en f1/0 de cada sw)  
 4. Se debe permitir que:
    + los alumnos salgan al exterior
    + los alumnos vean a sus compañeros de clase
