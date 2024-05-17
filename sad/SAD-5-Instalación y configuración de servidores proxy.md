@@ -30,7 +30,7 @@ Conexión a través de proxy socks. Concretamente queremos conectarnos desde una
 
 *Nota: Para afianzarlo, lo podemos añadir `.bashrc` para el usuario o a `/etc/environment` para todo el sistema.*
 
-*Nota 2: Si vamos a usarlo esporádicamente... http_proxy=socks5://localhost:9999 curl ifconfig.me`*.
+*Nota 2: Si vamos a usarlo esporádicamente... http_proxy=socks5://localhost:9999 curl ifconfig.me*.
 
 Debemos tener en cuenta el funcinamiento de los navegadores ya que Firefox va independiente de la configuración del sistema de proxy, por lo que deberemos configurarlo a parte o utilizar alguna extensión (p.e. FoxyProxy).
 
