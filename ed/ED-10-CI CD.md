@@ -80,29 +80,26 @@ Se adjunta la clase controlador [*MainCalculadoraDePila*](https://github.com/lui
 8. Ejecutar TUI.
 
 Tu “scaffolding” debería quedar similar a:
-```bash  
-  .
-  ├── pom.xml
-  └── src
-      ├── main
-      │   └── java
-      │       └── com
-      │           └── iescastelar
-      │               ├── CalculadoraDePila.java
-      │               ├── MainCalculadoraDePila.java
-      │               ├── roja
-      │               │   └── CalculadoraDePilaImpl.java
-      │               └── verde
-      │                   └── CalculadoraDePilaImpl.java
-      └── test
-          ├── java
-          │   └── com
-          │       └── iescastelar
-          │           └── CalculadoraDePilaImplTest.java
-          └── resources
-              └── casosDePrueba.csv
+```bash
+.
+├── pom.xml
+└── src
+    ├── main
+    │   └── java
+    │       └── com
+    │           └── iescastelar
+    │               ├── CalculadoraDePilaImpl.java
+    │               ├── CalculadoraDePila.java
+    │               └── MainCalculadoraDePila.java
+    └── test
+        ├── java
+        │   └── com
+        │       └── iescastelar
+        │           └── CalculadoraTest.java
+        └── resources
+            └── casosDePrueba.csv
 
-  12 directories, 7 files
+10 directories, 6 files
 ```
 
 ***Nota:** Deberéis subirlo a la `UT10-CI_CD/TUI` de vuestro repositorio del módulo formativo.*
