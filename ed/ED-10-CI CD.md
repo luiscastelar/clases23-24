@@ -60,18 +60,57 @@ Deberéis crear un proyecto completo que utilice el workflow mostrado para una c
 Se adjunta la clase controlador [*MainCalculadoraDePila*](https://github.com/luiscastelar/clases23-24/blob/main/ed/UT10-CI_CD/MainCalculadoraDePila.java) y se pide:
 1. Crear una batería de test siguiendo la metodología TDD.
 2. Pasar los test de la fase roja.
-   Dependencias (añadir al pom.xml):
+   Dependencias (pom.xml):
     ```xml
-    <dependencies>
-      <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-engine -->
-      <dependency>
-          <groupId>org.junit.jupiter</groupId>
-          <artifactId>junit-jupiter-engine</artifactId>
-          <version>5.11.0-M1</version>
-          <scope>test</scope>
-      </dependency>
-    <dependencies>
+    <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+      <modelVersion>4.0.0</modelVersion>
+      <groupId>com.iescastelar</groupId>    
+      <artifactId>calcualadoraDePila</artifactId>
+      <version>0.1</version>
+      <name>Calculadora de pila</name>
+      <description>
+          Calculadora de Pila en TUI y WebUI
+      </description>
+  
+      <properties>
+          <jdk.version>21</jdk.version>
+          <junit.jupiter.version>5.8.2</junit.jupiter.version>
+          <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+          <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+      </properties>
+  
+      <dependencies>
+          <dependency>
+              <groupId>org.junit.jupiter</groupId>
+              <artifactId>junit-jupiter</artifactId>
+              <version>${junit.jupiter.version}</version>
+              <scope>test</scope>
+          </dependency>
+      </dependencies>
+      <build>
+          <plugins>
+              <plugin>
+                  <groupId>org.apache.maven.plugins</groupId>
+                  <artifactId>maven-compiler-plugin</artifactId>
+                  <version>3.8.0</version>
+                  <configuration>
+                      <source>${jdk.version}</source>
+                      <target>${jdk.version}</target>
+                      <encoding>${project.build.sourceEncoding}</encoding>
+                  </configuration>
+              </plugin>
+              <plugin><!-- mvn surefire-report:report -->
+                  <groupId>org.apache.maven.plugins</groupId>
+                  <artifactId>maven-surefire-plugin</artifactId>
+                  <version>2.22.2</version>
+              </plugin>
+          </plugins>
+      </build>
+    </project>
     ```
+    *Nota: Debe funcionaros con **este** pom.xml*.
+
 3. Implementar la calculadora.
 4. Verificar que el texto está escrito siguiendo nomenclatura Sun o Google (a elegir).
 5. Compilar (con mvn).
@@ -83,6 +122,7 @@ Tu “scaffolding” debería quedar similar a:
 ```bash
 .
 ├── pom.xml
+├── salida.txt
 └── src
     ├── main
     │   └── java
@@ -90,7 +130,8 @@ Tu “scaffolding” debería quedar similar a:
     │           └── iescastelar
     │               ├── CalculadoraDePilaImpl.java
     │               ├── CalculadoraDePila.java
-    │               └── MainCalculadoraDePila.java
+    │               ├── MainCalculadoraDePila.java
+    │               └── package-info.java
     └── test
         ├── java
         │   └── com
@@ -99,7 +140,7 @@ Tu “scaffolding” debería quedar similar a:
         └── resources
             └── casosDePrueba.csv
 
-10 directories, 6 files
+10 directories, 8 files
 ```
 
 ***Nota:** Deberéis subirlo a la `UT10-CI_CD/TUI` de vuestro repositorio del módulo formativo.*
@@ -110,10 +151,11 @@ Tu “scaffolding” debería quedar similar a:
 2. Deberéis escribir la batería de pruebas del proyecto (calculadora RPN).
 3. Deberéis probar y **capturar** la batería de pruebas donde se vea TODO rojo... con `mvn test`
 
+   *Debéis probar TODOS los métodos*.
+
 Notas:
 1. *En esta fase está **prohibido** el uso de IDE*.
-2. Recuerda que las capturas en cli (línea de comandos) **SIEMPRE** se realizan mediante el comando `tee` o `TeeObject`.
-
+2. Recuerda que las capturas en cli (línea de comandos) **SIEMPRE** se realizan mediante el comando `tee` o `TeeObject`. *Deben llamarse **salida.txt** y ubicarse junto al pom.xml.*
 
 ### Fase TUI-2: TDD -> fase verde
 1. Deberéis crear una rama en vuestro repositorio denominada `UT10-verde` a partir de la rama `UT10-roja`.
@@ -143,25 +185,42 @@ En esta fase deberemos integrar una herramienta de análisis estático (linter) 
 ```
 *Podéis consultar la documentación en la [fuente oficial](https://maven.apache.org/plugins/maven-checkstyle-plugin/usage.html)*
 
-1. Deberéis realizar la validación del código escrito y obtener el reporte (site).
-2. Deberéis crear una rama en vuestro repositorio denominada `UT10-linter` a partir de la rama `UT10-verde`.
-3. Deberéis modificar vuestro código para pasar la validación y obtener el reporte (site).
+1. Deberéis crear una rama en vuestro repositorio denominada `UT10-pre-linter` a partir de la rama `UT10-verde`.
+2. Deberéis realizar la validación del código escrito y obtener el reporte (site) y obtener 
+3. Deberéis crear una rama en vuestro repositorio denominada `UT10-linter` a partir de la rama `UT10-pre-linter`.
+4. Deberéis modificar vuestro código para pasar la validación y obtener el reporte (site).
 
 ### Fase TUI-4: Empaquetado
 1. Deberéis obtener una aplicación `jar` plenamente funcional.
 2. Deberéis generar un archivo ejecutable a partir de dicho jar para Windows (bat y ps1) y otro para GNU/Linux (.sh y [.desktop](https://askubuntu.com/questions/398666/execute-sh-script-from-desktop-file))
 
+Deberéis modificar el pom.xml para añadir el main:
+```xml
+            <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-jar-plugin</artifactId>
+              <configuration>
+                <archive>
+                  <manifest>
+                    <addClasspath>true</addClasspath>
+                    <mainClass>com.iescastelar.MainCalculadoraDePila</mainClass>
+                  </manifest>
+                </archive>
+              </configuration>
+            </plugin>
+```
 
-## Fase GUI-Web:
-1. Modificar los test para recoger la integración GUI-Web.
+
+## Fase WebUI:
+1. Modificar los test para recoger la integración WebUI.
 2. Pasar los test de la fase roja.
-3. Integrar la CalculadoraDePilaImpl como librería en proyecto web GUI-Web.
+3. Integrar la CalculadoraDePilaImpl como librería en proyecto web WebUI.
 4. Verificar texto.
 5. Compilar.
 6. Pasar test (fase verde).
 7. Empaquetar a **war**.
 8. Desplegar.
-9. Ejecutar GUI-Web.
+9. Ejecutar WebUI.
 
 
 
