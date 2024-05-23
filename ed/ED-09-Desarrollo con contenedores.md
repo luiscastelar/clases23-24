@@ -247,3 +247,9 @@ Los ficheros yml además nos proporcionan un plus, poder integrarlos en nuestro 
 ## Securizando COMPOSE
 
 Para guardar nuestros *secretos* y no compartirlos con GIT tenemos los ficheros “.env” donde podremos definir variables de entorno en nuestros yamel que dejaremos fuera del repositorio GIT mediante la inclusión del patrón correspondiente en el fichero “.gitignore”.
+
+
+# Buenas prácticas
++ [... con Java](https://www.snyk.io/blog/docker-for-java-developers/)
++ [... con imagenes](https://www.snyk.io/blog/10-docker-image-security-best-practices/)
++ [... con node.js](https://snyk.io/blog/10-best-practices-to-containerize-nodejs-web-applications-with-docker/)
