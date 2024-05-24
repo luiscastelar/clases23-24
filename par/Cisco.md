@@ -22,33 +22,41 @@ So you have a router you want to reset, but don't know the enable password. Here
     > *Para enviar el BREAK desde screen (GNU/Linux) deberemos utilizar la combinación (C-a b, C-a C-b).*
 4. Type this command at the rommon prompt in order to boot from Flash.
 ```ios
-  rommon 1 > **confreg 0x2142**
+  rommon 1 > confreg 0x2142
 ```
 5. Reset the router.
 ```ios
-  rommon 2 > **reset**
+  rommon 2 > reset
 ```
 6. The router should now boot into the Initial config dialogue:
 ```ios
-  Would you like to enter the initial configuration dialog? \[yes/no\]: yes
+  Would you like to enter the initial configuration dialog? [yes/no]: yes
 ```
 7. Follow the prompts, to set a basic config.
 8. Enter enable mode and set the router to boot from the right place
 ```ios
- Router>**enable**
- Router>**conf t**
- Router(config)>**config-register 0x2102**
- Router(config)>**end**
- Router>**wr mem**
+ Router> enable
+ Router> conf t
+ Router(config)> config-register 0x2102
+ Router(config)> end
+ Router> wr mem
 ```
 9. Reload the router to check it worked properly
 
+> **Nota:**
+> 1. El registro 0x2142 cambia la configuración a arranque ignorando la NVRAM (donde se guarda la conf del password).
+> 2. Reiniciamos el router.
+> 3. El registgro 0x2102 restablece la configuración de arranque a normal.
+> 4. Guardamos, con lo que hemos borrado el password de *enable*.
+Fuente: [cisco](https://www.cisco.com/c/es_mx/support/docs/routers/10000-series-routers/50421-config-register-use.html)
+
 
 ### Con botón de reset
-1. Pulsar el botón de reset trasero.
-2. Enchufar el router.
-3. Esperar 5-7 segundos y soltar el reset.
-4. Esperar el arranque
+Utilizar sólo si falla la software ya que restablece a fábrica eliminando la configuración completamente.
+> 1. Pulsar el botón de reset trasero.
+> 2. Enchufar el router.
+> 3. Esperar 5-7 segundos y soltar el reset.
+> 4. Esperar el arranque
 
 
 ## Terminal
