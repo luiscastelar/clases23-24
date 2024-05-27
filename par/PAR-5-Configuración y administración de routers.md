@@ -464,7 +464,8 @@ En la empresa tenemos un problema de competitividad ya que nuestros trabajadores
 
 Para solucionarlo, hemos pensado que podemos crear una ruta en el router de borde que capture las peticiones al marca y las descarte. 
 
-Para la implementación en Linux (`ip-link`):
+
+#### Para la implementación en Linux (`ip-link`):
 ```bash
 # Dominio a capturar
 FQDN="marca.com"
@@ -474,9 +475,28 @@ IP=$(dig $FQDN | egrep "^$FQDN" | cut -f6)
 
 # Captura de ruta
 sudo ip route add $IP via 127.0.0.1 
+
+# Eliminar ruta
+sudo ip r del $IP via 127.0.0.1
 ```
 
-Para liberarla, tan fácil como eliminar dicha ruta `sudo ip r del $IP via 127.0.0.1`
+
+#### Para la implementación en Windows (route):
+```powershell
+# Dominio a capturar
+FQDN="marca.com"
+
+# IP del dominio
+$IP = (Resolve-DnsName -Name $FQDN | Where-Object { $_.QueryType -eq 'A' }).IPAddress
+
+# Captura de ruta (agregar ruta)
+route add $IP mask 255.255.255.255 127.0.0.1
+# donde podemos apadir el modificador -p para hacerlo persistente
+
+# Eliminar ruta
+route delete $IP
+```
+Fuente: [rutas en windows](https://www.howtogeek.com/22/adding-a-tcpip-route-to-the-windows-routing-table/)
 
 
 ## Ejercicio completo de configuración de routers
