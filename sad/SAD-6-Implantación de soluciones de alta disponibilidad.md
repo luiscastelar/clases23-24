@@ -39,7 +39,7 @@ Vamos a seguir el [tutorial](https://www.youtube.com/watch?v=DCoBcpOA7W4) de for
 5. Statefulset -> Añade un volumen- [ejemplo es](https://karabacode.blogspot.com/2020/05/postgresql-como-statefulset-en-minikube.html) o [ejemplo en](https://www.bogotobogo.com/DevOps/Docker/Docker_Kubernetes_StatefulSet.php)
 
 
-## Multinodo
+## Multimodo
 1. Utilizando un contenedor con [`kind`](https://www.josedomingo.org/pledin/2021/02/kubernetes-con-kind/): `kind create cluster --config config.yaml`
 2. De las más reales... creando la instalación multinodo con varias MV [vagrant - Lorenz Vanthillo](https://github.com/lvthillo/vagrant-ansible-kubernetes)
 
@@ -47,3 +47,6 @@ Vamos a seguir el [tutorial](https://www.youtube.com/watch?v=DCoBcpOA7W4) de for
 + [Kubernetes 101 - Uni Almería - Torres](https://ualmtorres.github.io/Kubernetes101/)
 + [Seminario - Uni Almería - Torres](https://ualmtorres.github.io/SeminarioKubernetes/)
 + 
+
+## Avisos:
++ Deshabilitar verificación en minikube: **--no-vtx-check**
