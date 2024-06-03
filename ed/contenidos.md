@@ -25,17 +25,17 @@
  + [x] *Herramientas y automatización*.
  
 # 3. Diseño y realización de pruebas:
- + [ ] Planificación de Pruebas.
- + [ ] Tipos de pruebas: Funcionales, estructurales y regresión, entre otras.
- + [ ] Procedimientos y casos de prueba.
- + [ ] Pruebas de Código: Cubrimiento, valores límite y clases de equivalencia, entre otras.
- + [ ] Pruebas unitarias; herramientas de automatización.
- + [ ] *Documentación de las incidencias.*
+ + [x] Planificación de Pruebas.
+ + [x] Tipos de pruebas: Funcionales, estructurales y regresión, entre otras.
+ + [x] Procedimientos y casos de prueba.
+ + [x] Pruebas de Código: Cubrimiento, valores límite y clases de equivalencia, entre otras.
+ + [x] Pruebas unitarias; herramientas de automatización.
+ + [x] *Documentación de las incidencias.*
  + [ ] *Dobles de prueba. Tipos. Características.*
  
 # 4.Optimización y documentación:
- + [ ] Refactorización. Concepto. Limitaciones. Patrones de refactorización más usuales. Refactorización y pruebas. Herramientas de ayuda a la refactorización.
- + [ ] *Analizadores de código.*
+ + [x] Refactorización. Concepto. Limitaciones. Patrones de refactorización más usuales. Refactorización y pruebas. Herramientas de ayuda a la refactorización.
+ + [x] *Analizadores de código.*
  + [x] Control de versiones. Estructura de las herramientas de control de versiones [*trabajado y evaluado en la UT1*]
  + [ ] ~~Documentación. Uso de comentarios. Alternativas.~~
 
@@ -43,16 +43,16 @@
 # 5. Repositorio. Herramientas de control de versiones. Uso integrado en el entorno
 de desarrollo:*
  + [x] *Repositorios remotos.*
- + [ ] *Documentación. Uso de comentarios. Alternativas.*
- + [ ] *Integración continua. Herramientas.*
+ + [x] *Documentación. Uso de comentarios. Alternativas.*
+ + [x] *Integración continua. Herramientas.*
  
 # 6. Elaboración de diagramas de clases:
  + [x] Clases. Atributos, métodos y visibilidad.
  + [x] Objetos. Instanciación.
  + [x] Relaciones. Asociación, *navegabilidad y multiplicidad*. Herencia, composición, agregación. *Realización y dependencia.*
  + [x] Notación de los diagramas de clases.
- + [ ] *Herramientas.*
- + [ ] *Generación automática de código. Ingeniería inversa.*
+ + [x] *Herramientas.*
+ + [x] *Generación automática de código. Ingeniería inversa.*
  
 # 7. Elaboración de diagramas de comportamiento:
 *Trabajado y evaluado en la UT2.*
