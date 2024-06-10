@@ -1,4 +1,4 @@
-#curso23_24 #ED [estado::done] 
+#curso23_24 #ed
 
 ## Revisión de la historia
 
@@ -14,6 +14,15 @@ Y por supuesto combinados: `git log --pretty=oneline --graph`
 
 + [Doc OFICIAL](https://git-scm.com/book/es/v2/Ramificaciones-en-Git-Procedimientos-B%C3%A1sicos-para-Ramificar-y-Fusionar)
 + [Ramas - YT:TodoCode](https://www.youtube.com/watch?v=gjKKtQVVCZU)
+
+
+### Sincronización de ramas
+En ocasiones aparecen nuevas ramas en remoto que debemos crear en local para poder descargar las actualizaciones. ¿Lo más sencillo? 
+```bash
+for remote in `git branch -r | grep -v /HEAD`; do git checkout --track $remote ; done`
+git pull -a
+```
+
 
 ## Gestión de ramas
 

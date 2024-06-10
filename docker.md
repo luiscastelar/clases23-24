@@ -1,6 +1,6 @@
-#curso23_24 #sad #psp #ed
+#curso23_24 #sad #psp #ed #par
 
-# {[Fold: Fold]} INSTALACIÓN
+# INSTALACIÓN
 
 ## LINUX
 
@@ -81,7 +81,7 @@ que escribir `docker run hello-world` desde linea de comandos en Linux o
 desde el CLI de Docker Desktop en Windows y MAC.
 
 
-# {[Fold: Fold]} PASO A PASO:
+# PASO A PASO:
 
 ## LOGS
 
@@ -289,6 +289,15 @@ Algunas referencias del tema:
 - [Jose Domingo](https://www.josedomingo.org/pledin/2020/02/redes-en-docker/)
 - [Atareao con Linux](https://www.atareao.es/tutorial/docker/redes-en-docker/)
 
+
+### Redes macvlan:
+Conectando contenedores a redes macvlan paso a paso -> [aquí](https://blog.oddbit.com/post/2018-03-12-using-docker-macvlan-networks/#host-access)
+
+> *Opción poco elegante pero funcional (en GNU/Linux)*:
+> Se puede crear un alias de interface, asignarle una IP y conectar los contenedores con esa IP en vez de con la inicial.
+> *Para esta solución perdemos aislamiento del contenedor y tendremos que vigilar los servicios que levantamos en el host*.
+
+
 ### Modo legacy ➡️ NO USAR
 
 ## VERSIONES CONCRETAS de IMÁGENES (TAGs):
@@ -403,11 +412,10 @@ docker system prune -all
 ```
 
 ## ACTUALIZACIONES (UPDATES)
+Tenemos 3 opciones: a mano o con el contenedor de `watchtower` .
 
-Tenemos 2 opciones: a mano o con el contenedor de `watchtower` .
 
 ### A MANO:
-
 **Importante**: Opción recomendada para contenedores en producción **críticos**. 3
 pasos:
 
@@ -421,8 +429,8 @@ Evidentemente, deberás haber puesto a salvo cualquier dato modificado en
 el contenedor basado en la imagen antigua ya que de no ser así lo
 **perderás TODO**.
 
-### WATCHATOWER:
 
+### WATCHATOWER:
 ```bash
 CONTENEDORES="contenedor1 contededor2 ... contenedorn"
 docker run --name watchtower -v /var/run/docker.sock:/var/run/docker.sock \
@@ -444,8 +452,11 @@ Referencias: [oficial](https://containrrr.dev/watchtower/)
 ```
 
 
-## SECRETOS:
+### Docker-controller-bot
+Gestión completa de contenedores (arrancar, parar, actualizar, programar...) -> [github](https://github.com/dgongut/docker-controller-bot)
 
+
+## SECRETOS:
 Muy utilizado en `docker compose` para evitar publicar credenciales por
 error.
 
@@ -459,8 +470,7 @@ La documentación oficial también habla de:
 -   --secret-add and --secret-rm flags for docker service update
 
 
-# {[Fold: Fold]} Docker COMPOSE:
-
+# Docker COMPOSE:
 ***AVISO***: La versión 1.0 de `docker-compose` está **sin mantenimiento** desde 
 julio de 2023, por lo que deberá utilizarse únicamente la versión 2.0 
 o superior.
@@ -468,6 +478,7 @@ o superior.
 En la práctica, para usar la versión 2 sólo tenemos que eliminar el 
 “dash” o guión “-” y llamaremos a dicha versión. Podemos verificar
 la versión mediante `docker compose -v`.
+
 
 ## COMANDOS BÁSICOS:
 -   `docker compose up` levanta (crea) la composición. Con `-d` la deja
@@ -490,8 +501,8 @@ queramos pasar al compose del tipo "image: webapp:${TAG}".
 También podemos pasarle variables de entorno con
 `docker-compose run -e DEGUG=1 ...`
 
-### SECRETOS:
 
+### SECRETOS:
 La mejor forma de no exponer credenciales es mediante la utilización de
 archivo ".env" y variables dentro del `docker-compose.yml`.
 
@@ -505,19 +516,44 @@ Por ejemplo: ".env": key1=16daz key2=d4
 -   usuario=${key1}
 -   password${key2}
 
+
 ## YAML:
 -   [Resumen {Wikipedia}](https://es.wikipedia.org/wiki/YAML)
 -   [Oficial](https://yaml.org/)
 
-## COMPOSERIZE:
 
+## COMPOSERIZE:
 Si ya controlamos `docker` cli podremos utilizar el servicio para 
 convertir de docker cli a docker compose [composerize](https://www.composerize.com/).
 
 
+# Dockerfile
+[Desarrollo con contenedores (ED)](https://github.com/luiscastelar/clases23-24/blob/main/ed/ED-09-Desarrollo%20con%20contenedores.md)
 
-# {[Fold: Fold]} IMÁGENES ÚTILES:
-*Este es un listado subjetivo y realizado en mayo de 2021. Tomarlo con precacución.*
+
+
+# Preguntas de entrevistas sobre DOCKER:
+Algunos tips sobre que debemos saber: [learning-zone](https://github.com/learning-zone/devops-interview-questions)
+
+
+# Moviendo a un HD Externo
+[Eso](https://geekland.eu/usar-y-ejecutar-docker-en-un-disco-duro-externo/)
+
+
+# EXTRA de SEGURIDAD:
+
+`docker`  se ejecuta en modo root por lo que pueden aparecer algunos 
+problemas de seguridad, sobre todo en sistemas multi-usuario. 
+Puedes saber más en los siguientes enlaces:
+- [Vídeo del Pelao sobre el tema](https://www.youtube.com/watch?v=0xUwaz0MD_E)
+- [Doc. Of. DOCKER sobre ejecución en espacio de nombres de usuario](https://docs.docker.com/engine/security/userns-remap/)
+- [Doc. Of. DOCKER sobre ejecución en modo rootless](https://docs.docker.com/engine/security/rootless/)
+
+
+
+
+# IMÁGENES ÚTILES:
+*Este es un listado subjetivo y realizado en mayo de 2021. Tomarlo con precaución.*
 
 ## GUI - Gestión de IMAGENES/CONTENEDORES/VOLÚMENES
 
@@ -618,28 +654,6 @@ docker run -d --name=firefox -p 5800:5800 -p 5900:5900 \
     # filerun
       docker run -d --name=filerun -v /home/luis/Documentos/docker/filerun/config:/config \
         -e TZ=Europe/Madrid -e PGID=1000 PUID=1000 -p 8081:80 afian/filerun:latest
-
-
-# Dockerfile
-Para crear imágenes: [inners-guide-to-building-docker-images](https://stackify.com/docker-build-a-beg)
-
-
-# Preguntas de entrevistas sobre DOCKER:
-Algunos tips sobre que debemos saber: [learning-zone](https://github.com/learning-zone/devops-interview-questions)
-
-
-# Moviendo a un HD Externo
-[Eso](https://geekland.eu/usar-y-ejecutar-docker-en-un-disco-duro-externo/)
-
-
-# EXTRA de SEGURIDAD:
-
-`docker`  se ejecuta en modo root por lo que pueden aparecer algunos 
-problemas de seguridad, sobre todo en sistemas multi-usuario. 
-Puedes saber más en los siguientes enlaces:
-- [Vídeo del Pelao sobre el tema](https://www.youtube.com/watch?v=0xUwaz0MD_E)
-- [Doc. Of. DOCKER sobre ejecución en espacio de nombres de usuario](https://docs.docker.com/engine/security/userns-remap/)
-- [Doc. Of. DOCKER sobre ejecución en modo rootless](https://docs.docker.com/engine/security/rootless/)
 
 
 # CAMBIAR PUERTOS ➡️ ****NO USAR****:
