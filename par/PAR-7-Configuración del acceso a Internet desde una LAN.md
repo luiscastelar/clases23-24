@@ -9,10 +9,10 @@
 + [x] NAT (estático, dinámico y sobrecargado)
 + [x] ACL Extendidas
 + [ ] ~~ACL Reflexivas~~
-+ [ ] Sin cables -> Wifi y Wimax
-+ [ ] PPPoE
++ [x] Sin cables -> Wifi y Wimax
++ [x] PPPoE
 + [ ] SDN (Redes Definidas por Software)
-+ [ ] Otras tecnologías (Frame Relay, RDSI, ADSL, UMTS, HSDPA)
++ [x] Otras tecnologías (Frame Relay, RDSI, ADSL, UMTS, HSDPA)
   
 ## Breve inciso sobre DNS
 [wikipedia](https://es.wikipedia.org/wiki/Sistema_de_nombres_de_dominio)

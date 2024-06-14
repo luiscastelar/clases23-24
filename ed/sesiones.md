@@ -9,12 +9,12 @@ Esto es un documento vivo donde hacer una planificación diaria y control del tr
 
  
  + [x] 8m: Desarrollo e Integración continua
- + [ ] 14m: Validate(Linter) + Compile + Test
- + [ ] 15m: V + C + T + Package
- + [ ] 21m: V + C + T + P + Despliegue (tomcat)
- + [ ] 22m: Persentaciones 1
- + [ ] 28m: Presentaciones 2
- + [ ] 29m: Presentaciones 3
+ + [x] 14m: Validate(Linter) + Compile + Test
+ + [x] 15m: V + C + T + Package
+ + [x] 21m: V + C + T + P + Despliegue (tomcat)
+ + [x] 22m: Continuamos ejercicio
+ + [x] 28m: Continuamos ejercicio
+ + [x] 29m: Continuamos ejercicio
 
 ---
 

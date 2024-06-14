@@ -314,3 +314,42 @@ Los alumnos con materia por recuperar se unirán tras la semana de recuperación
   + [x] Resolver examen
 
 
+# UT7 	Configuración del acceso a Internet desde una LAN. 	
+3a 	04-04-2024 	02-05-2024 	28 horas.
+
++ 10a:
+  + [x] Elementos para conexión a internet:
+    + [x] DHCP
+    + [x] ARP y NDP
+    + [x] DNS
++ 11a:
+  + [x] NAT estático
+  + [x] NAT dinámico
+  + [x] NAT con sobrecarga
++ 16a:
+  + [x] Configurar router para NAT
+  + [x] Reenvío de puertos
++ 17a:
+  + [x] Listas de control EXTENDIDAS
++ 18a:
+  + [x] NAT64
++ 23a:
+  + [x] PPPoE
+  + [x] Wifi y WiMax
++ 24a:
+  + [x] Otras tecnologías sin hilos
+  + [x] Otras Normas de comunicaciones
+    + [x] X25
+    + [x] ATM
+    + [x] Frame Relay
+    + [x] RDSI
+    + [x] xDSL
+    + [x] Móviles (1g - 5g)
++ 25a:
+  + [x] Ejercicios NAT con ACL.
++ 30a:
+  + [x] Ejercicios NAT con ACL y reenvío de puertos.
++ 2m:
+  + [x] Examen (intento 1).
++ 7m:
+  + [x] Examen (intento 2).
