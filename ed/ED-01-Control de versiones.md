@@ -37,6 +37,9 @@ Pues que tenemos que unir los caminos. Tenemos 2 opciones: merge y rebase.
   *Inconveniente*: Los creadores de los commits que desaparecen pierden el seguimiento de sus cambios por los HASH. **=> SÓLO REALIZAR EN REPOSITORIOS UNIPERSONALES** o nunca.
   
 ![merge-rebase](https://miro.medium.com/max/720/1*UDKJF0BHO_USMuovMgdylQ.png)
+Recuerda: 
+![](pub23/ed/assets/git_push_--force.jpg)
+
 
 ## PRÁCTICA
 Haz sólo lo que no tengas ya en el ejercicio anterior:
@@ -57,6 +60,8 @@ Haz sólo lo que no tengas ya en el ejercicio anterior:
 10. Mediante gitfiend o gitg captura la línea de tiempo.
 11. Regresa al punto 7 (en el tiempo) y muestra el contenido del archivo a.txt mediante una captura.
 12. Vuelve al `HEAD` y documentalo todo.
+
+
 
 
 
