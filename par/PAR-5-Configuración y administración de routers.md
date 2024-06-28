@@ -317,48 +317,46 @@ Podemos tener varias interfaces de loopback en un equipo.
 
 
 ### Configurar DHCP
+DHCP (Dynamic Host Configuration Protocol) es un protocolo que permite que los host de una red se configuren automáticamente. Solo se necesita definir una serie de  parámetros en alguna máquina que hará de *servidor DHCP* y que escuchará peticiones.
 
-DHCP (Dynamic Host Configuration Protocol) es un protocolo que permite
-que los host de una red se configuren automáticamente. Solo se necesita
-definir una serie de parámetros en alguna máquina que hará de *servidor
-DHCP* y que escuchará peticiones. Cuando un ordenador se encienda y esté
-configurado en modo DHCP **difundirá una petición** y si esa petición la
-recibe el servidor le contestará indicando la IP, máscara y otros datos
-que puede usar.
+Cuando un ordenador se encienda y esté configurado en modo DHCP **difundirá una petición** y si esa petición la recibe el servidor le contestará indicando la IP, máscara y otros datos que puede usar.
+
+Primero debemos crear un POOL (conjunto) de direcciones, y el servicio DHCP tomará de ese pool para asignar a los clientes que soliciten. Para configurar el pool:
+
+```ios
+Router> enable
+Router# configure terminal                       
+Router(config)# ip dhcp pool pool_contables      
+Router(dhcp-config)# network 192.168.1.0 255.255.255.0
+Router(dhcp-config)# default-router 192.168.1.1  
+Router(dhcp-config)# dns-server 8.8.8.8          
+```         
 
 Los parámetros que se necesitan son estos:
+- Dirección IP y máscara. Datos **obligatorios**. 
+- Tiempo de concesión `lease {days [hours [minutes]] | infinite}`. *Utilizaremos el valor por defecto, por lo que no necesitamos indicarlo*. 
+- *Opcional:* 
+  - _Option 3_: Gateway (pasarela), dirección del router que nos permite salir a otras redes. Podemos indicar varios separados por espacios.
+  - *Option 6:* Servidor de Nombres de Dominio -DNS-. Podemos indicar varios separados por espacios.
+  - Otros parámetros como servidor TFTP, servidor NetBios,...
+  - En general, podemos especificar cualquier *option DHCP* mediante el formato `option code [instance number] {ascii string | hex string | ip-address}`. 
 
-- Dirección IP y máscara. Absolutamente imprescindibles.
-- Gateway (dirección del router que nos permite salir a otras redes).
-- Otros parámetros, dirección de servidores DNS.
-
-Los comandos son estos:
-
-    Router>enable
-    Router#configure terminal
-    Router(config)#ip dhcp pool pool_contables
-    Router(dhcp-config)#network 192.168.1.0 255.255.255.0
-    Router(dhcp-config)#default-router 192.168.1.1
-    Router(dhcp-config)#dns-server 8.8.8.8
-
-El parámetro *default-router* será el que los clientes utilicen como *default gateway* o ‘puerta al mundo por defecto’.
-
+Puedes consultar la lista completa de opciones en la [RFC 2132](https://www.rfc-editor.org/rfc/rfc2132.html)
 
 ### Excluir direcciones de la asignación DHCP
+A menudo se suelen reservar algunas direcciones del pool para tener equipos que configuraremos de forma manual, por ejemplo routers o impresoras. Para ello:
 
-Una vez estemos en un DHCP, como teníamos antes, podemos *excluir
-direcciones.* Se puede excluir solo una o excluir un rango de
-direcciones:
+```ios
+Router> enable                                   
+Router# configure terminal                       
+Router(config)# ip dhcp pool pool_contables      
+Router(dhcp-config)# network 192.168.1.0 255.255.255.0
+Router(dhcp-config)# exit                        
+Router(config)# ip dhcp excluded-address 192.168.1.1
+Router(config)# ip dhcp excluded-address 192.168.1.20 192.168.1.30
+```                                              
 
-    Router>enable
-    Router#configure terminal
-    Router(config)#ip dhcp pool pool_contables
-    Router(dhcp-config)#network 192.168.1.0 255.255.255.0
-    Router(dhcp-config)#exit
-    Router(config)#ip dhcp excluded-address 192.168.1.1
-    Router(config)#ip dhcp excluded-address 192.168.1.20 192.168.1.30
-
-
+Se puede excluir solo una o excluir un rango de direcciones.
 
 ## Configuración del enrutamiento estático.
 
