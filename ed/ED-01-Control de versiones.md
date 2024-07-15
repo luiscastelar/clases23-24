@@ -3,7 +3,7 @@
 # GIT
 [Introducción a GIT por TodoCode](https://www.youtube.com/watch?v=mCVQgSyjCkI&list=PLQxX2eiEaqby-qh4raiKfYyb4T7WyHsfW) y [blog de Diego Martín](https://www.diegocmartin.com/tutorial-git/).
 
-Resumen de zonas:
+## Resumen de zonas:
 
 ![resumen git](https://cfw.rabbitloader.xyz/eyJjIjp0cnVlLCJoIjoid3d3LmRpZWdvY21hcnRpbi5jb20iLCJ2IjoxMzQ2MTc0NzgzfQ/wp-content/uploads/2018/12/git-workflow1.png)
 
@@ -23,8 +23,13 @@ Para crear un README en texto plano, pero con un formato agradable y *convertibl
 
 *Aplicaciones auxiliares:* [GitFiend](https://gitfiend.com/) o [GitG](https://wiki.gnome.org/Apps/Gitg) como apoyo visual a *git bash*. También [Git Extensions](https://gitextensions.github.io/) como plug-in de VS.
 
+## Revertir cambios
++ git reset --soft HEAD~1
++ git reset --hard HEAD~1
 
-### Merge y rebase
+Fuente: [@midudev](https://youtube.com/shorts/IwatUhxAsdU?si=fDiKuvklhy_0N2_v)
+
+## Merge y rebase
 ¿Qué ocurre cuando trabajamos con ramas o hemos realizado cambios desde 2 equipos distintos? \
 ![Ramas](https://miro.medium.com/max/720/1*wRBcfPnjdm8vY40j9iIl7g.png)
 
@@ -37,6 +42,8 @@ Pues que tenemos que unir los caminos. Tenemos 2 opciones: merge y rebase.
   *Inconveniente*: Los creadores de los commits que desaparecen pierden el seguimiento de sus cambios por los HASH. **=> SÓLO REALIZAR EN REPOSITORIOS UNIPERSONALES** o nunca.
   
 ![merge-rebase](https://miro.medium.com/max/720/1*UDKJF0BHO_USMuovMgdylQ.png)
+
+
 Recuerda: 
 ![](pub23/ed/assets/git_push_--force.jpg)
 
@@ -65,7 +72,7 @@ Haz sólo lo que no tengas ya en el ejercicio anterior:
 
 
 
-### Referencias:
+## Referencias:
   + Documentación OFICIAL -> [Git reference manual](https://git-scm.com/docs)
   + Vídeos aclarativos -> [PildorasInformáticas 1-5, 10-11](https://www.youtube.com/watch?v=ANF1X42_ae4&list=PLU8oAlHdN5BlyaPFiNQcV0xDqy0eR35aU)
   + [Pelao Nerd - 1](https://youtu.be/kEPF-MWGq1w) y [Pelao - 2](https://youtu.be/7-JHoPyJy-Q)
