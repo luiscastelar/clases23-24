@@ -2,8 +2,8 @@
 
 # Desarrollo con contenedores
 
-## 0. PREPARACIÓN:
-Instalar *Docker Desktop* en aquellos equipos que lo permitan.
+## PREPARACIÓN:
+**Entorno de trabajo en el aula**: Instalar *Docker Desktop* en aquellos equipos que lo permitan.
 
 Para los que **NO**, o para los que quieran control total de su sistema docker (incluida la red):
 + Vagrantfile:
@@ -38,7 +38,12 @@ sudo -u vagrant docker --version
 ip a | grep "inet "
 ```
 
-## 1. DEFINIENDO la imagen básica:
+**En entorno de producción**: 
+Daremos por hecho que el entorno es GNU/Linux e instalaremos docker cli utilizando el script obtenido en https://get.docker.com
+
+*Si nuestro entorno de producción fuera NO Linux no podremos utilizar docker*.
+
+## DEFINIENDO la imagen básica:
 Comenzamos con un ejemplo sencillo para ver los pasos de construcción de la imagen e instanciación del contenedor.
 + Dockerfile:
 ```Dockerfile
@@ -63,7 +68,7 @@ Para hacer las cosas algo más cómodas podemos crear un alias del tag a *latest
 + [Creando mi primera imagen](https://www.freecodecamp.org/espanol/news/guia-de-docker-para-principiantes-como-crear-tu-primera-aplicacion-docker/)
 
 
-## 2. FLEXIBILIZANDO la imagen:
+## FLEXIBILIZANDO la imagen:
 ### CMD vs ENTRYPOINT
 Comenzamos viendo la diferencia entre [cmd y entrypoint](https://programacionymas.com/blog/docker-diferencia-entrypoint-cmd)
 
@@ -127,7 +132,7 @@ CMD ping -c4 $destino
 ```
 
 
-## 3. Una imagen con aplicación Java stand-alone:
+## Una imagen con aplicación Java stand-alone:
 Vamos a realizar una base sobre la que podremos en realidad ejecutar aplicaciones Java (versión < 22) incluso con las *preview features*.
 
 + Dockerfile:
@@ -181,13 +186,13 @@ CLAVE=4.Ti.T3.10.v0y.4.c0nt4r
 
 Para construir la imagen: `docker build -t luistest:version003 .`
 
-## 4. FLEXIBILIZANDO la ejecución
+## FLEXIBILIZANDO la ejecución
 Podemos querer modificar los parámetros del archivo de configuración o incluso distribuir la imagen y que cada usuario pueda personalizarlo. 
 
 Para ello, tan sólo tendremos que instanciar la imagen vinculando el archivo de `conf.properties` con otro externo `docker run --rm -v ./conf-per.properties:/opt/app/src/conf.properties luistest:version003` 
 
 
-## 5. OPTIMIZANDO la imagen (2 pasos)
+## OPTIMIZANDO la imagen (2 pasos)
 A veces, necesitamos algunos o muchos recursos para construir una imagen, pero no tantos para ejecutarla por lo que podemos recurrir a la utilización de 2 etapas con [imágenes base diferentes](https://hub.docker.com/_/eclipse-temurin/tags).
 
 ```Dockerfile
@@ -217,7 +222,13 @@ Podemos ver la obvia diferencia con `docker system df -v | head`, aun habiendo r
 
 **Ejercicio:** Reduce la imagen por debajo de los 200 MB (version006).
 
-## 6. COMPARTIENDO la imagen
+### Creando nuestra propia imagen JRE con JLink
+> jlink is a tool that can be used to create a custom runtime image that contains only the modules that are needed to run your application
+>
+> Fuente: [optimizando imágenes java](https://medium.com/@RoussiAbel/optimizing-java-base-docker-images-size-from-674mb-to-58mb-c1b7c911f622)
+
+
+## COMPARTIENDO la imagen
 Subiéndola a [docker hub](https://hub.docker.com/):
 1. creando un repositorio `luisfe02/java_hola_mundo`
 2. Subiendo la imágen con:
